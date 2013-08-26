@@ -134,7 +134,7 @@ void LineSet::loadBinary(string filename) {
 	while(!file.eof()) {
 		Line addLine;
 		file.read((char*)&addLine, sizeof(Line) - sizeof(string) - sizeof(Line::Index)); //offset length by what we had before when using binary
-		addLine.layer = "cheil don't pay on time?";
+		addLine.layer = "Layer 0";
 		if (addLine.getLengthSquared() > 1e-7) { //sanity check
 			addLine.index = index++;
 			this->lines.insert(pair<Line::Index, Line>(addLine.index, addLine));

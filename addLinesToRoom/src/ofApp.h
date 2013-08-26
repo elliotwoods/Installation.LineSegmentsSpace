@@ -1,8 +1,10 @@
 #pragma once
 
 #include "ofMain.h"
+
 #include "ofxGrabCam.h"
 #include "ofxRay.h"
+#include "ofxUi.h"
 
 #include "LineSet.h"
 #include "Line.h"
@@ -51,4 +53,6 @@ public:
 	bool shift;
 	
 	ofFbo zoomed;
+	
+	ofxUICanvas layers;
 };
