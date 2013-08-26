@@ -34,7 +34,9 @@ public:
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
 
-	ofVec3f getPositionSnapped();
+	void layersChanged(LayerSet&);
+	void rebuildLayersGui();
+	void layerGuiEvent(ofxUIEventArgs&);
 	
 	ofxGrabCam camera;
 	
@@ -54,5 +56,8 @@ public:
 	
 	ofFbo zoomed;
 	
-	ofxUICanvas layers;
+	bool layerGuiRebuildFlag;
+	ofxUICanvas layerGui;
+	bool layerGuiAdd, layerGuiDelete, layerGuiRename;
+	bool cursorInLayerGui;
 };

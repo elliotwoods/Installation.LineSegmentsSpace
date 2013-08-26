@@ -10,6 +10,12 @@
 		4b84be00d8222e1072317e49d6fea85d /* ofxGrabCam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126d728b075c482c4c7404286359dee6 /* ofxGrabCam.cpp */; };
 		8B2F0D0E17C777EB00F7D61A /* LineSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F0D0C17C777EB00F7D61A /* LineSet.cpp */; };
 		8B2F0D1117C7785900F7D61A /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F0D0F17C7785900F7D61A /* Line.cpp */; };
+		8BD76FB717CAFE4E00AB4072 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB017CAFE4E00AB4072 /* tinyxml.cpp */; };
+		8BD76FB817CAFE4E00AB4072 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB217CAFE4E00AB4072 /* tinyxmlerror.cpp */; };
+		8BD76FB917CAFE4E00AB4072 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB317CAFE4E00AB4072 /* tinyxmlparser.cpp */; };
+		8BD76FBA17CAFE4E00AB4072 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB517CAFE4E00AB4072 /* ofxXmlSettings.cpp */; };
+		8BD76FBD17CB009D00AB4072 /* LayerSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FBB17CB009D00AB4072 /* LayerSet.cpp */; };
+		8BD76FC317CB276E00AB4072 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FC117CB276D00AB4072 /* Layer.cpp */; };
 		8BDADC7917C56ED200A61696 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BDADC6F17C56ED200A61696 /* Base.cpp */; };
 		8BDADC7A17C56ED200A61696 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BDADC7117C56ED200A61696 /* Camera.cpp */; };
 		8BDADC7B17C56ED200A61696 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BDADC7317C56ED200A61696 /* Plane.cpp */; };
@@ -118,6 +124,16 @@
 		8BD76F4917CAF9DC00AB4072 /* ofxUIWaveform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWaveform.h; sourceTree = "<group>"; };
 		8BD76F4A17CAF9DC00AB4072 /* ofxUIWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidget.h; sourceTree = "<group>"; };
 		8BD76F4B17CAF9DC00AB4072 /* ofxUIWidgetWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidgetWithLabel.h; sourceTree = "<group>"; };
+		8BD76FB017CAFE4E00AB4072 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		8BD76FB117CAFE4E00AB4072 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		8BD76FB217CAFE4E00AB4072 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		8BD76FB317CAFE4E00AB4072 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		8BD76FB517CAFE4E00AB4072 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		8BD76FB617CAFE4E00AB4072 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		8BD76FBB17CB009D00AB4072 /* LayerSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerSet.cpp; sourceTree = "<group>"; };
+		8BD76FBC17CB009D00AB4072 /* LayerSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerSet.h; sourceTree = "<group>"; };
+		8BD76FC117CB276D00AB4072 /* Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
+		8BD76FC217CB276D00AB4072 /* Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layer.h; sourceTree = "<group>"; };
 		8BDADC6D17C56ED200A61696 /* ofxRay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxRay.h; sourceTree = "<group>"; };
 		8BDADC6F17C56ED200A61696 /* Base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base.cpp; sourceTree = "<group>"; };
 		8BDADC7017C56ED200A61696 /* Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
@@ -243,6 +259,36 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		8BD76FAE17CAFE4E00AB4072 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				8BD76FAF17CAFE4E00AB4072 /* libs */,
+				8BD76FB417CAFE4E00AB4072 /* src */,
+			);
+			name = ofxXmlSettings;
+			path = ../../../addons/ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		8BD76FAF17CAFE4E00AB4072 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8BD76FB017CAFE4E00AB4072 /* tinyxml.cpp */,
+				8BD76FB117CAFE4E00AB4072 /* tinyxml.h */,
+				8BD76FB217CAFE4E00AB4072 /* tinyxmlerror.cpp */,
+				8BD76FB317CAFE4E00AB4072 /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		8BD76FB417CAFE4E00AB4072 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BD76FB517CAFE4E00AB4072 /* ofxXmlSettings.cpp */,
+				8BD76FB617CAFE4E00AB4072 /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		8BDADC6C17C56ED200A61696 /* ofxRay */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +319,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				8BD76FAE17CAFE4E00AB4072 /* ofxXmlSettings */,
 				8BD76CD517CAF9D800AB4072 /* ofxUI */,
 				8BDADC6C17C56ED200A61696 /* ofxRay */,
 				cb480773a518eb96ff50665783c29c3d /* ofxGrabCam */,
@@ -350,6 +397,10 @@
 				8B2F0D0D17C777EB00F7D61A /* LineSet.h */,
 				8B2F0D0F17C7785900F7D61A /* Line.cpp */,
 				8B2F0D1017C7785900F7D61A /* Line.h */,
+				8BD76FBB17CB009D00AB4072 /* LayerSet.cpp */,
+				8BD76FBC17CB009D00AB4072 /* LayerSet.h */,
+				8BD76FC117CB276D00AB4072 /* Layer.cpp */,
+				8BD76FC217CB276D00AB4072 /* Layer.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -477,6 +528,12 @@
 				8BDADC7D17C56ED200A61696 /* Ray.cpp in Sources */,
 				8B2F0D0E17C777EB00F7D61A /* LineSet.cpp in Sources */,
 				8B2F0D1117C7785900F7D61A /* Line.cpp in Sources */,
+				8BD76FB717CAFE4E00AB4072 /* tinyxml.cpp in Sources */,
+				8BD76FB817CAFE4E00AB4072 /* tinyxmlerror.cpp in Sources */,
+				8BD76FB917CAFE4E00AB4072 /* tinyxmlparser.cpp in Sources */,
+				8BD76FBA17CAFE4E00AB4072 /* ofxXmlSettings.cpp in Sources */,
+				8BD76FBD17CB009D00AB4072 /* LayerSet.cpp in Sources */,
+				8BD76FC317CB276E00AB4072 /* Layer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

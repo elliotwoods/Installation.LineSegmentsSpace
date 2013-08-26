@@ -1,5 +1,6 @@
 #pragma once
 #include "Line.h"
+#include "LayerSet.h"
 
 #include <deque>
 #define NORMAL_SIZE 3.0f
@@ -49,11 +50,19 @@ public:
 	void undo();
 	void addUndoSnapshot();
 	int getUndoStackLength();
+	
+	LayerSet& getLayers() { return this->layers; }
+	ofEvent<LayerSet> onLayersChange;
+	void addLayer(const string&);
+	void deleteLayer(ofPtr<Layer>);
+	void renameLayer(ofPtr<Layer>, const string&);
+	void selectLinesForLayer(ofPtr<Layer>);
+	void changeLayerVisibility();
 protected:
 	Line::Index getIndexAtScreen(int x, int y);
 	
-	map<Line::Index, Line> lines;
-	set<string> layers;
+	map<Line::Index, ofPtr<Line> > lines;
+	LayerSet layers;
 	
 	set<Line::Index> selection;
 	Line::Index hover;

@@ -22,6 +22,16 @@ void ofApp::setup(){
 	this->shift = false;
 	this->shadow = true;
 	this->grid = false;
+	
+	this->layerGui.init(20, 20);
+	ofAddListener(this->layerGui.newGUIEvent,this, &ofApp::layerGuiEvent);
+	this->windowResized(ofGetWidth(), ofGetHeight());
+	ofAddListener(this->lineSet.onLayersChange, this, &ofApp::layersChanged);
+	this->layerGuiAdd = false;
+	this->layerGuiDelete = false;
+	this->layerGuiRename = false;
+	this->layerGuiRebuildFlag = true;
+	this->cursorInLayerGui = false;
 }
 
 //---------
@@ -39,12 +49,18 @@ void ofApp::setupRoom() {
 
 //--------------------------------------------------------------
 void ofApp::update(){
-	this->cursor = this->camera.getCursorWorld();
+	if (!this->cursorInLayerGui) {
+		this->cursor = this->camera.getCursorWorld();
+	}
 	if (this->lineSet.getHoverIndex() != -1) {
 		this->cursor = this->lineSet.getHover().closestPointOnRayTo(this->cursor);
 	}
 	if (this->state == Adding) {
 		this->newLine.t = this->cursor - this->newLine.s;
+	}
+	if (this->layerGuiRebuildFlag) {
+		this->layerGuiRebuildFlag = false;
+		this->rebuildLayersGui();
 	}
 }
 
@@ -279,11 +295,6 @@ void ofApp::keyPressed(int key){
 	}
 }
 
-//----------
-ofVec3f ofApp::getPositionSnapped() {
-	//return hover->closestPointOnRayTo(this->camera.getCursorWorld());
-}
-
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
 	if (key == OF_KEY_SHIFT) {
@@ -293,7 +304,7 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-
+	this->cursorInLayerGui = this->layerGui.getRect()->inside(ofVec2f(x, y));
 }
 
 //--------------------------------------------------------------
@@ -303,7 +314,9 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-	this->mousePositionAtStartOfDown = ofVec2f(x,y);
+	if (!this->layerGui.getRect()->inside(ofVec2f(x, y))) {
+		this->mousePositionAtStartOfDown = ofVec2f(x,y);
+	}
 }
 
 //--------------------------------------------------------------
@@ -320,7 +333,7 @@ void ofApp::mouseReleased(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
+	this->layerGui.setPosition(ofGetWidth() - 200 - 20, 20);
 }
 
 //--------------------------------------------------------------
@@ -332,5 +345,111 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){
 	for(auto filename : dragInfo.files) {
 		this->lineSet.load(filename);
+	}
+}
+
+//--------------------------------------------------------------
+void ofApp::layersChanged(LayerSet& layers) {
+	this->layerGuiRebuildFlag = true;
+}
+
+//--------------------------------------------------------------
+void ofApp::rebuildLayersGui() {
+	auto & layers = this->lineSet.getLayers();
+
+	this->layerGui.removeWidgets();
+	this->layerGui.resetPlacer();
+	ofRectangle firstLayerBounds;
+	bool firstLayer = true;
+	for(auto layer : layers) {
+		auto selected = this->layerGui.addToggle(layer.first, &layer.second->selected);
+		if (firstLayer) {
+			firstLayerBounds = *selected->getRect();
+			firstLayer = false;
+		}
+	}
+	
+	if (layers.getHasSelection()) {
+		auto selected = layers.getSelection();
+		
+		this->layerGui.addSpacer();
+		this->layerGui.addLabel(selected->name);
+		this->layerGui.addSlider("Red", 0, 1.0f, &selected->color.r);
+		this->layerGui.addSlider("Green", 0, 1.0f, &selected->color.g);
+		this->layerGui.addSlider("Blue", 0, 1.0f, &selected->color.b);
+	}
+	
+	this->layerGui.addSpacer();
+	this->layerGui.addLabelButton("ADD LAYER", &this->layerGuiAdd);
+	this->layerGui.addLabelButton("DELETE LAYER", &this->layerGuiDelete);
+	this->layerGui.addLabelButton("RENAME LAYER", &this->layerGuiRename);
+	
+	this->layerGui.autoSizeToFitWidgets();
+	
+	//--
+	//go back to start and do visible toggles
+	//
+	firstLayer = true;
+	ofxUIWidget* lastVisible;
+	float pitch;
+	if (layers.size() > 1) {
+		auto firstLayer = layers.begin();
+		auto secondLayer = firstLayer;
+		secondLayer++;
+		auto firstWidget = this->layerGui.getWidget(firstLayer->first);
+		auto secondWidget = this->layerGui.getWidget(secondLayer->first);
+		pitch = secondWidget->getRect()->y - firstWidget->getRect()->y;
+	}
+	for(auto layer : layers) {
+		auto visible = new ofxUIToggle("", &layer.second->visible, 20,OFX_UI_GLOBAL_SLIDER_HEIGHT);
+			auto bounds = visible->getRect();
+		if (firstLayer) {
+			*bounds = firstLayerBounds;
+			bounds->x += 180;
+			bounds->width = bounds->height;
+			this->layerGui.addWidget(visible);
+			firstLayer = false;
+		} else {			
+			*bounds = *lastVisible->getRect();
+			bounds->y += pitch;
+			
+			this->layerGui.addWidget(visible);
+
+		}
+		lastVisible = visible;
+	}
+	//
+	//--
+	
+	this->layerGui.autoSizeToFitWidgets();
+}
+
+//--------------------------------------------------------------
+void ofApp::layerGuiEvent(ofxUIEventArgs& args) {
+	auto widgetName = args.widget->getName();
+	if (widgetName == "ADD LAYER" && this->layerGuiAdd) {
+		auto name = ofSystemTextBoxDialog("New layer name");
+		if(name != "") {
+			this->lineSet.addLayer(name);
+		}
+	} else if (widgetName == "DELETE LAYER" && this->layerGuiDelete) {
+		this->lineSet.deleteLayer(this->lineSet.getLayers().getSelection());
+	} else if (widgetName == "RENAME LAYER" && this->layerGuiRename) {
+		auto name = ofSystemTextBoxDialog("New layer name");
+		if (name != "") {
+			this->lineSet.renameLayer(this->lineSet.getLayers().getSelection(), name);
+		}
+	} else if (widgetName == "Red" || widgetName == "Green" || widgetName == "Blue") {
+		
+	} else if (args.widget->getName().length() > 0) {
+		//we've changed layer selection
+		auto & layers = this->lineSet.getLayers();
+		if (layers.count(widgetName) > 0) {
+			layers.setSelection(widgetName);
+			this->lineSet.selectLinesForLayer(layers[widgetName]);
+		}
+		this->layerGuiRebuildFlag = true;
+	} else {
+		this->lineSet.changeLayerVisibility();
 	}
 }
