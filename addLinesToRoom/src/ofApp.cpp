@@ -39,15 +39,22 @@ void ofApp::setupRoom() {
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+	this->cursor = this->camera.getCursorWorld();
+	if (this->lineSet.getHoverIndex() != -1) {
+		this->cursor = this->lineSet.getHover().closestPointOnRayTo(this->cursor);
+	}
+	if (this->state == Adding) {
+		this->newLine.t = this->cursor - this->newLine.s;
+	}
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+	
 	ofBackgroundGradient(100, 50);
 	
 	camera.begin();
+	this->lineSet.updateIndexBuffer(this->shift);
 	this->drawScene();
 	camera.end();
 	
@@ -74,7 +81,7 @@ void ofApp::draw(){
 		this->drawScene();
 		ofPopView();
 		zoomed.end();
-		zoomed.draw(0, ofGetHeight() - zoomed.getHeight());
+		zoomed.draw(0, ofGetHeight(), zoomed.getWidth(), - zoomed.getHeight());
 	}
 	//
 	//--
@@ -84,6 +91,9 @@ void ofApp::draw(){
 
 //----------
 void ofApp::drawScene() {
+	//--
+	//draw room
+	//
 	ofPushStyle();
 	ofFill();
 	glEnable(GL_CULL_FACE);
@@ -95,11 +105,13 @@ void ofApp::drawScene() {
 	glDisable(GL_CULL_FACE);
 	ofDisableLighting();
 	ofPopStyle();
+	//
+	//--
 	
 	this->lineSet.draw(this->shift, this->shadow);
 	
 	if (this->state == Adding) {
-		newLine.draw(false, NEWLINE_SIZE);
+		newLine.draw(NEWLINE_SIZE, ofColor::green);
 	}
 	
 	if (this->grid) {
@@ -128,27 +140,26 @@ void thickerLine(const ofVec3f& start, const ofVec3f& end, const ofColor& color,
 }
 //----------
 void ofApp::drawCursor() {
-	const ofVec3f cursor = this->shift ? this->getPositionSnapped() : this->camera.getCursorWorld();
 	const ofColor color = this->state == Adding ? ofColor(255,255,255) : ofColor(0,0,0);
 	//draw the cursor as lines between the walls
 	// (i.e. each line is 2 points where the cursor is projected onto the walls)
 	
 	ofVec3f A, B;
 	
-	A = cursor;
-	B = cursor;
+	A = this->cursor;
+	B = this->cursor;
 	A.x = roomMin.x;
 	B.x = roomMax.x;
 	thickerLine(A, B, color);
 	
-	A = cursor;
-	B = cursor;
+	A = this->cursor;
+	B = this->cursor;
 	A.y = roomMin.y;
 	B.y = roomMax.y;
 	thickerLine(A, B, color);
 	
-	A = cursor;
-	B = cursor;
+	A = this->cursor;
+	B = this->cursor;
 	A.z = roomMin.z;
 	B.z = roomMax.z;
 	thickerLine(A, B, color);
@@ -174,16 +185,24 @@ void ofApp::drawInstructions() {
 	instructions << "[c] = clear all lines" << endl;
 	instructions << "[h] = toggle shadow" << endl;
 	instructions << "[g] = toggle grid" << endl;
+	if (this->lineSet.getUndoStackLength() > 0) {
+		instructions << "[z] = undo" << endl;		
+	}
 	instructions << endl;
 	instructions << "Line count = " << (this->lineSet.getCountAll() + (this->state == Adding ? 1 : 0)) << endl;
-	instructions << "Total length = " << totalLength << endl;
-	
+	instructions << "Total length = " << totalLength << "m" << endl;
 	if (this->lineSet.getCountSelected() > 0) {
 		if (this->lineSet.getCountSelected() > 1) {
 			instructions << "Selection count = " << this->lineSet.getCountSelected() << endl;
 		}
-		instructions << "Total selection length = " << this->lineSet.getLengthSelected() << endl;
+		instructions << "Total selection length = " << this->lineSet.getLengthSelected() << "m" << endl;
 	}
+	
+	instructions << "Hover line length = ";
+	if (this->lineSet.getHoverIndex() != -1) {
+		instructions << this->lineSet.getHover().getLength() << "m";
+	}
+	instructions << endl;
 	
 	ofDrawBitmapStringHighlight(instructions.str(), 20, 20, ofColor(200, 100, 100));
 }
@@ -206,20 +225,12 @@ void ofApp::keyPressed(int key){
 		if (inside) {
 			switch (this->state) {
 				case Waiting:
-					this->findLineHover();
-					if (hover != this->lines.end() && this->shift) {
-						//we're on an existing line
-						this->newLine.s = this->getPositionSnapped();
-					} else {
-						this->newLine.s = cursor;
-					}
+					this->newLine.s = this->cursor;
 					this->state = Adding;
 					break;
 				case Adding:
 				{
-					this->lines.push_back(this->newLine);
-					this->selection = this->lines.end() - 1;
-					this->findLineHover();
+					this->lineSet.add(this->newLine);
 					this->state = Waiting;
 					break;
 				}
@@ -248,11 +259,7 @@ void ofApp::keyPressed(int key){
 	}
 	
 	if (key == OF_KEY_BACKSPACE) {
-//		for (auto line : this->selection) {
-//			this->lines.erase(line);
-//			this->selection.clear();
-//			findLineHover();
-//		}
+		this->lineSet.deleteSelected();
 	}
 	
 	if (key == OF_KEY_SHIFT) {
@@ -266,62 +273,15 @@ void ofApp::keyPressed(int key){
 	if (key == 'g') {
 		this->grid ^= true;
 	}
-}
-
-//----------
-vector<Line>::iterator ofApp::getPickLine() {
-	ofxRay::Ray pickRay;
-	pickRay.s = this->camera.getPosition();
-	pickRay.t = this->camera.getCursorWorld() - pickRay.s;
 	
-	auto inverseViewProjection = this->camera.getModelViewProjectionMatrix().getInverse();
-	auto pickRayInClip = pickRay * inverseViewProjection;
-	
-	const float pickDistance = this->shift ? SHIFT_SIZE : 3.0f; // threshold in pixels
-	auto lengthSquareThreshold = pow(pickDistance / ofGetWidth(),2);
-	
-	vector<Line>::iterator closest = this->lines.end();
-	float closestDistance = std::numeric_limits<float>::max();
-	
-	for (vector<Line>::iterator line = this->lines.begin(); line != this->lines.end(); line++) {
-		auto lineInClip = *line * inverseViewProjection;
-		float u1, u2;
-		auto intersectInClip = lineInClip.intersect(pickRayInClip, u1, u2);
-		
-		if (u1 >= 0.0f && u1 <= 1.0f) {
-			auto intersectInClipFlatZ = intersectInClip;
-			intersectInClipFlatZ.s.z = 0.0f;
-			intersectInClipFlatZ.t.z = 0.0f;
-			float distance = intersectInClipFlatZ.getLengthSquared();
-			if (distance < closestDistance && line->getLength() > 0.001f) { //sanity check for nuff lines
-				closestDistance = distance;
-				closest = line;
-			}
-		}
+	if (key == 'z') {
+		this->lineSet.undo();
 	}
-	
-	if (closest != this->lines.end()) {
-		if (closestDistance < lengthSquareThreshold) {
-			return closest;
-		}
-	}
-	
-	return lines.end();
-}
-
-//----------
-void ofApp::addPickLineToSelection() {
-	this->selection = this->getPickLine();
-}
-
-//----------
-void ofApp::findLineHover() {
-	this->hover = this->getPickLine();
 }
 
 //----------
 ofVec3f ofApp::getPositionSnapped() {
-	return hover->closestPointOnRayTo(this->camera.getCursorWorld());
+	//return hover->closestPointOnRayTo(this->camera.getCursorWorld());
 }
 
 //--------------------------------------------------------------
@@ -333,19 +293,7 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-	this->findLineHover();
-	
-	if (this->state == Adding) {
-		this->camera.updateCursorWorld();
-		auto cursor = this->camera.getCursorWorld();
-		if (hover != this->lines.end() && this->shift) {
-			//we're on an existing line
-			this->newLine.t = this->getPositionSnapped() - this->newLine.s;
-		} else {
-			//we're just picking in space
-			this->newLine.t = cursor - this->newLine.s;
-		}
-	}
+
 }
 
 //--------------------------------------------------------------
@@ -355,14 +303,19 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-	if (this->state == Waiting) {
-		this->addPickLineToSelection();
-	}
+	this->mousePositionAtStartOfDown = ofVec2f(x,y);
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
+	if (this->mousePositionAtStartOfDown == ofVec2f(x,y)) {
+		if (this->state == Waiting) {
+			if (!this->shift) {
+				this->lineSet.clearSelection();
+			}
+			this->lineSet.toggleHoverToSelection();
+		}
+	}
 }
 
 //--------------------------------------------------------------
@@ -378,6 +331,6 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){
 	for(auto filename : dragInfo.files) {
-		this->load(filename);
+		this->lineSet.load(filename);
 	}
 }

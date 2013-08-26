@@ -31,21 +31,15 @@ public:
 	void windowResized(int w, int h);
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
-	
-	vector<Line>::iterator getPickLine();
-	void addPickLineToSelection();
-	void findLineHover();
+
 	ofVec3f getPositionSnapped();
 	
-	//this function doesn't exist
-	void addIndices(int index, ...);
-
 	ofxGrabCam camera;
 	
+	ofVec3f cursor;
+	ofVec2f mousePositionAtStartOfDown;
 	LineSet lineSet;
 	Line newLine;
-	
-	set<string> layers; //cached list of layers
 	
 	ofBoxPrimitive room;
 	
