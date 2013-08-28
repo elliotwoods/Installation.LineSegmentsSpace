@@ -1,0 +1,35 @@
+Texture2D<float3> tex: PREVIOUS;
+float2 R:TARGETSIZE;
+
+float ThresholdMin = 0.5f;
+float ThresholdMax = 5.0f;
+
+bool CheckPixel(int2 xy, int offsetX, int offsetY)
+{
+	float3 world = tex[xy + int2(offsetX, offsetY)];
+	return world.z > ThresholdMin && world.z < ThresholdMax;
+}
+
+float4 pThresholdZ(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
+	int2 xy = x * R;
+	float3 world = tex[xy];
+    
+	float4 result;
+	result.xyz = world;
+	result.w = 1.0f;
+	
+	for (int i=-1; i<=1; i++)
+		for (int j=-1; j<=1; j++)
+		{
+			result.w *= CheckPixel(xy, i, j);
+		}
+	
+	return result;
+}
+
+technique10 ThresholdZ{
+	pass P1 <string format="R32G32B32A32_Float"; >
+	{
+		SetPixelShader(CompileShader(ps_4_0,pThresholdZ()));
+	}
+}

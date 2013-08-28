@@ -1,0 +1,37 @@
+Texture2D<float3> World : PREVIOUS;
+
+float2 R:TARGETSIZE;
+
+float4x4 InverseTransform;
+
+float Radius = 0.5f;
+float Thickness = 0.05f;
+float3 lightDirection;
+
+float Ambient = 0.2f;
+
+float4 pSphere(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
+    float4 world;
+	world.xyz = World[x * R];
+	world.w = 1.0f;
+	
+	float4 object = mul(world, InverseTransform);
+	object /= object.w;
+	
+	float r = length(object.xyz);
+	float3 normal = normalize(object.xyz);
+	
+	float value = pow(Thickness, 2) / pow(r - Radius, 2);
+	
+	float factor = saturate(dot(normal, - normalize(lightDirection)));
+	factor += Ambient;
+	
+	return value * factor * world.a;
+}
+
+technique10 Sphere{
+	pass P1
+	{
+		SetPixelShader(CompileShader(ps_4_0,pSphere()));
+	}
+}

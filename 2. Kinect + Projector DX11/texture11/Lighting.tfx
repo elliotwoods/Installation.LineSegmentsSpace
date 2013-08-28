@@ -1,0 +1,28 @@
+Texture2D<float3> texNormal: PREVIOUS;
+Texture2D<float3> World;
+
+float2 R:TARGETSIZE;
+
+float3 LightPosition;
+float LightDistance = 2.0f;
+float4 cDiffuse <bool color=true;String uiname="Diffuse";> = { 1.0f,1.0f,1.0f,1.0f };
+
+float4 pLighting(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
+    float3 normal = texNormal[x * R];
+    float3 world = World[x * R];
+	
+	float3 lightLook = world - LightPosition;
+	
+	float distanceCoeff = length(lightLook / LightDistance);
+	float inverseSquare = 1.0f / pow(distanceCoeff, 2.0f);
+	
+	float4 lightResult = cDiffuse * dot(normalize(lightLook), -normal) * inverseSquare;
+	return lightResult;
+}
+
+technique10 Lighting{
+	pass P1
+	{
+		SetPixelShader(CompileShader(ps_4_0,pLighting()));
+	}
+}

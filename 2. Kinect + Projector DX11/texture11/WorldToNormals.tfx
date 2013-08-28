@@ -1,0 +1,42 @@
+Texture2D<float3> tex: PREVIOUS;
+float2 R:TARGETSIZE;
+
+int StepSize = 2;
+
+float3 getWorldAt(int2 x, int offsetX, int offsetY) {
+	return tex[x + int2(offsetX * StepSize, offsetY * StepSize)];
+}
+
+//anticlockwise v1->v2->v3
+float3 getNormal(float3 v1, float3 v2, float3 v3) {
+	return normalize(cross(v1 - v2, v3 - v2));
+}
+
+float3 pWorldToNormals(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
+    float2 index = floor(R * x);
+	
+	float3 reading[3][3];
+	
+	float3 normal = 0;
+	
+	normal += getNormal(
+		getWorldAt(index, +1, -1),
+		getWorldAt(index, -1, -1),
+		getWorldAt(index, -1, +1));
+	
+	normal += getNormal(
+		getWorldAt(index, -1, +1),
+		getWorldAt(index, +1, +1),
+		getWorldAt(index, +1, -1));
+	
+	normal /= 2.0f;
+	
+	return normal;//
+}
+
+technique10 WorldToNormals{
+	pass P1
+	{
+		SetPixelShader(CompileShader(ps_4_0,pWorldToNormals()));
+	}
+}

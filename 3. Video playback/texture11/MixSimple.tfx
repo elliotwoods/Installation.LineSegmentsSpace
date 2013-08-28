@@ -1,0 +1,20 @@
+Texture2D tex0: PREVIOUS;
+Texture2D tex1 <string uiname="Texture In 2";>;
+
+SamplerState s0 <bool visible=false;string uiname="Sampler";> {Filter=MIN_MAG_MIP_LINEAR;AddressU=CLAMP;AddressV=CLAMP;};
+float2 R:TARGETSIZE;
+
+cbuffer controls:register(b0){
+	float Fader <float uimin=0.0;float uimax=1.0;> =0.5;
+};
+
+#define bld(op,c0,c1) float4(lerp((c0*c0.a+c1*c1.a*(1-c0.a))/saturate(c0.a+c1.a*(1-c0.a)),(op),c0.a*c1.a).rgb,saturate(c0.a+c1.a*(1-c0.a)))
+
+float4 pMIX(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_TARGET{
+	float4 c0=tex0.Sample(s0,x);
+	float4 c1=tex1.Sample(s0,x);
+	return lerp(c0,c1,Fader);
+}
+
+
+technique10 Mix{pass P1{SetPixelShader(CompileShader(ps_4_0,pMIX()));}}
