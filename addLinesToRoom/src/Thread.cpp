@@ -1,4 +1,4 @@
- #include "Line.h"
+ #include "Thread.h"
 
 //---------
 ofVec3f random3uf() {
@@ -6,25 +6,25 @@ ofVec3f random3uf() {
 }
 
 //---------
-void Line::draw(float edgeThickness, ofColor center) const {
+void Thread::draw(float edgeThickness, ofColor center, ofColor border) const {
 	const ofVec3f start = this->s;
 	const ofVec3f end = this->s + this->t;
 	
 	ofPushStyle();
 	
 	ofSetLineWidth(edgeThickness);
-	ofSetColor(0);
+	ofSetColor(border);
 	ofLine(start, end);
 	
 	ofSetLineWidth(1.0f);
-	ofSetColor(center);
+	ofSetColor(center.r, center.g, center.b);
 	ofLine(start, end);
 	
 	ofPopStyle();
 }
 
 //---------
-void Line::drawShadow(float floorHeight) const {
+void Thread::drawShadow(float floorHeight) const {
 	ofPushStyle();
 	ofVec3f start = this->s;
 	ofVec3f end = this->t + start;
@@ -38,7 +38,7 @@ void Line::drawShadow(float floorHeight) const {
 }
 
 //---------
-void Line::loadFrom(ofXml& xml) {
+void Thread::loadFrom(ofXml& xml) {
 	this->s = xml.getValue<ofVec3f>("s");
 	this->t = xml.getValue<ofVec3f>("t");
 	this->layer = xml.getValue("layer");
@@ -46,13 +46,13 @@ void Line::loadFrom(ofXml& xml) {
 }
 
 //---------
-void Line::saveTo(ofXml& xml) {
+void Thread::saveTo(ofXml& xml) {
 	auto addXml = this->getXml();
 	xml.addXml(addXml);
 }
 
 //---------
-ofXml Line::getXml() {
+ofXml Thread::getXml() {
 	ofXml xml;
 	xml.addChild("Line");
 	xml.setTo("Line");

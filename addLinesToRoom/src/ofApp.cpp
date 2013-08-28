@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
 const ofVec3f roomMin(-2.5f, 0.0f, 0.0f);
-const ofVec3f roomMax(2.5f, 2.7f, 7.0f);
+const ofVec3f roomMax(2.5f, 3.0f, 7.0f);
 const ofVec3f roomScale = roomMax - roomMin;
 const ofVec3f roomCenter = (roomMin + roomMax) / 2.0f;
 
@@ -24,6 +24,7 @@ void ofApp::setup(){
 	this->grid = false;
 	
 	this->layerGui.init(20, 20);
+
 	ofAddListener(this->layerGui.newGUIEvent,this, &ofApp::layerGuiEvent);
 	this->windowResized(ofGetWidth(), ofGetHeight());
 	ofAddListener(this->lineSet.onLayersChange, this, &ofApp::layersChanged);
@@ -50,7 +51,7 @@ void ofApp::setupRoom() {
 //--------------------------------------------------------------
 void ofApp::update(){
 	if (!this->cursorInLayerGui) {
-		this->cursor = this->camera.getCursorWorld();
+		this->cursor = this->cameraCursorCached;
 	}
 	if (this->lineSet.getHoverIndex() != -1) {
 		this->cursor = this->lineSet.getHover().closestPointOnRayTo(this->cursor);
@@ -72,6 +73,8 @@ void ofApp::draw(){
 	camera.begin();
 	this->lineSet.updateIndexBuffer(this->shift);
 	this->drawScene();
+	this->cameraCursorCached = this->camera.getCursorWorld();
+	this->drawCursor();
 	camera.end();
 	
 	//--
@@ -95,6 +98,7 @@ void ofApp::draw(){
 		glMatrixMode(GL_MODELVIEW);
 		glLoadMatrixf(camera.getModelViewMatrix().getPtr());
 		this->drawScene();
+		this->drawCursor();
 		ofPopView();
 		zoomed.end();
 		zoomed.draw(0, ofGetHeight(), zoomed.getWidth(), - zoomed.getHeight());
@@ -135,9 +139,34 @@ void ofApp::drawScene() {
 		ofRotate(90, 0.0f, 0.0f, 1.0f);
 		ofDrawGridPlane(7.0f, 7);
 		ofPopMatrix();
+		
+		ofPushStyle();
+		ofSetColor(0);
+		ofNoFill();
+		for(float x = roomMin.x; x<= roomMax.x; x++) {
+			ofPushMatrix();
+			ofTranslate(x, 0, 0);
+			ofRotate(-90, 0, 1.0f, 0);
+			ofRect(roomMin.z, roomMin.y, roomMax.z - roomMin.z, roomMax.y - roomMin.y);
+			ofPopMatrix();
+		}
+		
+		for(float z = roomMin.z; z<= roomMax.z; z++) {
+			ofPushMatrix();
+			ofTranslate(0, 0, z);
+			ofRect(roomMin.x, roomMin.y, roomMax.x - roomMin.x, roomMax.y - roomMin.y);
+			ofPopMatrix();
+		}
+		
+		for(float y = roomMin.y; y<= roomMax.y; y++) {
+			ofPushMatrix();
+			ofTranslate(0, y, 0);
+			ofRotate(90, 1.0f, 0, 0);
+			ofRect(roomMin.x, roomMin.z, roomMax.x - roomMin.x, roomMax.z - roomMin.z);
+			ofPopMatrix();
+		}
+		ofPopStyle();
 	}
-	
-	this->drawCursor();
 }
 
 //----------
@@ -194,11 +223,11 @@ void ofApp::drawInstructions() {
 	} else {
 		instructions << "[SPACE] = select start point for new line" << endl;
 	}
-	instructions << "[BACKSPACE] = delete last line" << endl;
+	instructions << "[BACKSPACE] = delete selected lines" << endl;
 	instructions << "[SHIFT] = show thicker lines" << endl;
-	instructions << "[s] = save line set" << endl;
-	instructions << "[l] = load line set" << endl;
-	instructions << "[c] = clear all lines" << endl;
+	instructions << "[s] = save" << endl;
+	instructions << "[l] = load" << endl;
+	instructions << "[c] = clear all" << endl;
 	instructions << "[h] = toggle shadow" << endl;
 	instructions << "[g] = toggle grid" << endl;
 	if (this->lineSet.getUndoStackLength() > 0) {
@@ -356,10 +385,10 @@ void ofApp::layersChanged(LayerSet& layers) {
 //--------------------------------------------------------------
 void ofApp::rebuildLayersGui() {
 	auto & layers = this->lineSet.getLayers();
+	layerGui.removeWidgets();
 
-	this->layerGui.removeWidgets();
 	this->layerGui.resetPlacer();
-	ofRectangle firstLayerBounds;
+	ofxUIRectangle firstLayerBounds;
 	bool firstLayer = true;
 	for(auto layer : layers) {
 		auto selected = this->layerGui.addToggle(layer.first, &layer.second->selected);
@@ -446,7 +475,7 @@ void ofApp::layerGuiEvent(ofxUIEventArgs& args) {
 		auto & layers = this->lineSet.getLayers();
 		if (layers.count(widgetName) > 0) {
 			layers.setSelection(widgetName);
-			this->lineSet.selectLinesForLayer(layers[widgetName]);
+			this->lineSet.selectThreadsForLayer(layers[widgetName]);
 		}
 		this->layerGuiRebuildFlag = true;
 	} else {

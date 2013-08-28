@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4b84be00d8222e1072317e49d6fea85d /* ofxGrabCam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126d728b075c482c4c7404286359dee6 /* ofxGrabCam.cpp */; };
-		8B2F0D0E17C777EB00F7D61A /* LineSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F0D0C17C777EB00F7D61A /* LineSet.cpp */; };
-		8B2F0D1117C7785900F7D61A /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F0D0F17C7785900F7D61A /* Line.cpp */; };
+		8B05EFC317CB521A007077F9 /* ThreadSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B05EFBF17CB521A007077F9 /* ThreadSet.cpp */; };
+		8B05EFC417CB521A007077F9 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B05EFC017CB521A007077F9 /* Thread.cpp */; };
 		8BD76FB717CAFE4E00AB4072 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB017CAFE4E00AB4072 /* tinyxml.cpp */; };
 		8BD76FB817CAFE4E00AB4072 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB217CAFE4E00AB4072 /* tinyxmlerror.cpp */; };
 		8BD76FB917CAFE4E00AB4072 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76FB317CAFE4E00AB4072 /* tinyxmlparser.cpp */; };
@@ -76,10 +76,10 @@
 /* Begin PBXFileReference section */
 		126d728b075c482c4c7404286359dee6 /* ofxGrabCam.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGrabCam.cpp; path = ../../../addons/ofxGrabCam/src/ofxGrabCam.cpp; sourceTree = SOURCE_ROOT; };
 		411825d206fefba451c69368c12a1283 /* ofxGrabCam.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGrabCam.h; path = ../../../addons/ofxGrabCam/src/ofxGrabCam.h; sourceTree = SOURCE_ROOT; };
-		8B2F0D0C17C777EB00F7D61A /* LineSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LineSet.cpp; sourceTree = "<group>"; };
-		8B2F0D0D17C777EB00F7D61A /* LineSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineSet.h; sourceTree = "<group>"; };
-		8B2F0D0F17C7785900F7D61A /* Line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Line.cpp; sourceTree = "<group>"; };
-		8B2F0D1017C7785900F7D61A /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		8B05EFBF17CB521A007077F9 /* ThreadSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadSet.cpp; sourceTree = "<group>"; };
+		8B05EFC017CB521A007077F9 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		8B05EFC117CB521A007077F9 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		8B05EFC217CB521A007077F9 /* ThreadSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSet.h; sourceTree = "<group>"; };
 		8BD76F2017CAF9DC00AB4072 /* ofxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI.h; sourceTree = "<group>"; };
 		8BD76F2117CAF9DC00AB4072 /* ofxUI2DGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DGraph.h; sourceTree = "<group>"; };
 		8BD76F2217CAF9DC00AB4072 /* ofxUI2DPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DPad.h; sourceTree = "<group>"; };
@@ -390,13 +390,13 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8B05EFBF17CB521A007077F9 /* ThreadSet.cpp */,
+				8B05EFC017CB521A007077F9 /* Thread.cpp */,
+				8B05EFC117CB521A007077F9 /* Thread.h */,
+				8B05EFC217CB521A007077F9 /* ThreadSet.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				8B2F0D0C17C777EB00F7D61A /* LineSet.cpp */,
-				8B2F0D0D17C777EB00F7D61A /* LineSet.h */,
-				8B2F0D0F17C7785900F7D61A /* Line.cpp */,
-				8B2F0D1017C7785900F7D61A /* Line.h */,
 				8BD76FBB17CB009D00AB4072 /* LayerSet.cpp */,
 				8BD76FBC17CB009D00AB4072 /* LayerSet.h */,
 				8BD76FC117CB276D00AB4072 /* Layer.cpp */,
@@ -526,14 +526,14 @@
 				8BDADC7B17C56ED200A61696 /* Plane.cpp in Sources */,
 				8BDADC7C17C56ED200A61696 /* Projector.cpp in Sources */,
 				8BDADC7D17C56ED200A61696 /* Ray.cpp in Sources */,
-				8B2F0D0E17C777EB00F7D61A /* LineSet.cpp in Sources */,
-				8B2F0D1117C7785900F7D61A /* Line.cpp in Sources */,
 				8BD76FB717CAFE4E00AB4072 /* tinyxml.cpp in Sources */,
 				8BD76FB817CAFE4E00AB4072 /* tinyxmlerror.cpp in Sources */,
 				8BD76FB917CAFE4E00AB4072 /* tinyxmlparser.cpp in Sources */,
 				8BD76FBA17CAFE4E00AB4072 /* ofxXmlSettings.cpp in Sources */,
 				8BD76FBD17CB009D00AB4072 /* LayerSet.cpp in Sources */,
 				8BD76FC317CB276E00AB4072 /* Layer.cpp in Sources */,
+				8B05EFC317CB521A007077F9 /* ThreadSet.cpp in Sources */,
+				8B05EFC417CB521A007077F9 /* Thread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

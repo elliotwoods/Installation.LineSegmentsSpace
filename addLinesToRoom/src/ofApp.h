@@ -6,8 +6,8 @@
 #include "ofxRay.h"
 #include "ofxUi.h"
 
-#include "LineSet.h"
-#include "Line.h"
+#include "ThreadSet.h"
+#include "Thread.h"
 
 class ofApp : public ofBaseApp{
 	enum State {
@@ -40,10 +40,11 @@ public:
 	
 	ofxGrabCam camera;
 	
+	ofVec3f cameraCursorCached;
 	ofVec3f cursor;
 	ofVec2f mousePositionAtStartOfDown;
-	LineSet lineSet;
-	Line newLine;
+	ThreadSet lineSet;
+	Thread newLine;
 	
 	ofBoxPrimitive room;
 	

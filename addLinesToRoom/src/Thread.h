@@ -1,10 +1,10 @@
 #pragma once
 #include "ofxRay.h"
 
-class Line : public ofxRay::Ray {
+class Thread : public ofxRay::Ray {
 public:
 	typedef int Index;
-	void draw(float edgeThickness, ofColor center = ofColor::white) const;
+	void draw(float edgeThickness, ofColor center = ofColor::white, ofColor border = ofColor::black) const;
 	void drawShadow(float floorHeight = 0.0f) const;
 
 	void loadFrom(ofXml&);

@@ -1,7 +1,7 @@
-#include "LineSet.h"
+#include "ThreadSet.h"
 
 //----------
-LineSet::LineSet() {
+ThreadSet::ThreadSet() {
 	this->clearSelection();
 	this->clearHover();
 	
@@ -9,7 +9,7 @@ LineSet::LineSet() {
 }
 
 //----------
-void LineSet::draw(bool shift, bool shadows) {
+void ThreadSet::draw(bool shift, bool shadows) {
 	ofPushStyle();
 	for(auto line : this->lines) {
 		auto layer = this->layers[line.second->layer];
@@ -21,23 +21,30 @@ void LineSet::draw(bool shift, bool shadows) {
 		}
 	}
 	ofPopStyle();
-	
+
 	for(auto index : this->selection) {
-		this->lines[index]->draw(SELECTED_SIZE, ofColor::red);
+		auto line = this->lines[index];
+		if (this->layers.count(line->layer) > 0) {
+			line->draw(SELECTED_SIZE, this->layers[line->layer]->color, ofColor::red);
+		}
 	}
 	
-	if (this->lines.count(this->hover) != 0) { //should also discount == -1 case where no hover
-		this->lines[hover]->draw(HOVER_SIZE, ofColor::blue);
+	if (this->lines.count(this->hover) != 0) { //should be ok to discount == -1 case where no hover
+		auto line = this->lines[this->hover];
+		if (this->layers.count(line->layer) > 0) {
+			line->draw(HOVER_SIZE, this->layers[line->layer]->color, ofColor::blue);
+		}
 	}
+
 }
 
 //----------
-void setColorForIndex(Line::Index index) {
+void setColorForIndex(Thread::Index index) {
 	ofSetColor(index % 256, (index / 256) % 256, (index / (256 * 256)) % 256);
 }
 
 //----------
-void LineSet::updateIndexBuffer(bool shift) {
+void ThreadSet::updateIndexBuffer(bool shift) {
 	int desiredWidth = ofGetWidth() / PICK_SAMPLE_DOWN;
 	int desiredHeight = ofGetHeight() / PICK_SAMPLE_DOWN;
 	if (this->indexBufferFbo.getWidth() != desiredWidth || this->indexBufferFbo.getHeight() != desiredHeight) {
@@ -79,19 +86,19 @@ void LineSet::updateIndexBuffer(bool shift) {
 }
 
 //----------
-void LineSet::add(Line line) {
-	for(auto otherLine : this->lines) {
-		auto closestPointOnOldLineToNewStart = otherLine.second->closestPointOnRayTo(line.s);
-		auto closestPointOnOldLineToNewEnd = otherLine.second->closestPointOnRayTo(line.s + line.t);
-		float distanceOldLineToNewStart = (closestPointOnOldLineToNewStart - line.s).length();
-		float distanceOldLineToNewEnd = (closestPointOnOldLineToNewEnd - (line.s + line.t)).length();
+void ThreadSet::add(Thread line) {
+	for(auto otherThread : this->lines) {
+		auto closestPointOnOldThreadToNewStart = otherThread.second->closestPointOnRayTo(line.s);
+		auto closestPointOnOldThreadToNewEnd = otherThread.second->closestPointOnRayTo(line.s + line.t);
+		float distanceOldThreadToNewStart = (closestPointOnOldThreadToNewStart - line.s).length();
+		float distanceOldThreadToNewEnd = (closestPointOnOldThreadToNewEnd - (line.s + line.t)).length();
 		
-		if (distanceOldLineToNewStart < 1e-6) {
-			this->splitLineAt(otherLine.first, closestPointOnOldLineToNewStart);
+		if (distanceOldThreadToNewStart < 1e-6) {
+			this->splitThreadAt(otherThread.first, closestPointOnOldThreadToNewStart);
 			break;
 		}
-		if (distanceOldLineToNewEnd < 1e-6) {
-			this->splitLineAt(otherLine.first, closestPointOnOldLineToNewEnd);
+		if (distanceOldThreadToNewEnd < 1e-6) {
+			this->splitThreadAt(otherThread.first, closestPointOnOldThreadToNewEnd);
 			break;
 		}
 	}
@@ -105,17 +112,17 @@ void LineSet::add(Line line) {
 		line.layer = this->layers.getSelection()->name;
 	}
 	
-	auto addLine = ofPtr<Line>(new Line());
-	*addLine = line;
+	auto addThread = ofPtr<Thread>(new Thread());
+	*addThread = line;
 	
 	this->addUndoSnapshot();
-	this->lines.insert(pair<Line::Index, ofPtr<Line> >(line.index, addLine));
+	this->lines.insert(pair<Thread::Index, ofPtr<Thread> >(line.index, addThread));
 	this->selection.clear();
 	this->hover = line.index;
 }
 
 //----------
-void LineSet::toggleHoverToSelection() {
+void ThreadSet::toggleHoverToSelection() {
 	if (this->lines.count(this->hover) > 0) {
 		if (this->selection.count(this->hover) == 0) {
 			this->selection.insert(this->hover);
@@ -129,7 +136,7 @@ void LineSet::toggleHoverToSelection() {
 }
 
 //----------
-void LineSet::load(string filename) {
+void ThreadSet::load(string filename) {
 	this->addUndoSnapshot();
 	ofFile file;
 	file.open(filename);
@@ -150,32 +157,32 @@ void LineSet::load(string filename) {
 }
 
 //----------
-void LineSet::loadBinary(string filename) {
+void ThreadSet::loadBinary(string filename) {
 	ifstream file;
 	filename = ofToDataPath(filename, true);
 	file.open(filename.c_str(), ios::in | ios::binary);
 	int index = 0;
 	while(!file.eof()) {
-		auto addLine = ofPtr<Line>(new Line());
-		file.read((char*)addLine.get(), sizeof(Line) - sizeof(string) - sizeof(Line::Index)); //offset length by what we had before when using binary
-		addLine->layer = "Layer 0";
-		if (addLine->getLengthSquared() > 1e-7) { //sanity check
-			addLine->index = index++;
-			this->lines.insert(pair<Line::Index, ofPtr<Line> >(addLine->index, addLine));
+		auto addThread = ofPtr<Thread>(new Thread());
+		file.read((char*)addThread.get(), sizeof(Thread) - sizeof(string) - sizeof(Thread::Index)); //offset length by what we had before when using binary
+		addThread->layer = "Layer 0";
+		if (addThread->getLengthSquared() > 1e-7) { //sanity check
+			addThread->index = index++;
+			this->lines.insert(pair<Thread::Index, ofPtr<Thread> >(addThread->index, addThread));
 		}
 	}
 	file.close();
 }
 
 //----------
-void LineSet::loadXml(string filename) {
+void ThreadSet::loadXml(string filename) {
 	ofXml xml;
 	xml.load(filename);
 	this->load(xml);
 }
 
 //----------
-void LineSet::load(ofXml& xml) {
+void ThreadSet::load(ofXml& xml) {
 	if (xml.setTo("Room")) {
 		this->undoStack.clear();
 		if (xml.setTo("Layers")) {
@@ -192,14 +199,14 @@ void LineSet::load(ofXml& xml) {
 		if (xml.setTo("Lines")) {
 			if (xml.setTo("Line[0]")) {
 				do {
-					auto newLine = ofPtr<Line>(new Line());
-					newLine->loadFrom(xml);
-					if (this->lines.count(newLine->index) > 0) {
-						newLine->index = this->getNextFreeIndex();
+					auto newThread = ofPtr<Thread>(new Thread());
+					newThread->loadFrom(xml);
+					if (this->lines.count(newThread->index) > 0) {
+						newThread->index = this->getNextFreeIndex();
 					}
-					this->lines.insert(pair<Line::Index, ofPtr<Line> >(newLine->index, newLine));
-					if (this->layers.count(newLine->layer) == 0) {
-						this->layers.insert(newLine->layer);
+					this->lines.insert(pair<Thread::Index, ofPtr<Thread> >(newThread->index, newThread));
+					if (this->layers.count(newThread->layer) == 0) {
+						this->layers.insert(newThread->layer);
 					}
 				} while (xml.setToSibling());
 				xml.setToParent();
@@ -210,7 +217,7 @@ void LineSet::load(ofXml& xml) {
 }
 
 //----------
-void LineSet::save(string filename) const {
+void ThreadSet::save(string filename) const {
 	this->getStateAsXml().save(filename);
 	
 	/*
@@ -227,7 +234,7 @@ void LineSet::save(string filename) const {
 }
 
 //----------
-ofXml LineSet::getStateAsXml() const {
+ofXml ThreadSet::getStateAsXml() const {
 	ofXml xml;
 	
 	xml.addChild("Room");
@@ -264,7 +271,7 @@ ofXml LineSet::getStateAsXml() const {
 }
 
 //----------
-void LineSet::clear() {
+void ThreadSet::clear() {
 	this->addUndoSnapshot();
 	this->lines.clear();
 	this->layers.clear();
@@ -274,35 +281,37 @@ void LineSet::clear() {
 }
 
 //----------
-void LineSet::clearSelection() {
+void ThreadSet::clearSelection() {
 	this->selection.clear();
 }
 
 //----------
-void LineSet::clearHover() {
+void ThreadSet::clearHover() {
 	this->hover = -1;
 }
 
 //----------
-void LineSet::deleteSelected() {
+void ThreadSet::deleteSelected() {
 	this->addUndoSnapshot();
 	for(auto index : this->selection) {
 		this->lines.erase(index);
 	}
+	this->selection.clear();
+	this->hover = -1;
 }
 
 //----------
-int LineSet::getCountAll() const {
+int ThreadSet::getCountAll() const {
 	return this->lines.size();
 }
 
 //----------
-int LineSet::getCountSelected() const {
+int ThreadSet::getCountSelected() const {
 	return this->selection.size();
 }
 
 //----------
-float LineSet::getLengthAll() const {
+float ThreadSet::getLengthAll() const {
 	float total = 0.0f;
 	for(auto line : this->lines) {
 		total += line.second->getLength();
@@ -311,7 +320,7 @@ float LineSet::getLengthAll() const {
 }
 
 //----------
-float LineSet::getLengthSelected() const {
+float ThreadSet::getLengthSelected() const {
 	float total = 0.0f;
 	for(auto index : this->selection) {
 		total += this->lines.at(index)->getLength(); //we have to use this syntax for const
@@ -320,42 +329,45 @@ float LineSet::getLengthSelected() const {
 }
 
 //----------
-Line::Index LineSet::getHoverIndex() const {
+Thread::Index ThreadSet::getHoverIndex() const {
 	return this->hover;
 }
 
 //----------
-Line& LineSet::getHover() {
+Thread& ThreadSet::getHover() {
 	return *this->lines[this->hover];
 }
 
 //----------
-Line::Index LineSet::getNextFreeIndex() const {
+Thread::Index ThreadSet::getNextFreeIndex() const {
 	if (this->lines.size() == 0) {
 		return 0;
 	} else {
-		auto lastLine = this->lines.end();
-		lastLine--;
-		return lastLine->first + 1;
+		auto lastThread = this->lines.end();
+		lastThread--;
+		return lastThread->first + 1;
 	}
 }
 
 //----------
-void LineSet::splitLineAt(Line::Index index, const ofVec3f& point) {
+void ThreadSet::splitThreadAt(Thread::Index index, const ofVec3f& point) {
 	this->addUndoSnapshot();
-	auto previousLine = this->lines[index];
-	this->lines[index]->t = point - previousLine->s;
+	auto previousThread = *this->lines[index];
+	this->lines[index]->t = point - previousThread.s;
 	
-	auto newLine = ofPtr<Line>(new Line());
-	newLine->layer = previousLine->layer;
-	newLine->s = point;
-	newLine->t = previousLine->t + previousLine->s - newLine->s;
-	newLine->index = this->getNextFreeIndex();
-	this->lines.insert(pair<Line::Index, ofPtr<Line> >(newLine->index, newLine));
+	auto newThread = ofPtr<Thread>(new Thread());
+	newThread->layer = previousThread.layer;
+	newThread->s = point;
+	newThread->t = previousThread.t + previousThread.s - newThread->s;
+	newThread->index = this->getNextFreeIndex();
+	this->lines.insert(pair<Thread::Index, ofPtr<Thread> >(newThread->index, newThread));
 }
 
 //----------
-void LineSet::addUndoSnapshot() {
+void ThreadSet::addUndoSnapshot() {
+	//!HACK - ofXml seems to have allocation issues
+	return;
+
 	ofXml currentState = this->getStateAsXml();
 	this->undoStack.push_back(currentState);
 	if(this->undoStack.size() > UNDO_STACK_LENGTH) {
@@ -364,7 +376,7 @@ void LineSet::addUndoSnapshot() {
 }
 
 //----------
-void LineSet::undo() {
+void ThreadSet::undo() {
 	if (this->undoStack.size() > 0) {
 		this->clear();
 		this->load(this->undoStack.back());
@@ -373,12 +385,12 @@ void LineSet::undo() {
 }
 
 //----------
-int LineSet::getUndoStackLength() {
+int ThreadSet::getUndoStackLength() {
 	return this->undoStack.size();
 }
 
 //----------
-Line::Index LineSet::getIndexAtScreen(int x, int y) {
+Thread::Index ThreadSet::getIndexAtScreen(int x, int y) {
 	x /= PICK_SAMPLE_DOWN;
 	y /= PICK_SAMPLE_DOWN;
 	
@@ -387,7 +399,7 @@ Line::Index LineSet::getIndexAtScreen(int x, int y) {
 		if (this->indexBufferPixels[pixelIndex * 4 + 3] == 0) {
 			return -1; //no line here
 		}
-		Line::Index index = 0;
+		Thread::Index index = 0;
 		index += this->indexBufferPixels[pixelIndex * 4];
 		index += this->indexBufferPixels[pixelIndex * 4 + 1] * 256;
 		index += this->indexBufferPixels[pixelIndex * 4 + 2] * 256 * 256;
@@ -398,20 +410,20 @@ Line::Index LineSet::getIndexAtScreen(int x, int y) {
 }
 
 //----------
-void LineSet::addLayer(const string& name) {
+void ThreadSet::addLayer(const string& name) {
 	this->layers.insert(name);
 	ofNotifyEvent(this->onLayersChange, this->layers, this);
 }
 
 //----------
-void LineSet::deleteLayer(ofPtr<Layer> layer) {
-	this->selectLinesForLayer(layer);
+void ThreadSet::deleteLayer(ofPtr<Layer> layer) {
+	this->selectThreadsForLayer(layer);
 	this->deleteSelected();
 	ofNotifyEvent(this->onLayersChange, this->layers, this);
 }
 
 //----------
-void LineSet::renameLayer(ofPtr<Layer> layer, const string& name) {
+void ThreadSet::renameLayer(ofPtr<Layer> layer, const string& name) {
 	auto tempLayer = ofPtr<Layer>(new Layer());
 	*tempLayer = *this->layers[layer->name];
 	
@@ -433,7 +445,7 @@ void LineSet::renameLayer(ofPtr<Layer> layer, const string& name) {
 }
 
 //----------
-void LineSet::selectLinesForLayer(ofPtr<Layer> layer) {
+void ThreadSet::selectThreadsForLayer(ofPtr<Layer> layer) {
 	this->clearSelection();
 	for(auto line : this->lines) {
 		if (line.second->layer == layer->name) {
@@ -443,7 +455,7 @@ void LineSet::selectLinesForLayer(ofPtr<Layer> layer) {
 }
 
 //----------
-void LineSet::changeLayerVisibility() {
+void ThreadSet::changeLayerVisibility() {
 	//clear any invisible elements from selection
 	vector<int> toRemoveFromSelection;
 	for(auto index : this->selection) {

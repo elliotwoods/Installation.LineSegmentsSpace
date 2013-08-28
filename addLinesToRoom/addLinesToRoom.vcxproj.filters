@@ -49,10 +49,10 @@
     <ClCompile Include="..\..\..\addons\ofxRay\src\ofxRay\Ray.cpp">
       <Filter>ofxRay\ofxRay</Filter>
     </ClCompile>
-    <ClCompile Include="src\Thread.cpp">
+    <ClCompile Include="src\ThreadSet.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\ThreadSet.cpp">
+    <ClCompile Include="src\Thread.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -248,10 +248,10 @@
     <ClInclude Include="..\..\..\addons\ofxRay\src\ofxRay\Ray.h">
       <Filter>ofxRay\ofxRay</Filter>
     </ClInclude>
-    <ClInclude Include="src\Thread.h">
+    <ClInclude Include="src\ThreadSet.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\ThreadSet.h">
+    <ClInclude Include="src\Thread.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

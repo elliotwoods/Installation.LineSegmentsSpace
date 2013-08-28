@@ -1,5 +1,5 @@
 #pragma once
-#include "Line.h"
+#include "Thread.h"
 #include "LayerSet.h"
 
 #include <deque>
@@ -13,14 +13,14 @@
 
 #define UNDO_STACK_LENGTH 10
 
-class LineSet {
+class ThreadSet {
 public:
-	LineSet();
+	ThreadSet();
 	
 	void draw(bool shift, bool shadows);
 	void updateIndexBuffer(bool shift);
 	
-	void add(Line);
+	void add(Thread);
 	void toggleHoverToSelection();
 	
 	void load(string filename);
@@ -40,12 +40,12 @@ public:
 	float getLengthAll() const;
 	float getLengthSelected() const;
 	
-	Line::Index getHoverIndex() const;
-	Line& getHover();
+	Thread::Index getHoverIndex() const;
+	Thread& getHover();
 	
-	Line::Index getNextFreeIndex() const;
+	Thread::Index getNextFreeIndex() const;
 	ofFbo & getIndexBufferFbo() { return this->indexBufferFbo; }
-	void splitLineAt(Line::Index, const ofVec3f&);
+	void splitThreadAt(Thread::Index, const ofVec3f&);
 	
 	void undo();
 	void addUndoSnapshot();
@@ -56,16 +56,16 @@ public:
 	void addLayer(const string&);
 	void deleteLayer(ofPtr<Layer>);
 	void renameLayer(ofPtr<Layer>, const string&);
-	void selectLinesForLayer(ofPtr<Layer>);
+	void selectThreadsForLayer(ofPtr<Layer>);
 	void changeLayerVisibility();
 protected:
-	Line::Index getIndexAtScreen(int x, int y);
+	Thread::Index getIndexAtScreen(int x, int y);
 	
-	map<Line::Index, ofPtr<Line> > lines;
+	map<Thread::Index, ofPtr<Thread> > lines;
 	LayerSet layers;
 	
-	set<Line::Index> selection;
-	Line::Index hover;
+	set<Thread::Index> selection;
+	Thread::Index hover;
 	
 	ofFbo indexBufferFbo;
 	ofPixels indexBufferPixels;
