@@ -1,0 +1,103 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha30.3.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\10. Calibrate camera from files\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\10. Calibrate camera from files\main.v4p">
+   <BOUNDS type="Window" left="21660" top="15165" width="9000" height="6000">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1320" top="1050" width="2295" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1320" top="1050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|..\chessboard as cursor experiment data\photos|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Image points folder|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1155" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mask" visible="1" slicecount="1" values="*.imagepoints.raw">
+   </PIN>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="3" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="Reader (Raw)" nodename="Reader (Raw)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1140" top="2205" width="2835" height="270">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Filenames" dstnodeid="2" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3930" top="1050" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3930" top="1050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Update" linkstyle="VHV">
+   <LINKPOINT x="3930" y="1468">
+   </LINKPOINT>
+   <LINKPOINT x="1905" y="1518">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="390" top="8805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0.652">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1155" top="525" width="3285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1155" top="525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="*.imagepoints.raw">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="3" dstpinname="Mask">
+   </LINK>
+   </PATCH>
