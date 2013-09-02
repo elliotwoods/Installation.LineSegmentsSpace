@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha30.3.dtd" >
    <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\7. Make chessboard image\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\7. Make chessboard image\main.v4p">
-   <BOUNDS type="Window" left="22095" top="7425" width="9000" height="9870">
+   <BOUNDS type="Window" left="5055" top="16605" width="9000" height="9870">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
    <BOUNDS type="Node" left="3195" top="5745" width="100" height="100">
@@ -331,7 +331,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3465" top="420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.39">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.36">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -783,5 +783,19 @@
    <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="18" dstpinname="Source">
    </LINK>
    <LINK srcnodeid="28" srcpinname="XY" dstnodeid="4" dstpinname="Resolution">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3165" top="1200" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3165" top="1200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Width">
    </LINK>
    </PATCH>
