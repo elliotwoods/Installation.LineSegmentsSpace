@@ -1,0 +1,9 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\19. 2 Projector calibrations\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\19. 2 Projector calibrations\main.v4p">
+   <BOUNDS type="Window" left="5910" top="13470" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="Table (Table)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.Table.dll" nodename="Table (Table)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="750" top="1275" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
