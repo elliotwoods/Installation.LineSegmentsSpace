@@ -1,43 +1,43 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <SpreadTable>
-    <Camera_x0020_X>-0.68096054888507718</Camera_x0020_X>
-    <_x0020_Camera_x0020_Y>-0.8223938223938223</_x0020_Camera_x0020_Y>
+    <Camera_x0020_X>-0.68147512864494</Camera_x0020_X>
+    <_x0020_Camera_x0020_Y>-0.82522522522522523</_x0020_Camera_x0020_Y>
     <_x0020_World_x0020_X>0.359</_x0020_World_x0020_X>
     <_x0020_World_x0020_Y>0</_x0020_World_x0020_Y>
     <_x0020_World_x0020_Z>2.964</_x0020_World_x0020_Z>
   </SpreadTable>
   <SpreadTable>
-    <Camera_x0020_X>-0.21355060034305312</Camera_x0020_X>
-    <_x0020_Camera_x0020_Y>-0.7755469755469756</_x0020_Camera_x0020_Y>
+    <Camera_x0020_X>-0.21612349914236706</Camera_x0020_X>
+    <_x0020_Camera_x0020_Y>-0.77091377091377089</_x0020_Camera_x0020_Y>
     <_x0020_World_x0020_X>1.194</_x0020_World_x0020_X>
     <_x0020_World_x0020_Y>0</_x0020_World_x0020_Y>
     <_x0020_World_x0020_Z>3.961</_x0020_World_x0020_Z>
   </SpreadTable>
   <SpreadTable>
-    <Camera_x0020_X>0.6298456260720412</Camera_x0020_X>
-    <_x0020_Camera_x0020_Y>-0.79073359073359073</_x0020_Camera_x0020_Y>
+    <Camera_x0020_X>0.63121783876500848</Camera_x0020_X>
+    <_x0020_Camera_x0020_Y>-0.79253539253539251</_x0020_Camera_x0020_Y>
     <_x0020_World_x0020_X>3.316</_x0020_World_x0020_X>
     <_x0020_World_x0020_Y>0</_x0020_World_x0020_Y>
     <_x0020_World_x0020_Z>5.109</_x0020_World_x0020_Z>
   </SpreadTable>
   <SpreadTable>
-    <Camera_x0020_X>0.88559176672384232</Camera_x0020_X>
-    <_x0020_Camera_x0020_Y>0.2707850707850708</_x0020_Camera_x0020_Y>
+    <Camera_x0020_X>0.88885077186963979</Camera_x0020_X>
+    <_x0020_Camera_x0020_Y>0.27516087516087517</_x0020_Camera_x0020_Y>
     <_x0020_World_x0020_X>3.773</_x0020_World_x0020_X>
     <_x0020_World_x0020_Y>2.127</_x0020_World_x0020_Y>
     <_x0020_World_x0020_Z>6.784</_x0020_World_x0020_Z>
   </SpreadTable>
   <SpreadTable>
-    <Camera_x0020_X>0.0015437392795883851</Camera_x0020_X>
-    <_x0020_Camera_x0020_Y>-0.0028314028314028296</_x0020_Camera_x0020_Y>
+    <Camera_x0020_X>0.0005145797598627099</Camera_x0020_X>
+    <_x0020_Camera_x0020_Y>-0.0020592020592020473</_x0020_Camera_x0020_Y>
     <_x0020_World_x0020_X>0</_x0020_World_x0020_X>
     <_x0020_World_x0020_Y>1.5</_x0020_World_x0020_Y>
     <_x0020_World_x0020_Z>6.784</_x0020_World_x0020_Z>
   </SpreadTable>
   <SpreadTable>
-    <Camera_x0020_X>-0.26895368782161233</Camera_x0020_X>
-    <_x0020_Camera_x0020_Y>0.35701415701415706</_x0020_Camera_x0020_Y>
+    <Camera_x0020_X>-0.26826758147512864</Camera_x0020_X>
+    <_x0020_Camera_x0020_Y>0.35752895752895758</_x0020_Camera_x0020_Y>
     <_x0020_World_x0020_X>0</_x0020_World_x0020_X>
     <_x0020_World_x0020_Y>2.417</_x0020_World_x0020_Y>
     <_x0020_World_x0020_Z>4.993</_x0020_World_x0020_Z>

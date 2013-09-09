@@ -13,7 +13,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1695" top="975" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|..\sitedata\calibrations\550D - 18mm\captures\IMG_0007.JPG|">
+   <PIN pinname="Input String" slicecount="1" values="|..\sitedata\calibrations\550D - 18mm\captures\IMG_0001.JPG|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -159,19 +159,13 @@
    </BOUNDS>
    <BOUNDS type="Window" left="18000" top="12135" width="7125" height="7260">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="View" visible="1">
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Layer Out" dstnodeid="15" dstpinname="Layers" linkstyle="VHV">
-   <LINKPOINT x="1910" y="6420">
-   </LINKPOINT>
-   <LINKPOINT x="4570" y="6420">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="13" srcpinname="Transform Out" dstnodeid="15" dstpinname="View">
    </LINK>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="16">
@@ -1249,13 +1243,15 @@
    </PIN>
    <PIN pinname="Flags" visible="1" slicecount="1" values="CV_CALIB_USE_INTRINSIC_GUESS,CV_CALIB_FIX_ASPECT_RATIO,CV_CALIB_FIX_PRINCIPAL_POINT,CV_CALIB_ZERO_TANGENT_DIST,CV_CALIB_FIX_FOCAL_LENGTH,CV_CALIB_FIX_K1,CV_CALIB_FIX_K2,CV_CALIB_FIX_K3,CV_CALIB_FIX_K4,CV_CALIB_FIX_K5,CV_CALIB_FIX_K6">
    </PIN>
+   <PIN pinname="Do" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="111" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="15375" top="17190" width="2565" height="1905">
    </BOUNDS>
    <BOUNDS type="Node" left="15375" top="17190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="11" visible="1" values="CV_CALIB_USE_INTRINSIC_GUESS,CV_CALIB_FIX_ASPECT_RATIO,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K5,CV_CALIB_FIX_K6">
+   <PIN pinname="Input Enum" slicecount="11" visible="1" values="CV_CALIB_USE_INTRINSIC_GUESS,CV_CALIB_FIX_ASPECT_RATIO,CV_CALIB_FIX_PRINCIPAL_POINT,CV_CALIB_FIX_FOCAL_LENGTH,CV_CALIB_FIX_FOCAL_LENGTH,CV_CALIB_FIX_K1,CV_CALIB_FIX_K2,CV_CALIB_FIX_K3,CV_CALIB_FIX_K4,CV_CALIB_FIX_K5,CV_CALIB_FIX_K6">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="11">
    </PIN>
@@ -1271,9 +1267,9 @@
    <LINK srcnodeid="84" srcpinname="Intrinsics" dstnodeid="110" dstpinname="Intrinsic Guess">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="18135" top="18630" width="480" height="480">
+   <BOUNDS type="Box" left="18135" top="18330" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="18135" top="18630" width="0" height="0">
+   <BOUNDS type="Node" left="18135" top="18330" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -1289,9 +1285,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Do">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Do">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="113" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="16290" top="20295" width="795" height="240">
    </BOUNDS>
@@ -1460,28 +1456,6 @@
    </LINK>
    <LINK srcnodeid="111" srcpinname="Output Enum" dstnodeid="110" dstpinname="Flags">
    </LINK>
-   <NODE systemname="Ord2Enum (Enumerations)" nodename="Ord2Enum (Enumerations)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="15360" top="16740" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Enum" visible="1">
-   </PIN>
-   <PIN pinname="Ord Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="129" srcpinname="Enum" dstnodeid="111" dstpinname="Input Enum">
-   </LINK>
-   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="130">
-   <BOUNDS type="Node" left="15345" top="16395" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="[ From .." slicecount="1" values="1">
-   </PIN>
-   <PIN pinname=".. To [" slicecount="1" values="12">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="130" srcpinname="Output" dstnodeid="129" dstpinname="Ord Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="131" systemname="IOBox (String)">
    <BOUNDS type="Box" left="18120" top="20040" width="795" height="240">
    </BOUNDS>
@@ -1614,4 +1588,100 @@
    </LINK>
    <LINK srcnodeid="115" srcpinname="Transform Out" dstnodeid="114" dstpinname="Transform In 2">
    </LINK>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="142">
+   <BOUNDS type="Node" left="4950" top="5895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SpinCursor (ProjectorControl DX11.Layer)" filename="%VVVV%\packs\VVVV.Nodes.ProjectorControl\nodes\modules\SpinCursor (ProjectorControl DX11.Layer).v4p" nodename="SpinCursor (ProjectorControl DX11.Layer)" componentmode="Hidden" id="143">
+   <BOUNDS type="Node" left="4380" top="5040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Position XY" slicecount="2" values="0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="143" srcpinname="Layer Out" dstnodeid="142" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="142" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Layer Out" dstnodeid="15" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Layer Out" dstnodeid="142" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="144">
+   <BOUNDS type="Node" left="18135" top="19170" width="360" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="110" dstpinname="Do">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="144" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output 1" dstnodeid="144" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="145">
+   <BOUNDS type="Node" left="9540" top="22305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="View per board" dstnodeid="145" dstpinname="Source">
+   </LINK>
+   <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="146">
+   <BOUNDS type="Node" left="9255" top="22605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="146" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3990" top="10470" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3990" top="10470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="146" srcpinname="TranslateXYZ" dstnodeid="147" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="148" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="18000" top="17805" width="3300" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18000" top="17805" width="3300" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;--we don&apos;t want to fix tangential distortion|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
