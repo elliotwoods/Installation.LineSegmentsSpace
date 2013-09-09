@@ -10,7 +10,6 @@ public:
 	void drawProjectionSpace() const;
 	void drawShadow(float floorHeight = 0.0f) const;
 
-	void loadFrom(ofXml&);
 	void saveTo(ofXml&);
 	ofXml getXml();
 	
@@ -18,4 +17,5 @@ public:
 	ofVec2f projectorEnd;
 	
 	int projector;
+	int ID;
 };
