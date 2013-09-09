@@ -1,14 +1,35 @@
-//
-//  Scene.h
-//  TriangulateMain
-//
-//  Created by Elliot Woods on 05/09/2013.
-//
-//
+#pragma once
 
-#ifndef __TriangulateMain__Scene__
-#define __TriangulateMain__Scene__
+#include "ofMain.h"
+#include "ofxRay.h"
 
-#include <iostream>
-
-#endif /* defined(__TriangulateMain__Scene__) */
+class Scene : public ofNode {
+public:
+public:
+	Scene();
+	void init();
+	void updateViews();
+	
+	ofxRay::Camera camera;
+	ofxRay::Projector projector0;
+	ofxRay::Projector projector1;
+	
+	ofVboMesh points0;
+	ofVboMesh points1;
+	
+	ofFbo viewCamera;
+	ofFbo viewProjector0;
+	ofFbo viewProjector1;
+	
+	ofImage imageCamera0;
+	ofImage imageCamera1;
+	ofImage imageProjector0;
+	ofImage imageProjector1;
+protected:
+	void drawSceneTo(ofProjector&, ofFbo&);
+	void drawPoints();
+	void customDraw();
+	ofBoxPrimitive room;
+	ofLight light;
+	bool grid;
+};
