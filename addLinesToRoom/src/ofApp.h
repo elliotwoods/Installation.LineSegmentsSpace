@@ -47,8 +47,8 @@ public:
 	Thread newLine;
 	
 	ofBoxPrimitive room;
-	
 	ofLight light;
+	
 	bool shadow;
 	bool grid;
 	
