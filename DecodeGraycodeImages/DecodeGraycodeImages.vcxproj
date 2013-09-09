@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DecodeGraycodeImages</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxUI\src;%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxCvGui2\libs;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxCvGui2\libs\ofxCvGui;..\..\..\addons\ofxCvGui2\libs\ofxCvGui\vs2010;..\..\..\addons\ofxCvGui2\src\ofxCvGui;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils;..\..\..\addons\ofxGraycode\libs;..\..\..\addons\ofxGraycode\src;..\..\..\addons\ofxGraycode\src\ofxGraycode</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4250</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxUI\src;%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxCvGui2\libs;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxCvGui2\libs\ofxCvGui;..\..\..\addons\ofxCvGui2\libs\ofxCvGui\vs2010;..\..\..\addons\ofxCvGui2\src\ofxCvGui;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils;..\..\..\addons\ofxGraycode\libs;..\..\..\addons\ofxGraycode\src;..\..\..\addons\ofxGraycode\src\ofxGraycode</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4250</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Assets.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Builder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Controller.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Element.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\ElementGroup.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Base.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\BaseImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Draws.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups\Grid.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Image.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Instructions.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Node.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Pixels.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\PixelsVector.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Text.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils\ToolbarItem.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils\WidgetsHost.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Types.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DGraph.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DPad.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIBaseDraws.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIBiLabelSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICircleSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICustomImageButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIDropDownList.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIEventArgs.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIFPS.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIFPSSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageSampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabel.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabelButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabelToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMinimalSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMovingGraph.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUINumberDialer.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIOFWrapper.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRadio.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRangeSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRectangle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRotarySlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIScrollableCanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISpacer.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISpectrum.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISuperCanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITabBar.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITextArea.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITextInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIToggleMatrix.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIValuePlotter.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWaveform.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWidget.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWidgetWithLabel.h" />
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Assets.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Builder.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Controller.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Element.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\ElementGroup.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\BaseImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Draws.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups\Grid.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Image.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Instructions.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Node.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Pixels.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\PixelsVector.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Text.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils\ToolbarItem.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils\WidgetsHost.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui\Types.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui2\src\ofxCvGui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\addons\ofxGraycode\ofxGraycodeLib\ofxGraycodeLib.vcxproj">
+      <Project>{ba65a9dd-2be2-4ff8-a9c6-6ac6624cddc3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
