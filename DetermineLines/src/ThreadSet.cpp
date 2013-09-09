@@ -18,6 +18,7 @@ void ThreadSet::load(string filename) {
 				end.y = xml.getFloatValue("_x0020_y2");
 				
 				newThread.projector = xml.getIntValue("_x0020_iProjector");
+				newThread.ID = xml.getIntValue("_x0020_ID");
 				this->push_back(newThread);
 			} while (xml.setToSibling());
 		}

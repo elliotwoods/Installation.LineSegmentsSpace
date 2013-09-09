@@ -55,12 +55,6 @@ void Thread::drawShadow(float floorHeight) const {
 }
 
 //---------
-void Thread::loadFrom(ofXml& xml) {
-	this->s = xml.getValue<ofVec3f>("s");
-	this->t = xml.getValue<ofVec3f>("t");
-}
-
-//---------
 void Thread::saveTo(ofXml& xml) {
 	auto addXml = this->getXml();
 	xml.addXml(addXml);
@@ -74,6 +68,7 @@ ofXml Thread::getXml() {
 	xml.addValue("s", this->s);
 	xml.addValue("t", this->t);
 	xml.addValue("iProjector", this->projector);
+	xml.addValue("ID", this->ID);
 	xml.addValue("projectorStart", this->projectorStart);
 	xml.addValue("projectorEnd", this->projectorEnd);
 	return xml;
