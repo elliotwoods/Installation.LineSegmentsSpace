@@ -1,0 +1,43 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha30.3.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\12. EDSDK scan image set\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\12. EDSDK scan image set\main.v4p">
+   <BOUNDS type="Window" left="9900" top="6000" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="shoot EDSDK" filename="subpatches\shoot EDSDK.v4p" nodename="subpatches\shoot EDSDK.v4p" componentmode="InAWindow" id="1">
+   <BOUNDS type="Node" left="4665" top="2715" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Save Location" slicecount="1" values=".">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5565" top="2070" width="1605" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5565" top="2070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="captures">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Save Location">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1455" top="930" width="4875" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1455" top="930" width="4875" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|see patch 12.. Canon capture graycode from reprojection scanning|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

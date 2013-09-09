@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha30.3.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\5. Calibrate EDSDK (screen as board)\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\5. Calibrate EDSDK (screen as board)\main.v4p">
+   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\9. Calibrate camera (ignore world scale)\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\5. Calibrate EDSDK (screen as board)\main.v4p">
    <BOUNDS type="Window" left="19020" top="11715" width="13995" height="11745">
    </BOUNDS>
    <NODE systemname="CalibrateCamera (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="CalibrateCamera (OpenCV)" componentmode="Hidden" id="0">
@@ -133,7 +133,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3450" top="450" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="10">
+   <PIN pinname="Y Input Value" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -181,7 +181,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5520" top="450" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="7">
+   <PIN pinname="Y Input Value" slicecount="1" values="8">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -205,7 +205,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="930" top="6135" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="7140" top="18090" width="6240" height="5010">
+   <BOUNDS type="Window" left="27765" top="21855" width="6240" height="5010">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -397,6 +397,8 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Board Size X" hiddenwhenlocked="1">
    </LINK>
@@ -409,7 +411,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.16">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.42">
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Board Pitch">
@@ -442,8 +444,6 @@
    </LINK>
    <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 1">
    </LINK>
-   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 2">
-   </LINK>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="38">
    <BOUNDS type="Node" left="1635" top="10020" width="100" height="100">
    </BOUNDS>
@@ -459,7 +459,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Transform In 1" visible="1">
+   <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform In 2" visible="1">
    </PIN>
@@ -631,15 +631,13 @@
    <NODE systemname="Writer (OpenCV Intrinsics)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Writer (OpenCV Intrinsics)" componentmode="Hidden" id="52">
    <BOUNDS type="Node" left="4965" top="10395" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Intrinsics" visible="1">
+   <PIN pinname="Intrinsics" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="|intrinscs\18mm - #1|">
+   <PIN pinname="Filename" slicecount="1" values="|intrinscs\18mm - #2|">
    </PIN>
    <PIN pinname="Write" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Intrinsics" dstnodeid="52" dstpinname="Intrinsics">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="Success" dstnodeid="26" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Preview (ProjectorSimulation DX9)" filename="%VVVV%\packs\VVVV.Nodes.ProjectorSimulation\nodes\modules\Preview (ProjectorSimulation DX9).v4p" nodename="Preview (ProjectorSimulation DX9)" componentmode="Hidden" id="54">
@@ -727,5 +725,53 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Success" dstnodeid="63" dstpinname="DoBeep">
+   </LINK>
+   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="2520" top="9540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Transform Out" dstnodeid="64" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="1935" top="9435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Fill Mode" slicecount="1" values="WireFrame">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Render State Out" dstnodeid="64" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Intrinsics" dstnodeid="52" dstpinname="Intrinsics">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5595" top="9555" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5595" top="9555" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Write">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Write">
    </LINK>
    </PATCH>
