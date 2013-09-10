@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\ReadLinesProcessed (XML).v4p" systemname="ReadLinesProcessed (XML)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\ReadLinesProcessed (XML).v4p">
+   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\ReadLinesProcessed (XML).v4p" systemname="ReadLinesProcessed (XML)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\ReadLinesProcessed (XML).v4p">
    <BOUNDS type="Window" left="4680" top="16230" width="13050" height="16380">
    </BOUNDS>
    <NODE systemname="AsXElement (XML)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsXElement (XML)" componentmode="Hidden" id="0">
@@ -27,7 +27,7 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\sitedata\lines_processed.xml">
+   <PIN pinname="Input String" slicecount="1" values="..\sitedata\lines_processed.xml">
    </PIN>
    </NODE>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="3">

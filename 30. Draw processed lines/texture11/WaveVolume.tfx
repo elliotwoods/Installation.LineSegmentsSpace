@@ -32,7 +32,7 @@ float4 PSSphere(psInput input) : SV_Target
 	World.w = 1.0f;
 	World = mul(World, TransformInverse);
 	
-	return sin((length(World.xyz) - Phase) / Radius) + 0.5f;
+	return sin((length(World.xyz) - Phase) / Radius) / 2.0f + 0.5f;
 }
 
 float4 PSTraverse(psInput input) : SV_Target

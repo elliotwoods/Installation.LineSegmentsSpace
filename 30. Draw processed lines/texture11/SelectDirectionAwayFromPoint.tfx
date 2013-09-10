@@ -1,0 +1,43 @@
+//@author: vux
+//@help: template for texture fx
+//@tags: texture
+//@credits: 
+
+Texture2D<float3> texture2d : PREVIOUS;
+Texture2D<float3> World;
+
+float3 Point;
+float Threshold = 0.1f;
+
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PS(psInput input) : SV_Target
+{
+	float3 world = World.Sample(linearSampler,input.uv);
+	float3 direction = texture2d.Sample(linearSampler,input.uv);
+	float correspondence = dot(normalize(world - Point), normalize(direction));
+	return smoothstep(1.0f - Threshold, 1.0f, abs(correspondence));
+}
+
+technique10 Process
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS()));
+	}
+}
+
+
+

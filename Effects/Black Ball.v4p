@@ -1,0 +1,185 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
+   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p" systemname="Black Ball" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p">
+   <BOUNDS type="Window" left="25608" top="16890" width="6120" height="6895">
+   </BOUNDS>
+   <NODE systemname="SelectVolume (DX11.TextureFX)" filename="..\30. Draw processed lines\texture11\SelectVolume.tfx" nodename="SelectVolume (DX11.TextureFX)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2730" top="3375" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="TransformInverse" visible="1">
+   </PIN>
+   <PIN pinname="Thickness" slicecount="1" visible="1" values="0.46">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="Sphere">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="4005" top="2460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3465" top="2940" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Mix (DX11.TextureFX)" filename="%VVVV%\packs\DX11\nodes\texture11\Mixer\Mix.tfx" nodename="Mix (DX11.TextureFX)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1635" top="5295" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Control" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 2" visible="1">
+   </PIN>
+   <PIN pinname="Fader" slicecount="1" values="0.5">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (DX11.Texture 2d)" nodename="DynamicTexture (DX11.Texture 2d)" componentmode="Hidden" id="4" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="1500" top="4770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <PIN pinname="Channel Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Data" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2580" top="4155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang On Create" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Invert (DX11.TextureFX)" filename="%VVVV%\packs\DX11\nodes\texture11\Filter\Invert.tfx" nodename="Invert (DX11.TextureFX)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="3210" top="3780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4620" top="1500" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4620" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" values="1.68,0.98,-1.32">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (DX11.Texture 2d)" nodename="DynamicTexture (DX11.Texture 2d)" componentmode="Hidden" id="8" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="2700" top="4770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <PIN pinname="Channel Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Data" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Levels (DX11.TextureFX)" filename="%VVVV%\packs\DX11\nodes\texture11\Filter\Levels.tfx" nodename="Levels (DX11.TextureFX)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3585" top="4305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Output White" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Input Black" slicecount="1" values="|1.00000,1.00000,1.00000,0.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="3" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="3" dstpinname="Texture In 2">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="3" dstpinname="Control">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1635" top="5895" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1635" top="5895" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Texture Out" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="World">
+   </PIN>
+   <BOUNDS type="Box" left="2730" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2730" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output Node" dstnodeid="0" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="0" dstpinname="TransformInverse">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="6" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="2" dstpinname="Source">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Noise">
+   </PIN>
+   <BOUNDS type="Box" left="4230" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4230" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output Node" dstnodeid="9" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="OnChange" dstnodeid="4" dstpinname="Apply">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="OnChange" dstnodeid="8" dstpinname="Apply">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="14" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="4275" top="3270" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4275" top="3270" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.83377,0.83377,0.83377,0.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="9" dstpinname="Input Black">
+   </LINK>
+   </PATCH>
