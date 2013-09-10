@@ -21,7 +21,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4620" top="1500" width="6000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="4065" top="8310" width="9240" height="10470">
+   <BOUNDS type="Window" left="3000" top="11460" width="9240" height="10470">
    </BOUNDS>
    <PIN pinname="Translate" slicecount="1" values="5.4178">
    </PIN>

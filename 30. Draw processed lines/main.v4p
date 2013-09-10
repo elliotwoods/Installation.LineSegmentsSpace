@@ -515,7 +515,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8763" top="6258" width="6120" height="6895">
    </BOUNDS>
-   <BOUNDS type="Window" left="22500" top="17430" width="12000" height="8655">
+   <BOUNDS type="Window" left="3375" top="10320" width="12885" height="9240">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -544,7 +544,7 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Position" dstnodeid="167" dstpinname="World">
    </LINK>
-   <NODE systemname="Point Towards Directiopn" filename="..\Effects\Point Towards Directiopn.v4p" nodename="..\Effects\Point Towards Directiopn.v4p" componentmode="Hidden" id="168">
+   <NODE systemname="Point Towards Directiopn" filename="..\Effects\Point Towards Directiopn.v4p" nodename="..\Effects\Point Towards Directiopn.v4p" componentmode="InAWindow" id="168">
    <BOUNDS type="Node" left="5713" top="9691" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3166" top="6176" width="5095" height="7030">
@@ -649,7 +649,7 @@
    </PIN>
    <PIN pinname="World" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="20610" top="10920" width="11430" height="11865">
+   <BOUNDS type="Window" left="2430" top="7200" width="11865" height="14400">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
@@ -887,7 +887,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="4">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="3.75054868146963">
    </PIN>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output" dstnodeid="193" dstpinname="Output Breakpoint" linkstyle="VHV">
@@ -953,7 +953,7 @@
    <NODE systemname="PeakSpread (Spreads)" nodename="PeakSpread (Spreads)" componentmode="Hidden" id="199">
    <BOUNDS type="Node" left="765" top="7530" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1009,7 +1009,7 @@
    </PIN>
    <PIN pinname="Input 6" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="130" srcpinname="Texture Out" dstnodeid="201" dstpinname="Input 1">
@@ -1027,8 +1027,6 @@
    <LINK srcnodeid="146" srcpinname="Texture Out" dstnodeid="201" dstpinname="Input 6">
    </LINK>
    <LINK srcnodeid="176" srcpinname="Texture Out" dstnodeid="74" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="194" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="202">
    <BOUNDS type="Node" left="1905" top="7515" width="100" height="100">
@@ -1074,26 +1072,88 @@
    </NODE>
    <LINK srcnodeid="198" srcpinname="Output" dstnodeid="204" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="205">
-   <BOUNDS type="Node" left="765" top="7200" width="100" height="100">
+   <LINK srcnodeid="200" srcpinname="Output 4" dstnodeid="176" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="194" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Input">
+   </LINK>
+   <NODE systemname="WindowLists (Windows)" nodename="WindowLists (Windows)" componentmode="Hidden" id="206">
+   <BOUNDS type="Node" left="16275" top="11655" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="765" top="7200" width="795" height="240">
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="207" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="16875" top="12150" width="2190" height="4020">
    </BOUNDS>
+   <BOUNDS type="Node" left="16875" top="12150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="20">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="206" srcpinname="VVVV Windows" dstnodeid="207" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="HWND (Windows)" nodename="HWND (Windows)" componentmode="Hidden" id="208">
+   <BOUNDS type="Node" left="20250" top="11580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Title" slicecount="1" values="|Black Ball.v4p *  C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\|">
+   </PIN>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Window (Windows)" nodename="Window (Windows)" componentmode="Hidden" id="209">
+   <BOUNDS type="Node" left="19440" top="12135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="-0.22">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="208" srcpinname="Handle" dstnodeid="209" dstpinname="Handle">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="210" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="780" top="7140" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="780" top="7140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="5" visible="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </NODE>
+   <LINK srcnodeid="210" srcpinname="Y Output Value" dstnodeid="199" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="210" srcpinname="Y Output Value" dstnodeid="201" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Whole Part" dstnodeid="210" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="211" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="20250" top="11160" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20250" top="11160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|instance.v4p *  C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Flow Across Left To Right\|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="205" srcpinname="Y Output Value" dstnodeid="199" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="205" srcpinname="Y Output Value" dstnodeid="201" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="200" srcpinname="Output 4" dstnodeid="176" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Whole Part" dstnodeid="205" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="194" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Input">
+   <LINK srcnodeid="211" srcpinname="Output String" dstnodeid="208" dstpinname="Title">
    </LINK>
    </PATCH>

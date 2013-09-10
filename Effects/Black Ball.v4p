@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
    <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p" systemname="Black Ball" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p">
-   <BOUNDS type="Window" left="22500" top="17430" width="12000" height="8655">
+   <BOUNDS type="Window" left="3375" top="10320" width="12885" height="9240">
    </BOUNDS>
    <NODE systemname="SelectVolume (DX11.TextureFX)" filename="..\30. Draw processed lines\texture11\SelectVolume.tfx" nodename="SelectVolume (DX11.TextureFX)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2730" top="4725" width="100" height="100">
@@ -495,6 +495,8 @@
    </PIN>
    <PIN pinname="Set Time" visible="1">
    </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="9840" top="2925" width="330" height="270">
@@ -504,8 +506,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Value0" dstnodeid="39" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10335" top="1965" width="795" height="720">
    </BOUNDS>
@@ -617,5 +617,7 @@
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Position" dstnodeid="39" dstpinname="Input 1">
    </LINK>
    </PATCH>
