@@ -1,0 +1,5810 @@
+<Lines>
+	<Line>
+		<s>0.255479, 1.00599, -2.90236</s>
+		<t>0.272096, -0.111382, -0.197651</t>
+		<iProjector>0</iProjector>
+		<ID>0</ID>
+		<projectorStart>-0.5236, 0.114019</projectorStart>
+		<projectorEnd>-0.4092, -0.1281</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.6285, 1.15264, -3.39774</s>
+		<t>0.679689, -0.777551, 0.236744</t>
+		<iProjector>0</iProjector>
+		<ID>3</ID>
+		<projectorStart>-0.2164, -0.0337</projectorStart>
+		<projectorEnd>-0.3264, -0.918756</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.543772, 0.882747, -3.1092</s>
+		<t>0.0799512, 0.216772, -0.313249</t>
+		<iProjector>0</iProjector>
+		<ID>4</ID>
+		<projectorStart>-0.4051, -0.1463</projectorStart>
+		<projectorEnd>-0.220557, -0.0647357</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0381999, 1.39286, -2.24948</s>
+		<t>0.631461, -0.165427, -0.788237</t>
+		<iProjector>0</iProjector>
+		<ID>5</ID>
+		<projectorStart>-0.7932, 0.5788</projectorStart>
+		<projectorEnd>-0.32939, 0.00506274</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.567917, 1.19442, -3.03152</s>
+		<t>0.553149, -0.111661, -0.669456</t>
+		<iProjector>0</iProjector>
+		<ID>6</ID>
+		<projectorStart>-0.3665, 0.0483</projectorStart>
+		<projectorEnd>-0.0047, -0.383219</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.504683, -0.2265, -2.67502</s>
+		<t>0.221622, 1.03394, -0.207866</t>
+		<iProjector>0</iProjector>
+		<ID>7</ID>
+		<projectorStart>-0.8041, -0.8091</projectorStart>
+		<projectorEnd>-0.47421, -0.297981</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.230362, 0.975932, -2.93524</s>
+		<t>0.65322, -0.672057, -0.010823</t>
+		<iProjector>0</iProjector>
+		<ID>8</ID>
+		<projectorStart>-0.5215, 0.1033</projectorStart>
+		<projectorEnd>-0.513419, -0.702556</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.665609, 0.75304, -2.9435</s>
+		<t>0.61551, -0.4261, -0.244464</t>
+		<iProjector>0</iProjector>
+		<ID>9</ID>
+		<projectorStart>-0.47192, -0.29649</projectorStart>
+		<projectorEnd>-0.33079, -0.93009</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.359469, 0.438407, -2.94157</s>
+		<t>0.352872, -0.0321502, -0.244057</t>
+		<iProjector>0</iProjector>
+		<ID>10</ID>
+		<projectorStart>-0.5906, -0.3106</projectorStart>
+		<projectorEnd>-0.43359, -0.533</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.302837, 0.394141, -3.00179</s>
+		<t>0.768147, -0.281667, 0.573339</t>
+		<iProjector>0</iProjector>
+		<ID>11</ID>
+		<projectorStart>-0.58706, -0.3027</projectorStart>
+		<projectorEnd>-0.72859, -0.910619</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.217071, 0.560291, -2.87245</s>
+		<t>0.741984, -0.551876, 0.201859</t>
+		<iProjector>0</iProjector>
+		<ID>12</ID>
+		<projectorStart>-0.6252, -0.1518</projectorStart>
+		<projectorEnd>-0.6617, -0.916874</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.45679, 1.10014, -1.49625</s>
+		<t>-0.817376, -0.770535, -1.7586</t>
+		<iProjector>0</iProjector>
+		<ID>13</ID>
+		<projectorStart>-0.82574, -0.59766</projectorStart>
+		<projectorEnd>-0.43495, -0.534301</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.217427, 0.964519, -2.95156</s>
+		<t>0.506745, -0.206912, -0.334409</t>
+		<iProjector>0</iProjector>
+		<ID>14</ID>
+		<projectorStart>-0.5185, 0.1017</projectorStart>
+		<projectorEnd>-0.32302, -0.334456</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.580947, 0.924036, -3.05903</s>
+		<t>0.585588, -0.290279, -0.782269</t>
+		<iProjector>0</iProjector>
+		<ID>15</ID>
+		<projectorStart>-0.4059, -0.1421</projectorStart>
+		<projectorEnd>-0.0509573, -0.671343</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.32323, 0.391103, -3.15573</s>
+		<t>-0.0750114, 0.317446, -0.618548</t>
+		<iProjector>0</iProjector>
+		<ID>16</ID>
+		<projectorStart>-0.31929, -0.916719</projectorStart>
+		<projectorEnd>-0.0411, -0.672</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.731537, 0.812099, -2.88025</s>
+		<t>0.148584, -0.517306, -0.0743484</t>
+		<iProjector>0</iProjector>
+		<ID>17</ID>
+		<projectorStart>-0.4745, -0.30039</projectorStart>
+		<projectorEnd>-0.51184, -0.70563</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.24633, 0.755843, -3.15969</s>
+		<t>0.424934, -0.387152, -0.0642726</t>
+		<iProjector>0</iProjector>
+		<ID>18</ID>
+		<projectorStart>-0.4688, -0.05862</projectorStart>
+		<projectorEnd>-0.43357, -0.53115</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.209249, 0.555369, -2.87031</s>
+		<t>0.525048, 0.247085, -0.0161924</t>
+		<iProjector>0</iProjector>
+		<ID>19</ID>
+		<projectorStart>-0.63014, -0.14937</projectorStart>
+		<projectorEnd>-0.47275, -0.30429</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0438501, 1.76141, -2.49183</s>
+		<t>0.183026, -1.1642, -0.356426</t>
+		<iProjector>0</iProjector>
+		<ID>20</ID>
+		<projectorStart>-0.6051, 0.8191</projectorStart>
+		<projectorEnd>-0.6279, -0.150637</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0370753, 1.77442, -2.48086</s>
+		<t>0.573549, -1.65377, -0.341453</t>
+		<iProjector>0</iProjector>
+		<ID>21</ID>
+		<projectorStart>-0.6099, 0.8261</projectorStart>
+		<projectorEnd>-0.648916, -0.707064</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0113286, 1.7316, -2.50641</s>
+		<t>0.640425, -0.977578, -0.429205</t>
+		<iProjector>0</iProjector>
+		<ID>22</ID>
+		<projectorStart>-0.6091, 0.8185</projectorStart>
+		<projectorEnd>-0.4758, -0.304615</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0372006, 1.73065, -2.50303</s>
+		<t>0.492111, -0.806744, -0.56698</t>
+		<iProjector>0</iProjector>
+		<ID>23</ID>
+		<projectorStart>-0.604595, 0.810196</projectorStart>
+		<projectorEnd>-0.4113, -0.1282</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.227983, 0.578433, -2.86064</s>
+		<t>0.0978602, -0.18082, -0.12175</t>
+		<iProjector>0</iProjector>
+		<ID>24</ID>
+		<projectorStart>-0.625557, -0.146604</projectorStart>
+		<projectorEnd>-0.5891, -0.3152</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.325627, 0.416691, -2.84032</s>
+		<t>-0.007442, -0.0220761, -0.148095</t>
+		<iProjector>0</iProjector>
+		<ID>25</ID>
+		<projectorStart>-0.64328, -0.30042</projectorStart>
+		<projectorEnd>-0.58834, -0.31296</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.328092, 0.40444, -2.97751</s>
+		<t>-0.0867019, 0.349203, -0.18119</t>
+		<iProjector>0</iProjector>
+		<ID>26</ID>
+		<projectorStart>-0.5892, -0.311856</projectorStart>
+		<projectorEnd>-0.4719, -0.0556</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.910133, 0.325491, -2.92617</s>
+		<t>-0.345937, 0.60567, -0.149335</t>
+		<iProjector>0</iProjector>
+		<ID>27</ID>
+		<projectorStart>-0.51143, -0.70641</projectorStart>
+		<projectorEnd>-0.40375, -0.12753</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.630191, 0.661312, -3.3953</s>
+		<t>0.856536, -0.263183, -0.171457</t>
+		<iProjector>0</iProjector>
+		<ID>28</ID>
+		<projectorStart>-0.320427, -0.334658</projectorStart>
+		<projectorEnd>-0.132, -0.9978</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.266057, 0.783047, -3.13129</s>
+		<t>0.0353666, -0.378102, -0.363438</t>
+		<iProjector>0</iProjector>
+		<ID>29</ID>
+		<projectorStart>-0.47102, -0.0516</projectorStart>
+		<projectorEnd>-0.39628, -0.30666</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.275405, 0.397156, -3.50625</s>
+		<t>0.355027, -0.091528, 0.230304</t>
+		<iProjector>0</iProjector>
+		<ID>30</ID>
+		<projectorStart>-0.397773, -0.2941</projectorStart>
+		<projectorEnd>-0.4327, -0.5424</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>0, nan, 0.000612086</t>
+		<iProjector>0</iProjector>
+		<ID>31</ID>
+		<projectorStart>-0.52682, 0.10404</projectorStart>
+		<projectorEnd>-0.14215, 0.34578</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.581637, 0.899893, -3.07167</s>
+		<t>-0.385373, 0.476906, -0.0389354</t>
+		<iProjector>0</iProjector>
+		<ID>32</ID>
+		<projectorStart>-0.407786, -0.157021</projectorStart>
+		<projectorEnd>-0.3769, 0.3841</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.528469, 0.875326, -3.10364</s>
+		<t>-0.188494, 0.562254, -0.369673</t>
+		<iProjector>0</iProjector>
+		<ID>33</ID>
+		<projectorStart>-0.4112, -0.14238</projectorStart>
+		<projectorEnd>-0.19102, 0.31602</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.565536, 0.920192, -3.07397</s>
+		<t>-0.448567, 0.411948, -0.720127</t>
+		<iProjector>0</iProjector>
+		<ID>34</ID>
+		<projectorStart>-0.4055, -0.132093</projectorStart>
+		<projectorEnd>-0.1418, 0.345</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.202538, 1.38777, -3.10746</s>
+		<t>0.232355, 0.113509, -0.292934</t>
+		<iProjector>0</iProjector>
+		<ID>35</ID>
+		<projectorStart>-0.374569, 0.390293</projectorStart>
+		<projectorEnd>-0.1836, 0.3143</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.201697, 1.56001, -2.88227</s>
+		<t>0.217886, -0.487394, -0.28622</t>
+		<iProjector>0</iProjector>
+		<ID>36</ID>
+		<projectorStart>-0.4337, 0.5405</projectorStart>
+		<projectorEnd>-0.366658, 0.0391357</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.146726, 1.52607, -2.93239</s>
+		<t>0.327282, 0.0919998, -0.223804</t>
+		<iProjector>0</iProjector>
+		<ID>37</ID>
+		<projectorStart>-0.4332, 0.5421</projectorStart>
+		<projectorEnd>-0.244372, 0.396293</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.574715, 1.18211, -3.04006</s>
+		<t>0.238026, 0.206955, -0.286586</t>
+		<iProjector>0</iProjector>
+		<ID>39</ID>
+		<projectorStart>-0.3673, 0.0365</projectorStart>
+		<projectorEnd>-0.14999, 0.0188814</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.482749, 1.09228, -3.12482</s>
+		<t>0.152047, 0.372637, 0.141148</t>
+		<iProjector>0</iProjector>
+		<ID>40</ID>
+		<projectorStart>-0.369157, 0.0245</projectorStart>
+		<projectorEnd>-0.3126, 0.1994</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.577349, 1.40626, -3.027</s>
+		<t>-0.134328, 0.201747, -0.142025</t>
+		<iProjector>0</iProjector>
+		<ID>41</ID>
+		<projectorStart>-0.32161, 0.192581</projectorStart>
+		<projectorEnd>-0.249, 0.4068</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.494637, 1.33743, -3.10359</s>
+		<t>-0.359866, -0.485679, -0.936389</t>
+		<iProjector>0</iProjector>
+		<ID>42</ID>
+		<projectorStart>-0.3236, 0.1884</projectorStart>
+		<projectorEnd>-0.14351, 0.0103186</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.82514, 2.10257, -2.16236</s>
+		<t>-0.303637, -0.759289, -0.927111</t>
+		<iProjector>0</iProjector>
+		<ID>43</ID>
+		<projectorStart>-0.50569, 0.682363</projectorStart>
+		<projectorEnd>-0.3152, 0.1637</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0574502, 1.78635, -2.77335</s>
+		<t>0.585222, -0.348701, -0.201665</t>
+		<iProjector>0</iProjector>
+		<ID>44</ID>
+		<projectorStart>-0.4673, 0.8139</projectorStart>
+		<projectorEnd>-0.32021, 0.1776</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.864483, 2.19264, -2.32296</s>
+		<t>-0.498607, -0.95828, -0.89616</t>
+		<iProjector>0</iProjector>
+		<ID>45</ID>
+		<projectorStart>-0.3835, 0.6876</projectorStart>
+		<projectorEnd>-0.3245, 0.1752</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.0901638, 1.6349, -2.73801</s>
+		<t>0.0454506, 0.077189, -0.224923</t>
+		<iProjector>0</iProjector>
+		<ID>46</ID>
+		<projectorStart>-0.508, 0.6806</projectorStart>
+		<projectorEnd>-0.383, 0.6859</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.08287, 1.63409, -2.74393</s>
+		<t>-0.0148942, 0.163703, -0.0129218</t>
+		<iProjector>0</iProjector>
+		<ID>47</ID>
+		<projectorStart>-0.506243, 0.682631</projectorStart>
+		<projectorEnd>-0.4701, 0.8205</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.133802, 1.83141, -2.71241</s>
+		<t>0.0185934, -0.107901, -0.235364</t>
+		<iProjector>0</iProjector>
+		<ID>48</ID>
+		<projectorStart>-0.4662, 0.8167</projectorStart>
+		<projectorEnd>-0.3822, 0.6863</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.257782, 1.42719, -3.06288</s>
+		<t>-0.0575785, 0.506664, -0.825021</t>
+		<iProjector>0</iProjector>
+		<ID>49</ID>
+		<projectorStart>-0.37253, 0.39267</projectorStart>
+		<projectorEnd>0.04334, 0.69774</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.343857, 1.46415, -3.48735</s>
+		<t>-0.0313346, 0.529552, -0.286192</t>
+		<iProjector>0</iProjector>
+		<ID>50</ID>
+		<projectorStart>-0.1811, 0.3271</projectorStart>
+		<projectorEnd>0.0417, 0.6931</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.327524, 1.59072, -3.89051</s>
+		<t>-0.0361827, 0.393816, 0.0938268</t>
+		<iProjector>0</iProjector>
+		<ID>51</ID>
+		<projectorStart>-0.0108, 0.3858</projectorStart>
+		<projectorEnd>0.04331, 0.693181</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.236298, 1.42449, -3.67912</s>
+		<t>0.127016, 0.186561, -0.185975</t>
+		<iProjector>0</iProjector>
+		<ID>52</ID>
+		<projectorStart>-0.1422, 0.3465</projectorStart>
+		<projectorEnd>-0.0073, 0.386581</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>0, nan, 2.57156e-39</t>
+		<iProjector>0</iProjector>
+		<ID>53</ID>
+		<projectorStart>-0.0104, 0.3908</projectorStart>
+		<projectorEnd>-0.05391, 0.138319</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.328044, 1.43746, -3.47281</s>
+		<t>-0.572379, -0.63425, -1.18887</t>
+		<iProjector>0</iProjector>
+		<ID>54</ID>
+		<projectorStart>-0.1896, 0.3195</projectorStart>
+		<projectorEnd>-0.0441971, 0.140056</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.319227, 1.48341, -3.59478</s>
+		<t>0.391671, -0.747577, 0.274737</t>
+		<iProjector>0</iProjector>
+		<ID>55</ID>
+		<projectorStart>-0.1408, 0.3428</projectorStart>
+		<projectorEnd>-0.3158, -0.338619</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.24439, 1.42261, -3.67251</s>
+		<t>0.377888, -0.288361, 0.0839813</t>
+		<iProjector>0</iProjector>
+		<ID>56</ID>
+		<projectorStart>-0.14259, 0.341181</projectorStart>
+		<projectorEnd>-0.1519, -0.0501</projectorEnd>
+	</Line>
+	<Line>
+		<s>-0.233114, 1.03709, -4.04907</s>
+		<t>0.948255, 0.174208, 0.554716</t>
+		<iProjector>0</iProjector>
+		<ID>57</ID>
+		<projectorStart>-0.1879, 0.3162</projectorStart>
+		<projectorEnd>-0.15089, -0.0414</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.348788, 1.44997, -3.46775</s>
+		<t>0.287964, -0.34155, 0.0548573</t>
+		<iProjector>0</iProjector>
+		<ID>58</ID>
+		<projectorStart>-0.18789, 0.320963</projectorStart>
+		<projectorEnd>-0.2196, -0.0689</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.46154, 1.63323, -3.15283</s>
+		<t>0.121055, -0.429686, 0.12575</t>
+		<iProjector>0</iProjector>
+		<ID>59</ID>
+		<projectorStart>-0.2451, 0.4115</projectorStart>
+		<projectorEnd>-0.364054, 0.0472</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.679783, 1.14315, -3.36288</s>
+		<t>0.450244, -0.457155, -0.432938</t>
+		<iProjector>0</iProjector>
+		<ID>60</ID>
+		<projectorStart>-0.2204, -0.0702</projectorStart>
+		<projectorEnd>-0.0639715, -0.62013</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.656949, 1.12041, -3.39248</s>
+		<t>-0.10459, -0.0237781, -0.261297</t>
+		<iProjector>0</iProjector>
+		<ID>61</ID>
+		<projectorStart>-0.22, -0.0694</projectorStart>
+		<projectorEnd>-0.1527, -0.0376185</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.560034, 1.10575, -3.6484</s>
+		<t>0.723211, -0.36227, -0.0770917</t>
+		<iProjector>0</iProjector>
+		<ID>62</ID>
+		<projectorStart>-0.1501, -0.034</projectorStart>
+		<projectorEnd>-0.0438718, -0.6766</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.280252, 0.820482, -3.59391</s>
+		<t>0.510323, -0.45816, -0.0437665</t>
+		<iProjector>0</iProjector>
+		<ID>63</ID>
+		<projectorStart>-0.28589, -0.0548</projectorStart>
+		<projectorEnd>-0.2591, -0.6</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.245254, 0.823078, -3.62269</s>
+		<t>0.270884, -0.42159, 0.0158541</t>
+		<iProjector>0</iProjector>
+		<ID>64</ID>
+		<projectorStart>-0.28239, -0.0356559</projectorStart>
+		<projectorEnd>-0.3163, -0.426</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.296231, 0.862219, -3.57466</s>
+		<t>0.0326942, -0.423545, 0.124269</t>
+		<iProjector>0</iProjector>
+		<ID>65</ID>
+		<projectorStart>-0.28278, -0.0371559</projectorStart>
+		<projectorEnd>-0.4029, -0.3004</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.281933, 0.847492, -3.58201</s>
+		<t>0.270006, -0.475343, 0.109686</t>
+		<iProjector>0</iProjector>
+		<ID>66</ID>
+		<projectorStart>-0.2855, -0.0406</projectorStart>
+		<projectorEnd>-0.36269, -0.4615</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.320788, 0.426685, -3.46492</s>
+		<t>0.214359, 0.000589311, -0.12077</t>
+		<iProjector>0</iProjector>
+		<ID>67</ID>
+		<projectorStart>-0.39969, -0.3027</projectorStart>
+		<projectorEnd>-0.3159, -0.4197</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.320216, 0.431175, -3.45963</s>
+		<t>0.23211, -0.0620834, -0.00510025</t>
+		<iProjector>0</iProjector>
+		<ID>68</ID>
+		<projectorStart>-0.402, -0.2996</projectorStart>
+		<projectorEnd>-0.3663, -0.461337</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.553194, 0.356317, -3.46578</s>
+		<t>-0.037578, 0.0550367, -0.13951</t>
+		<iProjector>0</iProjector>
+		<ID>69</ID>
+		<projectorStart>-0.36764, -0.47094</projectorStart>
+		<projectorEnd>-0.31576, -0.41934</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.914913, 0.324717, -2.92601</s>
+		<t>0.105912, 0.130241, -0.216758</t>
+		<iProjector>0</iProjector>
+		<ID>70</ID>
+		<projectorStart>-0.51009, -0.7075</projectorStart>
+		<projectorEnd>-0.3792, -0.6931</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.66389, 0.345116, -3.24933</s>
+		<t>0.38122, 0.138556, 0.139348</t>
+		<iProjector>0</iProjector>
+		<ID>71</ID>
+		<projectorStart>-0.42919, -0.538919</projectorStart>
+		<projectorEnd>-0.3804, -0.6899</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.907714, 0.323557, -2.92397</s>
+		<t>-0.254402, 0.0246972, -0.317261</t>
+		<iProjector>0</iProjector>
+		<ID>72</ID>
+		<projectorStart>-0.5132, -0.703119</projectorStart>
+		<projectorEnd>-0.434, -0.5318</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.620742, 0.271189, -2.75589</s>
+		<t>0.271255, 0.0378909, -0.179213</t>
+		<iProjector>0</iProjector>
+		<ID>73</ID>
+		<projectorStart>-0.6446, -0.55776</projectorStart>
+		<projectorEnd>-0.51625, -0.70401</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.903172, 0.318724, -2.92926</s>
+		<t>0.308451, 0.0403601, 0.0294421</t>
+		<iProjector>0</iProjector>
+		<ID>74</ID>
+		<projectorStart>-0.51407, -0.70476</projectorStart>
+		<projectorEnd>-0.4561, -0.87612</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.22265, 0.373449, -2.89104</s>
+		<t>0.101021, 0.00469986, -0.247656</t>
+		<iProjector>0</iProjector>
+		<ID>75</ID>
+		<projectorStart>-0.4534, -0.8769</projectorStart>
+		<projectorEnd>-0.3317, -0.9294</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.57164, 0.375925, -3.45371</s>
+		<t>0.204161, -0.0238754, -0.21022</t>
+		<iProjector>0</iProjector>
+		<ID>76</ID>
+		<projectorStart>-0.3654, -0.4704</projectorStart>
+		<projectorEnd>-0.25559, -0.596181</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.431909, 0.330192, -3.69965</s>
+		<t>0.359823, 0.0378935, 0.0621397</t>
+		<iProjector>0</iProjector>
+		<ID>77</ID>
+		<projectorStart>-0.3137, -0.4177</projectorStart>
+		<projectorEnd>-0.2586, -0.5968</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.679933, 0.709546, -3.35312</s>
+		<t>0.235958, -0.381246, 0.433529</t>
+		<iProjector>0</iProjector>
+		<ID>78</ID>
+		<projectorStart>-0.31628, -0.33639</projectorStart>
+		<projectorEnd>-0.51196, -0.70557</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.689988, 0.716287, -3.33984</s>
+		<t>0.23626, -0.357798, 0.0984654</t>
+		<iProjector>0</iProjector>
+		<ID>79</ID>
+		<projectorStart>-0.31763, -0.339511</projectorStart>
+		<projectorEnd>-0.37771, -0.68838</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.552866, 1.1082, -3.65091</s>
+		<t>0.195466, -0.782363, -0.0472369</t>
+		<iProjector>0</iProjector>
+		<ID>80</ID>
+		<projectorStart>-0.1515, -0.0335</projectorStart>
+		<projectorEnd>-0.25419, -0.600963</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.630895, 0.983755, -3.62754</s>
+		<t>0.447777, -0.640604, 0.128781</t>
+		<iProjector>0</iProjector>
+		<ID>81</ID>
+		<projectorStart>-0.169, -0.152226</projectorStart>
+		<projectorEnd>-0.2538, -0.783</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.752297, 0.794275, -3.59698</s>
+		<t>0.189553, -0.356149, 0.0258484</t>
+		<iProjector>0</iProjector>
+		<ID>82</ID>
+		<projectorStart>-0.19438, -0.333474</projectorStart>
+		<projectorEnd>-0.2385, -0.6469</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.717506, 0.839908, -3.61041</s>
+		<t>-0.00582469, 0.116349, 0.0350211</t>
+		<iProjector>0</iProjector>
+		<ID>83</ID>
+		<projectorStart>-0.18751, -0.285693</projectorStart>
+		<projectorEnd>-0.1756, -0.2128</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.6762, 0.991054, -3.59073</s>
+		<t>0.642922, -0.631643, -0.161739</t>
+		<iProjector>0</iProjector>
+		<ID>84</ID>
+		<projectorStart>-0.1704, -0.1726</projectorStart>
+		<projectorEnd>-0.10999, -0.911481</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.14814, 0.432758, -3.40809</s>
+		<t>0.201219, -0.0285894, -0.301891</t>
+		<iProjector>0</iProjector>
+		<ID>85</ID>
+		<projectorStart>-0.25517, -0.77676</projectorStart>
+		<projectorEnd>-0.11017, -0.90357</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.919781, 0.403868, -3.59095</s>
+		<t>0.397894, -0.035199, -0.154126</t>
+		<iProjector>0</iProjector>
+		<ID>86</ID>
+		<projectorStart>-0.2411, -0.651381</projectorStart>
+		<projectorEnd>-0.1127, -0.9012</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.974981, 0.446236, -3.54408</s>
+		<t>0.105311, -0.0934724, 0.0525606</t>
+		<iProjector>0</iProjector>
+		<ID>87</ID>
+		<projectorStart>-0.23981, -0.66102</projectorStart>
+		<projectorEnd>-0.25654, -0.7752</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.43361, -0.0140809, -3.51926</s>
+		<t>0.0242206, 0.660721, -0.243915</t>
+		<iProjector>0</iProjector>
+		<ID>88</ID>
+		<projectorStart>-0.2491, -1.2022</projectorStart>
+		<projectorEnd>-0.0158, -0.833256</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.53662, 0.702743, -3.64078</s>
+		<t>-0.234878, 0.0962509, -0.51407</t>
+		<iProjector>0</iProjector>
+		<ID>89</ID>
+		<projectorStart>-0.0257, -0.855719</projectorStart>
+		<projectorEnd>0.1154, -0.6493</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.868977, 1.09094, -4.14341</s>
+		<t>0.519901, -0.732246, 0.0230856</t>
+		<iProjector>0</iProjector>
+		<ID>90</ID>
+		<projectorStart>0.0815, -0.238863</projectorStart>
+		<projectorEnd>0.024, -0.9371</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.83428, 1.09418, -4.17932</s>
+		<t>0.386427, -0.414871, 0.368383</t>
+		<iProjector>0</iProjector>
+		<ID>91</ID>
+		<projectorStart>0.0874, -0.213537</projectorStart>
+		<projectorEnd>-0.0428, -0.6735</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.05802, 0.455972, -3.90303</s>
+		<t>-0.322684, 0.402759, -0.410979</t>
+		<iProjector>0</iProjector>
+		<ID>92</ID>
+		<projectorStart>-0.0942199, -0.69696</projectorStart>
+		<projectorEnd>0.05474, -0.29805</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.610614, 0.827163, -4.11649</s>
+		<t>0.334637, -0.484385, 0.0741982</t>
+		<iProjector>0</iProjector>
+		<ID>93</ID>
+		<projectorStart>-0.03969, -0.247212</projectorStart>
+		<projectorEnd>-0.096, -0.6916</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.795203, 0.36687, -3.6327</s>
+		<t>-0.168011, 0.464231, -0.462691</t>
+		<iProjector>0</iProjector>
+		<ID>94</ID>
+		<projectorStart>-0.25913, -0.59841</projectorStart>
+		<projectorEnd>-0.04291, -0.25182</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.809505, 0.383981, -3.62788</s>
+		<t>0.0261476, 0.691624, -0.562381</t>
+		<iProjector>0</iProjector>
+		<ID>95</ID>
+		<projectorStart>-0.25427, -0.59841</projectorStart>
+		<projectorEnd>0.08504, -0.22845</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.770307, 0.397524, -3.64751</s>
+		<t>-0.272053, 0.517405, -0.124589</t>
+		<iProjector>0</iProjector>
+		<ID>96</ID>
+		<projectorStart>-0.25391, -0.56952</projectorStart>
+		<projectorEnd>-0.16111, -0.12432</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.335257, 0.763592, -3.95439</s>
+		<t>0.469806, -0.403379, -0.190886</t>
+		<iProjector>0</iProjector>
+		<ID>97</ID>
+		<projectorStart>-0.1632, -0.1317</projectorStart>
+		<projectorEnd>-0.08799, -0.6039</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.429614, 0.84145, -3.84964</s>
+		<t>0.196813, -0.0269892, -0.260994</t>
+		<iProjector>0</iProjector>
+		<ID>98</ID>
+		<projectorStart>-0.1637, -0.1322</projectorStart>
+		<projectorEnd>-0.0424, -0.260237</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.328268, 0.761406, -3.97045</s>
+		<t>0.209082, 0.352555, 0.143802</t>
+		<iProjector>0</iProjector>
+		<ID>99</ID>
+		<projectorStart>-0.1597, -0.1306</projectorStart>
+		<projectorEnd>-0.09249, -0.0272185</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.530135, 1.0962, -3.8229</s>
+		<t>0.0857904, -0.291897, -0.291759</t>
+		<iProjector>0</iProjector>
+		<ID>100</ID>
+		<projectorStart>-0.0964, -0.0351</projectorStart>
+		<projectorEnd>-0.045, -0.261737</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.446517, 0.855504, -3.83384</s>
+		<t>-0.0283747, 0.0825489, -0.416522</t>
+		<iProjector>0</iProjector>
+		<ID>101</ID>
+		<projectorStart>-0.161, -0.1329</projectorStart>
+		<projectorEnd>-0.016, -0.0853</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.557219, 1.09697, -3.65189</s>
+		<t>0.169193, 0.218937, -0.147794</t>
+		<iProjector>0</iProjector>
+		<ID>102</ID>
+		<projectorStart>-0.1519, -0.0407</projectorStart>
+		<projectorEnd>-0.0147, -0.00381866</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.558846, 1.09727, -3.64602</s>
+		<t>-0.103797, 0.229436, -0.201389</t>
+		<iProjector>0</iProjector>
+		<ID>103</ID>
+		<projectorStart>-0.1531, -0.0414</projectorStart>
+		<projectorEnd>-0.0565, 0.151263</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.466531, 1.6143, -3.14308</s>
+		<t>0.281577, -0.26651, -0.247584</t>
+		<iProjector>0</iProjector>
+		<ID>104</ID>
+		<projectorStart>-0.25163, 0.39822</projectorStart>
+		<projectorEnd>-0.14839, 0.0250801</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.190209, 1.70424, -2.65626</s>
+		<t>0.372903, -0.323483, -0.385177</t>
+		<iProjector>0</iProjector>
+		<ID>105</ID>
+		<projectorStart>-0.50744, 0.68604</projectorStart>
+		<projectorEnd>-0.32245, 0.17829</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.240262, 1.41973, -3.6871</s>
+		<t>0.217266, -0.0934894, -0.160794</t>
+		<iProjector>0</iProjector>
+		<ID>106</ID>
+		<projectorStart>-0.1378, 0.3413</projectorStart>
+		<projectorEnd>-0.0551, 0.148681</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>-1.93206e+29, nan, 1.61149e-43</t>
+		<iProjector>0</iProjector>
+		<ID>107</ID>
+		<projectorStart>-0.0569, 0.1651</projectorStart>
+		<projectorEnd>-0.0138, -0.0125</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.411743, 1.30102, -3.90046</s>
+		<t>0.10268, -0.213968, 0.0602491</t>
+		<iProjector>0</iProjector>
+		<ID>108</ID>
+		<projectorStart>-0.05297, 0.15336</projectorStart>
+		<projectorEnd>-0.09739, -0.03048</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.362017, 0.812201, -3.92861</s>
+		<t>-0.0956292, 0.823802, -0.183094</t>
+		<iProjector>0</iProjector>
+		<ID>109</ID>
+		<projectorStart>-0.15838, -0.120856</projectorStart>
+		<projectorEnd>0.0596, 0.4267</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.376889, 1.60989, -3.82918</s>
+		<t>-0.0476913, 0.0523865, -0.200977</t>
+		<iProjector>0</iProjector>
+		<ID>110</ID>
+		<projectorStart>-0.0151, 0.3818</projectorStart>
+		<projectorEnd>0.053, 0.423381</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.383873, 1.61848, -3.83075</s>
+		<t>0.265258, -0.370636, -0.0628526</t>
+		<iProjector>0</iProjector>
+		<ID>111</ID>
+		<projectorStart>-0.01124, 0.38094</projectorStart>
+		<projectorEnd>-0.01381, -0.01017</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.780769, 0.384828, -3.64662</s>
+		<t>-0.267981, 0.719228, -0.189481</t>
+		<iProjector>0</iProjector>
+		<ID>112</ID>
+		<projectorStart>-0.25331, -0.582063</projectorStart>
+		<projectorEnd>-0.096, -0.0247</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.60664, 0.807309, -4.11755</s>
+		<t>-0.330192, 0.841421, 0.0287976</t>
+		<iProjector>0</iProjector>
+		<ID>113</ID>
+		<projectorStart>-0.0456, -0.2582</projectorStart>
+		<projectorEnd>0.0574199, 0.428863</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.257057, 0.903343, -4.13163</s>
+		<t>-0.000523269, 0.715526, 0.011889</t>
+		<iProjector>0</iProjector>
+		<ID>114</ID>
+		<projectorStart>-0.09692, -0.0297</projectorStart>
+		<projectorEnd>0.05693, 0.42477</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.139107, 2.42502, -3.96537</s>
+		<t>0.795246, -1.16547, 0.494609</t>
+		<iProjector>0</iProjector>
+		<ID>115</ID>
+		<projectorStart>0.1764, 1.0858</projectorStart>
+		<projectorEnd>-0.0969, -0.151</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.814214, 1.77252, -3.88308</s>
+		<t>-0.72051, 0.671915, -0.0816541</t>
+		<iProjector>0</iProjector>
+		<ID>116</ID>
+		<projectorStart>0.1479, 0.2409</projectorStart>
+		<projectorEnd>0.168827, 1.12076</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.906504, 1.24053, -3.50844</s>
+		<t>-0.152859, 0.486382, -0.45048</t>
+		<iProjector>0</iProjector>
+		<ID>117</ID>
+		<projectorStart>-0.0938, -0.14712</projectorStart>
+		<projectorEnd>0.14837, 0.2433</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.301387, 1.65043, -4.0766</s>
+		<t>0.346109, -0.529623, -0.108224</t>
+		<iProjector>0</iProjector>
+		<ID>118</ID>
+		<projectorStart>0.0604, 0.4216</projectorStart>
+		<projectorEnd>0.0521854, -0.0990214</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.261514, 1.6035, -4.11677</s>
+		<t>0.0818972, -0.344614, -0.088366</t>
+		<iProjector>0</iProjector>
+		<ID>119</ID>
+		<projectorStart>0.05428, 0.41067</projectorStart>
+		<projectorEnd>0.02222, 0.14319</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.581175, 0.823271, -4.13944</s>
+		<t>-0.249467, 0.423017, -0.0821862</t>
+		<iProjector>0</iProjector>
+		<ID>120</ID>
+		<projectorStart>-0.0397801, -0.2331</projectorStart>
+		<projectorEnd>0.0235, 0.1416</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.404915, 1.29058, -4.13557</s>
+		<t>-0.134049, -0.492369, -0.548401</t>
+		<iProjector>0</iProjector>
+		<ID>121</ID>
+		<projectorStart>0.02181, 0.133181</projectorStart>
+		<projectorEnd>0.0548, -0.107</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.390322, 1.28329, -4.15731</s>
+		<t>0.172545, -0.100117, -0.320696</t>
+		<iProjector>0</iProjector>
+		<ID>122</ID>
+		<projectorStart>0.0239, 0.1385</projectorStart>
+		<projectorEnd>0.1382, -0.0288187</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.643332, 1.11186, -4.18527</s>
+		<t>-0.0772447, 0.0903096, -0.288676</t>
+		<iProjector>0</iProjector>
+		<ID>123</ID>
+		<projectorStart>0.0504, -0.0998</projectorStart>
+		<projectorEnd>0.14169, -0.0181813</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.641802, 0.827886, -4.09468</s>
+		<t>-0.000763476, 0.28759, -0.101986</t>
+		<iProjector>0</iProjector>
+		<ID>124</ID>
+		<projectorStart>-0.04109, -0.26208</projectorStart>
+		<projectorEnd>0.05339, -0.0985801</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.615272, 1.09854, -4.21887</s>
+		<t>0.23349, 0.00275183, 0.0596356</t>
+		<iProjector>0</iProjector>
+		<ID>125</ID>
+		<projectorStart>0.0503, -0.0939</projectorStart>
+		<projectorEnd>0.08331, -0.218119</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.639839, 1.11412, -4.19763</s>
+		<t>0.139617, -0.213662, -0.0675969</t>
+		<iProjector>0</iProjector>
+		<ID>126</ID>
+		<projectorStart>0.05254, -0.0978</projectorStart>
+		<projectorEnd>0.05819, -0.29883</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>4.49816e+19, nan, 5.60519e-45</t>
+		<iProjector>0</iProjector>
+		<ID>127</ID>
+		<projectorStart>-0.01739, -0.0789187</projectorStart>
+		<projectorEnd>0.1352, -0.0194</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.374385, 0.891587, -4.30921</s>
+		<t>0.181576, -0.180972, -0.104827</t>
+		<iProjector>0</iProjector>
+		<ID>128</ID>
+		<projectorStart>-0.01389, -0.0915</projectorStart>
+		<projectorEnd>0.0156, -0.2876</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.519684, 0.708081, -4.44562</s>
+		<t>0.330664, -0.302203, 0.368234</t>
+		<iProjector>0</iProjector>
+		<ID>129</ID>
+		<projectorStart>0.0182, -0.270781</projectorStart>
+		<projectorEnd>-0.0908, -0.6047</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.836552, 0.38802, -4.09821</s>
+		<t>-0.136496, 0.236213, -0.321758</t>
+		<iProjector>0</iProjector>
+		<ID>130</ID>
+		<projectorStart>-0.0908, -0.6063</projectorStart>
+		<projectorEnd>0.0293, -0.4084</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.558673, 0.72187, -4.40114</s>
+		<t>0.139344, -0.112735, -0.0354743</t>
+		<iProjector>0</iProjector>
+		<ID>131</ID>
+		<projectorStart>0.01481, -0.282663</projectorStart>
+		<projectorEnd>0.0315, -0.4153</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.224517, 1.60641, -4.15178</s>
+		<t>0.645719, -0.49875, 0.0164933</t>
+		<iProjector>0</iProjector>
+		<ID>132</ID>
+		<projectorStart>0.0573709, 0.430371</projectorStart>
+		<projectorEnd>0.0834, -0.227</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.281242, 1.64549, -4.09674</s>
+		<t>0.289524, -0.455111, -0.356378</t>
+		<iProjector>0</iProjector>
+		<ID>133</ID>
+		<projectorStart>0.0617, 0.4279</projectorStart>
+		<projectorEnd>0.13481, -0.0297</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.257388, 2.54978, -4.71165</s>
+		<t>0.0164091, -0.912338, 0.611084</t>
+		<iProjector>0</iProjector>
+		<ID>134</ID>
+		<projectorStart>0.4718, 0.9897</projectorStart>
+		<projectorEnd>0.0578, 0.428781</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.616627, 1.71068, -4.23089</s>
+		<t>-0.357716, 0.828083, -0.471094</t>
+		<iProjector>0</iProjector>
+		<ID>135</ID>
+		<projectorStart>0.19798, 0.282331</projectorStart>
+		<projectorEnd>0.46922, 0.98721</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.279916, 2.5359, -4.68311</s>
+		<t>1.06308, -0.85925, -0.329307</t>
+		<iProjector>0</iProjector>
+		<ID>138</ID>
+		<projectorStart>0.4688, 0.9715</projectorStart>
+		<projectorEnd>0.598751, -0.186517</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.274576, 1.64313, -4.11049</s>
+		<t>0.0943647, 0.347379, -0.748154</t>
+		<iProjector>0</iProjector>
+		<ID>139</ID>
+		<projectorStart>0.0649199, 0.431181</projectorStart>
+		<projectorEnd>0.3979, 0.5392</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.361573, 1.97607, -4.88966</s>
+		<t>0.685197, -0.328842, -0.236571</t>
+		<iProjector>0</iProjector>
+		<ID>140</ID>
+		<projectorStart>0.4009, 0.5295</projectorStart>
+		<projectorEnd>0.54323, -0.0418443</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.297076, 1.64783, -4.09155</s>
+		<t>0.352469, 0.114244, -0.115767</t>
+		<iProjector>0</iProjector>
+		<ID>141</ID>
+		<projectorStart>0.0644, 0.4257</projectorStart>
+		<projectorEnd>0.2104, 0.3036</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.607512, 1.73487, -4.24028</s>
+		<t>0.0819992, -0.00798798, -0.274256</t>
+		<iProjector>0</iProjector>
+		<ID>143</ID>
+		<projectorStart>0.20551, 0.30273</projectorStart>
+		<projectorEnd>0.30746, 0.23316</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.600535, 1.73277, -4.24775</s>
+		<t>0.247408, -0.644682, 0.0812936</t>
+		<iProjector>0</iProjector>
+		<ID>144</ID>
+		<projectorStart>0.2047, 0.3043</projectorStart>
+		<projectorEnd>0.0831, -0.23</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.388973, 1.70946, -5.13456</s>
+		<t>0.322441, -0.26381, 0.225351</t>
+		<iProjector>0</iProjector>
+		<ID>145</ID>
+		<projectorStart>0.40819, 0.32937</projectorStart>
+		<projectorEnd>0.35444, 0.02892</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.793846, 1.47407, -4.44254</s>
+		<t>-0.448756, 0.496099, -0.458709</t>
+		<iProjector>0</iProjector>
+		<ID>146</ID>
+		<projectorStart>0.2482, 0.0243</projectorStart>
+		<projectorEnd>0.398854, 0.533828</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.684781, 1.7302, -4.48843</s>
+		<t>-0.352946, 0.223948, -0.438267</t>
+		<iProjector>0</iProjector>
+		<ID>147</ID>
+		<projectorStart>0.30046, 0.24018</projectorStart>
+		<projectorEnd>0.39803, 0.52722</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.678529, 1.72021, -4.50059</s>
+		<t>0.498192, -0.254327, 0.521768</t>
+		<iProjector>0</iProjector>
+		<ID>148</ID>
+		<projectorStart>0.30051, 0.2402</projectorStart>
+		<projectorEnd>0.1923, -0.1764</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.842715, 1.46616, -4.38811</s>
+		<t>-0.119692, 0.300835, -0.0406556</t>
+		<iProjector>0</iProjector>
+		<ID>149</ID>
+		<projectorStart>0.24022, -0.00537001</projectorStart>
+		<projectorEnd>0.299059, 0.24642</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.871035, 1.10505, -4.13407</s>
+		<t>-0.0246722, 0.38972, -0.240104</t>
+		<iProjector>0</iProjector>
+		<ID>150</ID>
+		<projectorStart>0.08152, -0.2292</projectorStart>
+		<projectorEnd>0.24467, 0.01095</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.64587, 0.393868, -3.945</s>
+		<t>-0.809039, 1.0791, -0.445792</t>
+		<iProjector>0</iProjector>
+		<ID>151</ID>
+		<projectorStart>0.03052, -1.07952</projectorStart>
+		<projectorEnd>0.24326, 0.00162</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.548904, 1.17448, -4.49141</s>
+		<t>-0.190539, 0.805884, -0.390472</t>
+		<iProjector>0</iProjector>
+		<ID>152</ID>
+		<projectorStart>0.1378, -0.0289499</projectorStart>
+		<projectorEnd>0.39542, 0.53274</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.700188, 1.27986, -3.84073</s>
+		<t>0.850546, 0.333745, 0.174342</t>
+		<iProjector>0</iProjector>
+		<ID>153</ID>
+		<projectorStart>-0.0164302, -0.0125095</projectorStart>
+		<projectorEnd>0.217761, -0.30123</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.37948, 0.911024, -3.54949</s>
+		<t>0.179975, 0.721287, -0.121306</t>
+		<iProjector>0</iProjector>
+		<ID>154</ID>
+		<projectorStart>-0.04856, -0.64614</projectorStart>
+		<projectorEnd>0.22793, -0.3051</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.06692, 1.0383, -3.78784</s>
+		<t>0.131433, 0.452274, -0.156473</t>
+		<iProjector>0</iProjector>
+		<ID>155</ID>
+		<projectorStart>-0.00637996, -0.376259</projectorStart>
+		<projectorEnd>0.19271, -0.17595</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.567589, 1.19031, -4.46766</s>
+		<t>0.061735, -0.49258, -0.153967</t>
+		<iProjector>0</iProjector>
+		<ID>156</ID>
+		<projectorStart>0.13747, -0.02898</projectorStart>
+		<projectorEnd>0.0890601, -0.337229</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.591886, 1.20605, -4.42563</s>
+		<t>0.331013, -0.142134, 0.359633</t>
+		<iProjector>0</iProjector>
+		<ID>157</ID>
+		<projectorStart>0.13423, -0.02895</projectorStart>
+		<projectorEnd>0.0626899, -0.27462</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.658055, 1.25554, -3.88317</s>
+		<t>0.171078, -0.188074, -0.307364</t>
+		<iProjector>0</iProjector>
+		<ID>158</ID>
+		<projectorStart>-0.0137, -0.0086</projectorStart>
+		<projectorEnd>0.0822282, -0.229829</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.672434, 1.27195, -3.85874</s>
+		<t>0.60201, -0.533009, 0.131639</t>
+		<iProjector>0</iProjector>
+		<ID>159</ID>
+		<projectorStart>-0.0151864, -0.00414289</projectorStart>
+		<projectorEnd>-0.046, -0.6737</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.720783, 0.788695, -2.88715</s>
+		<t>-0.152954, 0.124684, -0.193772</t>
+		<iProjector>0</iProjector>
+		<ID>160</ID>
+		<projectorStart>-0.47723, -0.30588</projectorStart>
+		<projectorEnd>-0.4042, -0.13932</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.632546, 0.321694, -3.26447</s>
+		<t>0.0609713, 0.386509, -0.0757318</t>
+		<iProjector>0</iProjector>
+		<ID>161</ID>
+		<projectorStart>-0.43448, -0.53589</projectorStart>
+		<projectorEnd>-0.31981, -0.34728</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.716848, 0.757323, -3.29942</s>
+		<t>0.0601627, -0.407093, -0.353086</t>
+		<iProjector>0</iProjector>
+		<ID>162</ID>
+		<projectorStart>-0.318627, -0.332358</projectorStart>
+		<projectorEnd>-0.2589, -0.6</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.884755, 0.455763, -4.01037</s>
+		<t>0.146037, -0.0282102, -0.300747</t>
+		<iProjector>0</iProjector>
+		<ID>163</ID>
+		<projectorStart>-0.09548, -0.6</projectorStart>
+		<projectorEnd>0.0222199, -0.69</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.876305, 0.440814, -4.00981</s>
+		<t>-0.206491, -0.0815722, -0.58809</t>
+		<iProjector>0</iProjector>
+		<ID>164</ID>
+		<projectorStart>-0.10004, -0.6</projectorStart>
+		<projectorEnd>0.0213799, -0.529589</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.694567, 0.381764, -4.57339</s>
+		<t>0.271704, -0.0244392, 0.175994</t>
+		<iProjector>0</iProjector>
+		<ID>165</ID>
+		<projectorStart>0.0235, -0.53037</projectorStart>
+		<projectorEnd>0.01997, -0.68754</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.01746, 0.416612, -4.31739</s>
+		<t>0.0634464, -0.0673327, -0.413932</t>
+		<iProjector>0</iProjector>
+		<ID>166</ID>
+		<projectorStart>0.02047, -0.68907</projectorStart>
+		<projectorEnd>0.13958, -0.74706</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.728135, 0.42416, -4.50911</s>
+		<t>0.384014, -0.0533404, -0.183979</t>
+		<iProjector>0</iProjector>
+		<ID>167</ID>
+		<projectorStart>0.01999, -0.52803</projectorStart>
+		<projectorEnd>0.13955, -0.75411</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.726126, 0.421467, -4.50893</s>
+		<t>0.0838099, -0.0192268, -0.431543</t>
+		<iProjector>0</iProjector>
+		<ID>168</ID>
+		<projectorStart>0.0204099, -0.52803</projectorStart>
+		<projectorEnd>0.1532, -0.57891</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.738891, 0.339151, -5.03206</s>
+		<t>0.334343, 0.00378424, 0.29477</t>
+		<iProjector>0</iProjector>
+		<ID>169</ID>
+		<projectorStart>0.14971, -0.57108</projectorStart>
+		<projectorEnd>0.13823, -0.74472</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.49574, 0.99657, -4.1489</s>
+		<t>0.311872, -0.628905, 0.0169187</t>
+		<iProjector>0</iProjector>
+		<ID>170</ID>
+		<projectorStart>-0.0191, -0.0914099</projectorStart>
+		<projectorEnd>-0.0903699, -0.60234</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.456877, 0.467364, -4.42386</s>
+		<t>0.0998614, 0.253951, 0.01684</t>
+		<iProjector>0</iProjector>
+		<ID>171</ID>
+		<projectorStart>-0.05039, -0.36531</projectorStart>
+		<projectorEnd>0.01646, -0.28317</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.399933, 0.756633, -4.49329</s>
+		<t>0.215431, 0.478605, 0.105046</t>
+		<iProjector>0</iProjector>
+		<ID>172</ID>
+		<projectorStart>0.01648, -0.18618</projectorStart>
+		<projectorEnd>0.13295, -0.02271</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.559141, 0.730488, -4.39427</s>
+		<t>0.0572146, 0.496716, -0.00123644</t>
+		<iProjector>0</iProjector>
+		<ID>173</ID>
+		<projectorStart>0.01426, -0.27927</projectorStart>
+		<projectorEnd>0.13427, -0.03048</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.351584, 0.71388, -4.55103</s>
+		<t>0.377849, 0.0461283, 0.054615</t>
+		<iProjector>0</iProjector>
+		<ID>174</ID>
+		<projectorStart>0.01597, -0.18537</projectorStart>
+		<projectorEnd>0.08495, -0.35043</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.596106, 0.753732, -4.34763</s>
+		<t>0.132063, 0.00977045, -0.166515</t>
+		<iProjector>0</iProjector>
+		<ID>175</ID>
+		<projectorStart>0.01345, -0.28395</projectorStart>
+		<projectorEnd>0.09116, -0.35124</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.947996, 0.863742, -4.08123</s>
+		<t>-0.283001, -0.14897, -0.510429</t>
+		<iProjector>0</iProjector>
+		<ID>176</ID>
+		<projectorStart>0.03235, -0.40839</projectorStart>
+		<projectorEnd>0.09209, -0.345</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.621656, 0.61784, -4.21554</s>
+		<t>0.0932606, 0.148886, -0.291886</t>
+		<iProjector>0</iProjector>
+		<ID>177</ID>
+		<projectorStart>-0.04994, -0.37002</projectorStart>
+		<projectorEnd>0.08813, -0.34104</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.369932, 0.384341, -4.53509</s>
+		<t>0.376878, 0.279442, 0.145569</t>
+		<iProjector>0</iProjector>
+		<ID>178</ID>
+		<projectorStart>-0.05036, -0.36609</projectorStart>
+		<projectorEnd>0.03668, -0.4122</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.64743, 0.596062, -4.48487</s>
+		<t>0.297324, -0.258435, 0.059289</t>
+		<iProjector>0</iProjector>
+		<ID>179</ID>
+		<projectorStart>0.03361, -0.396631</projectorStart>
+		<projectorEnd>0.0208999, -0.68601</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.471374, 0.675809, -4.51208</s>
+		<t>0.166511, -0.341314, -0.117911</t>
+		<iProjector>0</iProjector>
+		<ID>180</ID>
+		<projectorStart>0.02176, -0.26673</projectorStart>
+		<projectorEnd>0.01949, -0.52569</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.48189, 0.661695, -4.50192</s>
+		<t>-0.0576551, 0.231339, -0.304447</t>
+		<iProjector>0</iProjector>
+		<ID>181</ID>
+		<projectorStart>0.0195701, -0.27543</projectorStart>
+		<projectorEnd>0.13994, -0.13383</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.674, 0.842622, -4.23229</s>
+		<t>-0.168216, -0.201193, -0.568367</t>
+		<iProjector>0</iProjector>
+		<ID>182</ID>
+		<projectorStart>0.01558, -0.273</projectorStart>
+		<projectorEnd>0.10394, -0.3051</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.766535, 0.461591, -4.45742</s>
+		<t>-0.353606, 0.424083, -0.354663</t>
+		<iProjector>0</iProjector>
+		<ID>183</ID>
+		<projectorStart>0.02173, -0.5256</projectorStart>
+		<projectorEnd>0.1382, -0.13218</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.717132, 0.642232, -4.40807</s>
+		<t>-0.0850248, -0.317341, -0.242</t>
+		<iProjector>0</iProjector>
+		<ID>184</ID>
+		<projectorStart>0.03235, -0.40911</projectorStart>
+		<projectorEnd>0.02222, -0.528</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.728336, 0.432128, -4.51173</s>
+		<t>-0.0740844, 0.276307, -0.0844326</t>
+		<iProjector>0</iProjector>
+		<ID>185</ID>
+		<projectorStart>0.0235, -0.52335</projectorStart>
+		<projectorEnd>0.08945, -0.34335</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.813232, 0.934483, -4.22016</s>
+		<t>0.119492, -0.607794, -0.223894</t>
+		<iProjector>0</iProjector>
+		<ID>186</ID>
+		<projectorStart>0.0587199, -0.30033</projectorStart>
+		<projectorEnd>0.0209, -0.68916</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.789116, 0.907221, -4.24605</s>
+		<t>0.61278, -0.528735, 0.154857</t>
+		<iProjector>0</iProjector>
+		<ID>187</ID>
+		<projectorStart>0.05518, -0.29877</projectorStart>
+		<projectorEnd>0.0209599, -0.93246</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.23233, 0.719117, -3.76816</s>
+		<t>0.213099, -0.292098, -0.259319</t>
+		<iProjector>0</iProjector>
+		<ID>188</ID>
+		<projectorStart>-0.0446, -0.6583</projectorStart>
+		<projectorEnd>0.02089, -0.936919</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.52259, 0.375428, -3.38555</s>
+		<t>-0.124027, -0.0117428, -0.72513</t>
+		<iProjector>0</iProjector>
+		<ID>189</ID>
+		<projectorStart>-0.18176, -1.04196</projectorStart>
+		<projectorEnd>0.02393, -0.93717</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.39578, 0.368639, -4.10851</s>
+		<t>0.165676, -0.0291343, 0.089447</t>
+		<iProjector>0</iProjector>
+		<ID>190</ID>
+		<projectorStart>0.02308, -0.93327</projectorStart>
+		<projectorEnd>0.0257, -1.05063</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.653263, 0.702052, -4.60426</s>
+		<t>0.0154119, 0.323126, -0.425991</t>
+		<iProjector>0</iProjector>
+		<ID>191</ID>
+		<projectorStart>0.0903701, -0.34575</projectorStart>
+		<projectorEnd>0.2816, -0.19167</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.374776, 0.847798, -4.86468</s>
+		<t>0.528294, -0.0603035, 0.0154281</t>
+		<iProjector>0</iProjector>
+		<ID>192</ID>
+		<projectorStart>0.13696, -0.13293</projectorStart>
+		<projectorEnd>0.2288, -0.43176</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.657433, 0.718274, -4.58525</s>
+		<t>0.11296, -0.349767, -0.405745</t>
+		<iProjector>0</iProjector>
+		<ID>193</ID>
+		<projectorStart>0.08899, -0.34035</projectorStart>
+		<projectorEnd>0.15233, -0.57414</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.751691, 0.437028, -4.49847</s>
+		<t>0.244003, 0.534404, -0.295735</t>
+		<iProjector>0</iProjector>
+		<ID>194</ID>
+		<projectorStart>0.02395, -0.53352</projectorStart>
+		<projectorEnd>0.27365, -0.38406</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.02318, 0.420791, -4.31503</s>
+		<t>-0.069657, 0.504026, -0.532355</t>
+		<iProjector>0</iProjector>
+		<ID>195</ID>
+		<projectorStart>0.01912, -0.688441</projectorStart>
+		<projectorEnd>0.27227, -0.38643</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.07941, 0.346455, -4.72937</s>
+		<t>-0.0993516, 0.606055, -0.0769892</t>
+		<iProjector>0</iProjector>
+		<ID>196</ID>
+		<projectorStart>0.13732, -0.74862</projectorStart>
+		<projectorEnd>0.27188, -0.38955</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.751096, 0.34991, -5.03555</s>
+		<t>0.253918, 0.632129, 0.269294</t>
+		<iProjector>0</iProjector>
+		<ID>197</ID>
+		<projectorStart>0.15535, -0.57567</projectorStart>
+		<projectorEnd>0.27146, -0.38487</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.84228, 0.845681, -4.2431</s>
+		<t>-0.462506, -0.0822423, -0.578929</t>
+		<iProjector>0</iProjector>
+		<ID>198</ID>
+		<projectorStart>0.29146, -0.93354</projectorStart>
+		<projectorEnd>0.3197, -0.70014</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.93837, 0.360221, -2.90143</s>
+		<t>0.383844, 0.0223876, -0.232116</t>
+		<iProjector>0</iProjector>
+		<ID>199</ID>
+		<projectorStart>-0.5098, -0.7031</projectorStart>
+		<projectorEnd>-0.333538, -0.923856</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.58474, 0.930608, -3.05775</s>
+		<t>0.718391, -0.564873, -0.101489</t>
+		<iProjector>0</iProjector>
+		<ID>200</ID>
+		<projectorStart>-0.40685, -0.1377</projectorStart>
+		<projectorEnd>-0.3295, -0.92232</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.387382, 0.863971, -4.84784</s>
+		<t>-0.0229281, -0.359076, -0.143305</t>
+		<iProjector>0</iProjector>
+		<ID>201</ID>
+		<projectorStart>0.13999, -0.13296</projectorStart>
+		<projectorEnd>0.10178, -0.30969</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.715113, 0.410862, -4.52871</s>
+		<t>-0.161143, 0.278371, -0.19446</t>
+		<iProjector>0</iProjector>
+		<ID>202</ID>
+		<projectorStart>0.02086, -0.52644</projectorStart>
+		<projectorEnd>0.10127, -0.30351</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.732465, 0.789291, -4.45249</s>
+		<t>-0.361959, -0.437996, -0.724518</t>
+		<iProjector>0</iProjector>
+		<ID>203</ID>
+		<projectorStart>0.08017, -0.34038</projectorStart>
+		<projectorEnd>0.12236, -0.38724</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.641428, 0.686814, -4.62083</s>
+		<t>0.411778, 0.317892, -0.156026</t>
+		<iProjector>0</iProjector>
+		<ID>204</ID>
+		<projectorStart>0.0886, -0.34809</projectorStart>
+		<projectorEnd>0.29081, -0.3966</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.351406, 0.352259, -5.17384</s>
+		<t>0.483783, 0.0588104, 0.25927</t>
+		<iProjector>0</iProjector>
+		<ID>205</ID>
+		<projectorStart>0.11764, -0.37788</projectorStart>
+		<projectorEnd>0.15314, -0.58353</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.76125, 0.341978, -5.0121</s>
+		<t>-0.20166, 0.00014773, -0.438868</t>
+		<iProjector>0</iProjector>
+		<ID>206</ID>
+		<projectorStart>0.15232, -0.58281</projectorStart>
+		<projectorEnd>0.22616, -0.48345</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.357717, 0.344949, -5.18807</s>
+		<t>0.661092, 0.45311, 0.413496</t>
+		<iProjector>0</iProjector>
+		<ID>207</ID>
+		<projectorStart>0.11851, -0.38259</projectorStart>
+		<projectorEnd>0.23318, -0.48657</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.37503, 0.372578, -5.14851</s>
+		<t>0.310759, 0.682852, 0.137374</t>
+		<iProjector>0</iProjector>
+		<ID>208</ID>
+		<projectorStart>0.1171, -0.38247</projectorStart>
+		<projectorEnd>0.28634, -0.18309</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.329362, 0.697127, -5.34255</s>
+		<t>0.57149, -0.0302992, 0.40687</t>
+		<iProjector>0</iProjector>
+		<ID>209</ID>
+		<projectorStart>0.2257, -0.20178</projectorStart>
+		<projectorEnd>0.22703, -0.48972</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.349897, 0.34047, -5.18112</s>
+		<t>0.112919, 0.475555, 0.0241446</t>
+		<iProjector>0</iProjector>
+		<ID>210</ID>
+		<projectorStart>0.11494, -0.38331</projectorStart>
+		<projectorEnd>0.227, -0.20418</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.364697, 0.721814, -5.2876</s>
+		<t>0.361982, 0.365524, 0.313263</t>
+		<iProjector>0</iProjector>
+		<ID>211</ID>
+		<projectorStart>0.22222, -0.20814</projectorStart>
+		<projectorEnd>0.29249, -0.18462</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.267148, 1.1169, -4.83965</s>
+		<t>1.6513, 1.10225, -1.09675</t>
+		<iProjector>0</iProjector>
+		<ID>212</ID>
+		<projectorStart>0.15671, 0.0688</projectorStart>
+		<projectorEnd>1.1117, -0.1943</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.390281, 1.19325, -4.66546</s>
+		<t>1.44798, -0.535715, 0.173774</t>
+		<iProjector>0</iProjector>
+		<ID>213</ID>
+		<projectorStart>0.15892, 0.06648</projectorStart>
+		<projectorEnd>0.30176, -1.01454</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.383769, 1.7732, -4.88963</s>
+		<t>-0.0365998, -0.0847533, -0.303414</t>
+		<iProjector>0</iProjector>
+		<ID>214</ID>
+		<projectorStart>0.35536, 0.39111</projectorStart>
+		<projectorEnd>0.408141, 0.33078</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.361031, 1.497, -4.84613</s>
+		<t>0.122086, 0.333533, 0.0873737</t>
+		<iProjector>0</iProjector>
+		<ID>215</ID>
+		<projectorStart>0.271, 0.2371</projectorStart>
+		<projectorEnd>0.3541, 0.3849</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.48258, 1.57732, -4.68264</s>
+		<t>-0.0664839, 0.160403, -0.420902</t>
+		<iProjector>0</iProjector>
+		<ID>216</ID>
+		<projectorStart>0.27241, 0.2355</projectorStart>
+		<projectorEnd>0.41213, 0.33474</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.404951, 1.54129, -4.77906</s>
+		<t>0.836144, -0.442981, 0.279923</t>
+		<iProjector>0</iProjector>
+		<ID>217</ID>
+		<projectorStart>0.27379, 0.254219</projectorStart>
+		<projectorEnd>0.2767, -0.4451</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.360716, 1.74465, -4.93367</s>
+		<t>0.890062, -0.640577, 0.454638</t>
+		<iProjector>0</iProjector>
+		<ID>218</ID>
+		<projectorStart>0.35629, 0.38568</projectorStart>
+		<projectorEnd>0.275, -0.44511</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.25102, 1.08821, -4.49466</s>
+		<t>-0.831759, 0.62753, -0.603817</t>
+		<iProjector>0</iProjector>
+		<ID>219</ID>
+		<projectorStart>0.27496, -0.45531</projectorStart>
+		<projectorEnd>0.40985, 0.33171</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.505169, 1.37969, -4.75592</s>
+		<t>0.191371, -0.329331, -0.236732</t>
+		<iProjector>0</iProjector>
+		<ID>220</ID>
+		<projectorStart>0.25219, 0.10017</projectorStart>
+		<projectorEnd>0.28331, -0.19245</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.691658, 1.05584, -4.99639</s>
+		<t>0.280073, 0.184096, -0.391965</t>
+		<iProjector>0</iProjector>
+		<ID>221</ID>
+		<projectorStart>0.28459, -0.18459</projectorStart>
+		<projectorEnd>0.48941, -0.23622</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.364188, 1.27849, -4.9515</s>
+		<t>0.560498, -0.0790986, -0.514741</t>
+		<iProjector>0</iProjector>
+		<ID>222</ID>
+		<projectorStart>0.25249, 0.10176</projectorStart>
+		<projectorEnd>0.49028, -0.23703</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.52754, 1.39507, -4.73556</s>
+		<t>0.38575, 0.35193, -0.606335</t>
+		<iProjector>0</iProjector>
+		<ID>223</ID>
+		<projectorStart>0.25351, 0.100281</projectorStart>
+		<projectorEnd>0.5954, 0.0777</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.40262, 1.29703, -4.90653</s>
+		<t>0.499666, 0.165906, 0.265408</t>
+		<iProjector>0</iProjector>
+		<ID>224</ID>
+		<projectorStart>0.25072, 0.0986099</projectorStart>
+		<projectorEnd>0.32858, -0.04932</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.662295, 1.01899, -5.04285</s>
+		<t>0.264971, 0.48008, 0.447737</t>
+		<iProjector>0</iProjector>
+		<ID>225</ID>
+		<projectorStart>0.28195, -0.19245</projectorStart>
+		<projectorEnd>0.32945, -0.04302</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.693437, 1.05295, -5.00145</s>
+		<t>0.362165, -0.0613765, 0.238033</t>
+		<iProjector>0</iProjector>
+		<ID>226</ID>
+		<projectorStart>0.28594, -0.18774</projectorStart>
+		<projectorEnd>0.28505, -0.40287</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.708035, 1.07406, -4.99087</s>
+		<t>-0.126685, -0.691935, -0.409002</t>
+		<iProjector>0</iProjector>
+		<ID>227</ID>
+		<projectorStart>0.29038, -0.18774</projectorStart>
+		<projectorEnd>0.224, -0.47718</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.31013, 0.810243, -4.14084</s>
+		<t>-0.0683427, 0.282339, -0.357512</t>
+		<iProjector>0</iProjector>
+		<ID>228</ID>
+		<projectorStart>0.11533, -0.648451</projectorStart>
+		<projectorEnd>0.27632, -0.44988</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.25087, 1.09421, -4.48569</s>
+		<t>-0.173283, 0.579192, -0.561069</t>
+		<iProjector>0</iProjector>
+		<ID>229</ID>
+		<projectorStart>0.27496, -0.45453</projectorStart>
+		<projectorEnd>0.53873, -0.0375299</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.887432, 0.842607, -5.02431</s>
+		<t>0.0571281, 0.380945, -0.420799</t>
+		<iProjector>0</iProjector>
+		<ID>230</ID>
+		<projectorStart>0.2859, -0.3974</projectorStart>
+		<projectorEnd>0.493, -0.231856</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.43957, 1.11123, -5.31665</s>
+		<t>0.286013, -0.376603, -0.211177</t>
+		<iProjector>0</iProjector>
+		<ID>231</ID>
+		<projectorStart>0.32725, -0.04224</projectorStart>
+		<projectorEnd>0.35753, -0.37785</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.757338, 0.766898, -5.47434</s>
+		<t>-0.358446, 0.49954, -0.0977292</t>
+		<iProjector>0</iProjector>
+		<ID>232</ID>
+		<projectorStart>0.35668, -0.3747</projectorStart>
+		<projectorEnd>0.41825, 0.04692</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.383219, 1.06816, -5.41653</s>
+		<t>0.312092, 1.52782, -0.512983</t>
+		<iProjector>0</iProjector>
+		<ID>233</ID>
+		<projectorStart>0.3255, -0.0472559</projectorStart>
+		<projectorEnd>0.8926, 0.6328</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.03129, 0.344599, -4.9603</s>
+		<t>-0.0523413, 0.587398, 0.0881991</t>
+		<iProjector>0</iProjector>
+		<ID>234</ID>
+		<projectorStart>0.190903, -0.721907</projectorStart>
+		<projectorEnd>0.2842, -0.3981</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.03112, 0.972034, -4.7935</s>
+		<t>0.190414, -0.604896, -0.269822</t>
+		<iProjector>0</iProjector>
+		<ID>235</ID>
+		<projectorStart>0.28372, -0.40446</projectorStart>
+		<projectorEnd>0.2609, -0.81126</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.12283, 0.450083, -4.79572</s>
+		<t>0.210323, 0.0347627, -0.0998855</t>
+		<iProjector>0</iProjector>
+		<ID>236</ID>
+		<projectorStart>0.18655, -0.72045</projectorStart>
+		<projectorEnd>0.26441, -0.81117</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.973525, 0.265759, -5.06018</s>
+		<t>0.518863, 0.712435, 0.785448</t>
+		<iProjector>0</iProjector>
+		<ID>237</ID>
+		<projectorStart>0.18964, -0.727439</projectorStart>
+		<projectorEnd>0.23765, -0.66105</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.5422, 1.03005, -4.17226</s>
+		<t>-0.25672, -0.585652, -0.782395</t>
+		<iProjector>0</iProjector>
+		<ID>238</ID>
+		<projectorStart>0.23404, -0.6696</projectorStart>
+		<projectorEnd>0.26174, -0.80496</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.43221, 0.895604, -4.36505</s>
+		<t>-0.276754, 0.181642, -0.243677</t>
+		<iProjector>0</iProjector>
+		<ID>239</ID>
+		<projectorStart>0.2341, -0.66801</projectorStart>
+		<projectorEnd>0.28373, -0.41067</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.39054, 0.349731, -4.66009</s>
+		<t>0.00488353, 0.474369, -0.122522</t>
+		<iProjector>0</iProjector>
+		<ID>240</ID>
+		<projectorStart>0.18259, -0.91839</projectorStart>
+		<projectorEnd>0.32552, -0.679709</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.65972, 0.700718, -4.18777</s>
+		<t>0.00389028, -0.237049, -0.10928</t>
+		<iProjector>0</iProjector>
+		<ID>241</ID>
+		<projectorStart>0.18127, -0.91449</projectorStart>
+		<projectorEnd>0.1646, -1.03884</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.39444, 0.351358, -4.64296</s>
+		<t>0.13548, -0.0154364, -0.0858707</t>
+		<iProjector>0</iProjector>
+		<ID>242</ID>
+		<projectorStart>0.17923, -0.91836</projectorStart>
+		<projectorEnd>0.22925, -0.99813</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.38022, 0.800696, -4.80637</s>
+		<t>0.252843, -0.386583, 0.407495</t>
+		<iProjector>0</iProjector>
+		<ID>243</ID>
+		<projectorStart>0.32419, -0.68217</projectorStart>
+		<projectorEnd>0.17606, -1.03413</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.37889, 0.79914, -4.80858</s>
+		<t>0.183352, -0.467039, 0.0150728</t>
+		<iProjector>0</iProjector>
+		<ID>244</ID>
+		<projectorStart>0.3259, -0.68292</projectorStart>
+		<projectorEnd>0.23303, -1.02945</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.441148, 1.5799, -5.54114</s>
+		<t>0.539068, -0.575608, 0.0518603</t>
+		<iProjector>0</iProjector>
+		<ID>245</ID>
+		<projectorStart>0.491709, 0.20028</projectorStart>
+		<projectorEnd>0.46133, -0.366901</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.362596, 1.24249, -5.63593</s>
+		<t>0.441624, -0.316304, -0.107834</t>
+		<iProjector>0</iProjector>
+		<ID>246</ID>
+		<projectorStart>0.41953, 0.04926</projectorStart>
+		<projectorEnd>0.46613, -0.32151</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.731694, 0.744825, -5.5132</s>
+		<t>0.141363, 0.246568, -0.125683</t>
+		<iProjector>0</iProjector>
+		<ID>247</ID>
+		<projectorStart>0.35587, -0.37317</projectorStart>
+		<projectorEnd>0.47054, -0.32073</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.380485, 0.87692, -5.8012</s>
+		<t>0.525181, -0.479795, 0.521309</t>
+		<iProjector>0</iProjector>
+		<ID>248</ID>
+		<projectorStart>0.38482, -0.14784</projectorStart>
+		<projectorEnd>0.26039, -0.62343</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.54097, 1.00423, -5.55927</s>
+		<t>0.163391, -0.00804144, -0.45978</t>
+		<iProjector>0</iProjector>
+		<ID>249</ID>
+		<projectorStart>0.3853, -0.15336</projectorStart>
+		<projectorEnd>0.52505, -0.24483</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.980549, 0.483834, -5.1466</s>
+		<t>-0.110971, 0.655581, -0.573409</t>
+		<iProjector>0</iProjector>
+		<ID>250</ID>
+		<projectorStart>0.25903, -0.62514</projectorStart>
+		<projectorEnd>0.52457, -0.24486</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.909018, 0.41418, -5.26943</s>
+		<t>-0.144496, 0.363983, -0.197163</t>
+		<iProjector>0</iProjector>
+		<ID>251</ID>
+		<projectorStart>0.26173, -0.61959</projectorStart>
+		<projectorEnd>0.35936, -0.37314</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.824566, 0.768999, -4.89735</s>
+		<t>0.00883883, -0.442185, -0.496411</t>
+		<iProjector>0</iProjector>
+		<ID>252</ID>
+		<projectorStart>0.22354, -0.40362</projectorStart>
+		<projectorEnd>0.25958, -0.62343</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.04641, 1.61471, -4.39263</s>
+		<t>-0.18162, -1.22211, -0.923121</t>
+		<iProjector>0</iProjector>
+		<ID>253</ID>
+		<projectorStart>0.3259, -0.0485699</projectorStart>
+		<projectorEnd>0.25913, -0.61719</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.739853, 0.756164, -5.49705</s>
+		<t>0.237457, 0.251523, -0.00557089</t>
+		<iProjector>0</iProjector>
+		<ID>254</ID>
+		<projectorStart>0.3563, -0.3712</projectorStart>
+		<projectorEnd>0.46451, -0.362019</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.739056, 0.7491, -5.50704</s>
+		<t>0.257484, -0.158798, -0.115293</t>
+		<iProjector>0</iProjector>
+		<ID>255</ID>
+		<projectorStart>0.35721, -0.374881</projectorStart>
+		<projectorEnd>0.4043, -0.575</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.381899, 1.26088, -5.60151</s>
+		<t>0.261047, 0.148466, -0.108265</t>
+		<iProjector>0</iProjector>
+		<ID>256</ID>
+		<projectorStart>0.41815, 0.0531901</projectorStart>
+		<projectorEnd>0.5351, 0.00399</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.479029, 1.60519, -5.4772</s>
+		<t>0.18079, -0.176914, -0.193563</t>
+		<iProjector>0</iProjector>
+		<ID>257</ID>
+		<projectorStart>0.49033, 0.20103</projectorStart>
+		<projectorEnd>0.53339, 0.00783001</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.594436, 2.20724, -5.92121</s>
+		<t>-0.204145, -0.671031, 0.301021</t>
+		<iProjector>0</iProjector>
+		<ID>258</ID>
+		<projectorStart>0.7708, 0.45921</projectorStart>
+		<projectorEnd>0.48725, 0.19635</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.434005, 1.87183, -5.69161</s>
+		<t>0.215309, -0.454708, 0.00451517</t>
+		<iProjector>0</iProjector>
+		<ID>259</ID>
+		<projectorStart>0.59749, 0.35904</projectorStart>
+		<projectorEnd>0.53429, 0.00546</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.459323, 1.58881, -5.51329</s>
+		<t>0.186939, -0.0177077, -0.481609</t>
+		<iProjector>0</iProjector>
+		<ID>260</ID>
+		<projectorStart>0.4925, 0.1976</projectorStart>
+		<projectorEnd>0.6402, 0.0774</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.674505, 1.58602, -5.92609</s>
+		<t>0.332271, -0.0256574, 0.805676</t>
+		<iProjector>0</iProjector>
+		<ID>261</ID>
+		<projectorStart>0.63555, 0.0740373</projectorStart>
+		<projectorEnd>0.5119, -0.0657</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.639684, 1.56928, -6.00681</s>
+		<t>0.13976, -0.0725732, 0.541449</t>
+		<iProjector>0</iProjector>
+		<ID>262</ID>
+		<projectorStart>0.64111, 0.07902</projectorStart>
+		<projectorEnd>0.53471, -0.00471001</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.892918, 0.994446, -5.59175</s>
+		<t>-0.228879, 0.441904, -0.0765357</t>
+		<iProjector>0</iProjector>
+		<ID>263</ID>
+		<projectorStart>0.46429, -0.32775</projectorStart>
+		<projectorEnd>0.5378, 0.00705</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.04373, 1.05055, -5.38959</s>
+		<t>-0.407253, 0.355534, -0.325917</t>
+		<iProjector>0</iProjector>
+		<ID>264</ID>
+		<projectorStart>0.46306, -0.370709</projectorStart>
+		<projectorEnd>0.53519, 0.00471</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.954409, 1.78142, -5.27728</s>
+		<t>0.00875086, -0.551618, -0.113977</t>
+		<iProjector>0</iProjector>
+		<ID>265</ID>
+		<projectorStart>0.595, 0.0774299</projectorStart>
+		<projectorEnd>0.48683, -0.24096</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.7432, 0.754376, -5.50742</s>
+		<t>0.32472, -0.204759, -0.429108</t>
+		<iProjector>0</iProjector>
+		<ID>266</ID>
+		<projectorStart>0.3598, -0.37392</projectorStart>
+		<projectorEnd>0.48593, -0.63207</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.931064, 0.433602, -5.22753</s>
+		<t>-0.371659, 0.369991, -0.740185</t>
+		<iProjector>0</iProjector>
+		<ID>267</ID>
+		<projectorStart>0.25999, -0.61869</projectorStart>
+		<projectorEnd>0.44423, -0.26832</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.458072, 0.702936, -6.16773</s>
+		<t>0.572974, 0.391207, 0.751293</t>
+		<iProjector>0</iProjector>
+		<ID>268</ID>
+		<projectorStart>0.44107, -0.27222</projectorStart>
+		<projectorEnd>0.47537, -0.3426</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.817588, 0.912524, -5.34744</s>
+		<t>0.079342, 0.00352669, -0.196171</t>
+		<iProjector>0</iProjector>
+		<ID>269</ID>
+		<projectorStart>0.3676, -0.327</projectorStart>
+		<projectorEnd>0.43673, -0.37236</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.540108, 0.332329, -6.05915</s>
+		<t>0.255367, 0.561384, 0.694878</t>
+		<iProjector>0</iProjector>
+		<ID>270</ID>
+		<projectorStart>0.36199, -0.48186</projectorStart>
+		<projectorEnd>0.36548, -0.33093</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.860561, 0.364022, -5.34606</s>
+		<t>0.221609, 0.379667, -0.694092</t>
+		<iProjector>0</iProjector>
+		<ID>271</ID>
+		<projectorStart>0.26038, -0.61878</projectorStart>
+		<projectorEnd>0.54968, -0.54288</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.51221, 0.33491, -5.10717</s>
+		<t>-0.632693, 0.495712, 0.0529823</t>
+		<iProjector>0</iProjector>
+		<ID>272</ID>
+		<projectorStart>0.32668, -0.977099</projectorStart>
+		<projectorEnd>0.28892, -0.39891</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.51312, 0.570778, -5.11346</s>
+		<t>-0.621201, 0.273676, 0.0871992</t>
+		<iProjector>0</iProjector>
+		<ID>273</ID>
+		<projectorStart>0.38044, -0.86124</projectorStart>
+		<projectorEnd>0.28721, -0.39822</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.884784, 0.836578, -5.03568</s>
+		<t>0.669393, -0.484865, -0.502037</t>
+		<iProjector>0</iProjector>
+		<ID>274</ID>
+		<projectorStart>0.28684, -0.40056</projectorStart>
+		<projectorEnd>0.44549, -0.969269</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.602552, 2.36925, -5.7058</s>
+		<t>0.235015, -0.452517, -0.217546</t>
+		<iProjector>0</iProjector>
+		<ID>276</ID>
+		<projectorStart>0.77128, 0.57495</projectorStart>
+		<projectorEnd>0.75665, 0.1776</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.431298, 1.85552, -5.7087</s>
+		<t>0.53861, -0.135377, -0.318122</t>
+		<iProjector>0</iProjector>
+		<ID>277</ID>
+		<projectorStart>0.59362, 0.35361</projectorStart>
+		<projectorEnd>0.76199, -0.000809997</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.428508, 1.85682, -5.71563</s>
+		<t>0.488649, 0.677582, -0.358674</t>
+		<iProjector>0</iProjector>
+		<ID>278</ID>
+		<projectorStart>0.59626, 0.35367</projectorStart>
+		<projectorEnd>0.96986, 0.48894</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.537379, 2.16183, -6.02328</s>
+		<t>0.538416, -0.970186, 0.354616</t>
+		<iProjector>0</iProjector>
+		<ID>279</ID>
+		<projectorStart>0.7716, 0.4561</projectorStart>
+		<projectorEnd>0.56472, -0.328185</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.663449, 1.42489, -5.67671</s>
+		<t>0.945427, 0.487875, 1.05641</t>
+		<iProjector>0</iProjector>
+		<ID>280</ID>
+		<projectorStart>0.53554, 0.00468002</projectorStart>
+		<projectorEnd>0.61958, -0.15876</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.61977, 1.54656, -6.05105</s>
+		<t>0.282932, -0.176049, 0.281534</t>
+		<iProjector>0</iProjector>
+		<ID>281</ID>
+		<projectorStart>0.64114, 0.0735</projectorStart>
+		<projectorEnd>0.59846, -0.14163</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.601745, 1.53855, -6.07203</s>
+		<t>0.442494, -0.0719802, 0.314706</t>
+		<iProjector>0</iProjector>
+		<ID>282</ID>
+		<projectorStart>0.63976, 0.07512</projectorStart>
+		<projectorEnd>0.65123, -0.15177</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.63934, 1.40688, -5.7101</s>
+		<t>1.77981, 0.95293, 2.05965</t>
+		<iProjector>0</iProjector>
+		<ID>283</ID>
+		<projectorStart>0.53338, 0.00471001</projectorStart>
+		<projectorEnd>0.67979, -0.27687</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.4294, 1.39873, -5.99335</s>
+		<t>-0.830875, 0.124506, -0.105034</t>
+		<iProjector>0</iProjector>
+		<ID>284</ID>
+		<projectorStart>0.77425, -0.39033</projectorStart>
+		<projectorEnd>0.64019, 0.07035</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.36574, 1.99323, -4.87268</s>
+		<t>0.185789, -0.822185, 0.385888</t>
+		<iProjector>0</iProjector>
+		<ID>285</ID>
+		<projectorStart>0.3998, 0.5374</projectorStart>
+		<projectorEnd>0.1351, -0.032171</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.052465, 1.78528, -2.77531</s>
+		<t>0.595756, -0.343816, -0.197612</t>
+		<iProjector>0</iProjector>
+		<ID>286</ID>
+		<projectorStart>-0.46697, 0.81597</projectorStart>
+		<projectorEnd>-0.31885, 0.1776</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.582547, 1.13747, -3.38066</s>
+		<t>0.726643, -0.503179, -0.436563</t>
+		<iProjector>0</iProjector>
+		<ID>287</ID>
+		<projectorStart>-0.23543, -0.02106</projectorStart>
+		<projectorEnd>-0.0301, -0.7572</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.460522, 1.70288, -3.72527</s>
+		<t>-0.456654, -0.950313, -0.920583</t>
+		<iProjector>0</iProjector>
+		<ID>288</ID>
+		<projectorStart>-0.01118, 0.39504</projectorStart>
+		<projectorEnd>-0.01609, -0.01095</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.587695, 1.74266, -4.24887</s>
+		<t>0.24778, -0.26043, -0.140661</t>
+		<iProjector>0</iProjector>
+		<ID>289</ID>
+		<projectorStart>0.2057, 0.3179</projectorStart>
+		<projectorEnd>0.2437, 0.00752752</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.711816, 1.2984, -3.81235</s>
+		<t>-0.151466, 0.421863, -0.487233</t>
+		<iProjector>0</iProjector>
+		<ID>290</ID>
+		<projectorStart>-0.0165199, -0.00702001</projectorStart>
+		<projectorEnd>0.20987, 0.31605</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.397749, 1.46946, -3.41876</s>
+		<t>-0.173909, 0.475919, -0.449259</t>
+		<iProjector>0</iProjector>
+		<ID>291</ID>
+		<projectorStart>-0.19187, 0.309</projectorStart>
+		<projectorEnd>0.04244, 0.69381</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.705844, 1.74324, -4.45719</s>
+		<t>-0.440876, 0.793659, -0.240756</t>
+		<iProjector>0</iProjector>
+		<ID>292</ID>
+		<projectorStart>0.2983, 0.2362</projectorStart>
+		<projectorEnd>0.4688, 0.982843</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.25273, 1.10723, -4.47296</s>
+		<t>-0.980227, 1.42818, -0.220235</t>
+		<iProjector>0</iProjector>
+		<ID>293</ID>
+		<projectorStart>0.2732, -0.4525</projectorStart>
+		<projectorEnd>0.468, 0.9684</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.74536, 0.851066, -5.05468</s>
+		<t>0.0696268, -0.465266, 0.565228</t>
+		<iProjector>1</iProjector>
+		<ID>294</ID>
+		<projectorStart>0.812291, -0.397332</projectorStart>
+		<projectorEnd>0.8417, -0.995972</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43946, 0.26478, -4.81128</s>
+		<t>0.426236, 0.132601, 0.367702</t>
+		<iProjector>1</iProjector>
+		<ID>295</ID>
+		<projectorStart>0.638895, -0.899563</projectorStart>
+		<projectorEnd>0.866999, -1.01101</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.72883, 0.327986, -5.08046</s>
+		<t>0.0874577, 0.0630711, 0.592414</t>
+		<iProjector>1</iProjector>
+		<ID>296</ID>
+		<projectorStart>0.760862, -0.737533</projectorStart>
+		<projectorEnd>0.841679, -0.992207</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43351, 0.278821, -4.7972</s>
+		<t>0.299462, 0.040987, -0.297292</t>
+		<iProjector>1</iProjector>
+		<ID>297</ID>
+		<projectorStart>0.637997, -0.899663</projectorStart>
+		<projectorEnd>0.762115, -0.738073</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.72606, 0.335683, -5.10321</s>
+		<t>0.0142126, 0.510738, 0.0355201</t>
+		<iProjector>1</iProjector>
+		<ID>298</ID>
+		<projectorStart>0.75858, -0.728452</projectorStart>
+		<projectorEnd>0.808299, -0.396934</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.4373, 0.273326, -4.81346</s>
+		<t>0.30961, 0.57478, -0.259821</t>
+		<iProjector>1</iProjector>
+		<ID>299</ID>
+		<projectorStart>0.637704, -0.895973</projectorStart>
+		<projectorEnd>0.810547, -0.393062</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.7433, 0.857313, -5.05284</s>
+		<t>0.157432, 0.232765, -0.0639262</t>
+		<iProjector>1</iProjector>
+		<ID>300</ID>
+		<projectorStart>0.812096, -0.394536</projectorStart>
+		<projectorEnd>0.903971, -0.200471</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.90269, 1.21679, -5.5261</s>
+		<t>-0.00301743, -0.130952, 0.412825</t>
+		<iProjector>1</iProjector>
+		<ID>301</ID>
+		<projectorStart>0.887083, 0.0620788</projectorStart>
+		<projectorEnd>0.903623, -0.203664</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.90726, 1.33257, -6.05124</s>
+		<t>-0.0203505, -0.114847, 0.566583</t>
+		<iProjector>1</iProjector>
+		<ID>302</ID>
+		<projectorStart>0.864546, 0.334669</projectorStart>
+		<projectorEnd>0.881961, 0.0466745</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.61655, 1.80844, -6.27732</s>
+		<t>0.308748, -0.503348, 0.231119</t>
+		<iProjector>1</iProjector>
+		<ID>303</ID>
+		<projectorStart>0.759573, 0.771879</projectorStart>
+		<projectorEnd>0.870351, 0.308722</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.38433, 1.94701, -6.26468</s>
+		<t>0.241228, -0.159685, -0.0493903</t>
+		<iProjector>1</iProjector>
+		<ID>304</ID>
+		<projectorStart>0.663314, 0.882836</projectorStart>
+		<projectorEnd>0.760207, 0.766873</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.39167, 1.92961, -6.28381</s>
+		<t>0.0510235, 0.117249, -0.06322</t>
+		<iProjector>1</iProjector>
+		<ID>305</ID>
+		<projectorStart>0.664987, 0.874041</projectorStart>
+		<projectorEnd>0.692904, 0.987825</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.39334, 1.93659, -6.29038</s>
+		<t>0.514871, -0.245082, 0.595346</t>
+		<iProjector>1</iProjector>
+		<ID>306</ID>
+		<projectorStart>0.664574, 0.884063</projectorStart>
+		<projectorEnd>0.920753, 0.495561</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43911, 2.04218, -6.34572</s>
+		<t>0.455482, -0.342183, 0.651738</t>
+		<iProjector>1</iProjector>
+		<ID>307</ID>
+		<projectorStart>0.690761, 0.98807</projectorStart>
+		<projectorEnd>0.916022, 0.500582</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.06709, 2.11624, -6.35959</s>
+		<t>0.364236, -0.195397, 0.0921655</t>
+		<iProjector>1</iProjector>
+		<ID>308</ID>
+		<projectorStart>0.523798, 1.05187</projectorStart>
+		<projectorEnd>0.684069, 0.862611</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62918, 2.04527, -5.60486</s>
+		<t>0.0613704, -0.0998571, -0.093699</t>
+		<iProjector>1</iProjector>
+		<ID>309</ID>
+		<projectorStart>0.825652, 0.768934</projectorStart>
+		<projectorEnd>0.84238, 0.706441</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.39036, 1.94414, -6.27615</s>
+		<t>0.0238719, -0.500457, 0.120312</t>
+		<iProjector>1</iProjector>
+		<ID>310</ID>
+		<projectorStart>0.665602, 0.884269</projectorStart>
+		<projectorEnd>0.647672, 0.456438</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.39479, 1.95943, -6.29762</s>
+		<t>0.0174856, -0.501331, 0.163964</t>
+		<iProjector>1</iProjector>
+		<ID>311</ID>
+		<projectorStart>0.667325, 0.899518</projectorStart>
+		<projectorEnd>0.649177, 0.460073</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.41081, 1.4627, -6.12988</s>
+		<t>0.493944, 0.239336, 0.442716</t>
+		<iProjector>1</iProjector>
+		<ID>312</ID>
+		<projectorStart>0.646273, 0.462583</projectorStart>
+		<projectorEnd>0.919758, 0.497865</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.66947, 1.5003, -6.34577</s>
+		<t>0.239405, -0.449473, 0.428538</t>
+		<iProjector>1</iProjector>
+		<ID>313</ID>
+		<projectorStart>0.75475, 0.555665</projectorStart>
+		<projectorEnd>0.848774, 0.0843757</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43241, 1.05304, -6.36618</s>
+		<t>0.476276, 0.278835, 0.352095</t>
+		<iProjector>1</iProjector>
+		<ID>314</ID>
+		<projectorStart>0.621586, 0.24522</projectorStart>
+		<projectorEnd>0.865263, 0.31952</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.61773, 1.07694, -6.02391</s>
+		<t>0.272719, -0.0032357, 0.171566</t>
+		<iProjector>1</iProjector>
+		<ID>315</ID>
+		<projectorStart>0.717705, 0.144593</projectorStart>
+		<projectorEnd>0.84596, 0.0747723</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62743, 1.05804, -6.06197</s>
+		<t>0.30084, 0.105212, 0.431315</t>
+		<iProjector>1</iProjector>
+		<ID>316</ID>
+		<projectorStart>0.717434, 0.145695</projectorStart>
+		<projectorEnd>0.885687, 0.0632787</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.86882, 1.06576, -5.88923</s>
+		<t>0.0249872, 0.165597, 0.395859</t>
+		<iProjector>1</iProjector>
+		<ID>317</ID>
+		<projectorStart>0.834097, 0.0866731</projectorStart>
+		<projectorEnd>0.88611, 0.0595559</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.90404, 1.04905, -5.90796</s>
+		<t>0.00577784, 0.267321, -0.151838</t>
+		<iProjector>1</iProjector>
+		<ID>318</ID>
+		<projectorStart>0.847792, 0.0781958</projectorStart>
+		<projectorEnd>0.863088, 0.325237</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.90358, 0.946965, -6.34139</s>
+		<t>0.000507832, 0.10881, 0.476533</t>
+		<iProjector>1</iProjector>
+		<ID>319</ID>
+		<projectorStart>0.814247, 0.15902</projectorStart>
+		<projectorEnd>0.850644, 0.0691719</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.61284, 1.08077, -6.01331</s>
+		<t>0.279728, -0.116554, -0.262708</t>
+		<iProjector>1</iProjector>
+		<ID>320</ID>
+		<projectorStart>0.716735, 0.144571</projectorStart>
+		<projectorEnd>0.813487, 0.148349</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62911, 1.12364, -5.95533</s>
+		<t>0.278134, 0.197268, -0.090652</t>
+		<iProjector>1</iProjector>
+		<ID>321</ID>
+		<projectorStart>0.728335, 0.152277</projectorStart>
+		<projectorEnd>0.86289, 0.323631</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62809, 1.07215, -6.02122</s>
+		<t>0.154716, -0.196079, 0.283262</t>
+		<iProjector>1</iProjector>
+		<ID>322</ID>
+		<projectorStart>0.721923, 0.14047</projectorStart>
+		<projectorEnd>0.789721, -0.101556</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.78395, 0.870373, -5.73581</s>
+		<t>0.117455, 0.343025, 0.212523</t>
+		<iProjector>1</iProjector>
+		<ID>323</ID>
+		<projectorStart>0.789627, -0.106743</projectorStart>
+		<projectorEnd>0.886388, 0.0563553</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.78464, 0.87349, -5.74323</s>
+		<t>0.11873, 0.184338, -0.149045</t>
+		<iProjector>1</iProjector>
+		<ID>324</ID>
+		<projectorStart>0.790791, -0.101822</projectorStart>
+		<projectorEnd>0.849664, 0.0794745</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62962, 0.648042, -6.35739</s>
+		<t>0.223929, 0.39633, 0.249461</t>
+		<iProjector>1</iProjector>
+		<ID>325</ID>
+		<projectorStart>0.686719, -0.0185804</projectorStart>
+		<projectorEnd>0.813013, 0.146672</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62422, 0.734067, -6.22337</s>
+		<t>0.314829, 0.195196, 0.130552</t>
+		<iProjector>1</iProjector>
+		<ID>326</ID>
+		<projectorStart>0.68768, -0.0159036</projectorStart>
+		<projectorEnd>0.847953, 0.0724722</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.76625, 0.91155, -5.65652</s>
+		<t>0.122869, 0.178283, 0.55905</t>
+		<iProjector>1</iProjector>
+		<ID>327</ID>
+		<projectorStart>0.79027, -0.106021</projectorStart>
+		<projectorEnd>0.898969, -0.206269</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.79863, 0.356027, -5.94221</s>
+		<t>0.0925097, 0.728305, 0.102196</t>
+		<iProjector>1</iProjector>
+		<ID>328</ID>
+		<projectorStart>0.752001, -0.358939</projectorStart>
+		<projectorEnd>0.846253, 0.0707713</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.63281, 0.712205, -6.27606</s>
+		<t>0.183134, -0.411728, 0.245161</t>
+		<iProjector>1</iProjector>
+		<ID>329</ID>
+		<projectorStart>0.690118, -0.0161354</projectorStart>
+		<projectorEnd>0.747371, -0.365589</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.64714, 0.556319, -6.00642</s>
+		<t>0.168287, -0.248427, -0.014513</t>
+		<iProjector>1</iProjector>
+		<ID>330</ID>
+		<projectorStart>0.697307, -0.211027</projectorStart>
+		<projectorEnd>0.748926, -0.364337</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.61097, 0.780383, -6.14482</s>
+		<t>0.0297499, -0.213093, 0.16888</t>
+		<iProjector>1</iProjector>
+		<ID>331</ID>
+		<projectorStart>0.688021, -0.01648</projectorStart>
+		<projectorEnd>0.697135, -0.210615</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.65386, 0.513867, -6.02632</s>
+		<t>-0.0291057, 0.587432, -0.00509787</t>
+		<iProjector>1</iProjector>
+		<ID>332</ID>
+		<projectorStart>0.696486, -0.231397</projectorStart>
+		<projectorEnd>0.721556, 0.161081</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.64766, 0.54404, -6.01471</s>
+		<t>0.113493, 0.383168, 0.386137</t>
+		<iProjector>1</iProjector>
+		<ID>333</ID>
+		<projectorStart>0.695173, -0.215506</projectorStart>
+		<projectorEnd>0.789194, -0.109232</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.68972, 0.511108, -5.1098</s>
+		<t>0.0836158, 0.399926, -0.574445</t>
+		<iProjector>1</iProjector>
+		<ID>334</ID>
+		<projectorStart>0.754675, -0.604998</projectorStart>
+		<projectorEnd>0.792439, -0.0970445</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.74965, 0.358598, -5.36747</s>
+		<t>-0.101651, 0.182074, -0.657043</t>
+		<iProjector>1</iProjector>
+		<ID>335</ID>
+		<projectorStart>0.754296, -0.592857</projectorStart>
+		<projectorEnd>0.69481, -0.211328</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.35042, 0.847959, -5.93982</s>
+		<t>0.421213, 0.0707139, 0.296686</t>
+		<iProjector>1</iProjector>
+		<ID>336</ID>
+		<projectorStart>0.590504, -0.0365155</projectorStart>
+		<projectorEnd>0.793178, -0.108332</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.53974, 1.03786, -5.55885</s>
+		<t>0.362337, 0.0450321, 0.466501</t>
+		<iProjector>1</iProjector>
+		<ID>337</ID>
+		<projectorStart>0.700251, -0.0504763</projectorStart>
+		<projectorEnd>0.903145, -0.215163</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.44862, 0.854262, -5.25398</s>
+		<t>0.456979, 0.240527, 0.143683</t>
+		<iProjector>1</iProjector>
+		<ID>338</ID>
+		<projectorStart>0.66073, -0.303076</projectorStart>
+		<projectorEnd>0.90537, -0.199571</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.57104, 1.07971, -5.71201</s>
+		<t>-0.113947, -0.229899, 0.434514</t>
+		<iProjector>1</iProjector>
+		<ID>339</ID>
+		<projectorStart>0.711573, 0.0372319</projectorStart>
+		<projectorEnd>0.664326, -0.295188</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.33956, 0.874916, -5.87078</s>
+		<t>0.610954, 0.781368, 0.0385585</t>
+		<iProjector>1</iProjector>
+		<ID>340</ID>
+		<projectorStart>0.589212, -0.046526</projectorStart>
+		<projectorEnd>0.92015, 0.493558</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.73207, 0.375453, -5.35475</s>
+		<t>0.155711, 0.72365, 0.27204</t>
+		<iProjector>1</iProjector>
+		<ID>341</ID>
+		<projectorStart>0.750357, -0.591319</projectorStart>
+		<projectorEnd>0.900578, -0.210796</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.5016, 0.528073, -5.37215</s>
+		<t>0.251305, 0.32465, 0.309622</t>
+		<iProjector>1</iProjector>
+		<ID>342</ID>
+		<projectorStart>0.659294, -0.47588</projectorStart>
+		<projectorEnd>0.813773, -0.394355</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43541, 0.254831, -5.31667</s>
+		<t>0.317913, 0.590689, 0.233431</t>
+		<iProjector>1</iProjector>
+		<ID>343</ID>
+		<projectorStart>0.615086, -0.67736</projectorStart>
+		<projectorEnd>0.811204, -0.39104</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.49265, 0.597388, -5.35488</s>
+		<t>-0.0622559, -0.287295, 0.604999</t>
+		<iProjector>1</iProjector>
+		<ID>344</ID>
+		<projectorStart>0.665533, -0.428148</projectorStart>
+		<projectorEnd>0.639711, -0.900896</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.47631, 0.659983, -5.25649</s>
+		<t>0.238688, -0.298867, 0.212279</t>
+		<iProjector>1</iProjector>
+		<ID>345</ID>
+		<projectorStart>0.666638, -0.429628</projectorStart>
+		<projectorEnd>0.75774, -0.737794</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.15848, 0.170888, -5.75328</s>
+		<t>0.580797, 0.228572, 0.439477</t>
+		<iProjector>1</iProjector>
+		<ID>346</ID>
+		<projectorStart>0.481884, -0.536732</projectorStart>
+		<projectorEnd>0.755936, -0.590599</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.428, 0.2703, -5.28642</s>
+		<t>0.294297, 0.11471, -0.0384307</t>
+		<iProjector>1</iProjector>
+		<ID>347</ID>
+		<projectorStart>0.615924, -0.677318</projectorStart>
+		<projectorEnd>0.747636, -0.595962</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.14795, 0.187056, -5.7323</s>
+		<t>0.301508, 0.0807993, 0.4503</t>
+		<iProjector>1</iProjector>
+		<ID>348</ID>
+		<projectorStart>0.47976, -0.535474</projectorStart>
+		<projectorEnd>0.624523, -0.679663</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43115, 0.252405, -5.30514</s>
+		<t>0.0779634, 0.296163, -0.0617132</t>
+		<iProjector>1</iProjector>
+		<ID>349</ID>
+		<projectorStart>0.615471, -0.680272</projectorStart>
+		<projectorEnd>0.664381, -0.464404</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.49585, 0.561455, -5.3327</s>
+		<t>0.267677, -0.242231, -0.0889506</t>
+		<iProjector>1</iProjector>
+		<ID>350</ID>
+		<projectorStart>0.662327, -0.471715</projectorStart>
+		<projectorEnd>0.757472, -0.597166</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.15007, 0.185371, -5.72934</s>
+		<t>0.363401, 0.341542, 0.351805</t>
+		<iProjector>1</iProjector>
+		<ID>351</ID>
+		<projectorStart>0.481434, -0.537301</projectorStart>
+		<projectorEnd>0.663795, -0.475699</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.16578, 0.203121, -5.19085</s>
+		<t>0.750668, 1.42825, 0.219211</t>
+		<iProjector>1</iProjector>
+		<ID>352</ID>
+		<projectorStart>0.489242, -0.776727</projectorStart>
+		<projectorEnd>0.955919, 0.124195</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.68482, 0.288387, -5.85826</s>
+		<t>-0.0381064, 0.263604, -0.133444</t>
+		<iProjector>1</iProjector>
+		<ID>353</ID>
+		<projectorStart>0.703308, -0.435117</projectorStart>
+		<projectorEnd>0.694217, -0.220813</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43159, 0.202337, -6.20038</s>
+		<t>0.218759, 0.346328, 0.192716</t>
+		<iProjector>1</iProjector>
+		<ID>354</ID>
+		<projectorStart>0.582398, -0.353917</projectorStart>
+		<projectorEnd>0.696052, -0.215235</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.4284, 0.246291, -6.14397</s>
+		<t>0.352143, 0.0998719, 0.455267</t>
+		<iProjector>1</iProjector>
+		<ID>355</ID>
+		<projectorStart>0.584203, -0.348342</projectorStart>
+		<projectorEnd>0.75027, -0.467278</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.2821, 0.171422, -5.91693</s>
+		<t>0.366307, 0.384743, -0.0823488</t>
+		<iProjector>1</iProjector>
+		<ID>356</ID>
+		<projectorStart>0.530346, -0.47437</projectorStart>
+		<projectorEnd>0.696983, -0.213826</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.29836, 0.21913, -5.89495</s>
+		<t>0.168523, 0.543341, 0.802233</t>
+		<iProjector>1</iProjector>
+		<ID>357</ID>
+		<projectorStart>0.538543, -0.45618</projectorStart>
+		<projectorEnd>0.670262, -0.436536</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.29709, 0.207626, -5.89904</s>
+		<t>0.441105, 0.190147, 0.603308</t>
+		<iProjector>1</iProjector>
+		<ID>358</ID>
+		<projectorStart>0.536045, -0.458558</projectorStart>
+		<projectorEnd>0.755476, -0.597054</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.82064, 2.07604, -6.35101</s>
+		<t>0.0726023, -0.510039, 0.203999</t>
+		<iProjector>1</iProjector>
+		<ID>359</ID>
+		<projectorStart>0.410662, 1.01729</projectorStart>
+		<projectorEnd>0.422612, 0.552096</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.04314, 1.55551, -5.90769</s>
+		<t>0.632818, 0.507643, 0.294776</t>
+		<iProjector>1</iProjector>
+		<ID>360</ID>
+		<projectorStart>0.494179, 0.467794</projectorStart>
+		<projectorEnd>0.844346, 0.778305</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.90596, 2.11735, -6.3974</s>
+		<t>0.506943, -0.661968, 0.265654</t>
+		<iProjector>1</iProjector>
+		<ID>361</ID>
+		<projectorStart>0.451388, 1.0601</projectorStart>
+		<projectorEnd>0.650573, 0.458371</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.88395, 1.57732, -6.16163</s>
+		<t>0.173895, -0.0259348, 0.282024</t>
+		<iProjector>1</iProjector>
+		<ID>362</ID>
+		<projectorStart>0.419132, 0.568927</projectorStart>
+		<projectorEnd>0.50184, 0.45564</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.40585, 1.47694, -6.12131</s>
+		<t>0.209623, -0.386541, 0.11147</t>
+		<iProjector>1</iProjector>
+		<ID>363</ID>
+		<projectorStart>0.648084, 0.471082</projectorStart>
+		<projectorEnd>0.71864, 0.149074</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.42493, 1.41506, -6.23886</s>
+		<t>-0.0838542, -0.374199, 0.342033</t>
+		<iProjector>1</iProjector>
+		<ID>364</ID>
+		<projectorStart>0.646386, 0.46498</projectorStart>
+		<projectorEnd>0.600069, 0.076316</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.41871, 1.02974, -6.44434</s>
+		<t>0.203986, 0.0399251, 0.423349</t>
+		<iProjector>1</iProjector>
+		<ID>365</ID>
+		<projectorStart>0.61351, 0.256628</projectorStart>
+		<projectorEnd>0.719534, 0.139389</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43495, 1.04439, -6.37716</s>
+		<t>0.0460081, -0.125121, 0.313183</t>
+		<iProjector>1</iProjector>
+		<ID>366</ID>
+		<projectorStart>0.624861, 0.243298</projectorStart>
+		<projectorEnd>0.64638, 0.0530199</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.43126, 1.07661, -6.36371</s>
+		<t>0.0145674, -0.850814, 0.185495</t>
+		<iProjector>1</iProjector>
+		<ID>367</ID>
+		<projectorStart>0.623895, 0.253027</projectorStart>
+		<projectorEnd>0.590017, -0.349787</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.44662, 0.209688, -6.20357</s>
+		<t>0.0402174, 0.791346, 0.147969</t>
+		<iProjector>1</iProjector>
+		<ID>368</ID>
+		<projectorStart>0.588416, -0.352585</projectorStart>
+		<projectorEnd>0.654034, 0.0958353</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.64935, 0.552508, -6.00611</s>
+		<t>-0.325991, 0.314117, 0.105155</t>
+		<iProjector>1</iProjector>
+		<ID>369</ID>
+		<projectorStart>0.698745, -0.213898</projectorStart>
+		<projectorEnd>0.582929, -0.0401074</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.31083, 0.200222, -5.92634</s>
+		<t>0.0316792, 0.671128, 0.0505872</t>
+		<iProjector>1</iProjector>
+		<ID>370</ID>
+		<projectorStart>0.541862, -0.457601</projectorStart>
+		<projectorEnd>0.592207, -0.0471048</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.51402, 0.519928, -5.37827</s>
+		<t>-0.283549, 0.469295, -0.242998</t>
+		<iProjector>1</iProjector>
+		<ID>371</ID>
+		<projectorStart>0.664735, -0.481794</projectorStart>
+		<projectorEnd>0.557543, -0.0552136</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.02937, 0.188811, -4.95789</s>
+		<t>0.41067, 0.0753089, -0.353568</t>
+		<iProjector>1</iProjector>
+		<ID>372</ID>
+		<projectorStart>0.447955, -0.866899</projectorStart>
+		<projectorEnd>0.619875, -0.67029</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.0664, 0.176487, -5.01038</s>
+		<t>0.445082, 0.335568, -0.393786</t>
+		<iProjector>1</iProjector>
+		<ID>373</ID>
+		<projectorStart>0.46194, -0.849328</projectorStart>
+		<projectorEnd>0.661274, -0.473293</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.03858, 0.157614, -4.99827</s>
+		<t>0.219849, 0.828844, -0.414942</t>
+		<iProjector>1</iProjector>
+		<ID>374</ID>
+		<projectorStart>0.447632, -0.870427</projectorStart>
+		<projectorEnd>0.576558, -0.144512</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.01807, 0.235458, -4.85563</s>
+		<t>0.307968, 0.685296, -0.92054</t>
+		<iProjector>1</iProjector>
+		<ID>375</ID>
+		<projectorStart>0.447031, -0.871824</projectorStart>
+		<projectorEnd>0.589807, -0.0498054</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66143, 0.102855, -5.45409</s>
+		<t>0.758823, 0.156579, 0.150561</t>
+		<iProjector>1</iProjector>
+		<ID>376</ID>
+		<projectorStart>0.280816, -0.6873</projectorStart>
+		<projectorEnd>0.609589, -0.677347</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.65975, 0.107496, -5.45075</s>
+		<t>0.369357, 0.0752003, 0.475654</t>
+		<iProjector>1</iProjector>
+		<ID>377</ID>
+		<projectorStart>0.280621, -0.683408</projectorStart>
+		<projectorEnd>0.445121, -0.861018</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.20948, 0.907456, -5.28375</s>
+		<t>0.233733, -0.658771, -0.0370264</t>
+		<iProjector>1</iProjector>
+		<ID>378</ID>
+		<projectorStart>0.554987, -0.249349</projectorStart>
+		<projectorEnd>0.620415, -0.681258</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66802, 0.073264, -5.50718</s>
+		<t>0.566908, 0.859519, 0.238788</t>
+		<iProjector>1</iProjector>
+		<ID>379</ID>
+		<projectorStart>0.277619, -0.691903</projectorStart>
+		<projectorEnd>0.562581, -0.244849</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.05563, 0.717338, -5.50181</s>
+		<t>0.366706, 0.35452, -0.809984</t>
+		<iProjector>1</iProjector>
+		<ID>380</ID>
+		<projectorStart>0.473689, -0.274658</projectorStart>
+		<projectorEnd>0.622736, 0.241417</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.738, 0.110172, -5.57492</s>
+		<t>0.24972, 0.869059, -0.0724559</t>
+		<iProjector>1</iProjector>
+		<ID>383</ID>
+		<projectorStart>0.31189, -0.644465</projectorStart>
+		<projectorEnd>0.447608, -0.0509648</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.9255, 0.161822, -6.17032</s>
+		<t>0.510593, 0.0670987, 0.00683975</t>
+		<iProjector>1</iProjector>
+		<ID>384</ID>
+		<projectorStart>0.38445, -0.379079</projectorStart>
+		<projectorEnd>0.586792, -0.352557</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.15821, 0.216628, -6.39465</s>
+		<t>0.279024, 0.0257722, 0.248629</t>
+		<iProjector>1</iProjector>
+		<ID>385</ID>
+		<projectorStart>0.472295, -0.27166</projectorStart>
+		<projectorEnd>0.588293, -0.349927</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.93045, 0.0921272, -6.27678</s>
+		<t>0.210864, 0.229711, 0.0610275</t>
+		<iProjector>1</iProjector>
+		<ID>386</ID>
+		<projectorStart>0.383021, -0.381153</projectorStart>
+		<projectorEnd>0.473291, -0.273559</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.25403, 0.213115, -6.08388</s>
+		<t>-0.331462, 0.423398, -0.477587</t>
+		<iProjector>1</iProjector>
+		<ID>387</ID>
+		<projectorStart>0.517276, -0.384949</projectorStart>
+		<projectorEnd>0.394626, 0.0457698</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.79512, 0.733553, -5.07663</s>
+		<t>0.627602, 0.354076, -1.21913</t>
+		<iProjector>1</iProjector>
+		<ID>388</ID>
+		<projectorStart>0.377583, -0.399838</projectorStart>
+		<projectorEnd>0.622386, 0.24532</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.92292, 0.086128, -6.27271</s>
+		<t>0.559164, 0.848645, 0.200135</t>
+		<iProjector>1</iProjector>
+		<ID>389</ID>
+		<projectorStart>0.375778, -0.392348</projectorStart>
+		<projectorEnd>0.646495, 0.0632227</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.92212, 0.0631901, -6.30769</s>
+		<t>0.416934, 0.757825, 0.374228</t>
+		<iProjector>1</iProjector>
+		<ID>390</ID>
+		<projectorStart>0.373726, -0.392791</projectorStart>
+		<projectorEnd>0.584411, -0.0625854</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.49421, 0.910252, -6.12263</s>
+		<t>-0.152255, -0.0450987, 0.230865</t>
+		<iProjector>1</iProjector>
+		<ID>391</ID>
+		<projectorStart>0.650294, 0.0661244</projectorStart>
+		<projectorEnd>0.590316, -0.0427054</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.61718, 1.07763, -6.01406</s>
+		<t>-0.146603, -0.158133, -0.0608263</t>
+		<iProjector>1</iProjector>
+		<ID>392</ID>
+		<projectorStart>0.717531, 0.14237</projectorStart>
+		<projectorEnd>0.642319, 0.0570862</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.40708, 1.47925, -6.11012</s>
+		<t>0.0104456, -0.408453, -0.186115</t>
+		<iProjector>1</iProjector>
+		<ID>393</ID>
+		<projectorStart>0.648304, 0.46803</projectorStart>
+		<projectorEnd>0.619372, 0.23391</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.74359, 1.04976, -6.49369</s>
+		<t>0.669521, 0.42752, 0.390869</t>
+		<iProjector>1</iProjector>
+		<ID>394</ID>
+		<projectorStart>0.334967, 0.292422</projectorStart>
+		<projectorEnd>0.649184, 0.46468</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.67346, 1.79797, -6.5226</s>
+		<t>0.0791059, -0.789101, -0.0412374</t>
+		<iProjector>1</iProjector>
+		<ID>395</ID>
+		<projectorStart>0.331326, 0.835024</projectorStart>
+		<projectorEnd>0.338816, 0.285862</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66221, 1.7801, -6.49755</s>
+		<t>0.229241, -0.205598, 0.344324</t>
+		<iProjector>1</iProjector>
+		<ID>396</ID>
+		<projectorStart>0.325572, 0.824419</projectorStart>
+		<projectorEnd>0.421925, 0.563417</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.89153, 1.58068, -6.15378</s>
+		<t>0.456092, -0.49587, 0.328804</t>
+		<iProjector>1</iProjector>
+		<ID>397</ID>
+		<projectorStart>0.422829, 0.567625</projectorStart>
+		<projectorEnd>0.607843, 0.0838763</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.03949, 1.58664, -5.8222</s>
+		<t>0.34895, -0.595151, -0.0554757</t>
+		<iProjector>1</iProjector>
+		<ID>398</ID>
+		<projectorStart>0.499067, 0.460754</projectorStart>
+		<projectorEnd>0.619399, 0.0322308</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.98697, 1.32361, -5.98821</s>
+		<t>0.357907, -0.232382, 0.157597</t>
+		<iProjector>1</iProjector>
+		<ID>399</ID>
+		<projectorStart>0.456624, 0.320864</projectorStart>
+		<projectorEnd>0.606225, 0.090446</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.75015, 1.04354, -6.51055</s>
+		<t>0.680724, 0.00820363, 0.137281</t>
+		<iProjector>1</iProjector>
+		<ID>400</ID>
+		<projectorStart>0.339483, 0.296417</projectorStart>
+		<projectorEnd>0.620677, 0.248333</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.74727, 1.00004, -6.58949</s>
+		<t>0.140518, 0.581867, 0.442225</t>
+		<iProjector>1</iProjector>
+		<ID>401</ID>
+		<projectorStart>0.336179, 0.28981</projectorStart>
+		<projectorEnd>0.418854, 0.562581</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.17085, 0.189812, -5.91817</s>
+		<t>-0.193775, 0.793634, 0.274837</t>
+		<iProjector>1</iProjector>
+		<ID>402</ID>
+		<projectorStart>0.48834, -0.467564</projectorStart>
+		<projectorEnd>0.444596, -0.0534435</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.02003, 0.139263, -5.82629</s>
+		<t>-0.0452809, 0.851191, 0.194759</t>
+		<iProjector>1</iProjector>
+		<ID>403</ID>
+		<projectorStart>0.426671, -0.532799</projectorStart>
+		<projectorEnd>0.443143, -0.0514439</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.85178, 0.171859, -6.00173</s>
+		<t>0.173164, -0.0168158, 0.213374</t>
+		<iProjector>1</iProjector>
+		<ID>404</ID>
+		<projectorStart>0.358313, -0.431954</projectorStart>
+		<projectorEnd>0.428861, -0.529895</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.00474, 0.15692, -5.77981</s>
+		<t>0.198002, 0.0215327, -0.171538</t>
+		<iProjector>1</iProjector>
+		<ID>405</ID>
+		<projectorStart>0.421652, -0.532231</projectorStart>
+		<projectorEnd>0.49837, -0.456914</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.85151, 0.16461, -6.0117</s>
+		<t>0.335593, -0.00181569, 0.0660577</t>
+		<iProjector>1</iProjector>
+		<ID>406</ID>
+		<projectorStart>0.357926, -0.432643</projectorStart>
+		<projectorEnd>0.49122, -0.468262</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.74772, 0.130443, -5.54263</s>
+		<t>0.484679, 0.862488, -0.0727553</t>
+		<iProjector>1</iProjector>
+		<ID>407</ID>
+		<projectorStart>0.313297, -0.64972</projectorStart>
+		<projectorEnd>0.55824, -0.0567134</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.96914, 0.96487, -5.63473</s>
+		<t>0.255735, 0.0424796, 0.0546403</t>
+		<iProjector>1</iProjector>
+		<ID>408</ID>
+		<projectorStart>0.439748, -0.0634989</projectorStart>
+		<projectorEnd>0.55724, -0.0576136</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.22186, 1.00451, -5.60393</s>
+		<t>-0.0115561, -0.103805, 0.328874</t>
+		<iProjector>1</iProjector>
+		<ID>409</ID>
+		<projectorStart>0.554853, -0.0508145</projectorStart>
+		<projectorEnd>0.55457, -0.255424</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.2172, 0.898942, -5.2635</s>
+		<t>-0.256745, 0.0785483, -0.403667</t>
+		<iProjector>1</iProjector>
+		<ID>410</ID>
+		<projectorStart>0.557967, -0.26114</projectorStart>
+		<projectorEnd>0.434952, -0.0401118</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.89424, 1.57841, -6.1514</s>
+		<t>-0.121349, -0.477306, 0.317469</t>
+		<iProjector>1</iProjector>
+		<ID>411</ID>
+		<projectorStart>0.424326, 0.565721</projectorStart>
+		<projectorEnd>0.355397, 0.110004</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.33091, 1.09228, -5.82852</s>
+		<t>-0.109997, -0.0906472, 0.256193</t>
+		<iProjector>1</iProjector>
+		<ID>412</ID>
+		<projectorStart>0.600391, 0.0917216</projectorStart>
+		<projectorEnd>0.555802, -0.0651355</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.05097, 1.56569, -5.90889</s>
+		<t>-0.277318, -0.467006, 0.101605</t>
+		<iProjector>1</iProjector>
+		<ID>413</ID>
+		<projectorStart>0.497885, 0.474375</projectorStart>
+		<projectorEnd>0.356252, 0.0992034</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.89123, 1.59198, -6.15718</s>
+		<t>0.115845, -0.28548, 0.16709</t>
+		<iProjector>1</iProjector>
+		<ID>414</ID>
+		<projectorStart>0.423112, 0.577042</projectorStart>
+		<projectorEnd>0.464102, 0.30735</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.00647, 1.31285, -5.98735</s>
+		<t>-0.0222776, -0.354116, 0.36105</t>
+		<iProjector>1</iProjector>
+		<ID>415</ID>
+		<projectorStart>0.465109, 0.313179</projectorStart>
+		<projectorEnd>0.446871, -0.0717421</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.97689, 0.967552, -5.62229</s>
+		<t>0.357768, 0.129322, -0.209312</t>
+		<iProjector>1</iProjector>
+		<ID>416</ID>
+		<projectorStart>0.443884, -0.0644213</projectorStart>
+		<projectorEnd>0.603791, 0.0946235</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.75748, 0.997947, -6.5699</s>
+		<t>0.598252, 0.102615, 0.742548</t>
+		<iProjector>1</iProjector>
+		<ID>417</ID>
+		<projectorStart>0.338358, 0.284671</projectorStart>
+		<projectorEnd>0.608493, 0.100027</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.74712, 1.00012, -6.58418</s>
+		<t>0.142228, -0.258334, 0.230022</t>
+		<iProjector>1</iProjector>
+		<ID>418</ID>
+		<projectorStart>0.336377, 0.288008</projectorStart>
+		<projectorEnd>0.387533, 0.0447664</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.42466, 1.08065, -6.30548</s>
+		<t>-0.542072, -0.358759, -0.070972</t>
+		<iProjector>1</iProjector>
+		<ID>419</ID>
+		<projectorStart>0.621642, 0.242487</projectorStart>
+		<projectorEnd>0.384677, 0.043275</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.93762, 0.0844797, -6.23284</s>
+		<t>-0.0491698, 0.671884, -0.135398</t>
+		<iProjector>1</iProjector>
+		<ID>420</ID>
+		<projectorStart>0.386317, -0.406706</projectorStart>
+		<projectorEnd>0.387787, 0.0559596</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.90582, 0.615485, -6.5966</s>
+		<t>0.334691, 0.526158, 0.915547</t>
+		<iProjector>1</iProjector>
+		<ID>421</ID>
+		<projectorStart>0.383981, 0.0457555</projectorStart>
+		<projectorEnd>0.562949, 0.0714822</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.74703, 1.04875, -6.52164</s>
+		<t>0.185901, -0.91257, 0.304943</t>
+		<iProjector>1</iProjector>
+		<ID>422</ID>
+		<projectorStart>0.337813, 0.297162</projectorStart>
+		<projectorEnd>0.387515, -0.380298</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.6801, 1.78615, -6.49404</s>
+		<t>-0.24477, -0.0198551, 0.0736022</t>
+		<iProjector>1</iProjector>
+		<ID>423</ID>
+		<projectorStart>0.334321, 0.829008</projectorStart>
+		<projectorEnd>0.227024, 0.795826</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.44231, 1.78669, -6.4025</s>
+		<t>-0.0174918, -0.426481, 0.0948906</t>
+		<iProjector>1</iProjector>
+		<ID>424</ID>
+		<projectorStart>0.230244, 0.803235</projectorStart>
+		<projectorEnd>0.212604, 0.459012</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66915, 1.78517, -6.49605</s>
+		<t>-0.237295, -0.431046, 0.162395</t>
+		<iProjector>1</iProjector>
+		<ID>425</ID>
+		<projectorStart>0.330719, 0.827805</projectorStart>
+		<projectorEnd>0.215648, 0.462473</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.4297, 1.35844, -6.32756</s>
+		<t>0.465157, 0.223556, 0.167811</t>
+		<iProjector>1</iProjector>
+		<ID>426</ID>
+		<projectorStart>0.214207, 0.463119</projectorStart>
+		<projectorEnd>0.423419, 0.571654</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.42279, 1.38831, -6.27295</s>
+		<t>0.327307, -0.361947, -0.253156</t>
+		<iProjector>1</iProjector>
+		<ID>427</ID>
+		<projectorStart>0.213611, 0.467326</projectorStart>
+		<projectorEnd>0.338218, 0.287531</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.60966, 1.84846, -6.18071</s>
+		<t>-0.181233, -0.785779, -0.171402</t>
+		<iProjector>1</iProjector>
+		<ID>428</ID>
+		<projectorStart>0.761883, 0.769913</projectorStart>
+		<projectorEnd>0.62169, 0.247722</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.38925, 1.94294, -6.27141</s>
+		<t>0.231815, -0.152024, -0.0379786</t>
+		<iProjector>1</iProjector>
+		<ID>429</ID>
+		<projectorStart>0.665698, 0.881862</projectorStart>
+		<projectorEnd>0.758296, 0.768609</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.62961, 1.08157, -6.02666</s>
+		<t>-0.303183, 0.0208976, 0.194312</t>
+		<iProjector>1</iProjector>
+		<ID>430</ID>
+		<projectorStart>0.723107, 0.149653</projectorStart>
+		<projectorEnd>0.599202, 0.0988241</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.27041, 1.48281, -6.42104</s>
+		<t>0.161807, -0.12407, 0.0868344</t>
+		<iProjector>1</iProjector>
+		<ID>431</ID>
+		<projectorStart>0.150521, 0.585029</projectorStart>
+		<projectorEnd>0.215823, 0.466158</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.28199, 1.49063, -6.37356</s>
+		<t>0.160534, 0.299782, -0.0145869</t>
+		<iProjector>1</iProjector>
+		<ID>432</ID>
+		<projectorStart>0.155224, 0.577058</projectorStart>
+		<projectorEnd>0.229888, 0.803135</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.78641, 1.66204, -6.53348</s>
+		<t>0.507377, -0.19168, 0.128804</t>
+		<iProjector>1</iProjector>
+		<ID>433</ID>
+		<projectorStart>-0.0493764, 0.759407</projectorStart>
+		<projectorEnd>0.160609, 0.572271</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.79606, 1.65709, -6.53048</s>
+		<t>0.644722, 0.118122, 0.131166</t>
+		<iProjector>1</iProjector>
+		<ID>434</ID>
+		<projectorStart>-0.0455058, 0.757158</projectorStart>
+		<projectorEnd>0.227982, 0.796919</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.13641, 1.25269, -6.56271</s>
+		<t>0.157222, 0.25783, 0.202103</t>
+		<iProjector>1</iProjector>
+		<ID>435</ID>
+		<projectorStart>0.0910522, 0.460999</projectorStart>
+		<projectorEnd>0.155349, 0.582219</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.79229, 1.66871, -6.52183</s>
+		<t>0.329503, -0.445997, -0.0973868</t>
+		<iProjector>1</iProjector>
+		<ID>436</ID>
+		<projectorStart>-0.0473768, 0.757703</projectorStart>
+		<projectorEnd>0.0913215, 0.457071</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.12365, 1.21932, -6.61831</s>
+		<t>0.318492, 0.133302, 0.295588</t>
+		<iProjector>1</iProjector>
+		<ID>437</ID>
+		<projectorStart>0.0888519, 0.459196</projectorStart>
+		<projectorEnd>0.22, 0.458068</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.43605, 1.35607, -6.32933</s>
+		<t>-0.125976, -1.28943, 0.846506</t>
+		<iProjector>1</iProjector>
+		<ID>439</ID>
+		<projectorStart>0.217304, 0.460515</projectorStart>
+		<projectorEnd>0.138061, -0.691852</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.10299, 1.22465, -6.63066</s>
+		<t>0.652426, -0.212232, 0.0589504</t>
+		<iProjector>1</iProjector>
+		<ID>440</ID>
+		<projectorStart>0.0829583, 0.466207</projectorStart>
+		<projectorEnd>0.340136, 0.292436</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.12135, 1.27276, -6.52833</s>
+		<t>0.0555754, -0.647626, 0.358475</t>
+		<iProjector>1</iProjector>
+		<ID>441</ID>
+		<projectorStart>0.0879106, 0.460955</projectorStart>
+		<projectorEnd>0.1008, -0.0737349</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.42651, 1.36464, -6.3309</s>
+		<t>-0.249895, -0.831095, -0.0620112</t>
+		<iProjector>1</iProjector>
+		<ID>442</ID>
+		<projectorStart>0.211767, 0.465489</projectorStart>
+		<projectorEnd>0.103506, -0.0605338</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.18286, 0.538418, -6.38045</s>
+		<t>0.559113, 0.510936, -0.115921</t>
+		<iProjector>1</iProjector>
+		<ID>443</ID>
+		<projectorStart>0.106194, -0.0590262</projectorStart>
+		<projectorEnd>0.335683, 0.293613</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.46793, 0.606738, -6.51644</s>
+		<t>0.281069, 0.397264, -0.0353432</t>
+		<iProjector>1</iProjector>
+		<ID>444</ID>
+		<projectorStart>0.218639, 0.0217087</projectorStart>
+		<projectorEnd>0.336797, 0.280976</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.21745, 0.639826, -6.71249</s>
+		<t>0.237318, -0.105442, 0.0957327</t>
+		<iProjector>1</iProjector>
+		<ID>445</ID>
+		<projectorStart>0.124998, 0.109523</projectorStart>
+		<projectorEnd>0.21911, 0.0220648</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.46752, 0.625082, -6.48645</s>
+		<t>0.414195, 0.0987364, 0.122159</t>
+		<iProjector>1</iProjector>
+		<ID>447</ID>
+		<projectorStart>0.217741, 0.0221086</projectorStart>
+		<projectorEnd>0.382496, 0.03612</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.60537, 0.378949, -6.70955</s>
+		<t>0.131628, -0.269452, 0.321813</t>
+		<iProjector>1</iProjector>
+		<ID>448</ID>
+		<projectorStart>0.265616, -0.0588908</projectorStart>
+		<projectorEnd>0.310188, -0.327016</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.60591, 0.381228, -6.70521</s>
+		<t>0.219877, 0.110233, 0.100301</t>
+		<iProjector>1</iProjector>
+		<ID>449</ID>
+		<projectorStart>0.266844, -0.0582228</projectorStart>
+		<projectorEnd>0.351739, -0.0292668</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.73989, 0.10925, -6.39044</s>
+		<t>0.0854712, 0.360109, -0.247092</t>
+		<iProjector>1</iProjector>
+		<ID>450</ID>
+		<projectorStart>0.311499, -0.327171</projectorStart>
+		<projectorEnd>0.349594, -0.0339869</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.81838, 0.487747, -6.60481</s>
+		<t>0.348087, -0.303913, 0.151244</t>
+		<iProjector>1</iProjector>
+		<ID>451</ID>
+		<projectorStart>0.34934, -0.0312676</projectorStart>
+		<projectorEnd>0.474736, -0.269583</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.7294, 0.111468, -6.39222</s>
+		<t>0.426929, 0.120953, 0.00831795</t>
+		<iProjector>1</iProjector>
+		<ID>452</ID>
+		<projectorStart>0.307809, -0.323676</projectorStart>
+		<projectorEnd>0.471374, -0.266354</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.88032, 0.19787, -6.5736</s>
+		<t>0.284959, -0.0108634, 0.111823</t>
+		<iProjector>1</iProjector>
+		<ID>453</ID>
+		<projectorStart>0.364429, -0.215226</projectorStart>
+		<projectorEnd>0.472788, -0.265277</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.45052, 0.0537739, -6.7233</s>
+		<t>0.162089, 0.339514, 0.0242176</t>
+		<iProjector>1</iProjector>
+		<ID>454</ID>
+		<projectorStart>0.205242, -0.240063</projectorStart>
+		<projectorEnd>0.268473, -0.055534</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.44848, 0.0730203, -6.72365</s>
+		<t>0.288306, 0.0348635, 0.335609</t>
+		<iProjector>1</iProjector>
+		<ID>455</ID>
+		<projectorStart>0.202755, -0.22787</projectorStart>
+		<projectorEnd>0.309972, -0.327883</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.32197, 0.116965, -6.25747</s>
+		<t>0.135127, 0.0258004, -0.349402</t>
+		<iProjector>1</iProjector>
+		<ID>456</ID>
+		<projectorStart>0.15343, -0.358998</projectorStart>
+		<projectorEnd>0.206836, -0.226113</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.88746, 0.174353, -6.6076</s>
+		<t>-0.067733, 0.311883, -0.0103517</t>
+		<iProjector>1</iProjector>
+		<ID>457</ID>
+		<projectorStart>0.367065, -0.217602</projectorStart>
+		<projectorEnd>0.35004, -0.0303673</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.72813, 0.0951915, -6.40748</s>
+		<t>0.169815, 0.0777479, -0.21277</t>
+		<iProjector>1</iProjector>
+		<ID>458</ID>
+		<projectorStart>0.306097, -0.327723</projectorStart>
+		<projectorEnd>0.369962, -0.214045</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.13867, 0.0830187, -6.47258</s>
+		<t>0.0882578, 0.610506, -0.133423</t>
+		<iProjector>1</iProjector>
+		<ID>459</ID>
+		<projectorStart>0.0867292, -0.30273</projectorStart>
+		<projectorEnd>0.126795, 0.107723</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.1451, 0.126582, -6.40548</s>
+		<t>0.32888, 0.485334, -0.112073</t>
+		<iProjector>1</iProjector>
+		<ID>460</ID>
+		<projectorStart>0.0876726, -0.299365</projectorStart>
+		<projectorEnd>0.21983, 0.0233095</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.22217, 0.594171, -6.77986</s>
+		<t>-0.0350902, 0.0686007, 0.600029</t>
+		<iProjector>1</iProjector>
+		<ID>461</ID>
+		<projectorStart>0.127982, 0.103514</projectorStart>
+		<projectorEnd>0.105412, -0.0471323</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.13509, 0.0468743, -6.55312</s>
+		<t>0.0393531, 0.497931, 0.173282</t>
+		<iProjector>1</iProjector>
+		<ID>462</ID>
+		<projectorStart>0.086448, -0.295057</projectorStart>
+		<projectorEnd>0.102109, -0.057534</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.16585, 0.524419, -6.38052</s>
+		<t>0.308586, 0.102865, -0.108118</t>
+		<iProjector>1</iProjector>
+		<ID>463</ID>
+		<projectorStart>0.0989057, -0.0687353</projectorStart>
+		<projectorEnd>0.220324, 0.0239539</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.38909, 0.283833, -6.76398</s>
+		<t>0.0992088, 0.453249, 0.350451</t>
+		<iProjector>1</iProjector>
+		<ID>464</ID>
+		<projectorStart>0.184343, -0.0940676</projectorStart>
+		<projectorEnd>0.225769, 0.0664254</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.14121, 0.162801, -6.34011</s>
+		<t>0.254028, 0.182569, -0.337492</t>
+		<iProjector>1</iProjector>
+		<ID>465</ID>
+		<projectorStart>0.08786, -0.29579</projectorStart>
+		<projectorEnd>0.188387, -0.085811</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.2313, 0.644534, -6.70815</s>
+		<t>0.165837, -0.295944, 0.0358915</t>
+		<iProjector>1</iProjector>
+		<ID>466</ID>
+		<projectorStart>0.129893, 0.108324</projectorStart>
+		<projectorEnd>0.187916, -0.0856891</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.30039, 0.133999, -6.06409</s>
+		<t>0.176291, 0.486726, -0.447325</t>
+		<iProjector>1</iProjector>
+		<ID>467</ID>
+		<projectorStart>0.142747, -0.418102</projectorStart>
+		<projectorEnd>0.22114, 0.0262106</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.41693, 0.303352, -5.75938</s>
+		<t>0.0580993, 0.314307, -0.744387</t>
+		<iProjector>1</iProjector>
+		<ID>468</ID>
+		<projectorStart>0.186918, -0.432914</projectorStart>
+		<projectorEnd>0.221139, 0.02421</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.67053, 0.104454, -6.26413</s>
+		<t>0.109856, 1.01245, 0.450482</t>
+		<iProjector>1</iProjector>
+		<ID>469</ID>
+		<projectorStart>0.282219, -0.387539</projectorStart>
+		<projectorEnd>0.358873, 0.107274</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.86055, 0.125343, -6.09482</s>
+		<t>-0.0855608, 0.969329, 0.257354</t>
+		<iProjector>1</iProjector>
+		<ID>471</ID>
+		<projectorStart>0.359801, -0.439944</projectorStart>
+		<projectorEnd>0.356469, 0.1017</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.53214, 0.057888, -5.97291</s>
+		<t>0.285782, 1.25976, 0.234459</t>
+		<iProjector>1</iProjector>
+		<ID>472</ID>
+		<projectorStart>0.228128, -0.521247</projectorStart>
+		<projectorEnd>0.379467, 0.215249</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66232, 0.0918974, -6.26811</s>
+		<t>0.194572, 0.0296783, 0.190379</t>
+		<iProjector>1</iProjector>
+		<ID>473</ID>
+		<projectorStart>0.28103, -0.377552</projectorStart>
+		<projectorEnd>0.35811, -0.434252</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66309, 0.096824, -6.24987</s>
+		<t>-0.128347, 0.00241068, 0.336502</t>
+		<iProjector>1</iProjector>
+		<ID>474</ID>
+		<projectorStart>0.283168, -0.379479</projectorStart>
+		<projectorEnd>0.23258, -0.499918</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.52454, 0.0842759, -5.93582</s>
+		<t>0.337365, 0.0346437, -0.140328</t>
+		<iProjector>1</iProjector>
+		<ID>475</ID>
+		<projectorStart>0.22826, -0.501132</projectorStart>
+		<projectorEnd>0.359505, -0.437148</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.83234, 0.363251, -5.68381</s>
+		<t>0.152732, 0.612401, 0.0564861</t>
+		<iProjector>1</iProjector>
+		<ID>476</ID>
+		<projectorStart>0.359154, -0.444464</projectorStart>
+		<projectorEnd>0.447485, -0.0595426</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.41906, 0.281729, -5.79994</s>
+		<t>-0.244627, 0.231063, -0.618589</t>
+		<iProjector>1</iProjector>
+		<ID>477</ID>
+		<projectorStart>0.187817, -0.431516</projectorStart>
+		<projectorEnd>0.101778, -0.0615019</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.42038, 0.295003, -5.79031</s>
+		<t>0.140536, 1.13853, -0.219209</t>
+		<iProjector>1</iProjector>
+		<ID>478</ID>
+		<projectorStart>0.189085, -0.431837</projectorStart>
+		<projectorEnd>0.269928, 0.401835</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.55755, 1.38484, -6.05772</s>
+		<t>0.212744, -0.284163, 0.245297</t>
+		<iProjector>1</iProjector>
+		<ID>479</ID>
+		<projectorStart>0.269524, 0.397329</projectorStart>
+		<projectorEnd>0.354101, 0.101669</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.97423, 0.981924, -5.60495</s>
+		<t>0.329845, -0.0290214, -0.0892692</t>
+		<iProjector>1</iProjector>
+		<ID>481</ID>
+		<projectorStart>0.443787, -0.0616773</projectorStart>
+		<projectorEnd>0.585608, -0.0532063</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.66221, 0.118107, -5.21197</s>
+		<t>-0.22534, -0.0140329, -0.335775</t>
+		<iProjector>1</iProjector>
+		<ID>482</ID>
+		<projectorStart>0.283704, -0.782008</projectorStart>
+		<projectorEnd>0.190448, -0.640722</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.33679, 0.0933899, -5.06111</s>
+		<t>0.08496, 0.201168, -0.741261</t>
+		<iProjector>1</iProjector>
+		<ID>484</ID>
+		<projectorStart>0.144446, -0.851614</projectorStart>
+		<projectorEnd>0.190122, -0.420327</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.3306, 0.103642, -5.03634</s>
+		<t>0.107244, -0.0205111, -0.551976</t>
+		<iProjector>1</iProjector>
+		<ID>485</ID>
+		<projectorStart>0.141303, -0.857123</projectorStart>
+		<projectorEnd>0.193546, -0.63503</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.33108, 0.0857299, -5.0796</s>
+		<t>0.328464, 0.0295636, -0.145577</t>
+		<iProjector>1</iProjector>
+		<ID>486</ID>
+		<projectorStart>0.142246, -0.850199</projectorStart>
+		<projectorEnd>0.283347, -0.777847</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.33978, 0.106234, -5.05246</s>
+		<t>0.101196, 0.275813, -0.716256</t>
+		<iProjector>1</iProjector>
+		<ID>487</ID>
+		<projectorStart>0.144888, -0.852612</projectorStart>
+		<projectorEnd>0.212027, -0.351683</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.65301, 0.121329, -5.2283</s>
+		<t>-0.185177, 0.460764, -0.284813</t>
+		<iProjector>1</iProjector>
+		<ID>488</ID>
+		<projectorStart>0.280396, -0.772578</projectorStart>
+		<projectorEnd>0.211636, -0.35708</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.05989, 0.0443839, -5.45413</s>
+		<t>0.24768, 0.0345423, -0.0118637</t>
+		<iProjector>1</iProjector>
+		<ID>489</ID>
+		<projectorStart>0.036024, -0.704173</projectorStart>
+		<projectorEnd>0.137594, -0.685985</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.33662, 0.0838952, -5.07547</s>
+		<t>-0.0277231, 0.00144901, -0.398726</t>
+		<iProjector>1</iProjector>
+		<ID>490</ID>
+		<projectorStart>0.143477, -0.851936</projectorStart>
+		<projectorEnd>0.138527, -0.678477</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.0488, 0.0615968, -5.43775</s>
+		<t>0.291548, 0.0188842, 0.363837</t>
+		<iProjector>1</iProjector>
+		<ID>491</ID>
+		<projectorStart>0.0307524, -0.698829</projectorStart>
+		<projectorEnd>0.145385, -0.855006</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.30559, 0.0536861, -5.50195</s>
+		<t>-0.171484, 0.661594, -0.171842</t>
+		<iProjector>1</iProjector>
+		<ID>492</ID>
+		<projectorStart>0.138313, -0.686156</projectorStart>
+		<projectorEnd>0.0734545, -0.200021</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.04638, 0.026481, -5.48055</s>
+		<t>0.0856748, 0.661927, -0.245561</t>
+		<iProjector>1</iProjector>
+		<ID>493</ID>
+		<projectorStart>0.0305344, -0.705972</projectorStart>
+		<projectorEnd>0.0739847, -0.195622</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.86264, 0.0189231, -5.52945</s>
+		<t>0.270293, 0.716101, -0.127283</t>
+		<iProjector>1</iProjector>
+		<ID>494</ID>
+		<projectorStart>-0.0418166, -0.684242</projectorStart>
+		<projectorEnd>0.0710621, -0.192824</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.84009, 0.0249753, -5.22307</s>
+		<t>0.288991, 0.685359, -0.451264</t>
+		<iProjector>1</iProjector>
+		<ID>495</ID>
+		<projectorStart>-0.0611286, -0.807707</projectorStart>
+		<projectorEnd>0.0710569, -0.201321</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.87142, 0.0456582, -5.50669</s>
+		<t>-0.0282907, 0.018392, 0.354106</t>
+		<iProjector>1</iProjector>
+		<ID>496</ID>
+		<projectorStart>-0.0382188, -0.672961</projectorStart>
+		<projectorEnd>-0.0631166, -0.811999</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.42181, 0.372906, -5.65615</s>
+		<t>0.570505, 0.57199, -0.0131717</t>
+		<iProjector>1</iProjector>
+		<ID>497</ID>
+		<projectorStart>0.183677, -0.436823</projectorStart>
+		<projectorEnd>0.448677, -0.065142</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.04904, 0.051881, -5.43301</s>
+		<t>0.122438, 0.460166, -0.994672</t>
+		<iProjector>1</iProjector>
+		<ID>498</ID>
+		<projectorStart>0.0319333, -0.702677</projectorStart>
+		<projectorEnd>0.101512, -0.054934</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.37755, 0.0545278, -5.77893</s>
+		<t>-0.205367, 0.468188, -0.620891</t>
+		<iProjector>1</iProjector>
+		<ID>499</ID>
+		<projectorStart>0.168742, -0.575136</projectorStart>
+		<projectorEnd>0.1003, -0.0601414</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.04854, 0.0588261, -5.43459</s>
+		<t>0.319105, 0.0346228, -0.291574</t>
+		<iProjector>1</iProjector>
+		<ID>500</ID>
+		<projectorStart>0.0317353, -0.699873</projectorStart>
+		<projectorEnd>0.164882, -0.572053</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.8746, 0.0682796, -5.47729</s>
+		<t>0.179909, -0.0199827, 0.0319982</t>
+		<iProjector>1</iProjector>
+		<ID>501</ID>
+		<projectorStart>-0.038409, -0.672961</projectorStart>
+		<projectorEnd>0.0338566, -0.704253</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.84221, 0.0485926, -5.19059</s>
+		<t>0.217438, 0.00619933, -0.248907</t>
+		<iProjector>1</iProjector>
+		<ID>502</ID>
+		<projectorStart>-0.0611365, -0.804288</projectorStart>
+		<projectorEnd>0.0360249, -0.702676</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.30848, 0.184047, -6.05096</s>
+		<t>0.107897, 0.0843233, 0.237969</t>
+		<iProjector>1</iProjector>
+		<ID>503</ID>
+		<projectorStart>0.145516, -0.395667</projectorStart>
+		<projectorEnd>0.189115, -0.430239</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.31665, 0.10625, -6.25913</s>
+		<t>0.288127, 0.265808, -0.450331</t>
+		<iProjector>1</iProjector>
+		<ID>504</ID>
+		<projectorStart>0.15133, -0.363295</projectorStart>
+		<projectorEnd>0.265858, -0.0619617</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.36232, 0.958596, -5.73962</s>
+		<t>1.15571, 0.517344, 0.921721</t>
+		<iProjector>1</iProjector>
+		<ID>506</ID>
+		<projectorStart>0.156479, -0.0139147</projectorStart>
+		<projectorEnd>0.749875, -0.0182746</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.75428, 0.095263, -6.42726</s>
+		<t>-0.194255, 0.0455231, 0.163004</t>
+		<iProjector>1</iProjector>
+		<ID>507</ID>
+		<projectorStart>0.316252, -0.322801</projectorStart>
+		<projectorEnd>0.243893, -0.346278</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.01234, 1.96835, -6.58058</s>
+		<t>0.297016, -1.94752, 0.971405</t>
+		<iProjector>1</iProjector>
+		<ID>508</ID>
+		<projectorStart>0.0521759, 0.9981</projectorStart>
+		<projectorEnd>0.13896, -0.691031</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.31643, 1.86725, -5.61913</s>
+		<t>-1.41397, -0.357194, 0.458147</t>
+		<iProjector>1</iProjector>
+		<ID>509</ID>
+		<projectorStart>0.162394, 0.628976</projectorStart>
+		<projectorEnd>-0.522863, 0.236895</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>0, nan, 0.000612086</t>
+		<iProjector>1</iProjector>
+		<ID>510</ID>
+		<projectorStart>0.0570258, 1.0297</projectorStart>
+		<projectorEnd>0.267927, 0.399932</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.83039, 1.76622, -6.31562</s>
+		<t>0.379495, -0.791917, 0.529161</t>
+		<iProjector>1</iProjector>
+		<ID>511</ID>
+		<projectorStart>-0.0384683, 0.773644</projectorStart>
+		<projectorEnd>0.109579, 0.0169366</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.74189, 1.45484, -6.94493</s>
+		<t>-0.088491, -0.418318, 0.507953</t>
+		<iProjector>1</iProjector>
+		<ID>512</ID>
+		<projectorStart>-0.0346404, 0.77363</projectorStart>
+		<projectorEnd>-0.0951499, 0.296441</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.85245, 1.3404, -6.59382</s>
+		<t>-0.0204573, 0.448695, 0.273788</t>
+		<iProjector>1</iProjector>
+		<ID>513</ID>
+		<projectorStart>-0.019532, 0.540246</projectorStart>
+		<projectorEnd>-0.038559, 0.7947</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.84772, 1.35772, -6.59052</s>
+		<t>-0.140489, -0.141799, 0.50001</t>
+		<iProjector>1</iProjector>
+		<ID>514</ID>
+		<projectorStart>-0.019811, 0.553806</projectorStart>
+		<projectorEnd>-0.0961466, 0.30435</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.83682, 1.33243, -6.64678</s>
+		<t>0.370713, -0.372817, 0.798671</t>
+		<iProjector>1</iProjector>
+		<ID>515</ID>
+		<projectorStart>-0.0237669, 0.555353</projectorStart>
+		<projectorEnd>0.107947, 0.0314509</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.7138, 1.21923, -6.08438</s>
+		<t>0.49449, -0.248503, 0.279857</t>
+		<iProjector>1</iProjector>
+		<ID>516</ID>
+		<projectorStart>-0.0948767, 0.303337</projectorStart>
+		<projectorEnd>0.107855, 0.0217817</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.78336, 1.66898, -6.51567</s>
+		<t>0.488737, -0.192852, 0.097703</t>
+		<iProjector>1</iProjector>
+		<ID>517</ID>
+		<projectorStart>-0.0510766, 0.759608</projectorStart>
+		<projectorEnd>0.151216, 0.57895</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.46267, 0.576968, -5.49602</s>
+		<t>0.311064, 0.525254, -0.323572</t>
+		<iProjector>1</iProjector>
+		<ID>518</ID>
+		<projectorStart>0.209323, -0.366666</projectorStart>
+		<projectorEnd>0.356474, 0.105873</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.20763, 0.987673, -5.78119</s>
+		<t>0.260357, -0.425952, 0.241493</t>
+		<iProjector>1</iProjector>
+		<ID>519</ID>
+		<projectorStart>0.108087, 0.0252166</projectorStart>
+		<projectorEnd>0.211534, -0.360077</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.12418, 0.805737, -5.09577</s>
+		<t>1.4923, 0.40257, -0.474282</t>
+		<iProjector>1</iProjector>
+		<ID>520</ID>
+		<projectorStart>-0.397959, -0.336501</projectorStart>
+		<projectorEnd>0.293054, 0.0966132</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.50695, 1.17967, -5.53441</s>
+		<t>1.3906, 0.517312, -0.171784</t>
+		<iProjector>1</iProjector>
+		<ID>521</ID>
+		<projectorStart>0.234655, 0.059825</projectorStart>
+		<projectorEnd>0.914835, 0.498976</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.17553, 0.532377, -6.39964</s>
+		<t>0.1337, -0.399157, 0.283889</t>
+		<iProjector>1</iProjector>
+		<ID>522</ID>
+		<projectorStart>0.102266, -0.0562677</projectorStart>
+		<projectorEnd>0.147808, -0.401561</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.93662, 0.272992, -5.85287</s>
+		<t>0.275926, 0.719574, 0.0726504</t>
+		<iProjector>1</iProjector>
+		<ID>523</ID>
+		<projectorStart>-0.00504669, -0.411705</projectorStart>
+		<projectorEnd>0.109613, 0.0266174</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.66579, 0.0331658, -5.79823</s>
+		<t>0.511934, 0.505433, -0.576229</t>
+		<iProjector>1</iProjector>
+		<ID>524</ID>
+		<projectorStart>-0.108231, -0.555274</projectorStart>
+		<projectorEnd>0.103033, -0.0630002</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.05386, 0.13789, -5.65425</s>
+		<t>0.121245, 0.375568, -0.770016</t>
+		<iProjector>1</iProjector>
+		<ID>525</ID>
+		<projectorStart>0.0391967, -0.562805</projectorStart>
+		<projectorEnd>0.102509, -0.0577559</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.66827, 0.0258361, -5.82468</s>
+		<t>0.406825, 0.0660154, 0.0814805</t>
+		<iProjector>1</iProjector>
+		<ID>526</ID>
+		<projectorStart>-0.108288, -0.553776</projectorStart>
+		<projectorEnd>0.0498796, -0.557908</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.67639, 0.0366999, -5.82528</s>
+		<t>-0.07359, 0.0178749, 0.544075</t>
+		<iProjector>1</iProjector>
+		<ID>527</ID>
+		<projectorStart>-0.104135, -0.544787</projectorStart>
+		<projectorEnd>-0.155644, -0.752352</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.59871, 0.0311812, -5.32619</s>
+		<t>0.479557, 0.0487717, -0.447726</t>
+		<iProjector>1</iProjector>
+		<ID>528</ID>
+		<projectorStart>-0.155579, -0.748192</projectorStart>
+		<projectorEnd>0.053477, -0.550827</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.66721, 0.0258747, -5.83709</s>
+		<t>0.269971, 0.25723, 0.00185823</t>
+		<iProjector>1</iProjector>
+		<ID>529</ID>
+		<projectorStart>-0.108539, -0.549452</projectorStart>
+		<projectorEnd>-0.00355493, -0.403123</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>1.41406e+22, nan, 9.67674e-27</t>
+		<iProjector>1</iProjector>
+		<ID>530</ID>
+		<projectorStart>-0.00504315, -0.404512</projectorStart>
+		<projectorEnd>0.038494, -0.56822</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.60155, 0.032236, -5.30678</s>
+		<t>0.331339, 0.245909, -0.53883</t>
+		<iProjector>1</iProjector>
+		<ID>531</ID>
+		<projectorStart>-0.155302, -0.756056</projectorStart>
+		<projectorEnd>-0.00357249, -0.402134</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.07091, 1.30611, -4.06875</s>
+		<t>-0.33507, -1.33313, -2.50735</t>
+		<iProjector>1</iProjector>
+		<ID>532</ID>
+		<projectorStart>0.00705669, -0.425644</projectorStart>
+		<projectorEnd>-0.0693078, -0.320603</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.601, 0.0397553, -5.30739</s>
+		<t>0.205268, 0.427654, -0.484829</t>
+		<iProjector>1</iProjector>
+		<ID>533</ID>
+		<projectorStart>-0.157017, -0.751007</projectorStart>
+		<projectorEnd>-0.0585359, -0.302271</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.44452, 0.34964, -6.87043</s>
+		<t>0.795549, 0.229732, 0.596288</t>
+		<iProjector>1</iProjector>
+		<ID>534</ID>
+		<projectorStart>-0.160695, 0.000508929</projectorStart>
+		<projectorEnd>0.123733, -0.070739</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.45542, 0.366051, -6.81011</s>
+		<t>0.31505, 0.0369624, 0.541137</t>
+		<iProjector>1</iProjector>
+		<ID>535</ID>
+		<projectorStart>-0.156131, -0.00948247</projectorStart>
+		<projectorEnd>-0.0572629, -0.170268</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.72477, 0.423355, -6.20377</s>
+		<t>0.456491, 0.0920665, -0.226184</t>
+		<iProjector>1</iProjector>
+		<ID>536</ID>
+		<projectorStart>-0.0780418, -0.181472</projectorStart>
+		<projectorEnd>0.105177, -0.0583788</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.73109, 0.040365, -6.37892</s>
+		<t>0.441044, 0.490528, -0.00115347</t>
+		<iProjector>1</iProjector>
+		<ID>537</ID>
+		<projectorStart>-0.0657228, -0.344884</projectorStart>
+		<projectorEnd>0.100134, -0.065579</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.75586, 0.404791, -6.28152</s>
+		<t>-0.0254514, -0.334654, -0.0390935</t>
+		<iProjector>1</iProjector>
+		<ID>538</ID>
+		<projectorStart>-0.0623552, -0.166671</projectorStart>
+		<projectorEnd>-0.0670365, -0.347663</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.48089, 0.388709, -6.75843</s>
+		<t>0.25149, -0.329088, 0.414748</t>
+		<iProjector>1</iProjector>
+		<ID>539</ID>
+		<projectorStart>-0.147656, -0.0135193</projectorStart>
+		<projectorEnd>-0.0660219, -0.343785</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.46697, 0.383632, -6.79265</s>
+		<t>0.416993, 0.764554, 0.159472</t>
+		<iProjector>1</iProjector>
+		<ID>540</ID>
+		<projectorStart>-0.152746, -0.00604541</projectorStart>
+		<projectorEnd>-0.00673787, 0.416015</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.88007, 1.14404, -6.64504</s>
+		<t>-0.012953, -0.598645, 0.610558</t>
+		<iProjector>1</iProjector>
+		<ID>541</ID>
+		<projectorStart>-0.00649313, 0.420322</projectorStart>
+		<projectorEnd>-0.0275985, -0.16816</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.8712, 1.12029, -6.6535</s>
+		<t>-0.114236, -0.728725, 0.320784</t>
+		<iProjector>1</iProjector>
+		<ID>542</ID>
+		<projectorStart>-0.0106851, 0.403615</projectorStart>
+		<projectorEnd>-0.0594551, -0.157872</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.88292, 1.13658, -6.64698</s>
+		<t>0.295131, -0.635873, 0.254233</t>
+		<iProjector>1</iProjector>
+		<ID>543</ID>
+		<projectorStart>-0.00513979, 0.413311</projectorStart>
+		<projectorEnd>0.102992, -0.0820633</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.87653, 1.12155, -6.65631</s>
+		<t>-0.289855, -0.516406, 0.784342</t>
+		<iProjector>1</iProjector>
+		<ID>544</ID>
+		<projectorStart>-0.00651428, 0.408905</projectorStart>
+		<projectorEnd>-0.146058, -0.178692</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.585, 0.613483, -5.883</s>
+		<t>0.284259, -0.100966, -0.238235</t>
+		<iProjector>1</iProjector>
+		<ID>545</ID>
+		<projectorStart>-0.147001, -0.170096</projectorStart>
+		<projectorEnd>-0.023099, -0.157461</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.93284, 0.281046, -5.82537</s>
+		<t>-0.361201, 0.345829, -0.0802407</t>
+		<iProjector>1</iProjector>
+		<ID>546</ID>
+		<projectorStart>-0.00504595, -0.410206</projectorStart>
+		<projectorEnd>-0.15249, -0.154299</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.859, 0.543795, -6.0559</s>
+		<t>0.306814, -0.0349008, -0.37009</t>
+		<iProjector>1</iProjector>
+		<ID>547</ID>
+		<projectorStart>-0.0296927, -0.161162</projectorStart>
+		<projectorEnd>0.0993678, -0.06331</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.76357, 0.445619, -6.21345</s>
+		<t>0.105013, 0.124661, 0.200364</t>
+		<iProjector>1</iProjector>
+		<ID>548</ID>
+		<projectorStart>-0.0618547, -0.163971</projectorStart>
+		<projectorEnd>-0.0275381, -0.16124</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.58671, 0.614376, -5.88913</s>
+		<t>0.0960717, -0.584207, 0.0594902</t>
+		<iProjector>1</iProjector>
+		<ID>549</ID>
+		<projectorStart>-0.146755, -0.170095</projectorStart>
+		<projectorEnd>-0.102241, -0.550877</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.59673, 0.0333173, -5.32576</s>
+		<t>-0.0208998, 0.582415, -0.600097</t>
+		<iProjector>1</iProjector>
+		<ID>550</ID>
+		<projectorStart>-0.157495, -0.747973</projectorStart>
+		<projectorEnd>-0.148905, -0.152854</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.59818, 0.0595938, -5.30637</s>
+		<t>-0.234385, 0.993828, -0.349627</t>
+		<iProjector>1</iProjector>
+		<ID>551</ID>
+		<projectorStart>-0.157794, -0.745378</projectorStart>
+		<projectorEnd>-0.259743, 0.043501</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.36343, 1.04105, -5.65616</s>
+		<t>0.434636, -0.512676, 0.0101581</t>
+		<iProjector>1</iProjector>
+		<ID>552</ID>
+		<projectorStart>-0.260858, 0.0386985</projectorStart>
+		<projectorEnd>-0.0660145, -0.325298</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.55962, 1.56841, -6.57795</s>
+		<t>0.323487, -0.43435, -0.0601249</t>
+		<iProjector>1</iProjector>
+		<ID>553</ID>
+		<projectorStart>-0.14071, 0.70236</projectorStart>
+		<projectorEnd>-0.00534184, 0.409005</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.7031, 1.04876, -6.37613</s>
+		<t>0.177233, 0.0880728, -0.28825</t>
+		<iProjector>1</iProjector>
+		<ID>554</ID>
+		<projectorStart>-0.0860039, 0.278566</projectorStart>
+		<projectorEnd>-0.00603552, 0.421323</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.56673, 1.55233, -6.6169</s>
+		<t>0.152629, -0.472841, 0.294137</t>
+		<iProjector>1</iProjector>
+		<ID>555</ID>
+		<projectorStart>-0.137309, 0.703262</projectorStart>
+		<projectorEnd>-0.081164, 0.280516</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.38097, 1.35187, -6.60088</s>
+		<t>0.184089, 0.202618, 0.015058</t>
+		<iProjector>1</iProjector>
+		<ID>556</ID>
+		<projectorStart>-0.210546, 0.561344</projectorStart>
+		<projectorEnd>-0.139311, 0.69805</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.52034, 2.36733, -4.90621</s>
+		<t>-0.0129979, -0.703642, -1.70025</t>
+		<iProjector>1</iProjector>
+		<ID>557</ID>
+		<projectorStart>-0.270917, 0.851948</projectorStart>
+		<projectorEnd>-0.162249, 0.784632</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.27922, 1.7706, -6.54335</s>
+		<t>-0.042464, -0.259475, -0.0440969</t>
+		<iProjector>1</iProjector>
+		<ID>559</ID>
+		<projectorStart>-0.265772, 0.85148</projectorStart>
+		<projectorEnd>-0.272834, 0.672279</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.5007, 1.68334, -6.55869</s>
+		<t>-0.259895, -0.17777, -0.016005</t>
+		<iProjector>1</iProjector>
+		<ID>560</ID>
+		<projectorStart>-0.169346, 0.787064</projectorStart>
+		<projectorEnd>-0.272835, 0.663759</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.49799, 1.67342, -6.60484</s>
+		<t>0.0872376, -1.05256, 0.735668</t>
+		<iProjector>1</iProjector>
+		<ID>561</ID>
+		<projectorStart>-0.167221, 0.791654</projectorStart>
+		<projectorEnd>-0.148555, -0.175294</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.23241, 1.49286, -6.61658</s>
+		<t>0.354127, -0.871041, 0.749347</t>
+		<iProjector>1</iProjector>
+		<ID>562</ID>
+		<projectorStart>-0.272834, 0.670274</projectorStart>
+		<projectorEnd>-0.148055, -0.173528</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.27037, 1.75823, -6.5861</s>
+		<t>0.314262, -1.14486, 0.711794</t>
+		<iProjector>1</iProjector>
+		<ID>563</ID>
+		<projectorStart>-0.265658, 0.851346</projectorStart>
+		<projectorEnd>-0.147457, -0.178393</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.56956, 1.55814, -6.57138</s>
+		<t>0.311152, -0.420696, -0.070075</t>
+		<iProjector>1</iProjector>
+		<ID>564</ID>
+		<projectorStart>-0.137254, 0.694429</projectorStart>
+		<projectorEnd>-0.00583997, 0.41241</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.37313, 1.33859, -6.64992</s>
+		<t>0.344185, -0.259231, 0.356381</t>
+		<iProjector>1</iProjector>
+		<ID>565</ID>
+		<projectorStart>-0.211331, 0.566221</projectorStart>
+		<projectorEnd>-0.083365, 0.272115</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.57192, 1.57364, -6.55933</s>
+		<t>-0.100712, -1.15901, -0.184373</t>
+		<iProjector>1</iProjector>
+		<ID>566</ID>
+		<projectorStart>-0.137912, 0.693439</projectorStart>
+		<projectorEnd>-0.152705, -0.0100347</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.57116, 1.5464, -6.59036</s>
+		<t>0.147409, -0.469784, 0.251662</t>
+		<iProjector>1</iProjector>
+		<ID>567</ID>
+		<projectorStart>-0.136526, 0.693138</projectorStart>
+		<projectorEnd>-0.0805626, 0.282628</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.38914, 1.3551, -6.59984</s>
+		<t>-0.555812, -0.758135, -0.0397983</t>
+		<iProjector>1</iProjector>
+		<ID>568</ID>
+		<projectorStart>-0.208947, 0.560041</projectorStart>
+		<projectorEnd>-0.400413, 0.087736</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.40077, 1.40444, -6.55161</s>
+		<t>-0.316331, -1.15838, -0.182858</t>
+		<iProjector>1</iProjector>
+		<ID>569</ID>
+		<projectorStart>-0.207145, 0.570162</projectorStart>
+		<projectorEnd>-0.290572, -0.101277</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.3842, 1.35865, -6.60506</s>
+		<t>0.0850642, -0.942247, -0.151799</t>
+		<iProjector>1</iProjector>
+		<ID>570</ID>
+		<projectorStart>-0.208347, 0.560342</projectorStart>
+		<projectorEnd>-0.152074, -0.00309433</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.12251, 1.48519, -6.52328</s>
+		<t>-0.388476, -0.62705, -0.137131</t>
+		<iProjector>1</iProjector>
+		<ID>571</ID>
+		<projectorStart>-0.326043, 0.628975</projectorStart>
+		<projectorEnd>-0.445426, 0.261626</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.1078, 1.47045, -6.55722</s>
+		<t>-0.0683095, -0.80517, 0.184784</t>
+		<iProjector>1</iProjector>
+		<ID>572</ID>
+		<projectorStart>-0.326671, 0.629298</projectorStart>
+		<projectorEnd>-0.340039, 0.0425813</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.73341, 0.854788, -6.66131</s>
+		<t>0.166989, -0.110334, 0.450463</t>
+		<iProjector>1</iProjector>
+		<ID>573</ID>
+		<projectorStart>-0.445198, 0.260636</projectorStart>
+		<projectorEnd>-0.407818, 0.048677</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.98115, 1.52752, -6.33491</s>
+		<t>-0.166903, -0.772072, -0.128282</t>
+		<iProjector>1</iProjector>
+		<ID>574</ID>
+		<projectorStart>-0.396551, 0.613334</projectorStart>
+		<projectorEnd>-0.423916, 0.128663</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.8901, 1.24933, -6.56871</s>
+		<t>0.150379, -0.587225, 0.217062</t>
+		<iProjector>1</iProjector>
+		<ID>575</ID>
+		<projectorStart>-0.405738, 0.48867</projectorStart>
+		<projectorEnd>-0.340039, 0.0337773</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.38536, 1.35158, -6.62228</s>
+		<t>-0.345915, -0.683564, 0.276106</t>
+		<iProjector>1</iProjector>
+		<ID>576</ID>
+		<projectorStart>-0.207221, 0.564818</projectorStart>
+		<projectorEnd>-0.341637, 0.036178</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.03084, 0.645619, -6.3787</s>
+		<t>-0.206296, 0.142648, -0.0349426</t>
+		<iProjector>1</iProjector>
+		<ID>577</ID>
+		<projectorStart>-0.341637, 0.0334768</projectorStart>
+		<projectorEnd>-0.424427, 0.140224</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.46829, 0.39282, -6.77498</s>
+		<t>-0.431806, 0.269889, 0.399233</t>
+		<iProjector>1</iProjector>
+		<ID>578</ID>
+		<projectorStart>-0.15159, -0.00606863</projectorStart>
+		<projectorEnd>-0.33894, 0.0447826</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.4698, 0.415323, -6.77848</s>
+		<t>-0.215301, -0.176742, -0.0471492</t>
+		<iProjector>1</iProjector>
+		<ID>579</ID>
+		<projectorStart>-0.152737, 0.00951373</projectorStart>
+		<projectorEnd>-0.224549, -0.0731222</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.23096, 0.0126371, -6.46409</s>
+		<t>0.256036, 0.421441, -0.260458</t>
+		<iProjector>1</iProjector>
+		<ID>580</ID>
+		<projectorStart>-0.244862, -0.318462</projectorStart>
+		<projectorEnd>-0.148043, 0.00151239</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.27242, 0.271633, -6.76517</s>
+		<t>-0.0345957, -0.246646, 0.331694</t>
+		<iProjector>1</iProjector>
+		<ID>581</ID>
+		<projectorStart>-0.221053, -0.0729992</projectorStart>
+		<projectorEnd>-0.243863, -0.32066</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.26278, 0.269579, -6.79768</s>
+		<t>0.0984993, -0.22623, 0.146852</t>
+		<iProjector>1</iProjector>
+		<ID>582</ID>
+		<projectorStart>-0.223649, -0.0649211</projectorStart>
+		<projectorEnd>-0.189305, -0.241502</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.35846, 0.0301954, -6.67547</s>
+		<t>0.11701, 0.424785, -0.01161</t>
+		<iProjector>1</iProjector>
+		<ID>583</ID>
+		<projectorStart>-0.188337, -0.242372</projectorStart>
+		<projectorEnd>-0.155, 0.00131059</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.26256, 0.244053, -6.8277</s>
+		<t>-0.224242, -0.157551, 0.305765</t>
+		<iProjector>1</iProjector>
+		<ID>585</ID>
+		<projectorStart>-0.220823, -0.0705209</projectorStart>
+		<projectorEnd>-0.313867, -0.24952</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.0397, 0.0792646, -6.55183</s>
+		<t>0.331154, -0.0106352, -0.067533</t>
+		<iProjector>1</iProjector>
+		<ID>586</ID>
+		<projectorStart>-0.310571, -0.243822</projectorStart>
+		<projectorEnd>-0.18854, -0.238453</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.34826, 0.0190572, -6.70444</s>
+		<t>0.382746, 0.00917813, 0.320704</t>
+		<iProjector>1</iProjector>
+		<ID>587</ID>
+		<projectorStart>-0.192217, -0.238487</projectorStart>
+		<projectorEnd>-0.0646784, -0.350346</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.04224, 0.0782524, -6.54563</s>
+		<t>0.199136, -0.0602305, 0.0943928</t>
+		<iProjector>1</iProjector>
+		<ID>588</ID>
+		<projectorStart>-0.311071, -0.24882</projectorStart>
+		<projectorEnd>-0.241681, -0.320094</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.3545, 0.0172027, -6.71518</s>
+		<t>-0.116637, 0.00200515, 0.255099</t>
+		<iProjector>1</iProjector>
+		<ID>589</ID>
+		<projectorStart>-0.188569, -0.235787</projectorStart>
+		<projectorEnd>-0.242165, -0.315763</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.23363, 0.0131353, -6.46919</s>
+		<t>0.491, 0.00954494, 0.0790186</t>
+		<iProjector>1</iProjector>
+		<ID>590</ID>
+		<projectorStart>-0.243477, -0.316085</projectorStart>
+		<projectorEnd>-0.0674227, -0.35108</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.37849, 1.32666, -6.67738</s>
+		<t>-0.142078, -0.483392, 0.693298</t>
+		<iProjector>1</iProjector>
+		<ID>591</ID>
+		<projectorStart>-0.206745, 0.567557</projectorStart>
+		<projectorEnd>-0.289108, 0.0255861</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.71223, 1.04862, -6.39257</s>
+		<t>-0.500727, -0.28339, 0.254296</t>
+		<iProjector>1</iProjector>
+		<ID>592</ID>
+		<projectorStart>-0.0810626, 0.281726</projectorStart>
+		<projectorEnd>-0.288865, 0.0270971</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.22852, 0.854943, -6.04126</s>
+		<t>0.138215, -0.855159, 0.186111</t>
+		<iProjector>1</iProjector>
+		<ID>593</ID>
+		<projectorStart>-0.290177, 0.0430935</projectorStart>
+		<projectorEnd>-0.220762, -0.549136</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.21436, 0.78707, -6.1216</s>
+		<t>-0.114161, -0.730179, 0.392862</t>
+		<iProjector>1</iProjector>
+		<ID>594</ID>
+		<projectorStart>-0.290663, 0.0304422</projectorStart>
+		<projectorEnd>-0.335141, -0.55726</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.15064, 0.0291671, -6.20005</s>
+		<t>0.0721467, 0.787125, 0.109143</t>
+		<iProjector>1</iProjector>
+		<ID>595</ID>
+		<projectorStart>-0.288409, -0.403746</projectorStart>
+		<projectorEnd>-0.288379, 0.038892</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.15412, 0.0290772, -6.19592</s>
+		<t>0.221613, -0.00902141, 0.376396</t>
+		<iProjector>1</iProjector>
+		<ID>596</ID>
+		<projectorStart>-0.286559, -0.398383</projectorStart>
+		<projectorEnd>-0.221831, -0.547528</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.16241, 0.0291795, -6.20261</s>
+		<t>-0.0720987, 0.000908187, 0.439054</t>
+		<iProjector>1</iProjector>
+		<ID>597</ID>
+		<projectorStart>-0.282813, -0.395684</projectorStart>
+		<projectorEnd>-0.334642, -0.555562</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.37331, 0.023415, -5.82584</s>
+		<t>-0.278437, 0.0146212, 0.0687051</t>
+		<iProjector>1</iProjector>
+		<ID>598</ID>
+		<projectorStart>-0.221831, -0.544832</projectorStart>
+		<projectorEnd>-0.33459, -0.552865</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.04896, 0.669883, -6.32256</s>
+		<t>0.185958, 0.129606, 0.241774</t>
+		<iProjector>1</iProjector>
+		<ID>599</ID>
+		<projectorStart>-0.33834, 0.0305763</projectorStart>
+		<projectorEnd>-0.284097, 0.0268997</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.03232, 0.667053, -6.38925</s>
+		<t>0.202763, -0.659129, -0.0902662</t>
+		<iProjector>1</iProjector>
+		<ID>600</ID>
+		<projectorStart>-0.340866, 0.0485178</projectorStart>
+		<projectorEnd>-0.241466, -0.318361</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.02586, 0.630593, -6.44025</s>
+		<t>-0.405938, -0.59798, 0.0500784</t>
+		<iProjector>1</iProjector>
+		<ID>601</ID>
+		<projectorStart>-0.340039, 0.044082</projectorStart>
+		<projectorEnd>-0.472196, -0.316482</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.03083, 0.634454, -6.4188</s>
+		<t>-0.176192, -0.615647, 0.368676</t>
+		<iProjector>1</iProjector>
+		<ID>602</ID>
+		<projectorStart>-0.338725, 0.0392021</projectorStart>
+		<projectorEnd>-0.407434, -0.449412</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.6311, 0.0532867, -6.34202</s>
+		<t>0.617604, -0.0325445, -0.108338</t>
+		<iProjector>1</iProjector>
+		<ID>603</ID>
+		<projectorStart>-0.471786, -0.319803</projectorStart>
+		<projectorEnd>-0.23847, -0.31846</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.24848, 0.0365586, -6.42546</s>
+		<t>-0.390771, 0.0242399, 0.447007</t>
+		<iProjector>1</iProjector>
+		<ID>604</ID>
+		<projectorStart>-0.240167, -0.31846</projectorStart>
+		<projectorEnd>-0.410429, -0.449013</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.65381, 0.110716, -6.24333</s>
+		<t>0.216854, -0.0599919, 0.256482</t>
+		<iProjector>1</iProjector>
+		<ID>605</ID>
+		<projectorStart>-0.472766, -0.321336</projectorStart>
+		<projectorEnd>-0.407622, -0.452675</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.07646, 0.219739, -6.74421</s>
+		<t>-0.454342, -0.192506, 0.352029</t>
+		<iProjector>1</iProjector>
+		<ID>606</ID>
+		<projectorStart>-0.290914, -0.105242</projectorStart>
+		<projectorEnd>-0.470969, -0.316638</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.0733, 0.197462, -6.78565</s>
+		<t>-0.350238, -0.073152, -0.0372028</t>
+		<iProjector>1</iProjector>
+		<ID>607</ID>
+		<projectorStart>-0.290187, -0.105142</projectorStart>
+		<projectorEnd>-0.410568, -0.126797</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.8019, 0.534308, -6.74415</s>
+		<t>0.294587, -0.25534, 0.0929012</t>
+		<iProjector>1</iProjector>
+		<ID>608</ID>
+		<projectorStart>-0.401298, 0.0868912</projectorStart>
+		<projectorEnd>-0.291257, -0.103063</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.82015, 0.576103, -6.66497</s>
+		<t>-0.094016, -0.439736, -0.125928</t>
+		<iProjector>1</iProjector>
+		<ID>609</ID>
+		<projectorStart>-0.402168, 0.0867909</projectorStart>
+		<projectorEnd>-0.411665, -0.129976</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.79323, 0.519797, -6.76627</s>
+		<t>-0.146955, -0.439506, 0.508334</t>
+		<iProjector>1</iProjector>
+		<ID>610</ID>
+		<projectorStart>-0.402482, 0.0870911</projectorStart>
+		<projectorEnd>-0.473262, -0.334228</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.11782, 0.867586, -6.08454</s>
+		<t>-0.127615, 0.6657, -0.242583</t>
+		<iProjector>1</iProjector>
+		<ID>611</ID>
+		<projectorStart>-0.332073, 0.076701</projectorStart>
+		<projectorEnd>-0.392851, 0.619347</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.00109, 1.56909, -6.23691</s>
+		<t>-0.22217, -0.978913, 0.597281</t>
+		<iProjector>1</iProjector>
+		<ID>612</ID>
+		<projectorStart>-0.396992, 0.611713</projectorStart>
+		<projectorEnd>-0.490462, -0.244477</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.1371, 0.901444, -6.02844</s>
+		<t>-0.387075, -0.372089, 0.27681</t>
+		<iProjector>1</iProjector>
+		<ID>613</ID>
+		<projectorStart>-0.329389, 0.0796136</projectorStart>
+		<projectorEnd>-0.491361, -0.245177</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.83051, 0.776529, -6.4206</s>
+		<t>-0.0661303, -0.22814, 0.687395</t>
+		<iProjector>1</iProjector>
+		<ID>614</ID>
+		<projectorStart>-0.421646, 0.135954</projectorStart>
+		<projectorEnd>-0.488165, -0.241278</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.1642, 0.937928, -5.91675</s>
+		<t>-0.351156, -0.197704, -0.566216</t>
+		<iProjector>1</iProjector>
+		<ID>615</ID>
+		<projectorStart>-0.32722, 0.068343</projectorStart>
+		<projectorEnd>-0.423489, 0.131917</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.73672, 0.858736, -6.66795</s>
+		<t>-0.114825, 0.565412, 0.118507</t>
+		<iProjector>1</iProjector>
+		<ID>616</ID>
+		<projectorStart>-0.44297, 0.262617</projectorStart>
+		<projectorEnd>-0.522268, 0.607709</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.82782, 0.0592343, -5.60562</s>
+		<t>-0.0889497, -0.00822188, -0.4026</t>
+		<iProjector>1</iProjector>
+		<ID>617</ID>
+		<projectorStart>-0.449969, -0.591059</projectorStart>
+		<projectorEnd>-0.455266, -0.440338</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.80924, 0.0101063, -5.65991</s>
+		<t>-0.0644423, 0.514178, -0.11684</t>
+		<iProjector>1</iProjector>
+		<ID>618</ID>
+		<projectorStart>-0.450202, -0.59726</projectorStart>
+		<projectorEnd>-0.491162, -0.239979</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.75749, 0.528594, -5.75592</s>
+		<t>0.168426, -0.455371, 0.955849</t>
+		<iProjector>1</iProjector>
+		<ID>619</ID>
+		<projectorStart>-0.487466, -0.239833</projectorStart>
+		<projectorEnd>-0.474535, -0.926031</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.85053, 0.0659969, -5.5795</s>
+		<t>-0.537562, 0.00812031, -0.422604</t>
+		<iProjector>1</iProjector>
+		<ID>620</ID>
+		<projectorStart>-0.445054, -0.597947</projectorStart>
+		<projectorEnd>-0.618723, -0.415852</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.78742, 0.144554, -5.83083</s>
+		<t>-0.476829, -0.0742459, -0.165906</t>
+		<iProjector>1</iProjector>
+		<ID>621</ID>
+		<projectorStart>-0.453737, -0.452868</projectorStart>
+		<projectorEnd>-0.619348, -0.417117</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.65128, 0.0973521, -6.27079</s>
+		<t>0.191088, 0.715054, -0.0861444</t>
+		<iProjector>1</iProjector>
+		<ID>622</ID>
+		<projectorStart>-0.471553, -0.319502</projectorStart>
+		<projectorEnd>-0.42329, 0.136321</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.31929, 0.128895, -6.24306</s>
+		<t>0.255862, 0.0209002, -0.0134659</t>
+		<iProjector>1</iProjector>
+		<ID>623</ID>
+		<projectorStart>0.15223, -0.356756</projectorStart>
+		<projectorEnd>0.249683, -0.346276</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.82368, 0.572144, -6.67355</s>
+		<t>0.220165, 0.123947, 0.374804</t>
+		<iProjector>1</iProjector>
+		<ID>624</ID>
+		<projectorStart>-0.399028, 0.0869477</projectorStart>
+		<projectorEnd>-0.343636, 0.0411798</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.87607, 0.703844, -6.42091</s>
+		<t>-0.151585, 0.142718, -0.282203</t>
+		<iProjector>1</iProjector>
+		<ID>625</ID>
+		<projectorStart>-0.400998, 0.0891927</projectorStart>
+		<projectorEnd>-0.444628, 0.268791</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.76078, 0.914154, -6.56393</s>
+		<t>-0.113063, -0.817795, 0.29553</t>
+		<iProjector>1</iProjector>
+		<ID>626</ID>
+		<projectorStart>-0.444027, 0.265231</projectorStart>
+		<projectorEnd>-0.473465, -0.321636</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.73911, 0.851996, -6.67766</s>
+		<t>-0.381801, 0.156047, 0.0750842</t>
+		<iProjector>1</iProjector>
+		<ID>627</ID>
+		<projectorStart>-0.4409, 0.262739</projectorStart>
+		<projectorEnd>-0.599937, 0.352096</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.62738, 1.40922, -6.55372</s>
+		<t>-0.271383, -0.409988, -0.0712504</t>
+		<iProjector>1</iProjector>
+		<ID>628</ID>
+		<projectorStart>-0.520101, 0.60517</projectorStart>
+		<projectorEnd>-0.597782, 0.351929</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.61048, 1.39218, -6.58922</s>
+		<t>0.0850233, -1.31214, 1.10188</t>
+		<iProjector>1</iProjector>
+		<ID>629</ID>
+		<projectorStart>-0.52251, 0.604903</projectorStart>
+		<projectorEnd>-0.512635, -0.624835</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.35709, 1.35952, -6.09463</s>
+		<t>0.00109518, -0.36514, -0.536058</t>
+		<iProjector>1</iProjector>
+		<ID>630</ID>
+		<projectorStart>-0.669214, 0.440405</projectorStart>
+		<projectorEnd>-0.595982, 0.350728</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.39667, 0.403799, -6.57356</s>
+		<t>0.3551, 0.599372, 0.0165391</t>
+		<iProjector>1</iProjector>
+		<ID>631</ID>
+		<projectorStart>0.186888, -0.0873114</projectorStart>
+		<projectorEnd>0.337496, 0.280571</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.60893, 1.38801, -6.6104</s>
+		<t>-0.432466, -0.146419, 0.139629</t>
+		<iProjector>1</iProjector>
+		<ID>632</ID>
+		<projectorStart>-0.520468, 0.607746</projectorStart>
+		<projectorEnd>-0.698535, 0.475019</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.36914, 1.01809, -6.57331</s>
+		<t>0.193921, -0.487642, 0.348148</t>
+		<iProjector>1</iProjector>
+		<ID>633</ID>
+		<projectorStart>-0.598481, 0.349325</projectorStart>
+		<projectorEnd>-0.528041, -0.0748142</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.38262, 1.04297, -6.52273</s>
+		<t>-0.1245, -0.359869, 0.135465</t>
+		<iProjector>1</iProjector>
+		<ID>634</ID>
+		<projectorStart>-0.599736, 0.348237</projectorStart>
+		<projectorEnd>-0.639152, 0.0831344</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.24422, 0.662712, -6.42616</s>
+		<t>0.485341, 0.182341, -0.273388</t>
+		<iProjector>1</iProjector>
+		<ID>635</ID>
+		<projectorStart>-0.639052, 0.083935</projectorStart>
+		<projectorEnd>-0.443985, 0.264863</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.2351, 0.648112, -6.47345</s>
+		<t>0.340639, -0.0906543, 0.295169</t>
+		<iProjector>1</iProjector>
+		<ID>636</ID>
+		<projectorStart>-0.638654, 0.0876376</projectorStart>
+		<projectorEnd>-0.528455, -0.074048</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.73985, 0.867762, -6.63326</s>
+		<t>-0.129771, -0.230746, 0.640771</t>
+		<iProjector>1</iProjector>
+		<ID>637</ID>
+		<projectorStart>-0.444027, 0.263008</projectorStart>
+		<projectorEnd>-0.529569, -0.0747043</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.70893, 0.814616, -6.75602</s>
+		<t>-0.0612091, -0.431468, 0.834931</t>
+		<iProjector>1</iProjector>
+		<ID>638</ID>
+		<projectorStart>-0.4449, 0.269647</projectorStart>
+		<projectorEnd>-0.513813, -0.275939</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.17052, 1.22608, -6.51182</s>
+		<t>-0.0124567, -0.232269, 0.093266</t>
+		<iProjector>1</iProjector>
+		<ID>639</ID>
+		<projectorStart>-0.695734, 0.473917</projectorStart>
+		<projectorEnd>-0.695635, 0.29233</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.3664, 1.01785, -6.57036</s>
+		<t>-0.216431, -0.0152949, 0.17295</t>
+		<iProjector>1</iProjector>
+		<ID>640</ID>
+		<projectorStart>-0.600248, 0.34826</projectorStart>
+		<projectorEnd>-0.700235, 0.293431</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.81519, 1.06451, -6.45158</s>
+		<t>0.19364, 0.256594, 0.481872</t>
+		<iProjector>1</iProjector>
+		<ID>641</ID>
+		<projectorStart>0.364257, 0.288013</projectorStart>
+		<projectorEnd>0.466108, 0.31329</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.15363, 0.998271, -6.42605</s>
+		<t>0.0899025, -0.348521, -0.0271678</t>
+		<iProjector>1</iProjector>
+		<ID>642</ID>
+		<projectorStart>-0.695538, 0.298538</projectorStart>
+		<projectorEnd>-0.637278, 0.0810001</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.1847, 1.24435, -6.49173</s>
+		<t>-0.223423, -0.46212, -0.0924349</t>
+		<iProjector>1</iProjector>
+		<ID>643</ID>
+		<projectorStart>-0.695691, 0.475988</projectorStart>
+		<projectorEnd>-0.740077, 0.211125</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.1587, 0.997254, -6.42561</s>
+		<t>-0.212546, -0.229461, -0.183732</t>
+		<iProjector>1</iProjector>
+		<ID>644</ID>
+		<projectorStart>-0.694538, 0.296335</projectorStart>
+		<projectorEnd>-0.742178, 0.209764</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.952943, 0.770642, -6.60412</s>
+		<t>0.295202, -0.112404, 0.159502</t>
+		<iProjector>1</iProjector>
+		<ID>645</ID>
+		<projectorStart>-0.740876, 0.209723</projectorStart>
+		<projectorEnd>-0.637421, 0.0832673</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.77397, 1.08208, -5.84917</s>
+		<t>0.212212, -0.0997731, 0.223526</t>
+		<iProjector>1</iProjector>
+		<ID>646</ID>
+		<projectorStart>0.355755, 0.10294</projectorStart>
+		<projectorEnd>0.448691, -0.0529424</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.988615, 0.81091, -6.49051</s>
+		<t>-0.0595154, -0.303048, 0.132177</t>
+		<iProjector>1</iProjector>
+		<ID>647</ID>
+		<projectorStart>-0.739773, 0.204217</projectorStart>
+		<projectorEnd>-0.756677, -0.0260509</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.25975, 0.686673, -6.39848</s>
+		<t>-0.33461, -0.175836, 0.0433931</t>
+		<iProjector>1</iProjector>
+		<ID>648</ID>
+		<projectorStart>-0.639281, 0.0860308</projectorStart>
+		<projectorEnd>-0.757822, -0.02305</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.97679, 0.802584, -6.5359</s>
+		<t>0.0781136, -0.485116, 0.0985165</t>
+		<iProjector>1</iProjector>
+		<ID>649</ID>
+		<projectorStart>-0.739575, 0.208522</projectorStart>
+		<projectorEnd>-0.689473, -0.120187</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.24157, 0.670402, -6.42626</s>
+		<t>-0.199241, -0.373231, -0.0495262</t>
+		<iProjector>1</iProjector>
+		<ID>650</ID>
+		<projectorStart>-0.641951, 0.0844346</projectorStart>
+		<projectorEnd>-0.689746, -0.117823</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.941763, 0.542186, -6.30894</s>
+		<t>0.0935727, -0.266985, -0.199913</t>
+		<iProjector>1</iProjector>
+		<ID>651</ID>
+		<projectorStart>-0.757652, -0.020438</projectorStart>
+		<projectorEnd>-0.688315, -0.122453</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.23506, 0.657346, -6.4688</s>
+		<t>0.298555, -0.489788, 0.190456</t>
+		<iProjector>1</iProjector>
+		<ID>652</ID>
+		<projectorStart>-0.639855, 0.0913398</projectorStart>
+		<projectorEnd>-0.517178, -0.275191</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.04528, 0.305497, -6.45726</s>
+		<t>0.451354, -0.230474, 0.0278578</t>
+		<iProjector>1</iProjector>
+		<ID>653</ID>
+		<projectorStart>-0.690416, -0.117454</projectorStart>
+		<projectorEnd>-0.515156, -0.273127</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.75917, 0.196554, -5.48304</s>
+		<t>0.454518, 0.709769, 0.206175</t>
+		<iProjector>1</iProjector>
+		<ID>654</ID>
+		<projectorStart>0.322121, -0.627648</projectorStart>
+		<projectorEnd>0.552685, -0.254246</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.928862, 0.511805, -6.37279</s>
+		<t>-0.064011, -0.136322, 0.091444</t>
+		<iProjector>1</iProjector>
+		<ID>655</ID>
+		<projectorStart>-0.755426, -0.0190479</projectorStart>
+		<projectorEnd>-0.778739, -0.128879</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.04992, 0.307447, -6.45958</s>
+		<t>-0.165304, 0.101116, 0.248565</t>
+		<iProjector>1</iProjector>
+		<ID>656</ID>
+		<projectorStart>-0.689617, -0.117253</projectorStart>
+		<projectorEnd>-0.779807, -0.131458</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.805736, 0.588528, -6.51836</s>
+		<t>0.143432, -0.0560306, 0.207978</t>
+		<iProjector>1</iProjector>
+		<ID>657</ID>
+		<projectorStart>-0.79097, 0.077662</projectorStart>
+		<projectorEnd>-0.75592, -0.0275512</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.823361, 0.623783, -6.4763</s>
+		<t>0.0338015, -0.264797, 0.177565</t>
+		<iProjector>1</iProjector>
+		<ID>658</ID>
+		<projectorStart>-0.792273, 0.0835997</projectorStart>
+		<projectorEnd>-0.779847, -0.13337</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.04436, 0.0796117, -6.47496</s>
+		<t>0.00198042, 0.232629, 0.00942326</t>
+		<iProjector>1</iProjector>
+		<ID>659</ID>
+		<projectorStart>-0.675267, -0.243075</projectorStart>
+		<projectorEnd>-0.690119, -0.112953</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.05817, 0.0822088, -6.45296</s>
+		<t>-0.194403, 0.298967, 0.183557</t>
+		<iProjector>1</iProjector>
+		<ID>660</ID>
+		<projectorStart>-0.673009, -0.247289</projectorStart>
+		<projectorEnd>-0.780035, -0.13148</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.0124, 0.87611, -6.38981</s>
+		<t>-0.231263, 0.286259, 0.0280414</t>
+		<iProjector>1</iProjector>
+		<ID>661</ID>
+		<projectorStart>-0.745403, 0.213401</projectorStart>
+		<projectorEnd>-0.861292, 0.398762</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.15667, 1.21325, -6.5186</s>
+		<t>-0.38018, -0.0574001, 0.152101</t>
+		<iProjector>1</iProjector>
+		<ID>662</ID>
+		<projectorStart>-0.699461, 0.471067</projectorStart>
+		<projectorEnd>-0.861593, 0.400965</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.916465, 0.488332, -6.39656</s>
+		<t>-0.126271, 0.703433, 0.0705423</t>
+		<iProjector>1</iProjector>
+		<ID>663</ID>
+		<projectorStart>-0.754521, -0.0282511</projectorStart>
+		<projectorEnd>-0.863239, 0.404542</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.779718, 1.15959, -6.3554</s>
+		<t>-0.15414, -0.317051, 0.404305</t>
+		<iProjector>1</iProjector>
+		<ID>664</ID>
+		<projectorStart>-0.862392, 0.398761</projectorStart>
+		<projectorEnd>-0.947527, 0.0604579</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.904561, 0.505284, -6.40502</s>
+		<t>-0.0800746, 1.13175, 0.706943</t>
+		<iProjector>1</iProjector>
+		<ID>665</ID>
+		<projectorStart>-0.758081, -0.0208051</projectorStart>
+		<projectorEnd>-0.960703, 0.511156</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.852091, 0.351631, -6.31437</s>
+		<t>-0.107293, -0.244478, 0.0408182</t>
+		<iProjector>1</iProjector>
+		<ID>666</ID>
+		<projectorStart>-0.779833, -0.13438</projectorStart>
+		<projectorEnd>-0.806332, -0.286195</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.41881, 0.288387, -5.77354</s>
+		<t>0.228524, -0.17171, 0.536271</t>
+		<iProjector>1</iProjector>
+		<ID>667</ID>
+		<projectorStart>0.187812, -0.437409</projectorStart>
+		<projectorEnd>0.27702, -0.770126</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.793576, 0.145999, -6.19801</s>
+		<t>-0.271453, 0.564641, 0.00395441</t>
+		<iProjector>1</iProjector>
+		<ID>668</ID>
+		<projectorStart>-0.797166, -0.293344</projectorStart>
+		<projectorEnd>-0.945481, 0.0560452</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.445208, 0.594425, -6.3083</s>
+		<t>0.451805, -0.180787, 0.0840149</t>
+		<iProjector>1</iProjector>
+		<ID>669</ID>
+		<projectorStart>-0.943978, 0.0520429</projectorStart>
+		<projectorEnd>-0.778848, -0.133513</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.42099, 0.305801, -5.76133</s>
+		<t>0.0158858, -0.192529, 0.22944</t>
+		<iProjector>1</iProjector>
+		<ID>670</ID>
+		<projectorStart>0.189499, -0.432861</projectorStart>
+		<projectorEnd>0.191046, -0.641121</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.05035, 0.082667, -6.47429</s>
+		<t>-0.311253, 0.285401, 0.447299</t>
+		<iProjector>1</iProjector>
+		<ID>671</ID>
+		<projectorStart>-0.672668, -0.241835</projectorStart>
+		<projectorEnd>-0.853539, -0.216286</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.03649, 0.0757351, -6.47124</s>
+		<t>-0.362171, 0.169105, 0.930016</t>
+		<iProjector>1</iProjector>
+		<ID>672</ID>
+		<projectorStart>-0.675691, -0.243347</projectorStart>
+		<projectorEnd>-0.924827, -0.465685</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.691229, 0.136007, -5.54739</s>
+		<t>0.00910461, 0.782383, 0.359918</t>
+		<iProjector>1</iProjector>
+		<ID>673</ID>
+		<projectorStart>-0.909485, -0.535409</projectorStart>
+		<projectorEnd>-1.02526, -0.181352</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.17367, 0.175381, -5.46567</s>
+		<t>-0.466532, 0.715532, 0.366053</t>
+		<iProjector>1</iProjector>
+		<ID>674</ID>
+		<projectorStart>-0.726027, -0.558411</projectorStart>
+		<projectorEnd>-1.03059, -0.232701</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.33854, 0.100633, -5.95839</s>
+		<t>-0.182587, 0.0337916, 0.440483</t>
+		<iProjector>1</iProjector>
+		<ID>675</ID>
+		<projectorStart>-0.614296, -0.418691</projectorStart>
+		<projectorEnd>-0.727724, -0.55971</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.34758, 0.139751, -5.89219</s>
+		<t>-0.659639, 0.615958, 0.682246</t>
+		<iProjector>1</iProjector>
+		<ID>676</ID>
+		<projectorStart>-0.614521, -0.42122</projectorStart>
+		<projectorEnd>-1.00352, -0.274529</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.31413, 0.0660654, -6.00651</s>
+		<t>-0.0689427, 0.593453, -0.439155</t>
+		<iProjector>1</iProjector>
+		<ID>677</ID>
+		<projectorStart>-0.61635, -0.421113</projectorStart>
+		<projectorEnd>-0.63811, 0.084724</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.55568, 0.528308, -6.24474</s>
+		<t>-0.235148, -0.452188, 0.256078</t>
+		<iProjector>1</iProjector>
+		<ID>678</ID>
+		<projectorStart>-0.529128, -0.0692929</projectorStart>
+		<projectorEnd>-0.616649, -0.422912</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.79877, 0.449012, -5.69225</s>
+		<t>-0.233502, -0.2155, -0.473847</t>
+		<iProjector>1</iProjector>
+		<ID>679</ID>
+		<projectorStart>-0.472067, -0.317637</projectorStart>
+		<projectorEnd>-0.518836, -0.274685</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.31598, 0.0657902, -6.01305</s>
+		<t>-0.147104, 0.605424, 0.442766</t>
+		<iProjector>1</iProjector>
+		<ID>680</ID>
+		<projectorStart>-0.613781, -0.421535</projectorStart>
+		<projectorEnd>-0.75361, -0.203968</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.685565, 0.251026, -5.54507</s>
+		<t>0.116926, 0.205919, -0.326379</t>
+		<iProjector>1</iProjector>
+		<ID>681</ID>
+		<projectorStart>-0.921238, -0.458091</projectorStart>
+		<projectorEnd>-0.854266, -0.221021</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.86076, 0.364218, -6.29575</s>
+		<t>-0.362464, 0.200072, 0.435966</t>
+		<iProjector>1</iProjector>
+		<ID>682</ID>
+		<projectorStart>-0.776938, -0.130135</projectorStart>
+		<projectorEnd>-0.984066, -0.147639</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.46968, 0.396442, -6.80806</s>
+		<t>0.230195, 0.631255, 0.385603</t>
+		<iProjector>1</iProjector>
+		<ID>683</ID>
+		<projectorStart>-0.150374, 0.00397875</projectorStart>
+		<projectorEnd>-0.0860619, 0.27662</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.75229, 0.524235, -5.78195</s>
+		<t>0.192214, -0.507473, 0.0155001</t>
+		<iProjector>1</iProjector>
+		<ID>684</ID>
+		<projectorStart>-0.488166, -0.240086</projectorStart>
+		<projectorEnd>-0.390649, -0.563173</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.8299, 0.0699044, -5.58156</s>
+		<t>-0.235339, 0.526574, -0.533272</t>
+		<iProjector>1</iProjector>
+		<ID>685</ID>
+		<projectorStart>-0.451045, -0.591858</projectorStart>
+		<projectorEnd>-0.52743, -0.0717636</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.75823, 0.116988, -5.91528</s>
+		<t>-0.122556, 0.562695, -0.029211</t>
+		<iProjector>1</iProjector>
+		<ID>686</ID>
+		<projectorStart>-0.456263, -0.438712</projectorStart>
+		<projectorEnd>-0.528867, -0.0809051</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.67516, 0.0662407, -5.54768</s>
+		<t>-0.319397, 1.27532, -0.561594</t>
+		<iProjector>1</iProjector>
+		<ID>687</ID>
+		<projectorStart>-0.514277, -0.614195</projectorStart>
+		<projectorEnd>-0.666107, 0.424133</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.48328, 0.209676, -4.58196</s>
+		<t>-0.0902995, -0.114084, -0.523351</t>
+		<iProjector>1</iProjector>
+		<ID>688</ID>
+		<projectorStart>-0.697762, -0.934718</projectorStart>
+		<projectorEnd>-0.671876, -0.759344</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.43493, 0.111626, -4.7058</s>
+		<t>-0.255959, 0.0105643, -0.264526</t>
+		<iProjector>1</iProjector>
+		<ID>689</ID>
+		<projectorStart>-0.699342, -0.936669</projectorStart>
+		<projectorEnd>-0.77889, -0.796255</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.1983, 0.158194, -4.92321</s>
+		<t>0.199717, -0.0413977, -0.154056</t>
+		<iProjector>1</iProjector>
+		<ID>690</ID>
+		<projectorStart>-0.778661, -0.796155</projectorStart>
+		<projectorEnd>-0.674599, -0.761574</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.1885, 0.622056, -5.08091</s>
+		<t>0.213791, -0.491693, 0.0135331</t>
+		<iProjector>1</iProjector>
+		<ID>691</ID>
+		<projectorStart>-0.798214, -0.426174</projectorStart>
+		<projectorEnd>-0.675268, -0.763505</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.19096, 0.61965, -5.07714</s>
+		<t>0.256997, -0.47975, 0.401672</t>
+		<iProjector>1</iProjector>
+		<ID>692</ID>
+		<projectorStart>-0.799339, -0.429402</projectorStart>
+		<projectorEnd>-0.69896, -0.93442</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.18323, 0.614732, -5.08291</s>
+		<t>0.00982797, -0.471046, 0.13811</t>
+		<iProjector>1</iProjector>
+		<ID>693</ID>
+		<projectorStart>-0.800411, -0.426474</projectorStart>
+		<projectorEnd>-0.777903, -0.799773</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.81664, 0.072487, -5.59388</s>
+		<t>-1.10767, 0.664856, 0.365245</t>
+		<iProjector>1</iProjector>
+		<ID>694</ID>
+		<projectorStart>-0.44845, -0.58926</projectorStart>
+		<projectorEnd>-0.992904, -0.276725</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.943485, 0.526156, -5.39654</s>
+		<t>0.567452, -0.278608, -0.119797</t>
+		<iProjector>1</iProjector>
+		<ID>695</ID>
+		<projectorStart>-0.856501, -0.353045</projectorStart>
+		<projectorEnd>-0.591251, -0.504256</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.76251, 0.162437, -4.3001</s>
+		<t>-0.682573, 0.818253, -0.42001</t>
+		<iProjector>1</iProjector>
+		<ID>696</ID>
+		<projectorStart>-0.595371, -1.12703</projectorStart>
+		<projectorEnd>-0.932635, -0.335081</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.92945, 0.140225, -4.76093</s>
+		<t>-0.847015, 0.838327, 0.0470843</t>
+		<iProjector>1</iProjector>
+		<ID>697</ID>
+		<projectorStart>-0.474648, -0.921011</projectorStart>
+		<projectorEnd>-0.928035, -0.340177</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.07738, 0.926715, -5.20035</s>
+		<t>0.436523, -0.833083, -0.116698</t>
+		<iProjector>1</iProjector>
+		<ID>698</ID>
+		<projectorStart>-0.857121, -0.180702</projectorStart>
+		<projectorEnd>-0.596972, -0.681881</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.74098, 0.802489, -6.0976</s>
+		<t>0.389513, 0.145302, 0.967164</t>
+		<iProjector>1</iProjector>
+		<ID>699</ID>
+		<projectorStart>-0.868866, 0.117809</projectorStart>
+		<projectorEnd>-0.851605, -0.188656</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.50248, 0.0857689, -5.35582</s>
+		<t>-0.507545, 1.06873, -0.189109</t>
+		<iProjector>1</iProjector>
+		<ID>700</ID>
+		<projectorStart>-0.597586, -0.677366</projectorStart>
+		<projectorEnd>-0.870164, 0.115206</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.17923, 0.647784, -5.57786</s>
+		<t>0.0552822, -0.00518501, -0.894888</t>
+		<iProjector>1</iProjector>
+		<ID>701</ID>
+		<projectorStart>-0.748552, -0.213031</projectorStart>
+		<projectorEnd>-0.637554, 0.0853363</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.14406, 0.971911, -6.46261</s>
+		<t>0.0179713, -0.365727, 0.843097</t>
+		<iProjector>1</iProjector>
+		<ID>702</ID>
+		<projectorStart>-0.693809, 0.295687</projectorStart>
+		<projectorEnd>-0.747605, -0.221863</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.17065, 0.652177, -5.58246</s>
+		<t>-0.359808, 0.630492, -0.409364</t>
+		<iProjector>1</iProjector>
+		<ID>703</ID>
+		<projectorStart>-0.752635, -0.211089</projectorStart>
+		<projectorEnd>-0.904267, 0.367604</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.765046, 0.94038, -5.66755</s>
+		<t>0.176558, -0.398511, -0.64151</t>
+		<iProjector>1</iProjector>
+		<ID>704</ID>
+		<projectorStart>-0.929458, 0.0219282</projectorStart>
+		<projectorEnd>-0.759047, -0.0224619</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.753174, 0.804423, -5.88535</s>
+		<t>0.437013, -0.125488, 0.35433</t>
+		<iProjector>1</iProjector>
+		<ID>705</ID>
+		<projectorStart>-0.901262, 0.0103289</projectorStart>
+		<projectorEnd>-0.753395, -0.214465</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.878681, 2.08389, -5.25945</s>
+		<t>-0.115724, -0.977164, -0.427489</t>
+		<iProjector>1</iProjector>
+		<ID>706</ID>
+		<projectorStart>-1.06035, 0.711115</projectorStart>
+		<projectorEnd>-0.94896, 0.145816</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.7556, 0.533582, -5.76833</s>
+		<t>-0.396487, 0.816754, -0.339338</t>
+		<iProjector>1</iProjector>
+		<ID>707</ID>
+		<projectorStart>-0.487566, -0.241477</projectorStart>
+		<projectorEnd>-0.666686, 0.437322</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.77388, 0.577828, -5.68659</s>
+		<t>-0.671408, 1.00411, 0.20282</t>
+		<iProjector>1</iProjector>
+		<ID>708</ID>
+		<projectorStart>-0.488864, -0.243677</projectorStart>
+		<projectorEnd>-0.856302, 0.395457</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.24108, 0.654657, -6.44846</s>
+		<t>0.0717937, -0.58662, 0.441745</t>
+		<iProjector>1</iProjector>
+		<ID>709</ID>
+		<projectorStart>-0.639052, 0.0827342</projectorStart>
+		<projectorEnd>-0.617691, -0.419937</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.757547, 1.08888, -5.70344</s>
+		<t>0.00425798, -0.238536, -0.128341</t>
+		<iProjector>1</iProjector>
+		<ID>710</ID>
+		<projectorStart>-0.947157, 0.139411</projectorStart>
+		<projectorEnd>-0.906844, 0.0227066</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.14745, 1.18902, -6.59829</s>
+		<t>-0.309948, 0.072535, 0.652521</t>
+		<iProjector>1</iProjector>
+		<ID>711</ID>
+		<projectorStart>-0.690478, 0.476868</projectorStart>
+		<projectorEnd>-0.896245, 0.342266</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.12321, 1.17551, -6.59222</s>
+		<t>-0.634728, 0.35891, 0.434937</t>
+		<iProjector>1</iProjector>
+		<ID>712</ID>
+		<projectorStart>-0.700059, 0.46805</projectorStart>
+		<projectorEnd>-1.03623, 0.607358</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.458263, 1.44077, -6.31615</s>
+		<t>0.332852, -0.262366, -0.02039</t>
+		<iProjector>1</iProjector>
+		<ID>713</ID>
+		<projectorStart>-1.02145, 0.586791</projectorStart>
+		<projectorEnd>-0.860996, 0.404872</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.69698, 1.58662, -6.45115</s>
+		<t>0.0752063, -0.421887, 0.0710006</t>
+		<iProjector>1</iProjector>
+		<ID>714</ID>
+		<projectorStart>-0.918854, 0.726314</projectorStart>
+		<projectorEnd>-0.862498, 0.407075</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.783288, 1.16263, -6.35219</s>
+		<t>-0.401583, -0.0850226, 0.0501442</t>
+		<iProjector>1</iProjector>
+		<ID>715</ID>
+		<projectorStart>-0.861974, 0.397439</projectorStart>
+		<projectorEnd>-1.02353, 0.326722</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.780758, 1.16793, -6.34034</s>
+		<t>-0.313333, 0.162459, 0.385169</t>
+		<iProjector>1</iProjector>
+		<ID>716</ID>
+		<projectorStart>-0.862494, 0.401666</projectorStart>
+		<projectorEnd>-1.05628, 0.396417</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.32291, 1.31617, -6.22464</s>
+		<t>0.38468, 1.61523, 1.30699</t>
+		<iProjector>1</iProjector>
+		<ID>717</ID>
+		<projectorStart>-0.666116, 0.442364</projectorStart>
+		<projectorEnd>-0.759162, 1.31632</projectorEnd>
+	</Line>
+	<Line>
+		<s>-3.68935e+19, nan, 2.97511e-39</s>
+		<t>0, nan, 731.456</t>
+		<iProjector>1</iProjector>
+		<ID>718</ID>
+		<projectorStart>-0.667626, 0.434473</projectorStart>
+		<projectorEnd>-0.752918, 1.07819</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.15597, 1.85366, -6.26274</s>
+		<t>0.988795, -1.05239, 1.20962</t>
+		<iProjector>1</iProjector>
+		<ID>719</ID>
+		<projectorStart>-0.774004, 0.873394</projectorStart>
+		<projectorEnd>-0.393492, -0.339698</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.15766, 1.85915, -6.22934</s>
+		<t>-0.356621, -0.635851, 0.195135</t>
+		<iProjector>1</iProjector>
+		<ID>720</ID>
+		<projectorStart>-0.774938, 0.861955</projectorStart>
+		<projectorEnd>-0.899344, 0.340763</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.726823, 1.01618, -5.58548</s>
+		<t>0.101856, 0.235352, -0.383029</t>
+		<iProjector>1</iProjector>
+		<ID>721</ID>
+		<projectorStart>-0.971361, 0.0465328</projectorStart>
+		<projectorEnd>-0.896917, 0.344273</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.697155, 1.5927, -6.4523</s>
+		<t>0.0175046, 0.516405, 0.044507</t>
+		<iProjector>1</iProjector>
+		<ID>722</ID>
+		<projectorStart>-0.919087, 0.732081</projectorStart>
+		<projectorEnd>-0.964328, 1.1107</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.684832, 1.58103, -6.46954</s>
+		<t>-0.0730367, 0.494355, 0.473883</t>
+		<iProjector>1</iProjector>
+		<ID>723</ID>
+		<projectorStart>-0.92127, 0.728248</projectorStart>
+		<projectorEnd>-1.06224, 0.972311</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.820636, 1.24909, -6.00223</s>
+		<t>-0.36625, 0.653201, -0.217683</t>
+		<iProjector>1</iProjector>
+		<ID>724</ID>
+		<projectorStart>-0.896976, 0.345593</projectorStart>
+		<projectorEnd>-1.07908, 0.911908</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.03216, 2.1401, -4.79941</s>
+		<t>0.940851, -0.50832, -0.153839</t>
+		<iProjector>1</iProjector>
+		<ID>725</ID>
+		<projectorStart>-1.06423, 0.654958</projectorStart>
+		<projectorEnd>-0.520664, 0.237496</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.32418, 1.8746, -4.49454</s>
+		<t>-0.0811377, -1.76061, -0.581947</t>
+		<iProjector>1</iProjector>
+		<ID>726</ID>
+		<projectorStart>-0.396012, 0.197479</projectorStart>
+		<projectorEnd>-0.318603, -0.816771</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.33412, 1.83085, -4.4831</s>
+		<t>-0.849947, -0.977242, 0.180957</t>
+		<iProjector>1</iProjector>
+		<ID>727</ID>
+		<projectorStart>-0.39965, 0.195013</projectorStart>
+		<projectorEnd>-0.790071, -0.649212</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.5051, 0.9264, -4.18892</s>
+		<t>0.712901, -0.854426, -0.884593</t>
+		<iProjector>1</iProjector>
+		<ID>728</ID>
+		<projectorStart>-0.784139, -0.647501</projectorStart>
+		<projectorEnd>-0.312587, -0.825284</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.9086, 2.38853, -5.8041</s>
+		<t>0.514824, -2.42048, 0.762955</t>
+		<iProjector>1</iProjector>
+		<ID>729</ID>
+		<projectorStart>-0.50971, 1.14965</projectorStart>
+		<projectorEnd>-0.230847, -0.973345</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.799703, 0.850063, -4.81883</s>
+		<t>1.6762, -0.792533, 0.0179477</t>
+		<iProjector>1</iProjector>
+		<ID>730</ID>
+		<projectorStart>-1.0227, -0.381385</projectorStart>
+		<projectorEnd>-0.227831, -0.969346</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.11204, 2.40346, -6.41823</s>
+		<t>0.258943, -1.34896, 0.780174</t>
+		<iProjector>1</iProjector>
+		<ID>731</ID>
+		<projectorStart>-0.365508, 1.31634</projectorStart>
+		<projectorEnd>-0.258703, 0.0408</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.06209, 2.21964, -6.12416</s>
+		<t>-0.251592, -0.49239, 0.546185</t>
+		<iProjector>1</iProjector>
+		<ID>732</ID>
+		<projectorStart>-0.859631, 1.13626</projectorStart>
+		<projectorEnd>-1.00658, 0.577092</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.28772, 1.42591, -5.39268</s>
+		<t>1.06476, -0.390619, -0.268055</t>
+		<iProjector>1</iProjector>
+		<ID>733</ID>
+		<projectorStart>-0.780098, 0.261275</projectorStart>
+		<projectorEnd>-0.260429, 0.0356973</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.944954, 1.93416, -4.98944</s>
+		<t>0.431977, -0.711937, -0.599273</t>
+		<iProjector>1</iProjector>
+		<ID>734</ID>
+		<projectorStart>-1.05075, 0.52778</projectorStart>
+		<projectorEnd>-0.694236, 0.177082</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.928748, 1.59363, -5.26859</s>
+		<t>0.378079, -0.170828, -0.122382</t>
+		<iProjector>1</iProjector>
+		<ID>735</ID>
+		<projectorStart>-0.983488, 0.360145</projectorStart>
+		<projectorEnd>-0.775197, 0.257471</projectorEnd>
+	</Line>
+	<Line>
+		<s>3.31746, 1.7924, -5.75549</s>
+		<t>1.57959, -0.23607, 0.773732</t>
+		<iProjector>1</iProjector>
+		<ID>736</ID>
+		<projectorStart>0.157548, 0.624711</projectorStart>
+		<projectorEnd>0.949919, 0.120529</projectorEnd>
+	</Line>
+	<Line>
+		<s>4.66305, 1.6052, -6.1927</s>
+		<t>0.0302911, 0.359061, 0.478625</t>
+		<iProjector>1</iProjector>
+		<ID>737</ID>
+		<projectorStart>0.765406, 0.585093</projectorStart>
+		<projectorEnd>0.844315, 0.726887</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.221027, 1.14812, -4.11387</s>
+		<t>0.0793495, 0.495746, 0.0435119</t>
+		<iProjector>0</iProjector>
+		<ID>738</ID>
+		<projectorStart>-0.0565801, 0.146419</projectorStart>
+		<projectorEnd>0.0548, 0.4194</projectorEnd>
+	</Line>
+	<Line>
+		<s>1.18076, 0.348151, -2.92097</s>
+		<t>-0.513605, 0.484871, 0.0227907</t>
+		<iProjector>0</iProjector>
+		<ID>739</ID>
+		<projectorStart>-0.4541, -0.865</projectorStart>
+		<projectorEnd>-0.473981, -0.2457</projectorEnd>
+	</Line>
+	<Line>
+		<s>2.44972, 3.21358, -0.571105</s>
+		<t>-2.2208, -2.87358, -2.34519</t>
+		<iProjector>0</iProjector>
+		<ID>740</ID>
+		<projectorStart>-0.821669, 0.213401</projectorStart>
+		<projectorEnd>-0.6421, -0.2928</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.818209, 1.59365, -5.28679</s>
+		<t>0.28426, -0.638361, -1.22787</t>
+		<iProjector>1</iProjector>
+		<ID>741</ID>
+		<projectorStart>-1.01987, 0.369088</projectorStart>
+		<projectorEnd>-0.698009, 0.297377</projectorEnd>
+	</Line>
+	<Line>
+		<s>0.284716, 2.5284, -4.70142</s>
+		<t>0.99542, -0.392699, 0.0683503</t>
+		<iProjector>0</iProjector>
+		<ID>742</ID>
+		<projectorStart>0.472466, 0.974152</projectorStart>
+		<projectorEnd>0.6059, 0.1709</projectorEnd>
+	</Line>
+</Lines>

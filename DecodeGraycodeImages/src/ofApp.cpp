@@ -112,12 +112,14 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){
 	for(auto item : dragInfo.files) {
 		if (ofFile(item).isDirectory()) {
+			ofSetWindowTitle(item);
 			auto dir = ofDirectory();
 			dir.sort();
 			dir.listDir(item);
 			
 			ofImage loader;
 			int index = 0;
+			decoder.reset();
 			for (auto & file : dir.getFiles()) {
 				ofLogNotice("ofApp::dragEvent") << "loading " << file.getFileName() << " #" << index++;
 				loader.loadImage(file);

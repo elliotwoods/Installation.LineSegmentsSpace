@@ -1,1 +1,2 @@
+ofxCvGui2
 ofxGraycode

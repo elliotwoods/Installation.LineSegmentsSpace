@@ -22,8 +22,11 @@ void ofApp::setup(){
 //	gui.add(scene.imageCamera0, "Camera0 Median");
 //	gui.add(scene.imageCamera1, "Camera1 Median");
 	
+<<<<<<< HEAD
 
 	screenScene->push(this->debugNode);
+=======
+>>>>>>> e1790b4a9892e4d1cf92d6018625af74f944849d
 	screenScene->setGridLabelsEnabled(false);
 	screenScene->setGridEnabled(false);
 	screenScene->setCursorEnabled();
@@ -226,6 +229,7 @@ vector<float> loadDistortion(string& filename) {
 
 void ofApp::dragEvent(ofDragInfo dragInfo){
 	for(auto entry : dragInfo.files) {
+		ofLogNotice() << "Adding file " << entry;
 		filesDragged.push_back(entry);
 		bool isGraycode = entry.find("dataset") != string::npos;
 		bool isProjector = !isGraycode && entry.find("projector") != string::npos;

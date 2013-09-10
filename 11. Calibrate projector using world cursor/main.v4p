@@ -1331,7 +1331,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4935" top="14055" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="projector_2-correspondencs.xml">
+   <PIN pinname="Input String" slicecount="1" values="projector_1-correspondencs.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="spreadtable.xml">
    </PIN>
@@ -1882,7 +1882,7 @@
    </NODE>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Pause">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="180">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="180">
    <BOUNDS type="Node" left="16800" top="5145" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="16800" top="5145" width="6000" height="4500">

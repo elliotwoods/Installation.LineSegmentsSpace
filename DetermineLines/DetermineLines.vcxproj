@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DetermineLines</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>HAS_ADDON_OFXGRABCAM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data;..\..\..\addons\ofxPolyfit\libs\polyNfit\src;..\..\..\addons\ofxPolyfit\src;%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxCvGui2\libs;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxCvGui2\libs\ofxCvGui;..\..\..\addons\ofxCvGui2\libs\ofxCvGui\vs2010;..\..\..\addons\ofxCvGui2\src\ofxCvGui;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils;..\..\..\addons\ofxGrabCam\libs;..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxGraycode\libs;..\..\..\addons\ofxGraycode\src;..\..\..\addons\ofxGraycode\src\ofxGraycode;..\..\..\addons\ofxRay\libs;..\..\..\addons\ofxRay\src;..\..\..\addons\ofxRay\src\ofxRay;..\..\..\addons\ofxTriangulate\libs;..\..\..\addons\ofxTriangulate\src;..\..\..\addons\ofxUI\libs;..\..\..\addons\ofxUI\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4250</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>PocoFoundationmdd.lib;atlthunk.lib;msvcrt;libcmt;LIBC;LIBCMTD</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>HAS_ADDON_OFXGRABCAM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data;..\..\..\addons\ofxPolyfit\libs\polyNfit\src;..\..\..\addons\ofxPolyfit\src;%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxCvGui2\libs;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxCvGui2\libs\ofxCvGui;..\..\..\addons\ofxCvGui2\libs\ofxCvGui\vs2010;..\..\..\addons\ofxCvGui2\src\ofxCvGui;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui2\src\ofxCvGui\Panels\Utils;..\..\..\addons\ofxGrabCam\libs;..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxGraycode\libs;..\..\..\addons\ofxGraycode\src;..\..\..\addons\ofxGraycode\src\ofxGraycode;..\..\..\addons\ofxRay\libs;..\..\..\addons\ofxRay\src;..\..\..\addons\ofxRay\src\ofxRay;..\..\..\addons\ofxTriangulate\libs;..\..\..\addons\ofxTriangulate\src;..\..\..\addons\ofxUI\libs;..\..\..\addons\ofxUI\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4250</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\basisTransformIndices.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data\pfitBasis.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data\pfitDataPoint.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data\pfitDataSet.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\FitBase.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\matrix.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\polyNfit.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\powerBases.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\src\ofxPolyFit.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\src\ofxPolyFitUtils.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPolyfit\src\ofxPolyPlane.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\Thread.cpp" />
+    <ClCompile Include="src\ThreadSet.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTriangulate\src\ofxTriangulate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\basisTransformIndices.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data\pfitBasis.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data\pfitDataPoint.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\Data\pfitDataSet.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\FitBase.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\matrix.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\polyNfit.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\libs\polyNfit\src\powerBases.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\src\ofxPolyFit.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\src\ofxPolyFitUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxPolyfit\src\ofxPolyPlane.h" />
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Thread.h" />
+    <ClInclude Include="src\ThreadSet.h" />
+    <ClInclude Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.h" />
+    <ClInclude Include="..\..\..\addons\ofxTriangulate\src\ofxTriangulate.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DGraph.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DPad.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIBaseDraws.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIBiLabelSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICircleSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICustomImageButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIDropDownList.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIEventArgs.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIFPS.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIFPSSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageSampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabel.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabelButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabelToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMinimalSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMovingGraph.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUINumberDialer.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIOFWrapper.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRadio.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRangeSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRectangle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRotarySlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIScrollableCanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISpacer.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISpectrum.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISuperCanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITabBar.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITextArea.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITextInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIToggleMatrix.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIValuePlotter.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWaveform.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWidget.h" />
+    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWidgetWithLabel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\addons\ofxCvGui2\ofxCvGuiLib\ofxCvGuiLib.vcxproj">
+      <Project>{d984e425-b176-4122-ab51-cb93f80ee984}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\addons\ofxGraycode\ofxGraycodeLib\ofxGraycodeLib.vcxproj">
+      <Project>{ba65a9dd-2be2-4ff8-a9c6-6ac6624cddc3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\addons\ofxRay\ofxRayLib\ofxRayLib.vcxproj">
+      <Project>{048e1ec4-64fe-4aac-b524-1bd56a1fc726}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

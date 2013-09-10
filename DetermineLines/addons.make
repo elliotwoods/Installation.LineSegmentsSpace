@@ -1,6 +1,6 @@
-ofxGraycode
-ofxGrabCam
 ofxCvGui2
-ofxTriangulate
+ofxGrabCam
+ofxGraycode
 ofxRay
+ofxTriangulate
 ofxUI

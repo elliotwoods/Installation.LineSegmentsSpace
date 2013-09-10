@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\16. Shoot EDSDK\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\16. Shoot EDSDK\main.v4p">
+   <PATCH nodename="C:\kimchiandchips\installations\vvvv.patches.davinci13\16. Shoot EDSDK\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\16. Shoot EDSDK\main.v4p">
    <BOUNDS type="Window" left="2595" top="3345" width="10320" height="17190">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -231,7 +231,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5715" top="5640" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\sitedata\calibrations\550D - 18mm\captures|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\16. Shoot EDSDK|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -378,8 +378,6 @@
    <PIN pinname="Change" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="26" srcpinname="Change" dstnodeid="16" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Shoot">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27" systemname="IOBox (Value Advanced)">

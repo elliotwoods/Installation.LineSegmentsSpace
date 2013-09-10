@@ -1,0 +1,359 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\20. Calibrate projector multiviewport\subpatches\GetWorldCursor(EDSDK).v4p" systemname="GetWorldCursor (EDSDK)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\20. Calibrate projector multiviewport\subpatches\GetWorldCursor(EDSDK).v4p">
+   <BOUNDS type="Window" left="0" top="10725" width="16440" height="14205">
+   </BOUNDS>
+   <NODE systemname="Shoot EDSDK" filename="subpatches\Shoot EDSDK.v4p" nodename="subpatches\Shoot EDSDK.v4p" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3330" top="4710" width="1920" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2595" top="3345" width="11205" height="10545">
+   </BOUNDS>
+   <PIN pinname="Save On Computer" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Shoot" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Refresh" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="On Receive" visible="1">
+   </PIN>
+   <PIN pinname="Status2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="1260" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1260" top="435" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Board Setttings|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="BoardObjectPoints (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\modules\Image\OpenCV\BoardObjectPoints (OpenCV).v4p" nodename="BoardObjectPoints (OpenCV)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1245" top="3330" width="2460" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1245" top="3330">
+   </BOUNDS>
+   <PIN pinname="Board Pitch" visible="1" slicecount="1" values="2.5">
+   </PIN>
+   <PIN pinname="Object XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Board Size X" visible="1">
+   </PIN>
+   <PIN pinname="Board Size Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1245" top="2925" width="2460" height="270">
+   </BOUNDS>
+   <PIN pinname="Output Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output 1" dstnodeid="3" dstpinname="Board Size X">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output 2" dstnodeid="3" dstpinname="Board Size Y">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output 3" dstnodeid="3" dstpinname="Board Pitch">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3705" top="10680" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3705" top="10680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Status" dstnodeid="5" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5190" top="10680" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5190" top="10680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Photo recently|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Photo recently" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5190" top="435" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5190" top="435" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Shoot">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Shoot">
+   </LINK>
+   <NODE systemname="SolvePnP (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="SolvePnP (OpenCV)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1260" top="9945" width="4215" height="270">
+   </BOUNDS>
+   <PIN pinname="Intrinsics" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Object PointsXYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Image PointsXY" visible="1">
+   </PIN>
+   <PIN pinname="Extrinsics" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Object XYZ" dstnodeid="8" dstpinname="Object PointsXYZ">
+   </LINK>
+   <NODE systemname="Extrinsics (OpenCV Split)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Extrinsics (OpenCV Split)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1245" top="10575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Extrinsics" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Extrinsics" dstnodeid="16" dstpinname="Extrinsics">
+   </LINK>
+   <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1245" top="11175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Transform" dstnodeid="17" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1245" top="12195" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1245" top="12195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Position XYZ|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="TranslateXYZ" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Chessboard (DX11.Layer)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\modules\Image\OpenCV\DX11\Chessboard (DX11.Layer).v4p" nodename="Chessboard (DX11.Layer)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="7395" top="11520" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="BoardSizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Board Pitch" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="7395" top="10950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Remainder" visible="1">
+   </PIN>
+   <PIN pinname="Last Slice" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="1320" y="6053">
+   </LINKPOINT>
+   <LINKPOINT x="7395" y="6053">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Remainder" dstnodeid="19" dstpinname="BoardSizeXY">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Last Slice" dstnodeid="19" dstpinname="Board Pitch">
+   </LINK>
+   <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="8190" top="11115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Transform Out" dstnodeid="19" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Transform" dstnodeid="21" dstpinname="Transform In 1" linkstyle="VHV">
+   <LINKPOINT x="1305" y="10965">
+   </LINKPOINT>
+   <LINKPOINT x="8190" y="10965">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="22" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="8445" top="435" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8445" top="435" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Camera View|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output Node" dstnodeid="21" dstpinname="Transform In 2">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="23" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="9945" top="435" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9945" top="435" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Camera Intrinsics|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FindBoard" filename="GetWorldCursor\FindBoard.v4p" componentmode="Hidden" id="34" nodename="GetWorldCursor\FindBoard.v4p">
+   <BOUNDS type="Node" left="3330" top="6510" width="4380" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3330" top="6510" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20910" top="8055" width="11955" height="7410">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Board Setttings" visible="1">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="34" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Board Setttings" linkstyle="Bezier">
+   <LINKPOINT x="1325" y="3818">
+   </LINKPOINT>
+   <LINKPOINT x="7630" y="3818">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="PositionXY" dstnodeid="8" dstpinname="Image PointsXY">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="8" dstpinname="Intrinsics" linkstyle="Bezier">
+   <LINKPOINT x="9995" y="5310">
+   </LINKPOINT>
+   <LINKPOINT x="5410" y="5310">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2625" top="12180" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2625" top="12180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Success">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Success" dstnodeid="35" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="7635" y="9473">
+   </LINKPOINT>
+   <LINKPOINT x="2685" y="9473">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3345" top="1410" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3345" top="1410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Refresh">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="37" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4440" top="5295" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4440" top="5295" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Status2" dstnodeid="37" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="38" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4080" top="5565" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4080" top="5565" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Product Name" dstnodeid="38" dstpinname="Input String">
+   </LINK>
+   </PATCH>
