@@ -23,6 +23,7 @@ void ofApp::setup(){
 	this->selection = -1;
 	this->status = Waiting;
 	this->shift = false;
+	this->ctrl = false;
 	
 	this->windowResized(ofGetWidth(), ofGetHeight());
 
@@ -163,6 +164,8 @@ void ofApp::keyPressed(int key){
 	
 	if (key == OF_KEY_SHIFT) {
 		this->shift = true;
+	} else if (key == OF_KEY_CONTROL) {
+		this->ctrl = true;
 	} else if (key == OF_KEY_UP) {
 		if (this->selection != -1) {
 			auto & line = this->lines[selection];
@@ -224,6 +227,8 @@ void ofApp::keyPressed(int key){
 void ofApp::keyReleased(int key){
 	if (key == OF_KEY_SHIFT) {
 		this->shift = false;
+	} else if (key == OF_KEY_CONTROL) {
+		this->ctrl = false;
 	}
 	
 	if (key == 'n' && this->status==Waiting) {
@@ -267,6 +272,11 @@ void ofApp::mouseDragged(int x, int y, int button){
 		auto displace = screenToNorm(mouse) - screenToNorm(lastMouse);
 		if (this->shift) {
 			displace *= 0.1f;
+		}
+		if (this->ctrl) {
+			auto lineDir = (line.end - line.start).normalize();
+			float distance = displace.dot(lineDir);
+			displace = distance * lineDir;
 		}
 		point += displace;
 		

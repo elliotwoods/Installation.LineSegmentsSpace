@@ -61,6 +61,7 @@ class ofApp : public ofBaseApp{
 	ofVec2f lastMouse;
 	int endSelected;
 	bool shift;
+	bool ctrl;
 	
 	ofxOscSender osc;
 	ofThread sleeper;
