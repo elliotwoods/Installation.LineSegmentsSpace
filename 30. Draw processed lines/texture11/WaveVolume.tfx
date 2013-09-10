@@ -46,6 +46,22 @@ float4 PSTraverse(psInput input) : SV_Target
 	return abs(height - World.y) < Thickness;
 }
 
+float4 PSTraverseFeathered(psInput input) : SV_Target
+{
+	float4 World;
+	World.xyz = texture2d.Sample(linearSampler,input.uv);
+	World.w = 1.0f;
+	World = mul(World, TransformInverse);
+	
+	float height = Height * sin((length(World.xz) - Phase) / Radius);
+	float value = 1.0f - clamp(abs(height - World.y) / Thickness, 0, 1);
+	if (Thickness == 0) {
+		return 0;
+	} else {
+		return value;
+	}
+}
+
 technique10 Sphere
 {
 	pass P0
@@ -62,4 +78,11 @@ technique10 Traverse
 	}
 }
 
+technique10 TraverseFeathered
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSTraverseFeathered()));
+	}
+}
 

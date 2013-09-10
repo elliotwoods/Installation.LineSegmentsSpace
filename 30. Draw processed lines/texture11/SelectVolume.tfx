@@ -8,6 +8,7 @@ float Radius = 1.0f;
 float Thickness = 0.1f;
 float Phase = 0.0f;
 float4x4 TransformInverse;
+float2 R:TARGETSIZE;
 
 SamplerState linearSampler : IMMUTABLE
 {
@@ -33,6 +34,43 @@ float4 PSSphere(psInput input) : SV_Target
 	return abs(length(World.xyz) - Radius) < Thickness;
 }
 
+float4 PSSphereFill(psInput input) : SV_Target
+{
+	float2 x = R * input.uv;
+	float4 World;
+	World.xyz = texture2d[x];
+	World.w = 1.0f;
+	World = mul(World, TransformInverse);
+	
+	return length(World.xyz) < Radius;
+}
+
+float4 PSSphereFillGradient(psInput input) : SV_Target
+{
+	float2 x = R * input.uv;
+	float4 World;
+	World.xyz = texture2d[x];
+	World.w = 1.0f;
+	World = mul(World, TransformInverse);
+	float value = length(World.xyz) / Radius;
+	value = clamp(value, 0, 1);
+	value = 1.0f - value;
+	return value;
+}
+
+float4 PSSphereFillGradientNegative(psInput input) : SV_Target
+{
+	float2 x = R * input.uv;
+	float4 World;
+	World.xyz = texture2d[x];
+	World.w = 1.0f;
+	World = mul(World, TransformInverse);
+	float value = length(World.xyz) / Radius;
+	value = clamp(value, 0, 1);
+	value *= value < 1.0f;
+	return value;
+}
+
 float4 PSPlane(psInput input) : SV_Target
 {
 	float4 World;
@@ -49,6 +87,31 @@ technique10 Sphere
 	pass P0
 	{
 		SetPixelShader(CompileShader(ps_4_0,PSSphere()));
+	}
+}
+
+technique10 SphereFill
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSSphereFill()));
+	}
+}
+
+technique10 SphereFillGradient
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSSphereFillGradient()));
+	}
+}
+
+
+technique10 SphereFillGradientNegative
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSSphereFillGradientNegative()));
 	}
 }
 
