@@ -343,6 +343,7 @@ void ofApp::triangulateLine3D() {
 		int currentIndex = 0;
 		for (auto & thread : threads) {
 			if (thread.projector != iProjector) {
+				currentIndex++;
 				continue;
 			}
 			cout << "Triangulating thread " << currentIndex++ << "/" << threads.size() << endl;
