@@ -12,29 +12,31 @@ void ofApp::setup(){
 	
 	gui.init();
 	gui.add(fboProjectorView, "Projection Space lines");
-	
+	this->debugCameraPanel = gui.add(this->debugCameraMedian, "Camera Median");
+	this->debugProjectorPanel = gui.add(this->debugProjectorMedian, "Projector Median");
 	auto screenScene = gui.add(scene, "World");
+	
 //	gui.add(scene.viewCamera, "Camera View");
 //	gui.add(scene.viewProjector0, "Projector0 View");
 //	gui.add(scene.viewProjector1, "Projector1 View");
 //	gui.add(scene.imageCamera0, "Camera0 Median");
 //	gui.add(scene.imageCamera1, "Camera1 Median");
 	
-	
+
+	screenScene->push(this->debugNode);
 	screenScene->setGridLabelsEnabled(false);
 	screenScene->setGridEnabled(false);
+	screenScene->setCursorEnabled();
 	
 	auto & camera = screenScene->getCamera();
 	camera.setPosition(2.0f, 2.0f, -1.0f);
 	camera.lookAt(ofVec3f(0,0,-6.0f));
 	camera.setFov(90.0f);
-	camera.setCursorDraw(true);
 	camera.setNearClip(0.01f);
 	camera.setFarClip(100.0f);
 	
 	ofBackground(50);
 	ofSetVerticalSync(true);
-	fit.init(1, 1, 3, BASIS_SHAPE_TRIANGLE);
 }
 
 //--------------------------------------------------------------
@@ -44,6 +46,22 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	ofPushStyle();
+	ofNoFill();
+	
+	ofPushView();
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	glMatrixMode(GL_MODELVIEW);
+	
+	ofViewport(this->debugCameraPanel->getBounds());
+	ofCircle(debugCameraCoord, 0.1f);
+	
+	ofViewport(this->debugProjectorPanel->getBounds());
+	ofCircle(debugProjectorCoord, 0.1f);
+	
+	ofPopView();
+	ofPopStyle();
 }
 
 //--------------------------------------------------------------
@@ -94,6 +112,36 @@ void ofApp::keyPressed(int key){
 	
 	if (key == 't') {
 		triangulateLine3D();
+	}
+	
+	if (key == 'p') {
+		bool found = false;
+		int cameraIndex = 0;
+		int projectorIndex;
+		auto & decoder = this->decoder[0];
+		auto & projector = this->scene.projector0;
+		auto & dataSet = decoder.getDataSet();
+		while(!found) {
+			cameraIndex = ofRandom(0, decoder.getWidth() * decoder.getHeight() - 1.0f);
+			if (dataSet.getActive().getPixels()[cameraIndex]) {
+				found = true;
+				projectorIndex = dataSet.getData()[cameraIndex];
+			}
+		}
+		this->debugCameraCoord = scene.camera.getCoordinateFromIndex(cameraIndex);
+		this->debugProjectorCoord = projector.getCoordinateFromIndex(projectorIndex);
+		
+		this->debugNode.cameraRay = scene.camera.castCoordinate(this->debugCameraCoord);
+		this->debugNode.projectorRay = projector.castCoordinate(this->debugProjectorCoord);
+		this->debugNode.intersectRay = this->debugNode.cameraRay.intersect(this->debugNode.projectorRay);
+		
+		this->debugNode.cameraRay.color = ofColor(255,0,0);
+		this->debugNode.projectorRay.color = ofColor(0,255,0);
+		this->debugNode.intersectRay.color = ofColor(0,0,255);
+		
+		ofLogNotice() << "Debug viewing camera pixel:" << cameraIndex << ", projector pixel:" << projectorIndex << ", finds point:" << this->debugNode.intersectRay.getMidpoint();
+		ofLogNotice() << "Camera coordinate:" << this->debugCameraCoord;
+		ofLogNotice() << "Projector coordinate:" << this->debugProjectorCoord;
 	}
 }
 
@@ -211,6 +259,7 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 		if (isGraycode) {
 			auto & decoder = this->decoder[iProjector];
 			decoder.loadDataSet(entry);
+			decoder.setThreshold(10);
 			auto & projector = iProjector == 0 ? scene.projector0 : scene.projector1;
 			auto & mesh = iProjector == 0 ? scene.points0 : scene.points1;
 			ofLogNotice() << "Added dataset for projector " << iProjector;
@@ -223,7 +272,14 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 			imageCamera = decoder.getDataSet().getMedian();
 			imageCamera.update();
 			
-			ofxTriangulate::Triangulate(decoder.getDataSet(), scene.camera, projector, mesh, 0.1f);
+			ofxTriangulate::Triangulate(decoder.getDataSet(), scene.camera, projector, mesh, TRIANGULATE_MAX_DISTANCE);
+			
+			if (iProjector==0) {
+				this->debugCameraMedian = this->decoder[0].getDataSet().getMedian();
+				this->debugCameraMedian.update();
+				this->debugProjectorMedian = this->decoder[0].getDataSet().getMedianInverse();
+				this->debugProjectorMedian.update();
+			}
 		} else if (isDistortion) {
 			scene.camera.distortion = loadDistortion(entry);
 		} else if (isLineSet) {
@@ -257,26 +313,32 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 //---------
 void ofApp::triangulateLine3D() {
+	ofxPolyFitf fit;
+	fit.init(1, 1, 3, BASIS_SHAPE_TRIANGLE);
 	for(int iProjector=0; iProjector<2; iProjector++) {
 		auto & mapping = (iProjector == 0 ? scene.activePixelsMapProjectorToCamera0 : scene.activePixelsMapProjectorToCamera1);
 		auto & camera = scene.camera;
 		auto & projector = (iProjector == 0 ? scene.projector0 : scene.projector1);
 		
 		mapping.clear();
-		auto cameraInProjector = this->decoder[iProjector].getDataSet().getDataInverse().getPixels();
-		for(uint32_t i=0; i<this->payload.getWidth() * this->payload.getHeight(); i++) {
-			uint32_t cameraPixel = cameraInProjector[i];
-			if (cameraPixel != 0) {
-				mapping.insert(std::pair<uint32_t, uint32_t>(i, cameraPixel));
+		auto & decoder = this->decoder[iProjector];
+		auto projectorInCamera = decoder.getDataSet().getData().getPixels();
+		auto active = decoder.getDataSet().getActive().getPixels();
+		for(uint32_t cameraPixel=0; cameraPixel<decoder.getWidth() * decoder.getHeight(); cameraPixel++) {
+			if (active[cameraPixel]) {
+				uint32_t projectorPixel = projectorInCamera[cameraPixel];
+				if (projectorPixel != 0) {
+					mapping.insert(std::pair<uint32_t, uint32_t>(cameraPixel, projectorPixel));
+				}
 			}
 		}
 		
-	//	for(auto map : mapping) {
-	//		cout << map.first << "->" << map.second << endl;
-	//	}
+//		for(auto map : mapping) {
+//			cout << map.first << "->" << map.second << endl;
+//		}
 		
 		const int searchLocations = 20;
-		const int searchSize = 2; // kernel size in projector space
+		const int searchSize = 3; // kernel size in projector space
 		
 		int currentIndex = 0;
 		for (auto & thread : threads) {
@@ -289,26 +351,26 @@ void ofApp::triangulateLine3D() {
 				float x = (float) iSearchLocation / (float) (searchLocations - 1);
 				const ofVec2f searchLocation = x * (thread.projectorEnd - thread.projectorStart) + thread.projectorStart;
 				const ofVec2f searchPixelLocation = projector.getIndexFromCoordinate(searchLocation);
-				for(auto projectorPoint : mapping) {
-					const int projector_x = projectorPoint.first % this->payload.getWidth();
-					const int projector_y = projectorPoint.first / this->payload.getWidth();
+				for(auto correspondence : mapping) {
+					const int projector_x = correspondence.second % this->payload.getWidth();
+					const int projector_y = correspondence.second / this->payload.getWidth();
 					if (projector_y < searchPixelLocation.y - searchSize) {
 						continue;
 					} else if (projector_y > searchPixelLocation.y + searchSize) {
-						break;
+						continue; //this can be break if we're organising mapping by projector pixels
 					}
 					const ofVec2f projectorPixelLocation = ofVec2f(projector_x, projector_y);
 
 					ofVec3f worldXYZ;	
 					if ((projectorPixelLocation - searchPixelLocation).lengthSquared() <= searchSize * searchSize) {
-						if (ofxTriangulate::Triangulate(projectorPoint.second, projectorPoint.first, camera, projector, worldXYZ, 0.1f)) {
+						if (ofxTriangulate::Triangulate(correspondence.first, correspondence.second, camera, projector, worldXYZ, TRIANGULATE_MAX_DISTANCE)) {
 							Find find;
 							find.x = x;
 							find.projectorXY.x = projector_x;
 							find.projectorXY.y = projector_y;
 							find.worldXYZ = worldXYZ;
-							find.cameraIndex = projectorPoint.second;
-							find.projectorIndex = projectorPoint.first;
+							find.cameraIndex = correspondence.first;
+							find.projectorIndex = correspondence.second;
 							finds.push_back(find);
 						}
 					}

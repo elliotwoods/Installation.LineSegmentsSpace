@@ -10,12 +10,26 @@
 #include "Scene.h"
 #include "ThreadSet.h"
 
+#define TRIANGULATE_MAX_DISTANCE 0.2f
+
 struct Find {
 	float x;
 	ofVec2f projectorXY;
 	ofVec3f worldXYZ;
 	uint32_t cameraIndex;
 	uint32_t projectorIndex;
+};
+
+class DebugNode : public ofNode {
+public:
+	void customDraw() {
+		this->cameraRay.draw();
+		this->projectorRay.draw();
+		this->intersectRay.draw();
+	}
+	ofxRay::Ray cameraRay;
+	ofxRay::Ray projectorRay;
+	ofxRay::Ray intersectRay;
 };
 
 class ofApp : public ofBaseApp{
@@ -42,9 +56,19 @@ public:
 	ofxGraycode::PayloadGraycode payload;
 	Scene scene;
 	ThreadSet threads;
-	ofxPolyFitf fit;
 	
 	ofFbo fboProjectorView;
 	
 	vector<string> filesDragged;
+	
+	ofVec2f debugProjectorCoord;
+	ofVec2f debugCameraCoord;
+	
+	DebugNode debugNode;
+	
+	ofxCvGui::PanelPtr debugCameraPanel;
+	ofxCvGui::PanelPtr debugProjectorPanel;
+	
+	ofImage debugCameraMedian;
+	ofImage debugProjectorMedian;
 };
