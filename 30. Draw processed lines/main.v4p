@@ -415,7 +415,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="825" top="4998" width="12235" height="9340">
    </BOUNDS>
-   <BOUNDS type="Window" left="20535" top="9000" width="12240" height="12660">
+   <BOUNDS type="Window" left="1680" top="6870" width="9000" height="14400">
    </BOUNDS>
    <PIN pinname="Transform" visible="1">
    </PIN>
@@ -887,7 +887,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="3.75054868146963">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="3.59152307032318">
    </PIN>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output" dstnodeid="193" dstpinname="Output Breakpoint" linkstyle="VHV">
@@ -1111,7 +1111,9 @@
    </BOUNDS>
    <PIN pinname="Handle" visible="1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="-0.22">
+   <PIN pinname="X" slicecount="1" values="-0.54">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0.05">
    </PIN>
    </NODE>
    <LINK srcnodeid="208" srcpinname="Handle" dstnodeid="209" dstpinname="Handle">
@@ -1121,7 +1123,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="780" top="7140" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="5" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1143,7 +1145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="20250" top="11160" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|instance.v4p *  C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Flow Across Left To Right\|">
+   <PIN pinname="Input String" slicecount="1" values="|Noisy Wave.v4p    C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1155,5 +1157,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="211" srcpinname="Output String" dstnodeid="208" dstpinname="Title">
+   </LINK>
+   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="194" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -129,7 +129,7 @@
    </BOUNDS>
    <PIN pinname="Enabled" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="8">
+   <PIN pinname="Width" slicecount="1" values="16">
    </PIN>
    <PIN pinname="Volume" visible="1">
    </PIN>
