@@ -1,2 +1,1 @@
-ofxNetwork
 ofxOsc

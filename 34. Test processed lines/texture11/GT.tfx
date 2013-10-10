@@ -1,0 +1,37 @@
+//@author: elliotwoods
+//@help: select anything Greater Than
+//@tags: texture
+//@credits: 
+
+Texture2D<float> texture2d : PREVIOUS;
+float Input2 = 0.5f;
+
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PS(psInput input) : SV_Target
+{
+	return texture2d.Sample(linearSampler,input.uv) > Input2;
+}
+
+technique10 Process
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS()));
+	}
+}
+
+
+
