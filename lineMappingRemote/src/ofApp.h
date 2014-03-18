@@ -7,6 +7,7 @@ struct Line {
 	ofVec2f start;
 	ofVec2f end;
 	int iProjector;
+	bool changed;
 };
 
 enum Status {

@@ -124,6 +124,8 @@ void ofApp::drawLineSet(const ofRectangle & rect, bool zoom) {
 		if(line.second.iProjector == iProjector) {
 			if(line.first == selection) {
 				ofSetColor(255);
+			} else if (line.second.changed) {
+				ofSetColor(0, 0, 255);
 			} else {
 				ofSetColor(255, 0, 0);
 			}
@@ -391,6 +393,7 @@ void ofApp::updateLines() {
 					newLine.start = xml.getValue<ofVec2f>("start");
 					newLine.end = xml.getValue<ofVec2f>("end");
 					newLine.iProjector = xml.getIntValue("iProjector");
+					newLine.changed = xml.getIntValue("Changed") == 1;
 					if(xml.setTo("ID")) {
 						ID = xml.getIntValue();
 						xml.setToParent();

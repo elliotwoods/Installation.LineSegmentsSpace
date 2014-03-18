@@ -22,11 +22,7 @@ void ofApp::setup(){
 //	gui.add(scene.imageCamera0, "Camera0 Median");
 //	gui.add(scene.imageCamera1, "Camera1 Median");
 	
-<<<<<<< HEAD
-
 	screenScene->push(this->debugNode);
-=======
->>>>>>> e1790b4a9892e4d1cf92d6018625af74f944849d
 	screenScene->setGridLabelsEnabled(false);
 	screenScene->setGridEnabled(false);
 	screenScene->setCursorEnabled();
@@ -115,6 +111,7 @@ void ofApp::keyPressed(int key){
 	
 	if (key == 't') {
 		triangulateLine3D();
+		this->keyPressed('o');
 	}
 	
 	if (key == 'p') {
