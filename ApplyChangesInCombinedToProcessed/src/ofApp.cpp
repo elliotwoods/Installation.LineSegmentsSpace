@@ -1,6 +1,7 @@
 #include "ofApp.h"
 
-struct Line {
+class Thread {
+public:
 	ofVec2f projectorStart;
 	ofVec2f projectorEnd;
 };
@@ -9,7 +10,7 @@ struct Line {
 void ofApp::setup(){
 	ofXml newCombined;
 	ofXml processed;
-	map<int, Line> combinedContents;
+	map<int, Thread> combinedContents;
 	vector<ofVec2f> movement;
 	
 	auto result = ofSystemLoadDialog("Select new lines_combined.xml");
@@ -27,7 +28,7 @@ void ofApp::setup(){
 	if(newCombined.setTo("DocumentElement")) {
 		if(newCombined.setTo("SpreadTable[0]")) {
 			do {
-				Line newLine;
+				Thread newLine;
 				int ID = newCombined.getIntValue("_x0020_ID");
 				ofVec2f start, end;
 				start.x = newCombined.getFloatValue("x1");
@@ -36,7 +37,7 @@ void ofApp::setup(){
 				end.y = newCombined.getFloatValue("_x0020_y2");
 				newLine.projectorStart = start;
 				newLine.projectorEnd = end;
-				combinedContents.insert(pair<int,Line>(ID,newLine));
+				combinedContents.insert(pair<int,Thread>(ID,newLine));
 			} while (newCombined.setToSibling());
 			newCombined.setToParent();
 		}

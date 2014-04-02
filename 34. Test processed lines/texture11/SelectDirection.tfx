@@ -3,9 +3,9 @@
 //@tags: texture
 //@credits: 
 
-Texture2D texture1 : PREVIOUS;
-Texture2D texture2;
-float2 R:TARGETSIZE;
+Texture2D<float3> texture2d : PREVIOUS;
+float3 Direction;
+float Threshold = 0.1f;
 
 SamplerState linearSampler : IMMUTABLE
 {
@@ -23,7 +23,9 @@ struct psInput
 
 float4 PS(psInput input) : SV_Target
 {
-	return texture1.Sample(linearSampler,input.uv) * texture2.Sample(linearSampler, input.uv);
+	float3 direction = texture2d.Sample(linearSampler,input.uv);
+	float correspondence = dot(normalize(Direction), normalize(direction));
+	return smoothstep(1.0f - Threshold, 1.0f, abs(correspondence));
 }
 
 technique10 Process

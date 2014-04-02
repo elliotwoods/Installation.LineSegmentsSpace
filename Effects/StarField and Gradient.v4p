@@ -95,7 +95,7 @@
    </BOUNDS>
    <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Clip" slicecount="1" values="4" visible="1">
+   <PIN pinname="Clip" slicecount="1" visible="1" values="4">
    </PIN>
    <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
@@ -133,7 +133,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6765" top="3075" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -295,7 +295,7 @@
    </PIN>
    <PIN pinname="Scale" slicecount="1" values="3.5441">
    </PIN>
-   <PIN pinname="Pin Settings" slicecount="5" values="|&lt;PIN Name=&quot;Ruler1&quot; Type=&quot;Ruler&quot; SliceCount=&quot;1&quot; /&gt;|,|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-5.0000&quot; Maximum=&quot;3.0000&quot; /&gt;|,|&lt;PIN Name=&quot;stars&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;Music&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
+   <PIN pinname="Pin Settings" slicecount="5" values="|&lt;PIN Name=&quot;Ruler1&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-5.0000&quot; Maximum=&quot;3.0000&quot; /&gt;|,|&lt;PIN Name=&quot;stars&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;Music&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
    </PIN>
    <PIN pinname="Value0-Time0" slicecount="4" values="0.0199999618530274,5.07999981880187,43.4741104205645,67.6012744534653">
    </PIN>
@@ -329,7 +329,7 @@
    </PIN>
    <PIN pinname="Set Time" visible="1">
    </PIN>
-   <PIN pinname="Play" slicecount="1" values="1" visible="1">
+   <PIN pinname="Play" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Value0" dstnodeid="0" dstpinname="Y">
@@ -341,7 +341,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7575" top="3090" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

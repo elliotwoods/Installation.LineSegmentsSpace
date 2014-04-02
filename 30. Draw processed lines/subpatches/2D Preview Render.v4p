@@ -2,12 +2,12 @@
    <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\30. Draw processed lines\subpatches\2D Preview Render.v4p" systemname="2D Preview Render" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\30. Draw processed lines\subpatches\2D Preview Render.v4p">
    <BOUNDS type="Window" left="7200" top="20385" width="9945" height="3585">
    </BOUNDS>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="0" border="0">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="0" border="1">
    <BOUNDS type="Node" left="150" top="1980" width="5625" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="150" top="1980" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="5280" top="0" width="12720" height="9105">
+   <BOUNDS type="Window" left="5280" top="0" width="12720" height="12690">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
