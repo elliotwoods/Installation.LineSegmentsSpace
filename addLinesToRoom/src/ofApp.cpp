@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
 const ofVec3f roomMin(-3.6f, 0.0f, 0.0f);
-const ofVec3f roomMax(3.6f, 2.8f, 4.8f);
+const ofVec3f roomMax(3.6f, 2.8f, 4.08f);
 const ofVec3f roomScale = roomMax - roomMin;
 const ofVec3f roomCenter = (roomMin + roomMax) / 2.0f;
 

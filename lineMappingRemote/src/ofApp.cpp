@@ -429,6 +429,13 @@ void ofApp::updateLines() {
 void ofApp::sendSelection() {
 	auto & line = this->lines[selection];
 	ofxOscMessage msg;
+	
+	//clamp the current line to screen coordinates
+	line.start.x = ofClamp(line.start.x, -1.0f, 1.0f);
+	line.start.y = ofClamp(line.start.y, -1.0f, 1.0f);
+	line.end.x = ofClamp(line.end.x, -1.0f, 1.0f);
+	line.end.y = ofClamp(line.end.y, -1.0f, 1.0f);
+	
 	msg.setAddress("/point");
 	msg.addIntArg(selection);
 	msg.addFloatArg(line.start.x);
