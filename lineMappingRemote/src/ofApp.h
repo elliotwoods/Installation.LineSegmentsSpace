@@ -3,6 +3,8 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 
+#define PROJECTOR_COUNT 3
+
 struct Line {
 	ofVec2f start;
 	ofVec2f end;
@@ -45,7 +47,7 @@ class ofApp : public ofBaseApp{
 	
 	ofRectangle mainArea;
 	ofRectangle zoomedArea;
-	ofRectangle projectorButton[2];
+	ofRectangle projectorButton[PROJECTOR_COUNT];
 	ofRectangle newLineButton;
 	ofRectangle backButton;
 	ofRectangle nextButton;

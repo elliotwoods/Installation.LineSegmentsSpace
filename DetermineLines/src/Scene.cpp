@@ -1,7 +1,7 @@
 #include "Scene.h"
 
-const ofVec3f roomMin(0.0f, 0.0f, -6.78f);
-const ofVec3f roomMax(5.007f, 3.002f, 0.0f);
+const ofVec3f roomMin(0.0f, 0.0f, -3.74f);
+const ofVec3f roomMax(6.34f, 2.19f, 0.0f);
 const ofVec3f roomScale = roomMax - roomMin;
 const ofVec3f roomCenter = (roomMin + roomMax) / 2.0f;
 
@@ -26,11 +26,14 @@ void Scene::init() {
 	camera.setProjection(ofMatrix4x4());
 	projector0.setProjection(ofMatrix4x4());
 	projector1.setProjection(ofMatrix4x4());
+	projector2.setProjection(ofMatrix4x4());
 	
 	projector0.setWidth(1920);
 	projector0.setHeight(1080);
 	projector1.setWidth(1920);
 	projector1.setHeight(1080);
+	projector2.setWidth(1920);
+	projector2.setHeight(1080);
 	
 	camera.setWidth(5184);
 	camera.setHeight(3456);
@@ -38,6 +41,7 @@ void Scene::init() {
 	viewCamera.allocate(1024.0f * 1.5f, 1024.0f);
 	viewProjector0.allocate(1920, 1080);
 	viewProjector1.allocate(1920, 1080);
+	viewProjector2.allocate(1920, 1080);
 }
 
 //----------
@@ -45,6 +49,7 @@ void Scene::updateViews() {
 	drawSceneTo(camera, viewCamera);
 	drawSceneTo(projector0, viewProjector0);
 	drawSceneTo(projector1, viewProjector1);
+	drawSceneTo(projector2, viewProjector2);
 }
 
 //----------
@@ -72,6 +77,10 @@ void Scene::drawPoints() {
 	imageCamera1.getTextureReference().bind();
 	points1.drawVertices();
 	imageCamera1.getTextureReference().unbind();
+	
+	imageCamera2.getTextureReference().bind();
+	points2.drawVertices();
+	imageCamera2.getTextureReference().unbind();
 }
 
 //----------
@@ -145,12 +154,14 @@ void Scene::customDraw() {
 	this->camera.draw();
 	this->projector0.draw();
 	this->projector1.draw();
+	this->projector2.draw();
 	
 	ofPushStyle();
 	ofSetDrawBitmapMode(OF_BITMAPMODE_MODEL_BILLBOARD);
 	drawDevice(this->camera, "camera");
 	drawDevice(this->projector0, "projector0");
 	drawDevice(this->projector1, "projector1");
+	drawDevice(this->projector2, "projector1");
 	ofPopStyle();
 	
 	this->drawPoints();
@@ -163,6 +174,7 @@ void Scene::customDraw() {
 	
 	projector0.drawOnNearPlane(imageProjector0);
 	projector1.drawOnNearPlane(imageProjector1);
+	projector2.drawOnNearPlane(imageProjector2);
 	
 	if (threadSet != 0) {
 		threadSet->drawWorldSpace();

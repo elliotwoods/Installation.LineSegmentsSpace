@@ -25,12 +25,14 @@ void Thread::draw(float edgeThickness, ofColor center, ofColor border) const {
 
 //---------
 void Thread::drawShadow(float floorHeight) const {
-	ofPushStyle();
 	ofVec3f start = this->s;
 	ofVec3f end = this->t + start;
 	
+	//clamp the y value to the floor y value, so that the line sticks to the floor
 	start.y = floorHeight;
 	end.y = floorHeight;
+	
+	ofPushStyle();
 	
 	ofSetColor(20, 20, 20, 100);
 	ofLine(start, end);

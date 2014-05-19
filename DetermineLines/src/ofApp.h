@@ -10,7 +10,8 @@
 #include "Scene.h"
 #include "ThreadSet.h"
 
-#define TRIANGULATE_MAX_DISTANCE 0.2f
+#define TRIANGULATE_MAX_DISTANCE 0.4f
+#define PROJECTOR_COUNT 3
 
 struct Find {
 	float x;
@@ -52,7 +53,7 @@ public:
 	void triangulateLine3D();
 	
 	ofxCvGui::Builder gui;
-	ofxGraycode::Decoder decoder[2];
+	ofxGraycode::Decoder decoder[PROJECTOR_COUNT];
 	ofxGraycode::PayloadGraycode payload;
 	Scene scene;
 	ThreadSet threads;

@@ -29,7 +29,7 @@ void ofApp::setup(){
 
 	ofBackground(40);
 	
-	this->serverIP = ofSystemTextBoxDialog("Server IP address", "192.168.1.3");
+	this->serverIP = ofSystemTextBoxDialog("Server IP address", "192.168.1.149");
 	osc.setup(this->serverIP, 4000);
 	
 	ofSetVerticalSync(true);
@@ -94,12 +94,12 @@ void ofApp::draw(){
 	//--
 	
 	
-	for(int i=0; i<2; i++) {
-		ofDrawBitmapString("Projector " + ofToString(i), 40 + i * buttonWidth, buttonHeight / 2.0f + 5.0f);
+	for(int i=0; i < PROJECTOR_COUNT; i++) {
+		ofDrawBitmapString("Projector " + ofToString(i), projectorButton[i].x + 40, buttonHeight / 2.0f + 5.0f);
 	}
-	ofDrawBitmapString("New line", 40 + 2 * buttonWidth, buttonHeight / 2.0f + 5.0f);
-	ofDrawBitmapString("Back", 40 + 3 * buttonWidth, buttonHeight / 2.0f + 5.0f);
-	ofDrawBitmapString("Next", 40 + 4 * buttonWidth, buttonHeight / 2.0f + 5.0f);
+	ofDrawBitmapString("New line", 40 + newLineButton.x, buttonHeight / 2.0f + 5.0f);
+	ofDrawBitmapString("Back", 40 + backButton.x, buttonHeight / 2.0f + 5.0f);
+	ofDrawBitmapString("Next", 40 + nextButton.x, buttonHeight / 2.0f + 5.0f);
 	
 	this->drawLineSet(mainArea, false);
 	this->drawLineSet(zoomedArea, true);
@@ -291,25 +291,13 @@ void ofApp::mouseDragged(int x, int y, int button){
 void ofApp::mousePressed(int x, int y, int button){
 	ofVec2f mouse(x,y);
 	if (newLineButton.inside(x, y)) {
-		ofxOscMessage msg;
-		msg.setAddress("/newline");
-		msg.addIntArg(iProjector);
-		msg.addFloatArg(-0.5f);
-		msg.addFloatArg(0.0f);
-		msg.addFloatArg(0.5f);
-		msg.addFloatArg(0.0f);
-		osc.sendMessage(msg);
-		this->sleeper.sleep(100);
-		this->updateLines();
-		auto back = this->lines.end();
-		back--;
-		this->selection = back->first;
+		this->keyPressed('n');
 	} else if (backButton.inside(x, y)) {
 		this->back();
 	} else if (nextButton.inside(x, y)) {
 		this->next();
 	} else {
-		for(int i=0; i<2; i++) {
+		for(int i=0; i<PROJECTOR_COUNT; i++) {
 			if(projectorButton[i].inside(x, y)) {
 				iProjector = i;
 			}
@@ -349,17 +337,19 @@ void ofApp::mouseReleased(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
 	this->buttonHeight = 50;
-	this->buttonWidth = ofGetWidth() / 5.0f;
+	this->buttonWidth = ofGetWidth() / (float) (3 + PROJECTOR_COUNT);
 	
 	this->mainArea = ofRectangle(0, buttonHeight, ofGetWidth() - 200, ofGetHeight() - buttonHeight);
 	this->zoomedArea = ofRectangle(ofGetWidth() - 200, buttonHeight, 200, ofGetHeight() - buttonHeight);
 	
 	int iButton=0;
-	this->projectorButton[0] = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->projectorButton[1] = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->newLineButton = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->backButton = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->nextButton = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
+	for(int i=0; i<PROJECTOR_COUNT; i++) {
+		this->projectorButton[i] = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
+		cout << this->projectorButton[i] << endl;
+	}
+	this->newLineButton = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
+	this->backButton = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
+	this->nextButton = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
 
 }
 
