@@ -5,7 +5,7 @@ cbuffer controls:register(b0){
 };
 
 float4 pChessboard(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
-    float2 index = R * x + 2; // some weird hack one day, needed to add 2, shouldn't 
+    float2 index = floor(R * x); // some weird hack one day, needed to add 2, shouldn't 
 	return (index.x + (index.y % 2)) % 2;
 }
 

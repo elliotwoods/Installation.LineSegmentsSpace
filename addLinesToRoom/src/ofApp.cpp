@@ -73,6 +73,7 @@ void ofApp::draw(){
 	camera.begin();
 	this->lineSet.updateIndexBuffer(this->shift);
 	this->drawScene();
+	this->camera.updateCursorWorld();
 	this->cameraCursorCached = this->camera.getCursorWorld();
 	this->drawCursor();
 	camera.end();
