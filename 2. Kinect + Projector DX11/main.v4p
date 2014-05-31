@@ -104,7 +104,7 @@
    <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="22" stayontop="0" border="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="22" stayontop="0" border="1">
    <BOUNDS type="Node" left="8835" top="6690" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="8835" top="6690" width="6000" height="4500">
