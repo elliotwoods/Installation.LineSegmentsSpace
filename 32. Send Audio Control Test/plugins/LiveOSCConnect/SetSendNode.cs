@@ -39,7 +39,7 @@ namespace VVVV.Nodes.LiveOSC
 		public ILogger FLogger;
 		#endregion fields & pins
 
-		OSCTransmitter client = new OSCTransmitter("192.168.100.2", 9000);
+		OSCTransmitter client = new OSCTransmitter("192.168.1.143", 9000);
 		
 		SetSendNode()
 		{
@@ -49,6 +49,8 @@ namespace VVVV.Nodes.LiveOSC
 		{
 			if (FInConnection[0] == null) {
 				//return;
+			} else {
+				client = FInConnection[0];
 			}
 			//var client = FInConnection[0];
 			if (FInLevel.IsChanged || FInForceUpdate[0])

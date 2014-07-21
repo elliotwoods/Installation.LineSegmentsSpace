@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p" systemname="Room (DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p">
-   <BOUNDS type="Window" left="885" top="14385" width="17745" height="6915">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.1.dtd" >
+   <PATCH nodename="C:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\Room (DX11).v4p" systemname="Room (DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p">
+   <BOUNDS type="Window" left="855" top="4050" width="17745" height="6915">
    </BOUNDS>
    <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="3615" top="5655" width="100" height="100">
@@ -170,36 +170,6 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="13425" top="6675" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="3.392">
-   </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="1.501">
-   </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="3.002">
-   </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="ScaleX" slicecount="1" values="6.784">
-   </PIN>
-   <PIN pinname="Yaw" slicecount="1" values="-0.25">
-   </PIN>
-   </NODE>
-   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="13260" top="7260" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|left wall|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Transform Out" dstnodeid="19" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
    </LINK>
    <NODE systemname="GouraudDirectional (DX11.Effect)" filename="%VVVV%\packs\DX11\nodes\dx11\GouraudDirectional.fx" nodename="GouraudDirectional (DX11.Effect)" componentmode="Hidden" id="20">
@@ -262,12 +232,6 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="6" dstpinname="Layer 4">
    </LINK>
-   <NODE systemname="GroundPlane (DX11)" filename="..\..\..\..\openFrameworks\Research.ReprojectionScanning\vvvv\modules\GroundPlane (DX11).v4p" nodename="GroundPlane (DX11)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="675" top="6720" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="GeometryBuffer (DX11.Geometry Join)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="GeometryBuffer (DX11.Geometry Join)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="9180" top="6120" width="2205" height="270">
    </BOUNDS>
@@ -292,7 +256,11 @@
    <PIN pinname="Transform In" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="6" dstpinname="Layer 5">
+   <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="6" dstpinname="Layer 5" linkstyle="VHV">
+   <LINKPOINT x="9015" y="7035">
+   </LINKPOINT>
+   <LINKPOINT x="6225" y="7035">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="25" srcpinname="Geometry Out" dstnodeid="26" dstpinname="Geometry">
    </LINK>
@@ -581,5 +549,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="GroundPlane (DX11)" filename="..\..\Installation.LineOfSight\modules\GroundPlane (DX11).v4p" nodename="GroundPlane (DX11)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="675" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Layer Out" dstnodeid="6" dstpinname="Layer 1">
    </LINK>
    </PATCH>

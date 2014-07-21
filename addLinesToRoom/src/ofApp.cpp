@@ -230,6 +230,7 @@ void ofApp::drawInstructions() {
 	instructions << "[c] = clear all" << endl;
 	instructions << "[h] = toggle shadow" << endl;
 	instructions << "[g] = toggle grid" << endl;
+	instructions << "[f] = toggle fullscreen" << endl;
 	if (this->lineSet.getUndoStackLength() > 0) {
 		instructions << "[z] = undo" << endl;		
 	}
@@ -322,6 +323,10 @@ void ofApp::keyPressed(int key){
 	if (key == 'z') {
 		this->lineSet.undo();
 	}
+	
+	if (key == 'f') {
+		ofToggleFullscreen();
+	}
 }
 
 //--------------------------------------------------------------
@@ -333,6 +338,7 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
+	this->camera.updateCursorWorld();
 	this->cursorInLayerGui = this->layerGui.getRect()->inside(ofVec2f(x, y));
 }
 
