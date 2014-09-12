@@ -1,21 +1,7 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Noisy Wave.v4p" systemname="Noisy Wave" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Noisy Wave.v4p">
-   <BOUNDS type="Window" left="1680" top="6870" width="9000" height="14400">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="c:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Noisy Wave.v4p" systemname="Noisy Wave" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Noisy Wave.v4p">
+   <BOUNDS type="Window" left="9810" top="1185" width="13950" height="15930">
    </BOUNDS>
-   <NODE systemname="WaveVolume (DX11.TextureFX)" filename="..\30. Draw processed lines\texture11\WaveVolume.tfx" nodename="WaveVolume (DX11.TextureFX)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="3975" top="2520" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Phase" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Radius" slicecount="1" values="0.4">
-   </PIN>
-   <PIN pinname="Technique" slicecount="1" values="Sphere">
-   </PIN>
-   </NODE>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="6000" top="1500" width="100" height="100">
    </BOUNDS>
@@ -117,9 +103,9 @@
    <NODE id="24" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
-   <BOUNDS type="Box" left="900" top="10905" width="750" height="240">
+   <BOUNDS type="Box" left="2145" top="11775" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="900" top="10905" width="750" height="240">
+   <BOUNDS type="Node" left="2145" top="11775" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -132,10 +118,6 @@
    <BOUNDS type="Node" left="5445" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="0" dstpinname="Texture In">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Phase">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Texture Out" dstnodeid="22" dstpinname="Texture In">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="3" dstpinname="Texture In">
@@ -187,11 +169,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1605" top="2880" width="6000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="25605" top="10995" width="9240" height="9495">
+   <BOUNDS type="Window" left="1080" top="6015" width="9240" height="9495">
    </BOUNDS>
-   <PIN pinname="Translate" slicecount="1" values="-34.6635">
+   <PIN pinname="Translate" slicecount="1" values="3.5931">
    </PIN>
-   <PIN pinname="Scale" slicecount="1" values="54.1399">
+   <PIN pinname="Scale" slicecount="1" values="7.5741">
    </PIN>
    <PIN pinname="Pin Settings" slicecount="4" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Linear&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;4.0000&quot; /&gt;|,|&lt;PIN Name=&quot;NoiseVolume&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;ChipFatVolume&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
    </PIN>
@@ -237,23 +219,27 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="32" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="3705" top="6105" width="795" height="240">
+   <BOUNDS type="Box" left="3300" top="6660" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3705" top="6105" width="0" height="0">
+   <BOUNDS type="Node" left="3300" top="6660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Noise">
    </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="18" dstpinname="Texture In 2">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="34">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="34">
    <BOUNDS type="Node" left="7785" top="8325" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    <PIN pinname="Receive String" slicecount="1" values="/liveosc/connection">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="35">
@@ -367,7 +353,7 @@
    <NODE systemname="PlayClip (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="PlayClip (LiveOSC)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="7845" top="9825" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Connection" visible="1">
+   <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Track" visible="1">
    </PIN>
@@ -560,8 +546,6 @@
    </LINK>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Play">
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="24" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="31" srcpinname="Value0" dstnodeid="3" dstpinname="Thickness">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
@@ -708,4 +692,56 @@
    </LINK>
    <LINK srcnodeid="61" srcpinname="Up Edge" dstnodeid="62" dstpinname="Force Update">
    </LINK>
+   <NODE systemname="Multiply (DX11.TextureFX)" filename="texture11\Multiply.tfx" nodename="Multiply (DX11.TextureFX)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="2115" top="10650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="texture2" visible="1">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Texture Out" dstnodeid="70" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="MultiplyByValue (DX11.TextureFX)" filename="texture11\MultiplyByValue.tfx" nodename="MultiplyByValue (DX11.TextureFX)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="2130" top="11160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input2" visible="1">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="70" dstpinname="texture2">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="3300" top="10425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Destination Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Source Maximum" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="73" dstpinname="Destination Maximum">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="NoiseVolume" dstnodeid="73" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="72" dstpinname="Input2">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Texture Out" dstnodeid="72" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Texture Out" dstnodeid="24" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
    </PATCH>

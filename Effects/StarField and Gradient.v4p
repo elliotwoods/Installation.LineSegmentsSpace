@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p" systemname="StarField and Gradient" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p">
-   <BOUNDS type="Window" left="21555" top="16245" width="10725" height="8730">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="c:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\StarField and Gradient.v4p" systemname="StarField and Gradient" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p">
+   <BOUNDS type="Window" left="1830" top="5640" width="10725" height="8730">
    </BOUNDS>
    <NODE systemname="Radial Starfield" filename="..\Effects\Radial Starfield.v4p" componentmode="Hidden" id="1" nodename="..\Effects\Radial Starfield.v4p">
    <BOUNDS type="Node" left="585" top="2730" width="100" height="100">
@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Gradient From Base" filename="..\Effects\Gradient From Base.v4p" componentmode="Hidden" id="0" nodename="..\Effects\Gradient From Base.v4p">
-   <BOUNDS type="Node" left="2115" top="2730" width="100" height="100">
+   <BOUNDS type="Node" left="2100" top="2715" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2115" top="2730" width="4800" height="3600">
+   <BOUNDS type="Box" left="2100" top="2715" width="9885" height="6810">
    </BOUNDS>
    <BOUNDS type="Window" left="28365" top="21795" width="9000" height="6000">
    </BOUNDS>
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Y" visible="1">
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
@@ -68,12 +68,14 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="3" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="5">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="4500" top="3795" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    <PIN pinname="Receive String" slicecount="1" values="/liveosc/connection">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="SetSend (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="SetSend (LiveOSC)" componentmode="Hidden" id="7">
@@ -265,7 +267,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7170" top="5790" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" values="1,0,0,1">
+   <PIN pinname="Y Input Value" slicecount="4" values="1,0.5,0.5,1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -289,21 +291,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2760" top="1815" width="6000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="21120" top="8880" width="13125" height="8100">
+   <BOUNDS type="Window" left="11085" top="4980" width="13125" height="10185">
    </BOUNDS>
    <PIN pinname="Translate" slicecount="1" values="30.925">
    </PIN>
    <PIN pinname="Scale" slicecount="1" values="3.5441">
    </PIN>
-   <PIN pinname="Pin Settings" slicecount="5" values="|&lt;PIN Name=&quot;Ruler1&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-5.0000&quot; Maximum=&quot;3.0000&quot; /&gt;|,|&lt;PIN Name=&quot;stars&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;Music&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
-   </PIN>
-   <PIN pinname="Value0-Time0" slicecount="4" values="0.0199999618530274,5.07999981880187,43.4741104205645,67.6012744534653">
-   </PIN>
-   <PIN pinname="Value0-Value0" slicecount="4" values="-5,-3.46666671435038,-3.46666668256124,1.98666667938232">
-   </PIN>
-   <PIN pinname="Value0-InType0" slicecount="4" values="2,2,2,2">
-   </PIN>
-   <PIN pinname="Value0-OutType0" slicecount="4" values="2,2,2,2">
+   <PIN pinname="Pin Settings" slicecount="5" values="|&lt;PIN Name=&quot;Ruler1&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Gradient Height&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-10.0000&quot; Maximum=&quot;3.0000&quot; /&gt;|,|&lt;PIN Name=&quot;stars&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;Music&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
    </PIN>
    <PIN pinname="Value0" visible="1">
    </PIN>
@@ -331,9 +325,17 @@
    </PIN>
    <PIN pinname="Play" slicecount="1" visible="1" values="1">
    </PIN>
+   <PIN pinname="Gradient Height-Time0" slicecount="4" values="0.0199999618530274,5.07999981880187,43.4741104205645,67.6012744534653">
+   </PIN>
+   <PIN pinname="Gradient Height-Value0" slicecount="4" values="-5.40666666666668,-3.6,-3.6,1.98666667938232">
+   </PIN>
+   <PIN pinname="Gradient Height-InType0" slicecount="4" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="Gradient Height-OutType0" slicecount="4" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="Gradient Height" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="20" srcpinname="Value0" dstnodeid="0" dstpinname="Y">
-   </LINK>
    <LINK srcnodeid="20" srcpinname="stars" dstnodeid="1" dstpinname="Fill Factor">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21" systemname="IOBox (Value Advanced)">
@@ -493,5 +495,11 @@
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Play">
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
+   <LINK srcnodeid="20" srcpinname="Gradient Height" dstnodeid="0" dstpinname="Y">
    </LINK>
    </PATCH>

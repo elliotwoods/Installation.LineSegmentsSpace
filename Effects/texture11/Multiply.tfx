@@ -5,6 +5,7 @@
 
 Texture2D texture1 : PREVIOUS;
 Texture2D texture2;
+
 float2 R:TARGETSIZE;
 
 SamplerState linearSampler : IMMUTABLE
@@ -23,7 +24,7 @@ struct psInput
 
 float4 PS(psInput input) : SV_Target
 {
-	return texture1.Sample(linearSampler,input.uv) * texture2.Sample(linearSampler, input.uv);
+	return texture1.Sample(linearSampler,input.uv) * texture2.Sample(linearSampler,input.uv);
 }
 
 technique10 Process

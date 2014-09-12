@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\DrawLines\GenerateTextureTransforms.v4p" systemname="GenerateTextureTransforms" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\DrawLines\GenerateTextureTransforms.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="C:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\DrawLines\GenerateTextureTransforms.v4p" systemname="GenerateTextureTransforms" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\DrawLines\GenerateTextureTransforms.v4p">
    <BOUNDS type="Window" left="4935" top="20400" width="9000" height="6000">
    </BOUNDS>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="4">
@@ -13,7 +13,7 @@
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="930" top="2700" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Spread Count" visible="1">
+   <PIN pinname="Spread Count" visible="1" slicecount="1" values="2048">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -28,20 +28,6 @@
    <PIN pinname="Count" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="RoundUpPowerOfTwo (Value)" filename="..\RoundUpPowerOfTwo (Value).v4p" nodename="RoundUpPowerOfTwo (Value)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1830" top="2100" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="10485" top="13695" width="3630" height="5130">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="2" srcpinname="Count" dstnodeid="1" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Spread Count">
-   </LINK>
    <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="930" top="3135" width="3270" height="270">
    </BOUNDS>
@@ -88,4 +74,8 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="6" dstpinname="Input Node">
    </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
    </PATCH>

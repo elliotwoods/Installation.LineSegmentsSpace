@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Directiopn.v4p" systemname="Point Towards Directiopn" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Directiopn.v4p">
-   <BOUNDS type="Window" left="23250" top="11745" width="9930" height="8880">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="c:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Point Towards Directiopn.v4p" systemname="Point Towards Directiopn" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Directiopn.v4p">
+   <BOUNDS type="Window" left="7785" top="7320" width="9930" height="8880">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2235" top="4785" width="795" height="720">
@@ -31,11 +31,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3045" top="5040" width="795" height="240">
+   <BOUNDS type="Box" left="3420" top="5325" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3045" top="5040" width="0" height="0">
+   <BOUNDS type="Node" left="3420" top="5325" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.06">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.05">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3795" top="2130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -164,22 +164,24 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Pause">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="5940" top="3660" width="255" height="270">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="4575" top="7470" width="255" height="270">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="/liveosc/connection">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="SetSend (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="SetSend (LiveOSC)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="5925" top="4335" width="100" height="100">
+   <BOUNDS type="Node" left="4560" top="8145" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Connection" visible="1">
    </PIN>
    <PIN pinname="Send" visible="1">
    </PIN>
-   <PIN pinname="Level" slicecount="1" values="1" visible="1">
+   <PIN pinname="Level" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Force Update" visible="1">
    </PIN>
@@ -187,7 +189,7 @@
    <LINK srcnodeid="13" srcpinname="Input Value" dstnodeid="14" dstpinname="Connection">
    </LINK>
    <NODE systemname="PlayClip (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="PlayClip (LiveOSC)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="5010" top="4320" width="100" height="100">
+   <BOUNDS type="Node" left="3645" top="8130" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Connection" visible="1">
    </PIN>
@@ -201,21 +203,21 @@
    <LINK srcnodeid="13" srcpinname="Input Value" dstnodeid="15" dstpinname="Connection">
    </LINK>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="6315" top="3675" width="100" height="100">
+   <BOUNDS type="Node" left="4950" top="7485" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname=".. To [" slicecount="1" values="4" visible="1">
+   <PIN pinname=".. To [" slicecount="1" visible="1" values="4">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="14" dstpinname="Send">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5610" top="2865" width="480" height="480">
+   <BOUNDS type="Box" left="4170" top="6705" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5610" top="2865" width="0" height="0">
+   <BOUNDS type="Node" left="4170" top="6705" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -227,15 +229,15 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Play">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Force Update">
    </LINK>
    <NODE systemname="RandomSpread (Spreads)" nodename="RandomSpread (Spreads)" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="5130" top="5820" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" slicecount="1" values="0.75">
+   <PIN pinname="Input" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Random Seed" visible="1">
    </PIN>
@@ -318,8 +320,6 @@
    </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="23" srcpinname="Down Edge" dstnodeid="17" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
    <BOUNDS type="Node" left="2775" top="900" width="100" height="100">
    </BOUNDS>
@@ -335,7 +335,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="25">
@@ -347,8 +347,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Up Edge" dstnodeid="15" dstpinname="Stop">
    </LINK>
@@ -381,5 +379,43 @@
    <LINK srcnodeid="27" srcpinname="Up Edge" dstnodeid="8" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="27" srcpinname="Up Edge" dstnodeid="5" dstpinname="Reset">
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Down Edge" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="6390" top="7395" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Position Out" dstnodeid="29" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="5190" y="7305">
+   </LINKPOINT>
+   <LINKPOINT x="6390" y="7305">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="6375" top="7800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="OnChange" dstnodeid="30" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="14" dstpinname="Force Update" linkstyle="VHV">
+   <LINKPOINT x="6375" y="8093">
+   </LINKPOINT>
+   <LINKPOINT x="5430" y="8093">
+   </LINKPOINT>
    </LINK>
    </PATCH>

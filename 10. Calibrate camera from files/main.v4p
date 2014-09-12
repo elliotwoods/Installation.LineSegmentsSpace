@@ -1,13 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\10. Calibrate camera from files\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\10. Calibrate camera from files\main.v4p">
-   <BOUNDS type="Window" left="6345" top="5985" width="9000" height="8550">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="C:\openFrameworks\apps\Installation.LineSegmentsSpace\10. Calibrate camera from files\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\10. Calibrate camera from files\main.v4p">
+   <BOUNDS type="Window" left="6345" top="3600" width="9000" height="10935">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1320" top="1050" width="2295" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="1320" top="1050" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|..\sitedata\calibrations\550D - 18mm\captures|">
+   <PIN pinname="Input String" slicecount="1" values="|..\sitedata\camera chessboard captures|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -112,7 +112,7 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Content" dstnodeid="6" dstpinname="Input">
    </LINK>
-   <NODE systemname="BoardObjectPoints (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\modules\Image\OpenCV\BoardObjectPoints (OpenCV).v4p" nodename="BoardObjectPoints (OpenCV)" componentmode="Hidden" id="7">
+   <NODE systemname="BoardCorners (3d)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\modules\Image\OpenCV\BoardObjectPoints (OpenCV).v4p" nodename="BoardObjectPoints (OpenCV)" componentmode="Hidden" id="7">
    <BOUNDS type="Node" left="2055" top="3330" width="2460" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="2055" top="3330">
@@ -166,7 +166,7 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Board Pitch">
    </LINK>
-   <NODE systemname="CalibrateCamera (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="CalibrateCamera (OpenCV)" componentmode="Hidden" id="11">
+   <NODE systemname="CalibrateCamera (CV.Transform)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="CalibrateCamera (OpenCV)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="1140" top="5055" width="5610" height="270">
    </BOUNDS>
    <PIN pinname="Image PointsXY" visible="1">
@@ -187,7 +187,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2985" top="4455" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   <PIN pinname="Y Input Value" slicecount="0" visible="1" values="0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="px">
    </PIN>
@@ -222,48 +222,6 @@
    <LINKPOINT x="4265" y="1583">
    </LINKPOINT>
    <LINKPOINT x="6595" y="1583">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="ImageLoad (OpenCV FreeImage)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.FreeImage.dll" nodename="ImageLoad (OpenCV FreeImage)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="6165" top="2790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="|..\sitedata\calibrations\550D - 18mm\captures\IMG_0017.JPG|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Reload" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="Info (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Info (OpenCV)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="6150" top="3345" width="1560" height="270">
-   </BOUNDS>
-   <PIN pinname="Image" visible="1">
-   </PIN>
-   <PIN pinname="Width" visible="1">
-   </PIN>
-   <PIN pinname="Height" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="18" dstpinname="Image">
-   </LINK>
-   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="6630" top="3885" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Width" dstnodeid="19" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Height" dstnodeid="19" dstpinname="Y">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="XY" dstnodeid="12" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="6630" y="4240">
-   </LINKPOINT>
-   <LINKPOINT x="3045" y="4340">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
@@ -310,7 +268,7 @@
    </NODE>
    <LINK srcnodeid="11" srcpinname="Status" dstnodeid="22" dstpinname="Input String">
    </LINK>
-   <NODE systemname="Writer (OpenCV Intrinsics)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Writer (OpenCV Intrinsics)" componentmode="Hidden" id="23">
+   <NODE systemname="Writer (CV.Transform Intrinsics)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Writer (OpenCV Intrinsics)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="2985" top="7845" width="1650" height="270">
    </BOUNDS>
    <PIN pinname="Intrinsics" visible="1">
@@ -396,9 +354,7 @@
    </NODE>
    <LINK srcnodeid="13" srcpinname="Filenames" dstnodeid="14" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="17" dstpinname="Filename">
-   </LINK>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="27">
+   <NODE systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="27">
    <BOUNDS type="Node" left="4560" top="6420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output 1" visible="1">
@@ -414,4 +370,28 @@
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output 1" dstnodeid="25" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="6165" top="2790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="17" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="SizeXY" dstnodeid="12" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="6165" y="3743">
+   </LINKPOINT>
+   <LINKPOINT x="3045" y="3743">
+   </LINKPOINT>
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
    </PATCH>

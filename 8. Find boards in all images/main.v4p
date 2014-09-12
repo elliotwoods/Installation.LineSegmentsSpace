@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\8. Find boards in all images\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\8. Find boards in all images\main.v4p">
-   <BOUNDS type="Window" left="780" top="9225" width="16425" height="14205">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
+   <PATCH nodename="C:\openFrameworks\apps\Installation.LineSegmentsSpace\8. Find boards in all images\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\8. Find boards in all images\main.v4p">
+   <BOUNDS type="Window" left="-180" top="3960" width="16425" height="14205">
    </BOUNDS>
-   <NODE systemname="ImageLoad (OpenCV FreeImage)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.FreeImage.dll" nodename="ImageLoad (OpenCV FreeImage)" componentmode="Hidden" id="0">
+   <NODE systemname="FileImage (CV.Image FreeImage)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.FreeImage.dll" nodename="ImageLoad (OpenCV FreeImage)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3495" top="1815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -14,7 +14,7 @@
    <BOUNDS type="Box" left="3495" top="1815">
    </BOUNDS>
    </NODE>
-   <NODE systemname="FindBoard (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="FindBoard (OpenCV)" componentmode="Hidden" id="1">
+   <NODE systemname="FindBoard (CV.Image)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="FindBoard (OpenCV)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="3495" top="2235" width="6060" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
@@ -55,7 +55,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3630" top="345" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\sitedata\calibrations\550D - 18mm\captures|">
+   <PIN pinname="Input String" slicecount="1" values="|..\sitedata\camera chessboard captures|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -134,7 +134,7 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="PositionXY" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Reader (OpenCV Intrinsics)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Reader (OpenCV Intrinsics)" componentmode="Hidden" id="9">
+   <NODE systemname="Reader (CV.Transform Intrinsics)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Reader (OpenCV Intrinsics)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="6000" top="9495" width="2220" height="270">
    </BOUNDS>
    <PIN pinname="Read" visible="1" slicecount="1" values="0">
@@ -196,7 +196,7 @@
    <LINKPOINT x="8160" y="8798">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="SolvePnP (OpenCV)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="SolvePnP (OpenCV)" componentmode="Hidden" id="16">
+   <NODE systemname="SolvePnP (CV.Transform)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="SolvePnP (OpenCV)" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="1005" top="12150" width="5070" height="270">
    </BOUNDS>
    <PIN pinname="Object PointsXYZ" visible="1">
@@ -212,7 +212,7 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Intrinsics" dstnodeid="16" dstpinname="Intrinsics">
    </LINK>
-   <NODE systemname="Extrinsics (OpenCV Split)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Extrinsics (OpenCV Split)" componentmode="Hidden" id="17">
+   <NODE systemname="Extrinsics (CV.Transform Split)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Extrinsics (OpenCV Split)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="1020" top="12735" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Extrinsics" visible="1">
@@ -522,7 +522,7 @@
    </LINK>
    <LINK srcnodeid="47" srcpinname="Actual Backbuffer Height" dstnodeid="49" dstpinname="Aspect Height">
    </LINK>
-   <NODE systemname="Intrinsics (OpenCV Split)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Intrinsics (OpenCV Split)" componentmode="Hidden" id="50">
+   <NODE systemname="Intrinsics (CV.Transform Split)" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\plugins\VVVV.Nodes.OpenCV.dll" nodename="Intrinsics (OpenCV Split)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="12015" top="12030" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Camera" visible="1">
@@ -530,7 +530,7 @@
    <PIN pinname="Intrinsics" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Perspective (OpenCV Intrinsics Transform)" nodename="Perspective (OpenCV Intrinsics Transform)" componentmode="Hidden" id="51" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\modules\Image\OpenCV\Perspective (OpenCV Intrinsics Transform).v4p">
+   <NODE systemname="Perspective (CV.Transform)" nodename="Perspective (OpenCV Intrinsics Transform)" componentmode="Hidden" id="51" filename="%VVVV%\VVVV.Packs.Image\lib\nodes\modules\Image\OpenCV\Perspective (OpenCV Intrinsics Transform).v4p">
    <BOUNDS type="Node" left="12000" top="12465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
@@ -906,7 +906,7 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="9" dstpinname="Filename">
    </LINK>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="101">
+   <NODE systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="101">
    <BOUNDS type="Node" left="14175" top="5190" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output 1" visible="1">
@@ -1072,7 +1072,7 @@
    <LINKPOINT x="10585" y="1710">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="29">
+   <NODE systemname="QUAD (DX11.LAYER)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="10305" top="4500" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
@@ -1081,14 +1081,10 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Texture In" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In">
+   <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture">
    </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="110">
    <BOUNDS type="Node" left="9255" top="5565" width="100" height="100">
@@ -1110,7 +1106,7 @@
    <PIN pinname="Layer 2" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="29" srcpinname="Layer Out" dstnodeid="111" dstpinname="Layer 1">
+   <LINK srcnodeid="29" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="111" srcpinname="Layer Out" dstnodeid="110" dstpinname="Layers">
    </LINK>
@@ -1176,6 +1172,10 @@
    <PIN pinname="XYZ" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <LINK srcnodeid="115" srcpinname="Transform Out" dstnodeid="29" dstpinname="Transform In">
+   <LINK srcnodeid="115" srcpinname="Transform Out" dstnodeid="29" dstpinname="Transform">
    </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
    </PATCH>
