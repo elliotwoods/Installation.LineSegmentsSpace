@@ -29,7 +29,7 @@ void ofApp::setup(){
 
 	ofBackground(40);
 	
-	this->serverIP = ofSystemTextBoxDialog("Server IP address", "192.168.1.3");
+	this->serverIP = ofSystemTextBoxDialog("Server IP address", "192.168.100.12");
 	osc.setup(this->serverIP, 4000);
 	
 	ofSetVerticalSync(true);
@@ -58,9 +58,9 @@ void ofApp::draw(){
 	ofSetLineWidth(1.0f);
 	ofRect(mainArea);
 	ofRect(zoomedArea);
-	ofRect(projectorButton[0]);
-	ofRect(projectorButton[1]);
-	ofRect(newLineButton);
+	for(int i=0; i<PROJECTOR_COUNT; i++) {
+		ofRect(projectorButton[i]);
+	}
 	ofRect(nextButton);
 	ofRect(backButton);
 	ofPopStyle();
@@ -93,13 +93,27 @@ void ofApp::draw(){
 	//
 	//--
 	
+	//--
+	//print controls to screen
+	//--
+	//
+	stringstream controls;
+	controls << "[ ] = select line near mouse cursor" << endl;
+	controls << "[n] = new line" << endl;
+	controls << "[BACKSPACE] = delete selected line" << endl;
+	controls << "[f] = fullscreen" << endl;
+	controls << endl;
+	controls << "[SHIFT] = move slowly" << endl;
+	controls << "[CTRL] = move awesomely" << endl;
+	controls << "[ALT] = move both lines at same time" << endl;
 	
-	for(int i=0; i<2; i++) {
-		ofDrawBitmapString("Projector " + ofToString(i), 40 + i * buttonWidth, buttonHeight / 2.0f + 5.0f);
+	ofDrawBitmapString(controls.str(), this->projectorButton[0].x + 10, this->projectorButton[0].y + this->projectorButton[0].height + 20);
+	
+	for(int i=0; i < PROJECTOR_COUNT; i++) {
+		ofDrawBitmapString("Projector " + ofToString(i), projectorButton[i].x + 40, buttonHeight / 2.0f + 5.0f);
 	}
-	ofDrawBitmapString("New line", 40 + 2 * buttonWidth, buttonHeight / 2.0f + 5.0f);
-	ofDrawBitmapString("Back", 40 + 3 * buttonWidth, buttonHeight / 2.0f + 5.0f);
-	ofDrawBitmapString("Next", 40 + 4 * buttonWidth, buttonHeight / 2.0f + 5.0f);
+	ofDrawBitmapString("Back", 40 + backButton.x, buttonHeight / 2.0f + 5.0f);
+	ofDrawBitmapString("Next", 40 + nextButton.x, buttonHeight / 2.0f + 5.0f);
 	
 	this->drawLineSet(mainArea, false);
 	this->drawLineSet(zoomedArea, true);
@@ -124,6 +138,8 @@ void ofApp::drawLineSet(const ofRectangle & rect, bool zoom) {
 		if(line.second.iProjector == iProjector) {
 			if(line.first == selection) {
 				ofSetColor(255);
+			} else if (line.second.changed) {
+				ofSetColor(0, 0, 255);
 			} else {
 				ofSetColor(255, 0, 0);
 			}
@@ -160,42 +176,40 @@ ofVec2f ofApp::screenToNorm(const ofVec2f& screen) {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-	const float step = 0.0005f;
+	ofVec2f vecStep(2.0f / 1920.0f, 2.0f / 1080.0f);
 	
 	if (key == OF_KEY_SHIFT) {
 		this->shift = true;
 	} else if (key == OF_KEY_CONTROL) {
 		this->ctrl = true;
-	} else if (key == OF_KEY_UP) {
+	} else if (key == OF_KEY_ALT) {
+		this->alt = true;
+	} else if (key == OF_KEY_UP  || key == OF_KEY_DOWN || key == OF_KEY_LEFT || key == OF_KEY_RIGHT) {
 		if (this->selection != -1) {
 			auto & line = this->lines[selection];
+			ofVec2f vecStep;
+			switch(key) {
+				case OF_KEY_UP:
+					vecStep *= ofVec2f(0, 1);
+					break;
+				case OF_KEY_DOWN:
+					vecStep *= ofVec2f(0, -1);
+					break;
+				case OF_KEY_LEFT:
+					vecStep *= ofVec2f(-1, 0);
+					break;
+				case OF_KEY_RIGHT:
+					vecStep *= ofVec2f(1, 0);
+					break;
+			}
+			if (this->shift) {
+				line.start += vecStep;
+				line.end += vecStep;
+			} else {
+				auto & end = endSelected == 0 ? line.start : line.end;
+				end += vecStep;
+			}
 			this->sendSelection();
-			auto & end = endSelected == 0 ? line.start : line.end;
-			end.y += step;
-		}
-		this->sendSelection();
-	} else if (key == OF_KEY_DOWN) {
-		if (this->selection != -1) {
-			auto & line = this->lines[selection];
-			this->sendSelection();
-			auto & end = endSelected == 0 ? line.start : line.end;
-			end.y -= step;
-		}
-		this->sendSelection();
-	} else if (key == OF_KEY_LEFT) {
-		if (this->selection != -1) {
-			auto & line = this->lines[selection];
-			this->sendSelection();
-			auto & end = endSelected == 0 ? line.start : line.end;
-			end.x -= step;
-		}
-		this->sendSelection();
-	} else if (key == OF_KEY_RIGHT) {
-		if (this->selection != -1) {
-			auto & line = this->lines[selection];
-			this->sendSelection();
-			auto & end = endSelected == 0 ? line.start : line.end;
-			end.x += step;
 		}
 		this->sendSelection();
 	} else if (key == 'f') {
@@ -229,12 +243,17 @@ void ofApp::keyReleased(int key){
 		this->shift = false;
 	} else if (key == OF_KEY_CONTROL) {
 		this->ctrl = false;
+	} else if (key == OF_KEY_ALT) {
+		this->alt = false;
 	}
 	
 	if (key == 'n' && this->status==Waiting) {
 		ofxOscMessage msg;
 		msg.setAddress("/newline");
-		msg.addIntArg(iProjector);
+		
+		//msg.addIntArg(iProjector);
+		msg.addFloatArg(iProjector); // we do this as float now so all args are same type (compatability mode)
+		
 		auto cursor = this->screenToNorm(ofVec2f(ofGetMouseX(), ofGetMouseY()));
 		msg.addFloatArg(cursor.x);
 		msg.addFloatArg(cursor.y);
@@ -268,7 +287,6 @@ void ofApp::mouseDragged(int x, int y, int button){
 	ofVec2f mouse(x,y);
 	if (this->status == Dragging && this->selection != -1) {
 		auto& line = this->lines[selection];
-		ofVec2f& point = endSelected == 0 ? line.start : line.end;
 		auto displace = screenToNorm(mouse) - screenToNorm(lastMouse);
 		if (this->shift) {
 			displace *= 0.1f;
@@ -278,7 +296,13 @@ void ofApp::mouseDragged(int x, int y, int button){
 			float distance = displace.dot(lineDir);
 			displace = distance * lineDir;
 		}
-		point += displace;
+		if (this->alt) {
+			line.start += displace;
+			line.end += displace;
+		} else {
+			ofVec2f& point = endSelected == 0 ? line.start : line.end;
+			point += displace;
+		}
 		
 		this->sendSelection();
 	}
@@ -288,26 +312,12 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 	ofVec2f mouse(x,y);
-	if (newLineButton.inside(x, y)) {
-		ofxOscMessage msg;
-		msg.setAddress("/newline");
-		msg.addIntArg(iProjector);
-		msg.addFloatArg(-0.5f);
-		msg.addFloatArg(0.0f);
-		msg.addFloatArg(0.5f);
-		msg.addFloatArg(0.0f);
-		osc.sendMessage(msg);
-		this->sleeper.sleep(100);
-		this->updateLines();
-		auto back = this->lines.end();
-		back--;
-		this->selection = back->first;
-	} else if (backButton.inside(x, y)) {
+	if (backButton.inside(x, y)) {
 		this->back();
 	} else if (nextButton.inside(x, y)) {
 		this->next();
 	} else {
-		for(int i=0; i<2; i++) {
+		for(int i=0; i<PROJECTOR_COUNT; i++) {
 			if(projectorButton[i].inside(x, y)) {
 				iProjector = i;
 			}
@@ -347,17 +357,18 @@ void ofApp::mouseReleased(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
 	this->buttonHeight = 50;
-	this->buttonWidth = ofGetWidth() / 5.0f;
+	this->buttonWidth = ofGetWidth() / (float) (3 + PROJECTOR_COUNT);
 	
 	this->mainArea = ofRectangle(0, buttonHeight, ofGetWidth() - 200, ofGetHeight() - buttonHeight);
 	this->zoomedArea = ofRectangle(ofGetWidth() - 200, buttonHeight, 200, ofGetHeight() - buttonHeight);
 	
 	int iButton=0;
-	this->projectorButton[0] = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->projectorButton[1] = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->newLineButton = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->backButton = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
-	this->nextButton = ofRectangle(buttonWidth*iButton++,0,buttonWidth, buttonHeight);
+	for(int i=0; i<PROJECTOR_COUNT; i++) {
+		this->projectorButton[i] = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
+		cout << this->projectorButton[i] << endl;
+	}
+	this->backButton = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
+	this->nextButton = ofRectangle(buttonWidth * iButton++,0,buttonWidth, buttonHeight);
 
 }
 
@@ -391,6 +402,7 @@ void ofApp::updateLines() {
 					newLine.start = xml.getValue<ofVec2f>("start");
 					newLine.end = xml.getValue<ofVec2f>("end");
 					newLine.iProjector = xml.getIntValue("iProjector");
+					newLine.changed = xml.getIntValue("Changed") == 1;
 					if(xml.setTo("ID")) {
 						ID = xml.getIntValue();
 						xml.setToParent();
@@ -426,8 +438,15 @@ void ofApp::updateLines() {
 void ofApp::sendSelection() {
 	auto & line = this->lines[selection];
 	ofxOscMessage msg;
+	
+	//clamp the current line to screen coordinates
+	line.start.x = ofClamp(line.start.x, -1.0f, 1.0f);
+	line.start.y = ofClamp(line.start.y, -1.0f, 1.0f);
+	line.end.x = ofClamp(line.end.x, -1.0f, 1.0f);
+	line.end.y = ofClamp(line.end.y, -1.0f, 1.0f);
+	
 	msg.setAddress("/point");
-	msg.addIntArg(selection);
+	msg.addFloatArg(selection);
 	msg.addFloatArg(line.start.x);
 	msg.addFloatArg(line.start.y);
 	msg.addFloatArg(line.end.x);

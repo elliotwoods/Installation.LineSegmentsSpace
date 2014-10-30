@@ -1,0 +1,139 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.1.dtd" >
+   <PATCH nodename="D:\openFrameworks\apps\Installations.LineSegmentsSpace\2. Kinect + Projector DX11\Subpatches\LoadCache (Transform).v4p" systemname="LoadCache (Transform)" filename="D:\openFrameworks\apps\Installations.LineSegmentsSpace\2. Kinect + Projector DX11\Subpatches\LoadCache (Transform).v4p">
+   <BOUNDS type="Window" left="17300" top="9090" width="6310" height="4680">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <NODE systemname="Writer (Transform)" filename="%VVVV%\packs\VVVV.Packs.CV\nodes\modules\Transform\Writer (Transform).v4p" nodename="Writer (Transform)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="740" top="1320" width="2640" height="270">
+   </BOUNDS>
+   <PIN pinname="Write" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="740" top="480" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="740" top="480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Transform">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="3320" top="480" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3320" top="480" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Write">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Write">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="4900" top="480" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4900" top="480" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Use Live|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2030" top="480" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2030" top="480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="C:\vvvv\vvvv-sdk\vvvv45\packs\VVVV.Packs.CV\nodes\modules\Transform\file.txt">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|Binary matrices (*.mat)||*.mat|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Reader (Transform)" filename="%VVVV%\packs\VVVV.Packs.CV\nodes\modules\Transform\Reader (Transform).v4p" nodename="Reader (Transform)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2030" top="2110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="5" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2800" top="1670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Bang" dstnodeid="5" dstpinname="Read">
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="740" top="2860" width="2640" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="7" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="7" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="800" y="1785">
+   </LINKPOINT>
+   <LINKPOINT x="3320" y="1785">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Switch" linkstyle="Bezier">
+   <LINKPOINT x="4900" y="1905">
+   </LINKPOINT>
+   <LINKPOINT x="800" y="1905">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="8" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="730" top="3510" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="730" top="3510" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

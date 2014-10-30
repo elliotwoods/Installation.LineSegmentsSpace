@@ -5,8 +5,9 @@ void ofApp::setup(){
 	glDepthFunc(GL_LEQUAL);
 	
 	this->payload.init(1920, 1080);
-	this->decoder[0].init(this->payload);
-	this->decoder[1].init(this->payload);
+	for(int i=0; i<PROJECTOR_COUNT; i++) {
+		this->decoder[i].init(this->payload);
+	}
 	this->scene.init();
 	this->scene.setThreadSet(this->threads);
 	
@@ -22,11 +23,7 @@ void ofApp::setup(){
 //	gui.add(scene.imageCamera0, "Camera0 Median");
 //	gui.add(scene.imageCamera1, "Camera1 Median");
 	
-<<<<<<< HEAD
-
 	screenScene->push(this->debugNode);
-=======
->>>>>>> e1790b4a9892e4d1cf92d6018625af74f944849d
 	screenScene->setGridLabelsEnabled(false);
 	screenScene->setGridEnabled(false);
 	screenScene->setCursorEnabled();
@@ -72,6 +69,7 @@ void ofApp::keyPressed(int key){
 	if (key == 'c') {
 		scene.points0.clear();
 		scene.points1.clear();
+		scene.points2.clear();
 		scene.camera.setView(ofMatrix4x4());
 		scene.camera.setProjection(ofMatrix4x4());
 		scene.camera.distortion.clear();
@@ -79,9 +77,12 @@ void ofApp::keyPressed(int key){
 		scene.projector0.setProjection(ofMatrix4x4());
 		scene.projector1.setView(ofMatrix4x4());
 		scene.projector1.setProjection(ofMatrix4x4());
+		scene.projector2.setView(ofMatrix4x4());
+		scene.projector2.setProjection(ofMatrix4x4());
 		threads.clear();
-		this->decoder[0].reset();
-		this->decoder[1].reset();
+		for(int i=0; i<PROJECTOR_COUNT; i++) {
+			this->decoder[i].reset();
+		}
 	}
 	
 	if (key == 's') {
@@ -115,6 +116,7 @@ void ofApp::keyPressed(int key){
 	
 	if (key == 't') {
 		triangulateLine3D();
+		this->keyPressed('o');
 	}
 	
 	if (key == 'p') {
@@ -243,20 +245,26 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 		if (isProjector) {
 			if (entry.find("0") != string::npos) {
 				iProjector = 0;
-			} else {
+			} else if (entry.find("1") != string::npos) {
 				iProjector = 1;
+			} else {
+				iProjector = 2;
 			}
 		} else if(isGraycode) {
 			if (entry.find("0") != string::npos) {
 				iProjector = 0;
-			} else {
+			} else if (entry.find("1") != string::npos) {
 				iProjector = 1;
+			} else {
+				iProjector = 2;
 			}
 		} else {
 			if (entry.find("0") != string::npos) {
 				iProjector = 0;
-			} else {
+			} else if (entry.find("1") != string::npos) {
 				iProjector = 1;
+			} else {
+				iProjector = 2;
 			}
 		}
 		
@@ -264,15 +272,15 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 			auto & decoder = this->decoder[iProjector];
 			decoder.loadDataSet(entry);
 			decoder.setThreshold(10);
-			auto & projector = iProjector == 0 ? scene.projector0 : scene.projector1;
-			auto & mesh = iProjector == 0 ? scene.points0 : scene.points1;
+			auto & projector = iProjector == 0 ? scene.projector0 : iProjector == 1 ? scene.projector1 : scene.projector2;
+			auto & mesh = iProjector == 0 ? scene.points0 : iProjector == 1 ? scene.points1 : scene.points2;
 			ofLogNotice() << "Added dataset for projector " << iProjector;
 			
-			auto & imageProjector = (iProjector == 0 ? scene.imageProjector0 : scene.imageProjector1);
+			auto & imageProjector = (iProjector == 0 ? scene.imageProjector0 : iProjector == 1 ? scene.imageProjector1 : scene.imageProjector2);
 			imageProjector = decoder.getDataSet().getMedianInverse();
 			imageProjector.update();
 			
-			auto & imageCamera = (iProjector == 0 ? scene.imageCamera0 : scene.imageCamera1);
+			auto & imageCamera = (iProjector == 0 ? scene.imageCamera0 : iProjector == 1 ? scene.imageCamera1 : scene.imageCamera2);
 			imageCamera = decoder.getDataSet().getMedian();
 			imageCamera.update();
 			
@@ -301,14 +309,14 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 				if (isCamera) {
 					scene.camera.setView(matrix);
 				} else {
-					(iProjector == 0 ? scene.projector0 : scene.projector1).setView(matrix);
+					(iProjector == 0 ? scene.projector0 : iProjector == 1 ? scene.projector1 : scene.projector2).setView(matrix);
 				}
 			} else {
 				ofMatrix4x4 reverseZ;
 				if (isCamera) {
 					scene.camera.setProjection(matrix);
 				} else {	
-					(iProjector == 0 ? scene.projector0 : scene.projector1).setProjection(matrix);
+					(iProjector == 0 ? scene.projector0 : iProjector == 1 ? scene.projector1 : scene.projector2).setProjection(matrix);
 				}
 			}
 		}
@@ -319,10 +327,10 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 void ofApp::triangulateLine3D() {
 	ofxPolyFitf fit;
 	fit.init(1, 1, 3, BASIS_SHAPE_TRIANGLE);
-	for(int iProjector=0; iProjector<2; iProjector++) {
-		auto & mapping = (iProjector == 0 ? scene.activePixelsMapProjectorToCamera0 : scene.activePixelsMapProjectorToCamera1);
+	for(int iProjector=0; iProjector<3; iProjector++) {
+		auto & mapping = (iProjector == 0 ? scene.activePixelsMapProjectorToCamera0 : iProjector == 1 ? scene.activePixelsMapProjectorToCamera1 : scene.activePixelsMapProjectorToCamera2);
 		auto & camera = scene.camera;
-		auto & projector = (iProjector == 0 ? scene.projector0 : scene.projector1);
+		auto & projector = (iProjector == 0 ? scene.projector0 : iProjector == 1 ? scene.projector1 : scene.projector2);
 		
 		mapping.clear();
 		auto & decoder = this->decoder[iProjector];

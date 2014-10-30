@@ -29,7 +29,6 @@
 		8B0BA52417DB4FAA00B190BA /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA52317DB4FAA00B190BA /* Thread.cpp */; };
 		8B0BA52817DB505600B190BA /* ThreadSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA52617DB505600B190BA /* ThreadSet.cpp */; };
 		8B0BA53217DC2BD800B190BA /* ofxPolyFit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA52C17DC2BD800B190BA /* ofxPolyFit.cpp */; };
-		8B0BA53317DC2BD800B190BA /* ofxPolyFitUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA52E17DC2BD800B190BA /* ofxPolyFitUtils.cpp */; };
 		8B0BA53417DC2BD800B190BA /* ofxPolyPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA53017DC2BD800B190BA /* ofxPolyPlane.cpp */; };
 		8B0BA54917DC2BEA00B190BA /* pfitBasis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA53917DC2BEA00B190BA /* pfitBasis.cpp */; };
 		8B0BA54A17DC2BEA00B190BA /* pfitDataPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BA53B17DC2BEA00B190BA /* pfitDataPoint.cpp */; };
@@ -172,8 +171,6 @@
 		8B0BA52717DB505600B190BA /* ThreadSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSet.h; sourceTree = "<group>"; };
 		8B0BA52C17DC2BD800B190BA /* ofxPolyFit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPolyFit.cpp; sourceTree = "<group>"; };
 		8B0BA52D17DC2BD800B190BA /* ofxPolyFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPolyFit.h; sourceTree = "<group>"; };
-		8B0BA52E17DC2BD800B190BA /* ofxPolyFitUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPolyFitUtils.cpp; sourceTree = "<group>"; };
-		8B0BA52F17DC2BD800B190BA /* ofxPolyFitUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPolyFitUtils.h; sourceTree = "<group>"; };
 		8B0BA53017DC2BD800B190BA /* ofxPolyPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPolyPlane.cpp; sourceTree = "<group>"; };
 		8B0BA53117DC2BD800B190BA /* ofxPolyPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPolyPlane.h; sourceTree = "<group>"; };
 		8B0BA53917DC2BEA00B190BA /* pfitBasis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pfitBasis.cpp; sourceTree = "<group>"; };
@@ -405,8 +402,6 @@
 			children = (
 				8B0BA52C17DC2BD800B190BA /* ofxPolyFit.cpp */,
 				8B0BA52D17DC2BD800B190BA /* ofxPolyFit.h */,
-				8B0BA52E17DC2BD800B190BA /* ofxPolyFitUtils.cpp */,
-				8B0BA52F17DC2BD800B190BA /* ofxPolyFitUtils.h */,
 				8B0BA53017DC2BD800B190BA /* ofxPolyPlane.cpp */,
 				8B0BA53117DC2BD800B190BA /* ofxPolyPlane.h */,
 			);
@@ -833,7 +828,6 @@
 				8B0BA52417DB4FAA00B190BA /* Thread.cpp in Sources */,
 				8B0BA52817DB505600B190BA /* ThreadSet.cpp in Sources */,
 				8B0BA53217DC2BD800B190BA /* ofxPolyFit.cpp in Sources */,
-				8B0BA53317DC2BD800B190BA /* ofxPolyFitUtils.cpp in Sources */,
 				8B0BA53417DC2BD800B190BA /* ofxPolyPlane.cpp in Sources */,
 				8B0BA54917DC2BEA00B190BA /* pfitBasis.cpp in Sources */,
 				8B0BA54A17DC2BEA00B190BA /* pfitDataPoint.cpp in Sources */,

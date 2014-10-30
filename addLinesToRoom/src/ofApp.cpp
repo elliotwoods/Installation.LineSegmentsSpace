@@ -1,14 +1,16 @@
 #include "ofApp.h"
 
-const ofVec3f roomMin(-2.5f, 0.0f, 0.0f);
-const ofVec3f roomMax(2.5f, 3.0f, 7.0f);
-const ofVec3f roomScale = roomMax - roomMin;
-const ofVec3f roomCenter = (roomMin + roomMax) / 2.0f;
+const ofVec3f defaultRoomMin(-3.6f, 0.0f, 0.0f);
+const ofVec3f defaultRoomMax(3.6f, 2.8f, 4.08f);
 
 //--------------------------------------------------------------
 void ofApp::setup(){
 	ofBackground(0);
-	camera.setPosition((roomMax - roomCenter) * 2 + roomCenter);
+	ofSetEscapeQuitsApp(false);
+	
+	this->clearRoomMinMax();
+	
+	camera.setPosition(ofVec3f(0.0f, 2.0f, 10.0f));
 	camera.lookAt(roomCenter);
 	
 	glDepthFunc(GL_LEQUAL);
@@ -63,6 +65,8 @@ void ofApp::update(){
 		this->layerGuiRebuildFlag = false;
 		this->rebuildLayersGui();
 	}
+	
+	this->model.update();
 }
 
 //--------------------------------------------------------------
@@ -73,6 +77,9 @@ void ofApp::draw(){
 	camera.begin();
 	this->lineSet.updateIndexBuffer(this->shift);
 	this->drawScene();
+	if (!ofGetMousePressed()) {
+		this->camera.updateCursorWorld();
+	}
 	this->cameraCursorCached = this->camera.getCursorWorld();
 	this->drawCursor();
 	camera.end();
@@ -116,13 +123,25 @@ void ofApp::drawScene() {
 	//
 	ofPushStyle();
 	ofFill();
-	glEnable(GL_CULL_FACE);
-	glCullFace(GL_FRONT);
-	this->light.enable();
-	room.draw();
-	this->light.disable();
-	glCullFace(GL_BACK);
-	glDisable(GL_CULL_FACE);
+	if (this->model.hasMeshes()) {
+		ofSetColor(255);
+		this->light.enable();
+		glEnable(GL_CULL_FACE);
+		glCullFace(GL_BACK);
+		this->model.drawFaces();
+		glDisable(GL_CULL_FACE);
+		this->light.disable();
+		this->model.drawWireframe();
+	} else {
+		this->light.enable();
+		glEnable(GL_CULL_FACE);
+		glCullFace(GL_FRONT);
+		room.draw();
+		glCullFace(GL_BACK);
+		glDisable(GL_CULL_FACE);
+		this->light.disable();
+	}
+
 	ofDisableLighting();
 	ofPopStyle();
 	//
@@ -230,7 +249,6 @@ void ofApp::drawInstructions() {
 	instructions << "[c] = clear all" << endl;
 	instructions << "[h] = toggle shadow" << endl;
 	instructions << "[g] = toggle grid" << endl;
-	instructions << "[f] = toggle fullscreen" << endl;
 	if (this->lineSet.getUndoStackLength() > 0) {
 		instructions << "[z] = undo" << endl;		
 	}
@@ -257,16 +275,20 @@ void ofApp::drawInstructions() {
 void ofApp::keyPressed(int key){
 	if (key == ' ') {
 		const ofVec3f cursor = this->camera.getCursorWorld();
-		const ofVec3f cursorNormalised = (cursor - roomMin) / roomScale;
-		const float epsilon = 0.01f;
 		
+		//check if inside if not model
 		bool inside = true;
-		inside &= cursorNormalised.x >= 0.0f - epsilon;
-		inside &= cursorNormalised.x <= 1.0f + epsilon;
-		inside &= cursorNormalised.y >= 0.0f - epsilon;
-		inside &= cursorNormalised.y <= 1.0f + epsilon;
-		inside &= cursorNormalised.z >= 0.0f - epsilon;
-		inside &= cursorNormalised.z <= 1.0f + epsilon;
+		if (!this->model.hasMeshes()) {
+			const ofVec3f cursorNormalised = (cursor - roomMin) / roomScale;
+			const float epsilon = 0.01f;
+			
+			inside &= cursorNormalised.x >= 0.0f - epsilon;
+			inside &= cursorNormalised.x <= 1.0f + epsilon;
+			inside &= cursorNormalised.y >= 0.0f - epsilon;
+			inside &= cursorNormalised.y <= 1.0f + epsilon;
+			inside &= cursorNormalised.z >= 0.0f - epsilon;
+			inside &= cursorNormalised.z <= 1.0f + epsilon;
+		}
 		
 		if (inside) {
 			switch (this->state) {
@@ -301,7 +323,11 @@ void ofApp::keyPressed(int key){
 	}
 	
 	if (key == 'c') {
-		this->lineSet.clear();
+		auto result = ofSystemTextBoxDialog("Type 'YES' if you are sure that you want to delete everything (clear loaded model, clear all lines).");
+		if (ofToLower(result).find("yes") != string::npos) {
+			this->lineSet.clear();
+			this->model.clear();
+		}
 	}
 	
 	if (key == OF_KEY_BACKSPACE) {
@@ -310,6 +336,7 @@ void ofApp::keyPressed(int key){
 	
 	if (key == OF_KEY_SHIFT) {
 		this->shift = true;
+		this->camera.setCursorDraw(true);
 	}
 	
 	if (key == 'h') {
@@ -318,13 +345,14 @@ void ofApp::keyPressed(int key){
 	
 	if (key == 'g') {
 		this->grid ^= true;
+		this->camera.setCursorDraw(this->grid);
 	}
 	
 	if (key == 'z') {
 		this->lineSet.undo();
 	}
 	
-	if (key == 'f') {
+	if (key == 'f' ) {
 		ofToggleFullscreen();
 	}
 }
@@ -333,12 +361,12 @@ void ofApp::keyPressed(int key){
 void ofApp::keyReleased(int key){
 	if (key == OF_KEY_SHIFT) {
 		this->shift = false;
+		this->camera.setCursorDraw(false);
 	}
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-	this->camera.updateCursorWorld();
 	this->cursorInLayerGui = this->layerGui.getRect()->inside(ofVec2f(x, y));
 }
 
@@ -379,7 +407,17 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){
 	for(auto filename : dragInfo.files) {
-		this->lineSet.load(filename);
+		const auto extension = ofToLower(ofFilePath::getFileExt(filename));
+		if (extension == "xml") {
+			this->lineSet.load(filename);
+		} else if (extension == "dae" || extension == "obj" || extension == "3ds") {
+			this->model.loadModel(filename);
+			const auto factor = 0.5f / 10.85 * 4.7 / 5.5;
+			this->model.setScale(factor * 1.0f, factor *  -1.0f, factor * -1.0f);
+			this->roomMin = this->model.getSceneMin() * ofVec3f(-1.0f, 1.0f, -1.0f);
+			this->roomMax = this->model.getSceneMax() * ofVec3f(-1.0f, 1.0f, -1.0f);
+			this->calcRoomScale();
+		}
 	}
 }
 
@@ -487,4 +525,17 @@ void ofApp::layerGuiEvent(ofxUIEventArgs& args) {
 	} else {
 		this->lineSet.changeLayerVisibility();
 	}
+}
+
+//--------------------------------------------------------------
+void ofApp::clearRoomMinMax() {
+	this->roomMin = defaultRoomMin;
+	this->roomMax = defaultRoomMax;
+	this->calcRoomScale();
+}
+
+//--------------------------------------------------------------
+void ofApp::calcRoomScale() {
+	this->roomScale = roomMax - roomMin;
+	this->roomCenter = (roomMin + roomMax) / 2.0f;
 }

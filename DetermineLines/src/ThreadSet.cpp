@@ -13,12 +13,12 @@ void ThreadSet::load(string filename) {
 				ofVec2f & end = newThread.projectorEnd;
 				
 				start.x = xml.getFloatValue("x1");
-				start.y = xml.getFloatValue("_x0020_y1");
-				end.x = xml.getFloatValue("_x0020_x2");
-				end.y = xml.getFloatValue("_x0020_y2");
+				start.y = xml.getFloatValue("y1");
+				end.x = xml.getFloatValue("x2");
+				end.y = xml.getFloatValue("y2");
 				
-				newThread.projector = xml.getIntValue("_x0020_iProjector");
-				newThread.ID = xml.getIntValue("_x0020_ID");
+				newThread.projector = xml.getIntValue("iProjector");
+				newThread.ID = xml.getIntValue("ID");
 				this->push_back(newThread);
 			} while (xml.setToSibling());
 		}

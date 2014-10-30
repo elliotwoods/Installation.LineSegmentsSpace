@@ -75,7 +75,7 @@ void ofApp::setup(){
 		}
 		processed.setToParent();
 	}
-	//processed.save(result2.filePath);
+	processed.save(result2.filePath);
 	
 	ofVec2f totalMovement;
 	for(auto move : movement) {

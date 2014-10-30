@@ -3,10 +3,13 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 
+#define PROJECTOR_COUNT 4
+
 struct Line {
 	ofVec2f start;
 	ofVec2f end;
 	int iProjector;
+	bool changed;
 };
 
 enum Status {
@@ -25,15 +28,15 @@ class ofApp : public ofBaseApp{
 	ofVec2f normToScreen(const ofVec2f&);
 	ofVec2f screenToNorm(const ofVec2f&);
 	
-		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
+	void keyPressed(int key);
+	void keyReleased(int key);
+	void mouseMoved(int x, int y );
+	void mouseDragged(int x, int y, int button);
+	void mousePressed(int x, int y, int button);
+	void mouseReleased(int x, int y, int button);
+	void windowResized(int w, int h);
+	void dragEvent(ofDragInfo dragInfo);
+	void gotMessage(ofMessage msg);
 		
 	void sendSelection();
 	void sendSelectedIndex();
@@ -44,8 +47,7 @@ class ofApp : public ofBaseApp{
 	
 	ofRectangle mainArea;
 	ofRectangle zoomedArea;
-	ofRectangle projectorButton[2];
-	ofRectangle newLineButton;
+	ofRectangle projectorButton[PROJECTOR_COUNT];
 	ofRectangle backButton;
 	ofRectangle nextButton;
 	
@@ -62,6 +64,7 @@ class ofApp : public ofBaseApp{
 	int endSelected;
 	bool shift;
 	bool ctrl;
+	bool alt;
 	
 	ofxOscSender osc;
 	ofThread sleeper;

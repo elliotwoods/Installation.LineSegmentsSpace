@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>93F8F9DD-269B-4FEE-B422-574E0D2F35CF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DecodeGraycodeImages</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14C86A24-D838-44D2-8B8F-C4403177A50C</key>
+		<string>ssh://github.com/elliotwoods/LineSegmentsSpace.git</string>
+		<key>4C6E79A2-794B-44A0-AFA7-579F3C77B967</key>
+		<string>ssh://github.com/elliotwoods/openFrameworks.git</string>
+		<key>7AF80F3A-7CF3-46EF-A1A8-317A77C0808E</key>
+		<string>ssh://github.com/elliotwoods/ofxGraycode.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>apps/Installation.LineSegmentsSpace/DecodeGraycodeImages/DecodeGraycodeImages.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14C86A24-D838-44D2-8B8F-C4403177A50C</key>
+		<string>../../..</string>
+		<key>4C6E79A2-794B-44A0-AFA7-579F3C77B967</key>
+		<string>../../../../..</string>
+		<key>7AF80F3A-7CF3-46EF-A1A8-317A77C0808E</key>
+		<string>../../../../../addons/ofxGraycode</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/elliotwoods/LineSegmentsSpace.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4C6E79A2-794B-44A0-AFA7-579F3C77B967</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14C86A24-D838-44D2-8B8F-C4403177A50C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DaVinci2013</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7AF80F3A-7CF3-46EF-A1A8-317A77C0808E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxGraycode</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C6E79A2-794B-44A0-AFA7-579F3C77B967</string>
+			<key>IDESourceControlWCCName</key>
+			<string>openFrameworks</string>
+		</dict>
+	</array>
+</dict>
+</plist>

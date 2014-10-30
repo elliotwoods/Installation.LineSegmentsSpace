@@ -9,6 +9,7 @@ float Thickness = 0.05f;
 float3 lightDirection;
 
 float Ambient = 0.2f;
+float Brightness = 1.0f;
 
 float4 pSphere(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
     float4 world;
@@ -26,7 +27,7 @@ float4 pSphere(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
 	float factor = saturate(dot(normal, - normalize(lightDirection)));
 	factor += Ambient;
 	
-	return value * factor * world.a;
+	return saturate(value * factor * world.a) * Brightness;
 }
 
 technique10 Sphere{

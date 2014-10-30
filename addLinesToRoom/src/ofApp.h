@@ -5,6 +5,7 @@
 #include "ofxGrabCam.h"
 #include "ofxRay.h"
 #include "ofxUi.h"
+#include "ofxAssimpModelLoader.h"
 
 #include "ThreadSet.h"
 #include "Thread.h"
@@ -61,4 +62,11 @@ public:
 	ofxUICanvas layerGui;
 	bool layerGuiAdd, layerGuiDelete, layerGuiRename;
 	bool cursorInLayerGui;
+	
+	ofxAssimpModelLoader model;
+	
+	void clearRoomMinMax();
+	void calcRoomScale();
+	
+	ofVec3f roomMin, roomMax, roomScale, roomCenter;
 };
