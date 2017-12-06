@@ -44,7 +44,8 @@ void ofApp::setup(){
 							: selection->Start;
 
 						//clamp movement to line
-						if (ofGetKeyPressed(OF_KEY_LEFT_ALT)) {
+						if (ofGetKeyPressed(OF_KEY_LEFT_ALT) || ofGetKeyPressed(OF_KEY_RIGHT_ALT) || ofGetKeyPressed(OF_KEY_ALT)||
+                            ofGetKeyPressed('z') || ofGetKeyPressed('Z')) {
 							auto lineVector = (selection->End - selection->Start).getNormalized();
 							movement = movement.dot(lineVector) * lineVector;
 						}
