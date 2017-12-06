@@ -35,3 +35,8 @@ Release/
 *~.xml
 
 *.o
+
+*.dds
+*.raw
+*.opendb
+*.db
