@@ -316,9 +316,8 @@ void ofApp::addLine() {
 		, { "End",{
 			{ "x", end.x }
 			,{ "y", end.y }
-		}
+        }}
 		, {"LastEditBy", this->myName.get() }
-		}
 	};
 
 	ofHttpRequest request;
