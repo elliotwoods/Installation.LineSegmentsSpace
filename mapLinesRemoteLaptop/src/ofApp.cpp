@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "ofApp.h"
 
-
 //--------------------------------------------------------------
 void ofApp::setup(){
 	ofSetFrameRate(60);
@@ -43,6 +42,12 @@ void ofApp::setup(){
 						auto & vertex = this->lineEndSelection.get()
 							? selection->End
 							: selection->Start;
+
+						//clamp movement to line
+						if (ofGetKeyPressed(OF_KEY_LEFT_ALT)) {
+							auto lineVector = (selection->End - selection->Start).getNormalized();
+							movement = movement.dot(lineVector) * lineVector;
+						}
 						vertex += movement;
 					}
 					else {
@@ -64,6 +69,12 @@ void ofApp::setup(){
 		widgets->addButton("Refresh", [this]() {
 			this->refresh();
 		});
+		widgets->addEditableValue<string>(this->myName)->onValueChange += [](const string & name) {
+			ofFile file;
+			file.open("myName.txt", ofFile::WriteOnly, false);
+			file << name;
+		};
+
 		widgets->addLiveValue<size_t>("Line count", [this]() {
 			return this->lines.size();
 		});
@@ -129,6 +140,20 @@ void ofApp::setup(){
 		}
 	});
 
+	{
+		ofFile file;
+		file.open("myName.txt", ofFile::ReadOnly, false);
+		auto contents = file.readToBuffer();
+		auto name = contents.getText();
+		if (name.empty()) {
+			auto result = ofSystemTextBoxDialog("Please type in your name:");
+			this->myName = result;
+		}
+		else {
+			this->myName = name;
+		}
+	}
+
 	this->refresh();
 }
 
@@ -173,6 +198,12 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
+}
+
+void ofApp::exit()
+{
+	this->running = false;
+	this->thread.join();
 }
 
 //--------------------------------------------------------------
@@ -285,7 +316,9 @@ void ofApp::addLine() {
 		, { "End",{
 			{ "x", end.x }
 			,{ "y", end.y }
-		}}
+		}
+		, {"LastEditBy", this->myName.get() }
+		}
 	};
 
 	ofHttpRequest request;
@@ -326,6 +359,7 @@ void ofApp::pushUpdate(shared_ptr<Line> line)
 			{ "x", line->End.x }
 			,{ "y", line->End.y }
 		} }
+		, {"LastEditBy", this->myName.get() }
 	};
 
 	ofHttpRequest request;
@@ -514,22 +548,33 @@ void ofApp::drawCanvas() {
 
 		ofPushStyle();
 		{
-			ofSetColor(50);
-			for (const auto & lineIt : this->lines) {
-				auto & line = lineIt.second;
-				if (line->ProjectorIndex != this->projectorSelection.get()) {
-					continue;
+			//draw lines
+			{
+				ofSetColor(50);
+				for (const auto & lineIt : this->lines) {
+					auto & line = lineIt.second;
+					if (line->ProjectorIndex != this->projectorSelection.get()) {
+						continue;
+					}
+
+					if (line->Age < 5.0f){// && line->LastEditBy != this->myName.get()) {
+						ofDrawBitmapString(line->LastEditBy, (line->Start + line->End) / 2.0f);
+					}
+
+					ofDrawLine(line->Start, line->End);
 				}
-
-				ofDrawLine(line->Start, line->End);
 			}
 
-			auto hover = this->hover.lock();
-			ofSetColor(100);
-			if (hover) {
-				ofDrawLine(hover->Start, hover->End);
+			//draw hover
+			{
+				auto hover = this->hover.lock();
+				ofSetColor(100);
+				if (hover) {
+					ofDrawLine(hover->Start, hover->End);
+				}
 			}
 
+			//draw selection
 			{
 				auto selection = this->selection.lock();
 				auto b = ofGetElapsedTimeMillis() / 10;
@@ -570,10 +615,28 @@ shared_ptr<Line> toLine(const json & jsonLine)
 	end.x = jsonLine["End"]["x"];
 	end.y = jsonLine["End"]["y"];
 
+	string lastEditBy;
+	float age = 100.0f;
+	try {
+		if (jsonLine.find("LastEditBy") == jsonLine.end()) {
+			throw(exception());
+		}
+		if (jsonLine.find("Age") == jsonLine.end()) {
+			throw(exception());
+		}
+		lastEditBy = jsonLine["LastEditBy"].get<string>();
+		age = jsonLine["Age"].get<float>();
+	}
+	catch (...) {
+
+	}
+
 	return make_shared<Line>(Line{
 		lineIndex,
 		projectorIndex,
 		start,
-		end
+		end,
+		lastEditBy,
+		age
 	});
 }
