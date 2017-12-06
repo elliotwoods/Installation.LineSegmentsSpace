@@ -37,6 +37,8 @@ class ofApp : public ofBaseApp{
 		void addLine();
 		void selectLine();
 		void deleteLine();
+		void pingLine();
+		void selectByIndex(int index);
 		void pushUpdate(shared_ptr<Line> line);
 
 		void pickHover(const ofVec2f & panelCoordinate);
