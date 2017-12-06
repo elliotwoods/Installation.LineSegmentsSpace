@@ -10,6 +10,8 @@ struct Line {
 	int ProjectorIndex;
 	ofVec2f Start;
 	ofVec2f End;
+	string LastEditBy;
+	float Age;
 };
 
 shared_ptr<Line> toLine(const json &);
@@ -20,6 +22,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+		void exit() override;
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -37,6 +40,8 @@ class ofApp : public ofBaseApp{
 		void addLine();
 		void selectLine();
 		void deleteLine();
+		void pingLine();
+		void selectByIndex(int index);
 		void pushUpdate(shared_ptr<Line> line);
 
 		void pickHover(const ofVec2f & panelCoordinate);
@@ -49,6 +54,7 @@ class ofApp : public ofBaseApp{
 		ofImage projectorPreview;
 
 		ofParameter<string> serverAddress{ "Server address", "http://192.168.0.116:8000" };
+		ofParameter<string> myName{ "My name", "" };
 		ofParameter<int> projectorSelection;
 		ofParameter<int> lineEndSelection;
 
