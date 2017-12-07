@@ -44,10 +44,18 @@ void ofApp::setup(){
 							: selection->Start;
 
 						//clamp movement to line
-						if (ofGetKeyPressed(OF_KEY_LEFT_ALT) || ofGetKeyPressed(OF_KEY_RIGHT_ALT) || ofGetKeyPressed(OF_KEY_ALT)||
-                            ofGetKeyPressed('z') || ofGetKeyPressed('Z')) {
+						if (this->zKeyPressed) {
+							//parallel only
+
 							auto lineVector = (selection->End - selection->Start).getNormalized();
 							movement = movement.dot(lineVector) * lineVector;
+						}
+						else if (this->xKeyPressed) {
+							//tangent only
+
+							auto lineVector = (selection->End - selection->Start).getNormalized();
+							//remove parallel component
+							movement -= movement.dot(lineVector) * lineVector;
 						}
 						vertex += movement;
 					}
@@ -99,6 +107,15 @@ void ofApp::setup(){
 				return string();
 			}
 		});
+		widgets->addLiveValue<string>("Last edited by", [this]() {
+			auto selection = this->selection.lock();
+			if (selection) {
+				return selection->LastEditBy;
+			}
+			else {
+				return string();
+			}
+		});
 		{
 			auto selectProjector = widgets->addMultipleChoice("Projector selection");
 			for (int i = 0; i < 8; i++) {
@@ -122,6 +139,16 @@ void ofApp::setup(){
 		widgets->addButton("Delete", [this]() {
 			this->deleteLine();
 		}, OF_KEY_BACKSPACE);
+			
+		widgets->addLiveValue<string>("High score", [this]() {
+			stringstream ss;
+			ss << this->highScore.first << " : " << this->highScore.second;
+			return ss.str();
+		});
+		widgets->addLiveValue<int>("Your score", [this]() {
+			return this->yourScore;
+		});
+		
 
 		strip->add(widgets);
 	}
@@ -214,9 +241,19 @@ void ofApp::keyPressed(int key){
 	case 'R':
 		this->refresh();
 		break;
+	case 'a':
+	case 'A':
 	case 'n':
 	case 'N':
 		this->addLine();
+		break;
+	case 'z':
+	case 'Z':
+		this->zKeyPressed = true;
+		break;
+	case 'x':
+	case 'X':
+		this->xKeyPressed = true;
 		break;
 	case ' ':
 		this->selectLine();
@@ -231,7 +268,18 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-
+	switch (key) {
+	case 'z':
+	case 'Z':
+		this->zKeyPressed = false;
+		break;
+	case 'x':
+	case 'X':
+		this->xKeyPressed = false;
+		break;
+	default:
+		break;
+	}
 }
 
 //--------------------------------------------------------------
@@ -286,10 +334,35 @@ void ofApp::refresh() {
 		}
 		const auto & jsonLines = responseData["content"];
 		this->lines.clear();
+		map<string, int> scores;
 		for (const auto & jsonLine : jsonLines) {
 			auto newLine = toLine(jsonLine);
 			this->lines.emplace(newLine->LineIndex, newLine);
+			
+			//add to high score
+			if(!newLine->LastEditBy.empty()) {
+				auto findScore = scores.find(newLine->LastEditBy);
+				if (findScore == scores.end()) {
+					scores.emplace(newLine->LastEditBy, 1);
+				}
+				else {
+					findScore->second++;
+				}
+			}
 		}
+
+		//find high score
+		pair<string, int> highScore = { "", 0 };
+		for (const auto & score : scores) {
+			if (score.second > highScore.second) {
+				highScore = score;
+			}
+			if (score.first == this->myName.get()) {
+				this->yourScore = score.second;
+			}
+		}
+		this->highScore = highScore;
+
 		if (selection) {
 			this->selectByIndex(selection->LineIndex);
 		}

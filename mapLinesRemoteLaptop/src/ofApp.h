@@ -71,4 +71,9 @@ class ofApp : public ofBaseApp{
 		ofThreadChannel<ofHttpRequest> requests;
 		bool running = true;
 		std::thread thread;
+
+		pair<string, int> highScore;
+		int yourScore = 0;
+		bool zKeyPressed = false; // bug means we can't use ofGetKeyPressed on OSX
+		bool xKeyPressed = false; // bug means we can't use ofGetKeyPressed on OSX
 };
