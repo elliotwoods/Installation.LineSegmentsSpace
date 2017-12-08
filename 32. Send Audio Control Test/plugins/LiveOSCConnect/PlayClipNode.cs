@@ -53,7 +53,12 @@ namespace VVVV.Nodes.LiveOSC
 			{
 				if (FInPlay[i])
 				{
-					var msg = new OSCMessage("/live/play/clip");
+					//LiveOSC v1
+					//var msg = new OSCMessage("/live/play/clip");
+					
+					//LiveOSC v2
+					var msg = new OSCMessage("/live/clip/play");
+					
 					msg.Append( (int) FInTrack[i]);
 					msg.Append( (int) FInClip[i] );
 					client.Send(msg);
@@ -61,7 +66,12 @@ namespace VVVV.Nodes.LiveOSC
 				
 				if (FInStop[i])
 				{
-					var msg = new OSCMessage("/live/stop/clip");
+					//LiveOSC v1
+					//var msg = new OSCMessage("/live/stop/clip");
+					
+					//LiveOSC v2
+					var msg = new OSCMessage("/live/clip/stop");
+					
 					msg.Append( (int) FInTrack[i]);
 					msg.Append( (int) FInClip[i] );
 					client.Send(msg);
