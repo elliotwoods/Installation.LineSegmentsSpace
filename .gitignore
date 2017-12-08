@@ -1,42 +1,46 @@
-libs/
-docs/
-
 *.depend
 *.layout
 *.mode*v3
 *.pbxuser
 *.app*
 *.DS_*
-._*
+._*.*
+
+# Ignore bin folder
+**/bin/*
+
+# Keep useful libs
+!libs/**/Debug
+!libs/**/Release
+!libs/**/bin/*
+
+Debug/
+Release/
 
 .svn/
 obj/
-bin/
 build/
-!data/
 xcuserdata/
 
 ipch/
 *.suo
 *.opensdf
 *.vcxproj.user
-*.vsxproj.filters
 
+# Visual Studio temp files
 *.obj
 *.tlog
 *.sdf
 *.pdb
 *.idb
 *.pch
-Debug/
-Release/
 
 
+# VVVV backup files
 *~.xml
+Application/Rulr\.VC\.db
 
-*.o
-
-*.dds
-*.raw
+Application/Rulr\.VC\.VC\.opendb
 *.opendb
-*.db
+.VC.db
+*.VC.db

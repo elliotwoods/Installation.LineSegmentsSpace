@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p" systemname="Black Ball" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Black Ball.v4p" systemname="Black Ball" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Black Ball.v4p">
    <BOUNDS type="Window" left="3375" top="10320" width="12885" height="9240">
    </BOUNDS>
    <NODE systemname="SelectVolume (DX11.TextureFX)" filename="..\30. Draw processed lines\texture11\SelectVolume.tfx" nodename="SelectVolume (DX11.TextureFX)" componentmode="Hidden" id="0">
@@ -9,9 +9,9 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Radius" slicecount="3" visible="1" values="0.15,0.15,0.15">
+   <PIN pinname="Radius" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="TransformInverse" visible="1">
+   <PIN pinname="TransformInverse" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Thickness" slicecount="1" visible="1" values="0.46">
    </PIN>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" visible="1">
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="2">
@@ -31,7 +31,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Source" visible="1">
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Mix (DX11.TextureFX)" filename="%VVVV%\packs\DX11\nodes\texture11\Mixer\Mix.tfx" nodename="Mix (DX11.TextureFX)" componentmode="Hidden" id="3">
@@ -39,11 +39,11 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Texture In" visible="1">
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Control" visible="1">
+   <PIN pinname="Control" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture In 2" visible="1">
+   <PIN pinname="Texture In 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Fader" slicecount="1" values="0.5">
    </PIN>
@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Height" slicecount="1" values="1024">
    </PIN>
-   <PIN pinname="Apply" visible="1">
+   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Channel Count" slicecount="1" values="3">
    </PIN>
@@ -75,7 +75,7 @@
    <NODE systemname="Invert (DX11.TextureFX)" filename="%VVVV%\packs\DX11\nodes\texture11\Filter\Invert.tfx" nodename="Invert (DX11.TextureFX)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="3210" top="5130" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Texture In" visible="1">
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -85,7 +85,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4695" top="2670" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="1.1,0.56,-0.71">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -109,7 +109,7 @@
    </PIN>
    <PIN pinname="Height" slicecount="1" values="1024">
    </PIN>
-   <PIN pinname="Apply" visible="1">
+   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Channel Count" slicecount="1" values="3">
    </PIN>
@@ -125,7 +125,7 @@
    </PIN>
    <PIN pinname="Output White" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="Input Black" slicecount="1" values="|1.00000,1.00000,1.00000,0.00000|">
+   <PIN pinname="Input Black" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="3" dstpinname="Texture In">
@@ -141,7 +141,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1635" top="7845" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -186,12 +186,14 @@
    </NODE>
    <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="9" dstpinname="Input Black">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="20">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="6735" top="3495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    <PIN pinname="Receive String" slicecount="1" values="/liveosc/connection">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
@@ -245,9 +247,9 @@
    <NODE systemname="PositionAudio" filename="utils\PositionAudio.v4p" nodename="utils\PositionAudio.v4p" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="7845" top="6855" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="X" visible="1" slicecount="2" values="4.4">
+   <PIN pinname="X" visible="1" slicecount="1" values="1.33">
    </PIN>
-   <PIN pinname="Track" slicecount="1" visible="1" values="4">
+   <PIN pinname="Track" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
@@ -257,7 +259,7 @@
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Volume" visible="1">
+   <PIN pinname="Volume" visible="1" slicecount="1" values="1">
    </PIN>
    <BOUNDS type="Window" left="750" top="10230" width="9000" height="11895">
    </BOUNDS>
@@ -269,7 +271,7 @@
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="22">
    <BOUNDS type="Node" left="5505" top="3630" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="XYZ" visible="1">
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -279,7 +281,7 @@
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="8100" top="5460" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.5">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -311,13 +313,13 @@
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="8100" top="5010" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="-0.52">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Width" visible="1">
+   <PIN pinname="Width" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Block">
    </PIN>
@@ -329,7 +331,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.34">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Radius">
@@ -337,7 +339,7 @@
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="31">
    <BOUNDS type="Node" left="6555" top="5265" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.5">
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" values="5">
    </PIN>
@@ -355,7 +357,7 @@
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="3405" top="3510" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="3">
    </PIN>
@@ -369,7 +371,7 @@
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="3705" top="2430" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
@@ -383,15 +385,15 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="34">
    <BOUNDS type="Node" left="6345" top="5820" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="0">
+   <PIN pinname="Input 1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Output" dstnodeid="34" dstpinname="Input 2">
@@ -403,7 +405,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6360" top="1950" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -491,9 +493,9 @@
    </PIN>
    <PIN pinname="alpha" visible="1">
    </PIN>
-   <PIN pinname="Play" visible="1">
+   <PIN pinname="Play" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Set Time" visible="1">
+   <PIN pinname="Set Time" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Position" visible="1">
    </PIN>
@@ -620,4 +622,6 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="Position" dstnodeid="39" dstpinname="Input 1">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

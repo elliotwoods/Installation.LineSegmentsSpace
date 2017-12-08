@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Directiopn.v4p" systemname="Point Towards Directiopn" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Directiopn.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Point Towards Directiopn.v4p" systemname="Point Towards Directiopn" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Directiopn.v4p">
    <BOUNDS type="Window" left="23250" top="11745" width="9930" height="8880">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
@@ -35,7 +35,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3045" top="5040" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.06">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3795" top="2130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -164,12 +164,14 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Pause">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="13">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="5940" top="3660" width="255" height="270">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="/liveosc/connection">
    </PIN>
    <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="SetSend (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="SetSend (LiveOSC)" componentmode="Hidden" id="14">
@@ -179,7 +181,7 @@
    </PIN>
    <PIN pinname="Send" visible="1">
    </PIN>
-   <PIN pinname="Level" slicecount="1" values="1" visible="1">
+   <PIN pinname="Level" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Force Update" visible="1">
    </PIN>
@@ -205,7 +207,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname=".. To [" slicecount="1" values="4" visible="1">
+   <PIN pinname=".. To [" slicecount="1" visible="1" values="4">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="14" dstpinname="Send">
@@ -215,7 +217,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5610" top="2865" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -335,7 +337,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="25">
@@ -382,4 +384,10 @@
    </LINK>
    <LINK srcnodeid="27" srcpinname="Up Edge" dstnodeid="5" dstpinname="Reset">
    </LINK>
+   <NODE systemname="DeNiro (Animation)" nodename="DeNiro (Animation)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="3255" top="5460" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

@@ -1,9 +1,9 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\RoundUpPowerOfTwo (Value).v4p" systemname="RoundUpPowerOfTwo (Value)" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\RoundUpPowerOfTwo (Value).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\RoundUpPowerOfTwo (Value).v4p" systemname="RoundUpPowerOfTwo (Value)" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\-. Common\RoundUpPowerOfTwo (Value).v4p">
    <BOUNDS type="Window" left="10485" top="13695" width="3630" height="5130">
    </BOUNDS>
    <NODE systemname="Log (Value)" nodename="Log (Value)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="2025" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="2025" top="1200" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -12,26 +12,18 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Ceil (Value)" filename="..\..\..\Research.ReprojectionScanning\vvvv\modules\Ceil (Value).v4p" nodename="Ceil (Value)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2025" top="1995" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Power (Value)" nodename="Power (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1515" top="2565" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="3015" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1500" top="3015" width="795" height="240">
+   <BOUNDS type="Box" left="1500" top="3465" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="3015" width="0" height="0">
+   <BOUNDS type="Node" left="1500" top="3465" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -47,25 +39,61 @@
    <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Y Output Value|">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="3515" width="750" height="240">
+   <BOUNDS type="Box" left="1500" top="3965" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="3515" width="750" height="240">
+   <BOUNDS type="Node" left="1500" top="3965" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="2" dstpinname="Input 2">
-   </LINK>
    <NODE id="5" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
-   <BOUNDS type="Box" left="2025" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="2025" top="200" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2025" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="2025" top="200" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="Input">
+   <NODE systemname="Frac (Value)" nodename="Frac (Value)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2010" top="1620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Real Part" visible="1">
+   </PIN>
+   <PIN pinname="Whole Part" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="6" dstpinname="Input">
    </LINK>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2385" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Real Part" dstnodeid="7" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2010" top="2400" width="450" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Whole Part" dstnodeid="8" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
    </PATCH>

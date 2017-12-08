@@ -8,6 +8,7 @@ float Radius = 1.0f;
 float Thickness = 0.1f;
 float Phase = 0.0f;
 float Height = 0.3f;
+float3 CutValue;
 
 float4x4 TransformInverse;
 
@@ -30,9 +31,12 @@ float4 PSSphere(psInput input) : SV_Target
 	float4 World;
 	World.xyz = texture2d.Sample(linearSampler,input.uv);
 	World.w = 1.0f;
-	World = mul(World, TransformInverse);
+	float4 Object = mul(World, TransformInverse);
 	
-	return sin((length(World.xyz) - Phase) / Radius) / 2.0f + 0.5f;
+	float cut = !any(World == CutValue);
+	float4 value = sin((length(Object.xyz) - Phase) / Radius) / 2.0f + 0.5f;
+	value *= cut;
+	return value;
 }
 
 float4 PSTraverse(psInput input) : SV_Target

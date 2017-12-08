@@ -1,0 +1,72 @@
+//@author: elliotwoods
+//@help: select a volume (still doing this old trick?)
+//@tags: texture
+//@credits: 
+#define COUNT 1000
+
+Texture2D<float3> texture2d : PREVIOUS;
+float Radius[COUNT];
+float Thickness = 0.1f;
+float Phase = 0.0f;
+float4x4 TransformInverse;
+float2 R:TARGETSIZE;
+float GradientPower = 1.0f;
+float3 Center[COUNT];
+
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PSSphereFill(psInput input) : SV_Target
+{
+	float4 World;
+	World.xyz = texture2d.Sample(linearSampler,input.uv);
+	World.w = 1.0f;
+	
+	float value;
+	for(int i=0; i<COUNT; i++) {
+		float3 Object = World.xyz - Center[i];
+		value += abs(length(Object.xyz) < Radius[i]);
+	}
+	return value;
+}
+
+float4 PSSphereFillGradient(psInput input) : SV_Target
+{
+	float4 World;
+	World.xyz = texture2d.Sample(linearSampler,input.uv);
+	World.w = 1.0f;
+	
+	float value;
+	for(int i=0; i<COUNT; i++) {
+		float3 Object = World.xyz - Center[i];
+		value += clamp(1.0f - length(Object.xyz) / abs(Radius[i]), 0, 1);
+	}
+	return value;
+}
+
+technique10 Sphere
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSSphereFill()));
+	}
+}
+
+technique10 SphereGradient
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSSphereFillGradient()));
+	}
+}

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Gradient From Base.v4p" systemname="Gradient From Base" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Gradient From Base.v4p">
-   <BOUNDS type="Window" left="28365" top="21795" width="9000" height="6000">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Gradient From Base.v4p" systemname="Gradient From Base" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Gradient From Base.v4p">
+   <BOUNDS type="Window" left="22350" top="19965" width="9000" height="6000">
    </BOUNDS>
    <NODE systemname="SelectVolume (DX11.TextureFX)" filename="..\30. Draw processed lines\texture11\SelectVolume.tfx" nodename="SelectVolume (DX11.TextureFX)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="840" top="3645" width="3810" height="270">
@@ -20,6 +20,8 @@
    <PIN pinname="GradientPower" slicecount="1" values="0.08">
    </PIN>
    <PIN pinname="Thickness" visible="1" slicecount="1" values="1.73">
+   </PIN>
+   <PIN pinname="Gamma" slicecount="1" values="0.7">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
@@ -188,4 +190,6 @@
    </NODE>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Y">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

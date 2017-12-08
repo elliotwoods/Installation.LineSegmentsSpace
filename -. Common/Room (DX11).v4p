@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.1.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\Room (DX11).v4p" systemname="Room (DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\Room (DX11).v4p" systemname="Room (DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p" scrollx="0" scrolly="2175">
    <BOUNDS type="Window" left="855" top="4050" width="17745" height="6915">
    </BOUNDS>
    <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="10">
@@ -139,7 +139,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4200" top="3375" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="5.007,3.002,6.784">
+   <PIN pinname="Y Input Value" slicecount="3" values="15,5,10">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -170,8 +170,6 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="GouraudDirectional (DX11.Effect)" filename="%VVVV%\packs\DX11\nodes\dx11\GouraudDirectional.fx" nodename="GouraudDirectional (DX11.Effect)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="2055" top="6720" width="100" height="100">
    </BOUNDS>
@@ -550,12 +548,26 @@
    </NODE>
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="GroundPlane (DX11)" filename="..\..\Installation.LineOfSight\modules\GroundPlane (DX11).v4p" nodename="GroundPlane (DX11)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="675" top="6720" width="100" height="100">
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="1095" top="4050" width="675" height="270">
    </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
+   <BOUNDS type="Box" left="1095" top="4050" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|grid 11|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Layer Out" dstnodeid="6" dstpinname="Layer 1">
+   <LINK srcnodeid="6" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
    </LINK>
+   <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="1005" top="5685" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>

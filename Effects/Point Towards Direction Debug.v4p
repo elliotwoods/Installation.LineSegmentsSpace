@@ -1,0 +1,69 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Point Towards Direction Debug.v4p" systemname="Point Towards Direction Debug" filename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Point Towards Direction Debug.v4p">
+   <BOUNDS type="Window" left="7050" top="11385" width="9930" height="8880">
+   </BOUNDS>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Direction">
+   </PIN>
+   <BOUNDS type="Box" left="4305" top="1265" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4305" top="1265" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="11" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1545" top="7620" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1545" top="7620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="DebugPositionLines (DX11.TextureFX)" filename="texture11\DebugPositionLines.tfx" nodename="DebugPositionLines (DX11.TextureFX)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="4035" top="6630" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Box" left="5010" top="4500" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5010" top="4500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="8.45,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="28" dstpinname="PositionXYZ">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="3045" top="1080" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3045" top="1080" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Position">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Output Node" dstnodeid="28" dstpinname="Texture In">
+   </LINK>
+   </PATCH>

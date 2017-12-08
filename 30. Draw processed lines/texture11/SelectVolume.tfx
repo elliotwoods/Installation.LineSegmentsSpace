@@ -7,6 +7,7 @@ Texture2D<float3> texture2d : PREVIOUS;
 float Radius = 1.0f;
 float Thickness = 0.1f;
 float Phase = 0.0f;
+float Gamma = 1.0f;
 float4x4 TransformInverse;
 float2 R:TARGETSIZE;
 
@@ -29,9 +30,10 @@ float4 PSSphere(psInput input) : SV_Target
 	float4 World;
 	World.xyz = texture2d.Sample(linearSampler,input.uv);
 	World.w = 1.0f;
-	World = mul(World, TransformInverse);
+	float4 Object = mul(World, TransformInverse);
 	
-	return abs(length(World.xyz) - Radius) < Thickness;
+	float4 value = 	abs(length(Object.xyz) - Radius) < Thickness;
+	return value;
 }
 
 float4 PSSphereFill(psInput input) : SV_Target
@@ -51,10 +53,12 @@ float4 PSSphereFillGradient(psInput input) : SV_Target
 	float4 World;
 	World.xyz = texture2d[x];
 	World.w = 1.0f;
-	World = mul(World, TransformInverse);
-	float value = length(World.xyz) / Radius;
-	value = clamp(value, 0, 1);
-	value = 1.0f - value;
+	float4 Object = mul(World, TransformInverse);
+	Object /= Object.w;
+	float value = 1.0f - length(Object.xyz) / Radius;
+	value = saturate(value);
+	value = pow(abs(value), Gamma);
+	
 	return value;
 }
 

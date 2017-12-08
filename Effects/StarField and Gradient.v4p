@@ -1,33 +1,33 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p" systemname="StarField and Gradient" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p">
-   <BOUNDS type="Window" left="21555" top="16245" width="10725" height="8730">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\StarField and Gradient.v4p" systemname="StarField and Gradient" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p" scrollx="15" scrolly="0">
+   <BOUNDS type="Window" left="22290" top="16845" width="10725" height="8730">
    </BOUNDS>
    <NODE systemname="Radial Starfield" filename="..\Effects\Radial Starfield.v4p" componentmode="Hidden" id="1" nodename="..\Effects\Radial Starfield.v4p">
    <BOUNDS type="Node" left="585" top="2730" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="585" top="2730" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="25530" top="20970" width="9000" height="6000">
+   <BOUNDS type="Window" left="24495" top="17175" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Position" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Fill Factor" slicecount="1" visible="1" values="-0.09">
+   <PIN pinname="Fill Factor" slicecount="1" visible="1" values="0.06">
    </PIN>
    </NODE>
-   <NODE systemname="Gradient From Base" filename="..\Effects\Gradient From Base.v4p" componentmode="Hidden" id="0" nodename="..\Effects\Gradient From Base.v4p">
+   <NODE systemname="Gradient From Base" filename="..\Effects\Gradient From Base.v4p" componentmode="InAWindow" id="0" nodename="..\Effects\Gradient From Base.v4p">
    <BOUNDS type="Node" left="2115" top="2730" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2115" top="2730" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="28365" top="21795" width="9000" height="6000">
+   <BOUNDS type="Window" left="22350" top="19965" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Y" visible="1">
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
@@ -49,9 +49,9 @@
    <NODE systemname="Cons (DX11.Texture 2d)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Cons (DX11.Texture 2d)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="585" top="3780" width="1575" height="270">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="3" dstpinname="Input 2">
@@ -68,12 +68,14 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="3" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="5">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="4500" top="3795" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    <PIN pinname="Receive String" slicecount="1" values="/liveosc/connection">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="SetSend (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="SetSend (LiveOSC)" componentmode="Hidden" id="7">
@@ -81,13 +83,13 @@
    </BOUNDS>
    <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Send" visible="1" slicecount="3" values="0">
+   <PIN pinname="Send" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Level" slicecount="4" visible="1" values="1,1,1,1">
+   <PIN pinname="Level" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Force Update" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Track" slicecount="1" visible="1" values="3">
+   <PIN pinname="Track" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="PlayClip (LiveOSC)" filename="..\32. Send Audio Control Test\plugins\LiveOSCConnect\LiveOSCConnect.csproj" nodename="PlayClip (LiveOSC)" componentmode="Hidden" id="6">
@@ -95,13 +97,13 @@
    </BOUNDS>
    <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Clip" slicecount="1" visible="1" values="4">
+   <PIN pinname="Clip" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Stop" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Track" slicecount="1" values="3">
+   <PIN pinname="Track" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Input Value" dstnodeid="6" dstpinname="Connection">
@@ -193,13 +195,13 @@
    </BOUNDS>
    <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Clip" slicecount="1" values="4">
+   <PIN pinname="Clip" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Stop" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Track" slicecount="1" visible="1" values="3">
+   <PIN pinname="Track" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Input Value" dstnodeid="14" dstpinname="Connection">
@@ -231,13 +233,13 @@
    </BOUNDS>
    <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Send" visible="1" slicecount="3" values="0,0,0">
+   <PIN pinname="Send" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Level" slicecount="4" visible="1" values="1,0,0,1">
+   <PIN pinname="Level" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Force Update" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Track" slicecount="1" visible="1" values="3">
+   <PIN pinname="Track" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
@@ -299,7 +301,7 @@
    </PIN>
    <PIN pinname="Value0-Time0" slicecount="4" values="0.0199999618530274,5.07999981880187,43.4741104205645,67.6012744534653">
    </PIN>
-   <PIN pinname="Value0-Value0" slicecount="4" values="-5,-3.46666671435038,-3.46666668256124,1.98666667938232">
+   <PIN pinname="Value0-Value0" slicecount="4" values="-5,-3.20000004768372,-3.20000001589457,1.98666667938232">
    </PIN>
    <PIN pinname="Value0-InType0" slicecount="4" values="2,2,2,2">
    </PIN>
@@ -327,9 +329,9 @@
    </PIN>
    <PIN pinname="Music" visible="1">
    </PIN>
-   <PIN pinname="Set Time" visible="1">
+   <PIN pinname="Set Time" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Play" slicecount="1" visible="1" values="1">
+   <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Value0" dstnodeid="0" dstpinname="Y">
@@ -449,7 +451,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Go To Position">
@@ -494,4 +496,6 @@
    </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Play">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

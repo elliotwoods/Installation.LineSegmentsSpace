@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Point.v4p" systemname="Point Towards Point" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Point.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Point Towards Point.v4p" systemname="Point Towards Point" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Point.v4p">
    <NODE systemname="SelectDirectionAwayFromPoint (DX11.TextureFX)" filename="..\30. Draw processed lines\texture11\SelectDirectionAwayFromPoint.tfx" nodename="SelectDirectionAwayFromPoint (DX11.TextureFX)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2700" top="5100" width="100" height="100">
    </BOUNDS>
@@ -15,7 +15,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3000" top="4035" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.347451454520204,1.79296505276448,-0.42731484073932">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -28,24 +28,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="RandomSpread (Spreads)" nodename="RandomSpread (Spreads)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1515" top="1950" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Width" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Random Seed" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="DeNiro (Animation)" nodename="DeNiro (Animation)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="1500" top="2445" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
+   <PIN pinname="Go To Position" visible="1" slicecount="3" values="0.429878158029169,0.23932370916009,1.47222660901025">
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -54,28 +40,12 @@
    <PIN pinname="Acceleration" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="1860" top="1500" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Cycles" visible="1">
-   </PIN>
-   <PIN pinname="Period" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="3075" top="3615" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3825" top="2520" width="795" height="720">
    </BOUNDS>
    <BOUNDS type="Node" left="3825" top="2520" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="1,1,-1">
+   <PIN pinname="Y Input Value" slicecount="3" values="1,1,1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -88,10 +58,6 @@
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Cycles" dstnodeid="2" dstpinname="Random Seed">
-   </LINK>
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture In|">
    </PIN>
@@ -124,12 +90,42 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="9" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
+   <BOUNDS type="Window" left="10425" top="15795" width="5325" height="6705">
+   </BOUNDS>
+   <NODE id="5" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3075" top="3615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Position Out" dstnodeid="5" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Input 2">
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="25305" top="12105" width="5325" height="6705">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Box" left="1545" top="1155" width="795" height="720">
    </BOUNDS>
+   <BOUNDS type="Node" left="1545" top="1155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="3,1,1.47222660901025">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Go To Position">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

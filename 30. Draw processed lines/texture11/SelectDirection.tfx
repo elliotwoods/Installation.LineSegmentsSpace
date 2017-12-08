@@ -1,7 +1,4 @@
-//@author: vux
-//@help: template for texture fx
-//@tags: texture
-//@credits: 
+
 
 Texture2D<float3> texture2d : PREVIOUS;
 float3 Direction;

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StackTextures (DX11.Texture2D).v4p" systemname="StackTextures (DX11.Texture2D)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\Effects\StackTextures (DX11.Texture2D).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\StackTextures (DX11.Texture2D).v4p" systemname="StackTextures (DX11.Texture2D)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\Effects\StackTextures (DX11.Texture2D).v4p">
    <BOUNDS type="Window" left="20850" top="17805" width="9000" height="6000">
    </BOUNDS>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="0">
@@ -47,7 +47,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2835" top="2565" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" values="1024,1024">
+   <PIN pinname="Y Input Value" slicecount="2" values="1024,2048" visible="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -88,4 +88,56 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Render State" dstnodeid="13" dstpinname="Render State">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="4170" top="975" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4170" top="975" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LineIndex">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="4170" top="1470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input">
+   </LINK>
+   <NODE systemname="RoundUpPowerOfTwo (Value)" filename="..\..\-. Common\RoundUpPowerOfTwo (Value).v4p" nodename="..\..\-. Common\RoundUpPowerOfTwo (Value).v4p" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="4155" top="1965" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2404" top="162" width="3625" height="4515">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10485" top="13695" width="3630" height="4515">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Count" dstnodeid="17" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="4020" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="XY" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

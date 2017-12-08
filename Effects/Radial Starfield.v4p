@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha31.dtd" >
-   <PATCH nodename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Radial Starfield.v4p" systemname="Radial Starfield" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Radial Starfield.v4p">
-   <BOUNDS type="Window" left="25530" top="20970" width="9000" height="6000">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Radial Starfield.v4p" systemname="Radial Starfield" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Radial Starfield.v4p">
+   <BOUNDS type="Window" left="24495" top="17175" width="9000" height="6000">
    </BOUNDS>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="2250" top="675" width="100" height="100">
@@ -22,6 +22,8 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Radius" slicecount="1" values="0.055">
+   </PIN>
+   <PIN pinname="CutValueXYZ" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
@@ -69,7 +71,7 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Input2" slicecount="1" values="0.998" visible="1">
+   <PIN pinname="Input2" slicecount="1" visible="1" values="0.998">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In">
@@ -106,4 +108,24 @@
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="4920" top="1050" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4920" top="1050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="CutValueXYZ">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>
