@@ -325,7 +325,8 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::refresh() {
 	auto selection = this->selection.lock();
-	auto response = ofLoadURL(this->serverAddress.get() + "/api/lines");
+    auto hover = this->hover.lock();
+    auto response = ofLoadURL(this->serverAddress.get() + "/api/lines");
 	try {
 		auto responseData = json::parse(response.data.getText());
 		if (!responseData["success"]) {
@@ -366,6 +367,15 @@ void ofApp::refresh() {
 		if (selection) {
 			this->selectByIndex(selection->LineIndex);
 		}
+        if(hover){
+            //find the hover in the new set
+            for(const auto & line : this->lines) {
+                if(line.second->LineIndex == hover->LineIndex) {
+                    this->hover = line.second;
+                    break;
+                }
+            }
+        }
 	}
 	catch (std::exception & e) {
 		ofLogError() << e.what();
