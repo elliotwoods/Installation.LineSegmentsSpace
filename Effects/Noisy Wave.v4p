@@ -165,6 +165,10 @@
    </PIN>
    <PIN pinname="Y" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="X" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Transform Out" dstnodeid="5" dstpinname="Source">
    </LINK>
@@ -182,20 +186,20 @@
    </NODE>
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="28" dstpinname="Y">
    </LINK>
-   <NODE systemname="Timeliner (Animation)" filename="%VVVV%\lib\nodes\plugins\Timeliner.dll" nodename="Timeliner (Animation)" componentmode="Hidden" id="31">
+   <NODE systemname="Timeliner (Animation)" filename="%VVVV%\lib\nodes\plugins\Timeliner.dll" nodename="Timeliner (Animation)" componentmode="InAWindow" id="31">
    <BOUNDS type="Node" left="1605" top="2880" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1605" top="2880" width="6000" height="3000">
    </BOUNDS>
    <BOUNDS type="Window" left="25605" top="10995" width="9240" height="9495">
    </BOUNDS>
-   <PIN pinname="Translate" slicecount="1" values="-34.6635">
+   <PIN pinname="Translate" slicecount="1" values="-31.7725">
    </PIN>
-   <PIN pinname="Scale" slicecount="1" values="54.1399">
+   <PIN pinname="Scale" slicecount="1" values="37.7164">
    </PIN>
    <PIN pinname="Pin Settings" slicecount="4" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Linear&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;4.0000&quot; /&gt;|,|&lt;PIN Name=&quot;NoiseVolume&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;ChipFatVolume&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
    </PIN>
-   <PIN pinname="Value0-Time0" slicecount="8" values="2.03161305239614,11.3103605388136,16.2367805568354,20.1792659759521,37.7021446228027,39.6516189575195,40.418937655475,40.419037655475">
+   <PIN pinname="Value0-Time0" slicecount="8" values="2.03161305239614,11.3103605388136,16.2367805568354,20.1792659759521,32.6910630615545,34.6405373962713,35.4078560942268,35.4079560942268">
    </PIN>
    <PIN pinname="Value0-Value0" slicecount="8" values="0,0.0933333349227906,0.186666669646899,0.706666648387909,0.706666648387909,4,4,0">
    </PIN>
@@ -207,7 +211,7 @@
    </PIN>
    <PIN pinname="GUI Settings" slicecount="1" values="|&lt;GUI&gt;&lt;SPLITTER Position=&quot;53&quot; /&gt;&lt;/GUI&gt;|">
    </PIN>
-   <PIN pinname="NoiseVolume-Time0" slicecount="4" values="37.7669412524224,38.7736207296308,40.3897936243698,40.3898936243698">
+   <PIN pinname="NoiseVolume-Time0" slicecount="4" values="32.7558596911742,33.7625391683826,35.3787120631216,35.3788120631216">
    </PIN>
    <PIN pinname="NoiseVolume-Value0" slicecount="4" values="0,1,1,0">
    </PIN>
@@ -225,7 +229,7 @@
    </PIN>
    <PIN pinname="Set Time" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="ChipFatVolume-Time0" slicecount="3" values="0,39.6821914633543,40.3762114488535">
+   <PIN pinname="ChipFatVolume-Time0" slicecount="3" values="0,34.6711099021061,35.3651298876053">
    </PIN>
    <PIN pinname="ChipFatVolume-Value0" slicecount="3" values="1,1,0">
    </PIN>

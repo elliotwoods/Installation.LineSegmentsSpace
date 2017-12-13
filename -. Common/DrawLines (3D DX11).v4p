@@ -122,30 +122,18 @@
    </NODE>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="LineGeometry" filename="Debug - DrawLine\LineGeometry.v4p" nodename="Debug - DrawLine\LineGeometry.v4p" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="1215" top="7065" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="160" top="4690" width="5745" height="4750">
-   </BOUNDS>
-   <BOUNDS type="Window" left="5520" top="12120" width="8520" height="6750">
-   </BOUNDS>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Instancer (DX11.Drawer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Instancer (DX11.Drawer)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="1215" top="7635" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1215" top="7635" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Geometry In" visible="1">
+   <PIN pinname="Geometry In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
    <PIN pinname="Instance Count" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="32" srcpinname="Geometry Out" dstnodeid="33" dstpinname="Geometry In">
-   </LINK>
    <NODE systemname="LineInstanced3D (DX11.Effect)" filename="dx11\LineInstanced3D.fx" nodename="LineInstanced3D (DX11.Effect)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="915" top="8490" width="4740" height="270">
    </BOUNDS>
@@ -259,5 +247,17 @@
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Enable Line AntiAlias">
    </LINK>
    <LINK srcnodeid="45" srcpinname="Render State" dstnodeid="39" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="LineGeometry" filename="Debug - DrawLine\LineGeometry.v4p" nodename="Debug - DrawLine\LineGeometry.v4p" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="1215" top="7065" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="160" top="4690" width="5745" height="4750">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5520" top="12120" width="8520" height="6750">
+   </BOUNDS>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Geometry Out" dstnodeid="33" dstpinname="Geometry In">
    </LINK>
    </PATCH>

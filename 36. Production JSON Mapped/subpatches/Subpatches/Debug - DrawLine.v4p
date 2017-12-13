@@ -1,0 +1,303 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\kimchips\Dropbox (Kimchi and Chips)\KC38 - QUAD\site files\VVVV\Subpatches\Debug - DrawLine.v4p" systemname="Debug - DrawLine" filename="C:\Users\kimchips\Dropbox (Kimchi and Chips)\KC38 - QUAD\site files\VVVV\Subpatches\Debug - DrawLine.v4p" scrollx="330" scrolly="0">
+   <BOUNDS type="Window" left="4980" top="14205" width="10995" height="7710">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="2490" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2490" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Line">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Line (Lines)" filename="plugins\LinesDatabase.dll" nodename="Line (Lines)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2475" top="1260" width="4845" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2475" top="1260" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Line" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="LineIndex" visible="1">
+   </PIN>
+   <PIN pinname="ProjectorIndex" visible="1">
+   </PIN>
+   <PIN pinname="StartXY" visible="1">
+   </PIN>
+   <PIN pinname="EndXY" visible="1">
+   </PIN>
+   <PIN pinname="Star tWorldXYZ" visible="1">
+   </PIN>
+   <PIN pinname="End WorldXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Start WorldXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Last Update" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="2" dstpinname="Line">
+   </LINK>
+   <NODE systemname="Instancer (DX11.Drawer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Instancer (DX11.Drawer)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="3210" top="4410" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3210" top="4410" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Geometry In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="Instance Count" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="2430" top="5520" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2430" top="5520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="3555" top="3525" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LineGeometry" filename="Debug - DrawLine\LineGeometry.v4p" nodename="Debug - DrawLine\LineGeometry.v4p" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="1055" top="2845" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="470" width="5745" height="4750">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5520" top="12120" width="8520" height="6750">
+   </BOUNDS>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Geometry Out" dstnodeid="10" dstpinname="Geometry In">
+   </LINK>
+   <NODE systemname="DynamicBuffer (DX11.Buffer 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer 2d)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="5445" top="3705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5445" top="3705" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="DataXYZ" visible="1">
+   </PIN>
+   <PIN pinname="DataXY" visible="1">
+   </PIN>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="StartXY" dstnodeid="13" dstpinname="DataXYZ">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="StartXY" dstnodeid="13" dstpinname="DataXY">
+   </LINK>
+   <NODE systemname="DynamicBuffer (DX11.Buffer 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer 2d)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5835" top="4170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5835" top="4170" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="DataXYZ" visible="1">
+   </PIN>
+   <PIN pinname="DataXY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="EndXY" dstnodeid="16" dstpinname="DataXY">
+   </LINK>
+   <NODE systemname="DynamicBuffer (DX11.Buffer Int)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Int)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="4965" top="3030" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4965" top="3030" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="ProjectorIndex" dstnodeid="17" dstpinname="Data">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="LineIndex" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Count" dstnodeid="10" dstpinname="Instance Count">
+   </LINK>
+   <NODE systemname="Age (DateTime)" filename="plugins\DateTimeAge\DateTimeAge.csproj" nodename="Age (DateTime)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="7245" top="1935" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7245" top="1935" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Last Update" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Rasterizer (DX11.RenderState Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState Advanced)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="1365" top="4440" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1365" top="4440" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable Line AntiAlias" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enable MultiSampling" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ColorByAge" filename="Debug - DrawLine\ColorByAge.v4p" nodename="Debug - DrawLine\ColorByAge.v4p" componentmode="InAWindow" id="27">
+   <BOUNDS type="Node" left="7252" top="3247" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5147" top="482" width="4210" height="5530">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10965" top="16605" width="5745" height="7200">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="27" dstpinname="Input">
+   </LINK>
+   <NODE systemname="DebugLineInstanced (DX11.Effect)" filename="dx11\DebugLineInstanced.fx" nodename="DebugLineInstanced (DX11.Effect)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="2430" top="4890" width="4320" height="270">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Query" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Geometry Out" dstnodeid="29" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Buffer" dstnodeid="29" dstpinname="Start">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Buffer" dstnodeid="29" dstpinname="End">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Buffer" dstnodeid="29" dstpinname="ProjectorIndex">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Buffer" dstnodeid="29" dstpinname="Colors">
+   </LINK>
+   <NODE systemname="PipelineStatistics (DX11.Query)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="PipelineStatistics (DX11.Query)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="5820" top="5280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Query Source" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pixel Shader Invocations" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="3150" top="6225" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Query" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7095" top="5970" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7095" top="5970" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Pixel Shader Invocations" dstnodeid="35" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="DrawLine (DX11.Effect)" filename="dx11\DrawLine.fx" nodename="DrawLine (DX11.Effect)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="7965" top="4890" width="2250" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="DrawLine">
+   </PIN>
+   <PIN pinname="StartXY" visible="1">
+   </PIN>
+   <PIN pinname="EndXY" visible="1">
+   </PIN>
+   <PIN pinname="ProjectorIndex" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Geometry Out" dstnodeid="37" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="StartXY" dstnodeid="37" dstpinname="StartXY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="EndXY" dstnodeid="37" dstpinname="EndXY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="ProjectorIndex" dstnodeid="37" dstpinname="ProjectorIndex">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="37" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Layer" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Render State" dstnodeid="29" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="38">
+   <BOUNDS type="Node" left="4905" top="7035" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4905" top="7035" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18315" top="15120" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="ViewPort" visible="1">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Layer" dstnodeid="38" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="ViewPort (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="ViewPort (DX11)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="6795" top="6315" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6795" top="6315" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="ViewPort" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="6795" top="6660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="ViewPort" dstnodeid="40" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output Node" dstnodeid="38" dstpinname="ViewPort">
+   </LINK>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="7770" top="6315" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7770" top="6315" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="40" dstpinname="Index">
+   </LINK>
+   </PATCH>

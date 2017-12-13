@@ -314,7 +314,7 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="instance" filename="Flow Across Left To Right\instance.v4p" nodename="instance" componentmode="Hidden" id="52">
+   <NODE systemname="instance" filename="Flow Across Left To Right\instance.v4p" nodename="instance" componentmode="InAWindow" id="52">
    <BOUNDS type="Node" left="7655" top="5271" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="4118" top="1649" width="7075" height="7245">
@@ -331,9 +331,11 @@
    </PIN>
    <PIN pinname="World - Texture In" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="3" visible="1">
+   <PIN pinname="Period" slicecount="1" visible="1" values="3">
    </PIN>
    <PIN pinname="Decay" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="52" dstpinname="World - Texture In">
@@ -357,9 +359,11 @@
    </PIN>
    <PIN pinname="Position" visible="1" slicecount="3" values="0.396925063446794,1.32004573687839,-3.94395960024196">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="3" visible="1">
+   <PIN pinname="Period" slicecount="1" visible="1" values="3">
    </PIN>
    <PIN pinname="Decay" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="30" dstpinname="Texture In">
@@ -445,7 +449,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5070" top="4815" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4.3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -495,5 +499,33 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Decay">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
+   <BOUNDS type="Box" left="5325" top="3930" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5325" top="3930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Z">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
+   <BOUNDS type="Box" left="8670" top="3825" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8670" top="3825" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Z">
    </LINK>
    </PATCH>

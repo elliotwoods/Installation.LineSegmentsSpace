@@ -53,7 +53,7 @@ class ofApp : public ofBaseApp{
 		ofxCvGui::Builder gui;
 		ofImage projectorPreview;
 
-		ofParameter<string> serverAddress{ "Server address", "http://192.168.0.116:8000" };
+		ofParameter<string> serverAddress{ "Server address", "http://192.168.0.108:8000" };
 		ofParameter<string> myName{ "My name", "" };
 		ofParameter<int> projectorSelection;
 		ofParameter<int> lineEndSelection;

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\StarField and Gradient.v4p" systemname="StarField and Gradient" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p" scrollx="15" scrolly="0">
-   <BOUNDS type="Window" left="22290" top="16845" width="10725" height="8730">
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\StarField and Gradient.v4p" systemname="StarField and Gradient" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\StarField and Gradient.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="22290" top="15315" width="10725" height="10260">
    </BOUNDS>
    <NODE systemname="Radial Starfield" filename="..\Effects\Radial Starfield.v4p" componentmode="Hidden" id="1" nodename="..\Effects\Radial Starfield.v4p">
    <BOUNDS type="Node" left="585" top="2730" width="100" height="100">
@@ -449,9 +449,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Go To Position">

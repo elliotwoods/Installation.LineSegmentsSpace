@@ -1,0 +1,109 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\kimchips\Dropbox (Kimchi and Chips)\KC38 - QUAD\site files\VVVV\Subpatches\Mapping\Take Backups.v4p" systemname="Take Backups" filename="C:\Users\kimchips\Dropbox (Kimchi and Chips)\KC38 - QUAD\site files\VVVV\Subpatches\Mapping\Take Backups.v4p">
+   <NODE systemname="Copier (File)" nodename="Copier (File)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="2745" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="To Filename" visible="1">
+   </PIN>
+   <PIN pinname="From Filename" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
+   </PIN>
+   <PIN pinname="Error Message" visible="1">
+   </PIN>
+   <PIN pinname="Copy" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Replace Existing" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Date (Astronomy)" filename="%VVVV%\addonpack\lib\nodes\plugins\Date.dll" nodename="Date (Astronomy)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1860" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Formate" slicecount="1" values="yMd-Hm">
+   </PIN>
+   <PIN pinname="Current Date" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1845" top="1890" width="1590" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1845" top="1890" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1680" top="2295" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values=".json">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1755" top="3210" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1755" top="3210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="0" dstpinname="From Filename">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="0" dstpinname="To Filename">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Copy">
+   </PIN>
+   <BOUNDS type="Box" left="3150" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3150" top="500" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="3" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="3" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Error Message" dstnodeid="4" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Current Date" dstnodeid="2" dstpinname="Input String">
+   </LINK>
+   <BOUNDS type="Window" left="27195" top="15150" width="5250" height="4710">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Copy">
+   </LINK>
+   </PATCH>
