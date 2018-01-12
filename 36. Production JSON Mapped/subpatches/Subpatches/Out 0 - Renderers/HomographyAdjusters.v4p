@@ -1,0 +1,1451 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\36. Production JSON Mapped\subpatches\Subpatches\Out 0 - Renderers\HomographyAdjusters.v4p" systemname="HomographyAdjusters" filename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\36. Production JSON Mapped\subpatches\Subpatches\Out 0 - Renderers\HomographyAdjusters.v4p" scrollx="5970" scrolly="0">
+   <BOUNDS type="Window" left="3750" top="7500" width="13965" height="19665">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="10935" top="360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10935" top="360" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ProjectorStartEnd">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="9960" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9960" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="iProjector">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="12210" top="15675" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12210" top="15675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Helper Layers|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="12516" top="7545" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12180" top="5430" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="9" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="9" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Helper Layers" dstnodeid="7" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="15195" top="4995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15195" top="4995" width="1440" height="1290">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.16062231774143,-0.924836308171657,1.0943820224719,1.51460674157303">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1.31533569768863,1.03430353430353,-1.41372141372141,1.00368885649465">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (Transform)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Transform)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="10665" top="15015" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10665" top="15015" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Input 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 7" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 8" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="13">
+   <BOUNDS type="Box" left="10665" top="15675" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10665" top="15675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="11" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="15195" top="6450" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15195" top="6450" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="X Output Value" dstnodeid="11" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Y">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="13050" top="4920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13050" top="4920" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.839080459770115,-1,0.74712643678161,0.448275862068966">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.247058823529412,1,-0.341176470588234,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="13050" top="6465" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="X Output Value" dstnodeid="18" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="XY" dstnodeid="9" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="SetMatrix (Transform)" nodename="SetMatrix (Transform)" componentmode="Hidden" id="19" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="9375" top="14535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Matrix In" slicecount="16" visible="1" values="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="10080" top="14130" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10080" top="14130" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Matrix In">
+   </LINK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="15270" top="6810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Difference" dstnodeid="22" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="16890" top="4950" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16890" top="4950" width="1455" height="1245">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.975150911249931,-0.99698920898969,2.38340829758782,0.707806123335009">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.925162287284006,1.02021393892781,-1.12759424609136,0.977677295801015">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="23" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="16890" top="6405" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16890" top="6405" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="X Output Value" dstnodeid="23" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Difference" dstnodeid="22" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="9" dstpinname="Difference">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="18375" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18375" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="32" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="32" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="18525" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18525" top="9165" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="18525" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="X Output Value" dstnodeid="28" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="XY" dstnodeid="32" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="19950" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19950" top="9165" width="1455" height="1395">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.38811188811187,-2.36363636363637,-0.122377622377623,0.664335664335665">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.974522292993616,1.90445859872611,-1.54777070063693,1.73885350318471">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="25" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="19950" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19950" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.01">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="X Output Value" dstnodeid="25" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 7" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 5" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="18885" top="30" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18885" top="30" width="1275" height="1230">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Endless">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1.5">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="20265" top="45" width="1275" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="20265" top="45" width="1275" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;-- default data|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="12210" top="15015" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12210" top="15015" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Render State" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1">
+   </PIN>
+   <PIN pinname="Layer 7" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 8" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 5" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 7" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Layer Out" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Difference" dstnodeid="32" dstpinname="Difference">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="21975" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="21975" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="47" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="47" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="22125" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="22125" top="9165" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="22125" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="X Output Value" dstnodeid="45" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="XY" dstnodeid="47" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
+   <BOUNDS type="Node" left="23520" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="23520" top="9165" width="1650" height="1305">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-2.02734839476813,-1.78478002378121,-0.590963139120095,1.00713436385255">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1,1.27882960413081,-1.01032702237521,1.64027538726334">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="43" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="23550" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="23550" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.005">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="X Output Value" dstnodeid="43" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Difference" dstnodeid="47" dstpinname="Difference">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 8" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 8">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="15090" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15090" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="52" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="52" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
+   <BOUNDS type="Node" left="15240" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15240" top="9165" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="15240" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="X Output Value" dstnodeid="50" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="XY" dstnodeid="52" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
+   <BOUNDS type="Node" left="16650" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16650" top="9165" width="1290" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.70054945054945,-2.32692307692308,0.184065934065935,0.315934065934066">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1.15358361774744,0.897610921501707,-1.09215017064846,1.21501706484641">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="48" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="16665" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16665" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.01">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="X Output Value" dstnodeid="48" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Difference" dstnodeid="52" dstpinname="Difference">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 6">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 6" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="10635" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10635" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="57" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="57" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
+   <BOUNDS type="Node" left="10785" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10785" top="9090" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.931034482758621,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.623529411764706,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="10785" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="X Output Value" dstnodeid="55" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="XY" dstnodeid="57" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Node" left="12240" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12240" top="9165" width="1185" height="1350">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.7985803016859,-1.71872227151731,0.254658385093166,-0.118012422360244">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.992998833138855,1.1610268378063,-1.02800466744457,0.733955659276551">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="53" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="12210" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12210" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.02">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="X Output Value" dstnodeid="53" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Difference" dstnodeid="57" dstpinname="Difference">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 4">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="7365" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7365" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="62" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="62" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="61">
+   <BOUNDS type="Node" left="7515" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7515" top="9090" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.931034482758621,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.623529411764706,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="7515" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="X Output Value" dstnodeid="60" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="XY" dstnodeid="62" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
+   <BOUNDS type="Node" left="8955" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8955" top="9090" width="1395" height="1140">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.50632911392405,-1.18987341772152,0.563291139240506,1.15189873417721">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-1.04488778054863,1.25436408977557,-1.05236907730673,0.932668329177058">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="58" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="8940" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8940" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.02">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="X Output Value" dstnodeid="58" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Difference" dstnodeid="62" dstpinname="Difference">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="4170" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4170" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="67" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="67" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
+   <BOUNDS type="Node" left="4320" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4320" top="9090" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.931034482758621,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.623529411764706,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="4320" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="X Output Value" dstnodeid="65" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="XY" dstnodeid="67" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
+   <BOUNDS type="Node" left="5745" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5745" top="9090" width="1245" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.05815831987076,-1.07754442649434,0.718901453957998,0.680129240710824">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.972093023255814,0.897674418604657,-1.04651162790698,0.758139534883722">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="63" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="5745" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5745" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.02">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="X Output Value" dstnodeid="63" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Difference" dstnodeid="67" dstpinname="Difference">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Adjuster" filename="HomographyAdjusters\Adjuster.v4p" nodename="HomographyAdjusters\Adjuster.v4p" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="1020" top="11385" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1020" top="11385" width="5050" height="5520">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7875" top="13410" width="8445" height="7515">
+   </BOUNDS>
+   <PIN pinname="Helper Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projector Index" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Difference" visible="1" slicecount="8" values="-0.05,0.0033101045296163,0.00991782584487899,0.0319332618600911,0.0101760506629944,0,-0.0062839210033417,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TargetsXY" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="72" dstpinname="iProjector">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="72" dstpinname="ProjectorStartEnd">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
+   <BOUNDS type="Node" left="1170" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1170" top="9090" width="1275" height="1365">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.931034482758621,-1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.623529411764706,1,-1,1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="1170" top="10710" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="X Output Value" dstnodeid="70" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="XY" dstnodeid="72" dstpinname="TargetsXY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="69">
+   <BOUNDS type="Node" left="2655" top="9090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2655" top="9090" width="1275" height="1545">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-1.13015184381779,-1.20824295010846,0.902386117136659,0.811279826464209">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.987829614604464,1.04868154158215,-0.884381338742393,1.03042596348884">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-3">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="DifferenceControl" filename="HomographyAdjusters\DifferenceControl.v4p" componentmode="Hidden" id="68" nodename="HomographyAdjusters\DifferenceControl.v4p">
+   <BOUNDS type="Node" left="2595" top="10710" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2595" top="10710" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5340" top="4335" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Difference" visible="1">
+   </PIN>
+   <PIN pinname="Multiplier" slicecount="1" values="0.02">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="X Output Value" dstnodeid="68" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Difference" dstnodeid="72" dstpinname="Difference">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Helper Layers" dstnodeid="37" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73">
+   <BOUNDS type="Box" left="12660" top="315" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12660" top="315" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Show Helpers|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Enabled">
+   </LINK>
+   </PATCH>

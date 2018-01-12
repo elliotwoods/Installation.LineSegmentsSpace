@@ -11,7 +11,7 @@
    </PIN>
    <PIN pinname="Do Seek" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Play" slicecount="1" visible="1" values="1">
+   <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Audio" visible="1">
    </PIN>
@@ -89,9 +89,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Play">
-   </LINK>
    <LINK srcnodeid="5" srcpinname="Output 1" dstnodeid="0" dstpinname="Do Seek">
    <LINKPOINT x="1455" y="4035">
    </LINKPOINT>
@@ -128,4 +128,6 @@
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Play">
+   </LINK>
    </PATCH>

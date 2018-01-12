@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\36. Production JSON Mapped\main.v4p" systemname="main" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\30. Draw processed lines\main.v4p" locked="0" bgcolor="10000536" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="825" top="4890" width="15300" height="16845">
+   <BOUNDS type="Window" left="1080" top="5670" width="15300" height="16845">
    </BOUNDS>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="1890" top="15180" width="100" height="100">
@@ -352,7 +352,7 @@
    <BOUNDS type="Window" left="25110" top="18390" width="8130" height="6675">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Select Shape" filename="..\Effects\Select Shape.v4p" nodename="..\Effects\Select Shape.v4p" componentmode="InAWindow" id="130">
+   <NODE systemname="Select Shape" filename="..\Effects\Select Shape.v4p" nodename="..\Effects\Select Shape.v4p" componentmode="Hidden" id="130">
    <BOUNDS type="Node" left="3015" top="9690" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="3450" top="10980" width="12735" height="13560">
@@ -376,7 +376,7 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Makkuro kurosuke" filename="..\Effects\Makkuro kurosuke.v4p" nodename="..\Effects\Makkuro kurosuke.v4p" componentmode="InAWindow" id="146">
+   <NODE systemname="Makkuro kurosuke" filename="..\Effects\Makkuro kurosuke.v4p" nodename="..\Effects\Makkuro kurosuke.v4p" componentmode="Hidden" id="146">
    <BOUNDS type="Node" left="11823" top="9705" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="8763" top="6258" width="6120" height="6895">
@@ -400,7 +400,7 @@
    </LINK>
    <LINK srcnodeid="133" srcpinname="Texture Out" dstnodeid="146" dstpinname="Noise" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Point Towards Point" filename="..\Effects\Point Towards Point.v4p" nodename="..\Effects\Point Towards Point.v4p" componentmode="InAWindow" id="167">
+   <NODE systemname="Point Towards Point" filename="..\Effects\Point Towards Point.v4p" nodename="..\Effects\Point Towards Point.v4p" componentmode="Hidden" id="167">
    <BOUNDS type="Node" left="15186" top="3848" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="12524" top="525" width="5325" height="6700">
@@ -669,7 +669,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="810" top="1050" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -681,7 +681,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Run">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1069,7 +1069,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4319" top="570" width="5790" height="8700">
    </BOUNDS>
-   <BOUNDS type="Window" left="-975" top="9795" width="13200" height="12060">
+   <BOUNDS type="Window" left="645" top="11115" width="13200" height="12060">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="222" srcpinname="Output" dstnodeid="45" dstpinname="XYZ Start,End" linkstyle="VHV">
@@ -1144,12 +1144,16 @@
    <LINKPOINT x="11835" y="5798">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="73" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Out 0 - Renderers" filename="subpatches\Subpatches\Out 0 - Renderers.v4p" nodename="subpatches\Subpatches\Out 0 - Renderers.v4p" componentmode="Hidden" id="226">
    <BOUNDS type="Node" left="7620" top="16230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="ProjectorStartEnd" visible="1">
+   </PIN>
+   <PIN pinname="iProjector" visible="1">
+   </PIN>
+   <PIN pinname="Line XYZ" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="52" srcpinname="Layer" dstnodeid="226" dstpinname="Layers">
@@ -1170,7 +1174,7 @@
    <PIN pinname="Y Input Value" slicecount="1" values="252">
    </PIN>
    </NODE>
-   <NODE systemname="Noisy Wave" filename="..\Effects\Noisy Wave.v4p" nodename="..\Effects\Noisy Wave.v4p" componentmode="InAWindow" id="102">
+   <NODE systemname="Noisy Wave" filename="..\Effects\Noisy Wave.v4p" nodename="..\Effects\Noisy Wave.v4p" componentmode="Hidden" id="102">
    <BOUNDS type="Node" left="4498" top="9668" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="825" top="4998" width="12235" height="9340">
@@ -1236,4 +1240,46 @@
    </LINK>
    <LINK srcnodeid="191" srcpinname="Y Output Value" dstnodeid="239" dstpinname="Play">
    </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="226" dstpinname="ProjectorStartEnd" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="iProjector" dstnodeid="226" dstpinname="iProjector" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="226" dstpinname="Line XYZ" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7245" y="9075">
+   </LINKPOINT>
+   <LINKPOINT x="8655" y="9075">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Debug - Plane Lines" filename="subpatches\Debug - Plane Lines.v4p" componentmode="Hidden" id="240" nodename="subpatches\Debug - Plane Lines.v4p">
+   <BOUNDS type="Node" left="14190" top="9720" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14190" top="9720" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2925" top="15165" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="XYZ Start,End" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="240" dstpinname="XYZ Start,End">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="73" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="241">
+   <BOUNDS type="Node" left="2280" top="15" width="2505" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2280" top="15" width="7080" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Warning : Homography is applied|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
    </PATCH>
