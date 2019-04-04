@@ -168,17 +168,54 @@ void ofApp::setup(){
 		}
 	});
 
+	//load person's name
 	{
-		ofFile file;
-		file.open("myName.txt", ofFile::ReadOnly, false);
-		auto contents = file.readToBuffer();
-		auto name = contents.getText();
-		if (name.empty()) {
-			auto result = ofSystemTextBoxDialog("Please type in your name:");
-			this->myName = result;
+		auto filename = "myName.txt";
+
+		string loadName;
+		{
+			ofFile file;
+			file.open(filename, ofFile::ReadOnly, false);
+			auto contents = file.readToBuffer();
+			loadName = contents.getText();
+		}
+
+		auto result = ofSystemTextBoxDialog("Please type in your name: [" + loadName + "]");
+		
+		if (result.empty()) {
+			this->myName = loadName;
 		}
 		else {
-			this->myName = name;
+			this->myName = result;
+
+			ofFile file;
+			file.open(filename, ofFile::WriteOnly, false);
+			file.write(result.c_str(), result.size());
+		}
+	}
+
+	//load server address
+	{
+		auto filename = "serverAddress.txt";
+
+		{
+			ofFile file;
+			file.open(filename, ofFile::ReadOnly, false);
+			auto contents = file.readToBuffer();
+			auto loadAddress = contents.getText();
+
+			if (!loadAddress.empty()) {
+				this->serverAddress.set(loadAddress);
+			}
+		}
+
+		auto result = ofSystemTextBoxDialog("Server address: [" + this->serverAddress.get() + "]");
+		if (!result.empty()) {
+			this->serverAddress.set(result);
+
+			ofFile file;
+			file.open(filename, ofFile::WriteOnly, false);
+			file.write(result.c_str(), result.size());
 		}
 	}
 

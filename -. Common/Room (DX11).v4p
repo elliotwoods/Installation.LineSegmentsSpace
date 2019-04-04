@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\Room (DX11).v4p" systemname="Room (DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p" scrollx="0" scrolly="2175">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\Room (DX11).v4p" systemname="Room (DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\Room (DX11).v4p" scrollx="0" scrolly="2985">
    <BOUNDS type="Window" left="855" top="4050" width="17745" height="6915">
    </BOUNDS>
    <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="10">
@@ -85,7 +85,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6885" top="4695" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="0,0,1">
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -139,7 +139,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4200" top="3375" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="15,5,10">
+   <PIN pinname="Y Input Value" slicecount="3" values="5.6,3,8">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -167,7 +167,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
    </PIN>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="GouraudDirectional (DX11.Effect)" filename="%VVVV%\packs\DX11\nodes\dx11\GouraudDirectional.fx" nodename="GouraudDirectional (DX11.Effect)" componentmode="Hidden" id="20">
@@ -252,6 +252,8 @@
    <PIN pinname="Geometry" visible="1">
    </PIN>
    <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="6" dstpinname="Layer 5" linkstyle="VHV">
@@ -548,7 +550,7 @@
    </NODE>
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Enabled">
    </LINK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
    <BOUNDS type="Node" left="1095" top="4050" width="675" height="270">
@@ -564,10 +566,26 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="47">
    <BOUNDS type="Node" left="1005" top="5685" width="100" height="100">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="6" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE systemname="Rasterizer (DX11.RenderState Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState Advanced)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="7485" top="6105" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7485" top="6105" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable Line AntiAlias" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enable MultiSampling" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Render State" dstnodeid="26" dstpinname="Render State">
+   </LINK>
    </PATCH>

@@ -6,6 +6,8 @@
 *.DS_*
 ._*.*
 
+**/packages/*
+
 # Ignore bin folder
 **/bin/*
 

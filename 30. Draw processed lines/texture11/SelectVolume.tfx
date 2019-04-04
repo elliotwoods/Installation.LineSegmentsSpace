@@ -85,6 +85,19 @@ float4 PSPlane(psInput input) : SV_Target
 	return abs(length(World.y) - Radius) < Thickness;
 }
 
+float4 PSCube(psInput input) : SV_Target
+{
+	float4 World;
+	World.xyz = texture2d.Sample(linearSampler,input.uv);
+	World.w = 1.0f;
+	World = mul(World, TransformInverse);
+	float inside = all(abs(World.xyz) < 1.0f);
+	float r = max(max(abs(World.x), abs(World.y)), abs(World.z));
+	r = pow(r, Gamma);
+	float edge = (r + Thickness) > 1;
+	return r * inside;
+}
+
 
 technique10 Sphere
 {
@@ -126,4 +139,13 @@ technique10 Plane
 		SetPixelShader(CompileShader(ps_4_0,PSPlane()));
 	}
 }
+
+technique10 Cube
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PSCube()));
+	}
+}
+
 

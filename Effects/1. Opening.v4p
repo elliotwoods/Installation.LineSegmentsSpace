@@ -1,0 +1,279 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\1. Opening.v4p" systemname="1. Opening" filename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\1. Opening.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="7905" top="570" width="12735" height="13560">
+   </BOUNDS>
+   <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1485" top="11370" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1485" top="11370" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="70">
+   <BOUNDS type="Node" left="675" top="840" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="840" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE systemname="1. room fill sphere" filename="..\36. Production JSON Mapped\sketches\1. room fill sphere.v4p" nodename="..\36. Production JSON Mapped\sketches\1. room fill sphere.v4p" componentmode="Hidden" id="129">
+   <BOUNDS type="Node" left="8400" top="5325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="130">
+   <BOUNDS type="Box" left="6285" top="1470" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6285" top="1470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Output Node" dstnodeid="129" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="1. floor wave" filename="..\36. Production JSON Mapped\sketches\1. floor wave.v4p" nodename="..\36. Production JSON Mapped\sketches\1. floor wave.v4p" componentmode="Hidden" id="131">
+   <BOUNDS type="Node" left="2220" top="6450" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="10965" top="5310" width="9360" height="8655">
+   </BOUNDS>
+   <PIN pinname="Phase" visible="1" slicecount="1" values="32.0404000268685">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Output Node" dstnodeid="131" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="Timeliner (Animation)" filename="%VVVV%\lib\nodes\plugins\Timeliner.dll" nodename="Timeliner (Animation)" componentmode="Hidden" id="132">
+   <BOUNDS type="Node" left="3210" top="2520" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3210" top="2520" width="6000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11160" top="5775" width="11865" height="7800">
+   </BOUNDS>
+   <PIN pinname="Translate" slicecount="1" values="13.3447">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="12.8161">
+   </PIN>
+   <PIN pinname="Pin Settings" slicecount="4" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Wave&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Linear&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;3.0000&quot; /&gt;|,|&lt;PIN Name=&quot;TriangleAlpha&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|,|&lt;PIN Name=&quot;RoomSphereZ&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Cubic&quot; Minimum=&quot;-10.0000&quot; Maximum=&quot;10.0000&quot; /&gt;|">
+   </PIN>
+   <PIN pinname="Time" visible="1">
+   </PIN>
+   <PIN pinname="Wave-Time0" slicecount="7" values="0,2.63383293151855,4.3745571817268,7.10088369907879,9.21831105910214,17.5538577180713,21.6112391402256">
+   </PIN>
+   <PIN pinname="Wave-Value0" slicecount="7" values="0,1,1,2,3,3,2">
+   </PIN>
+   <PIN pinname="Wave-InType0" slicecount="7" values="1,2,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Wave-OutType0" slicecount="7" values="1,2,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Wave" visible="1">
+   </PIN>
+   <PIN pinname="TriangleAlpha-Time0" slicecount="12" values="9.81385621381254,12.0576455172163,13.5178888695643,14.2658178967126,15.7972936370124,17.4356162510277,17.6686462163769,19.639051629996,21.6824359160492,25.0969698723975,26.2633620489442,27.4015490210492">
+   </PIN>
+   <PIN pinname="TriangleAlpha-Value0" slicecount="12" values="0,1,0,0,1,0,2.9802322753722E-009,1,0,0,1,0">
+   </PIN>
+   <PIN pinname="TriangleAlpha-InType0" slicecount="12" values="2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="TriangleAlpha-OutType0" slicecount="12" values="2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="TriangleAlpha" visible="1">
+   </PIN>
+   <PIN pinname="RoomSphereZ-Time0" slicecount="4" values="22.3525153640105,25.8168782210922,27.5163775924041,32.1573155659008">
+   </PIN>
+   <PIN pinname="RoomSphereZ-Value0" slicecount="4" values="-3.99999999304611,2.93333339691161,2.93333331743876,9.86666650772094">
+   </PIN>
+   <PIN pinname="RoomSphereZ-InType0" slicecount="4" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="RoomSphereZ-OutType0" slicecount="4" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="RoomSphereZ" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set Time" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="133">
+   <BOUNDS type="Box" left="9195" top="11115" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9195" top="11115" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Time">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="132" srcpinname="Time" dstnodeid="133" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Wave" dstnodeid="131" dstpinname="Phase">
+   </LINK>
+   <NODE systemname="Cons (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Cons (DX11.Texture 2d)" componentmode="Hidden" id="135">
+   <BOUNDS type="Node" left="1575" top="10395" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1575" top="10395" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="131" srcpinname="Texture Out" dstnodeid="135" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="135" srcpinname="Output" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="1. Ghetto Triangle" filename="Opening\1. Ghetto Triangle.v4p" nodename="Opening\1. Ghetto Triangle.v4p" componentmode="Hidden" id="140">
+   <BOUNDS type="Node" left="6195" top="5244" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3368" top="2577" width="5655" height="5335">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12810" top="4515" width="5655" height="7770">
+   </BOUNDS>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Output Node" dstnodeid="140" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="140" srcpinname="Texture Out" dstnodeid="135" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="TriangleAlpha" dstnodeid="140" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Texture Out" dstnodeid="135" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="RoomSphereZ" dstnodeid="129" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="132" dstpinname="Play">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="141">
+   <BOUNDS type="Node" left="4065" top="1740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="142">
+   <BOUNDS type="Node" left="11295" top="10410" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11295" top="10410" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="8">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="143">
+   <BOUNDS type="Node" left="11280" top="11025" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11280" top="11025" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Line Thickness|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="142" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="145">
+   <BOUNDS type="Node" left="13530" top="9690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13530" top="9690" width="795" height="960">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="146">
+   <BOUNDS type="Node" left="13515" top="11070" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13515" top="11070" width="795" height="960">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,0,0,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Sound Levels|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="145" srcpinname="Y Output Value" dstnodeid="146" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="147">
+   <BOUNDS type="Node" left="4365" top="810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4365" top="810" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="148">
+   <BOUNDS type="Node" left="4065" top="2130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="141" srcpinname="Up Edge" dstnodeid="148" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Output" dstnodeid="132" dstpinname="Set Time">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="148" dstpinname="Input 2">
+   </LINK>
+   </PATCH>
