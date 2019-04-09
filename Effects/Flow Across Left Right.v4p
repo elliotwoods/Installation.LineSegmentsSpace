@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Flow Across Left Right.v4p" systemname="Point Towards Point" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Point.v4p" scrollx="9030" scrolly="0">
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\Effects\Flow Across Left Right.v4p" systemname="Point Towards Point" filename="C:\openFrameworks\apps\VVVV.Patches.DaVinci13\Effects\Point Towards Point.v4p" scrollx="2910" scrolly="270">
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Direction">
    </PIN>
@@ -30,7 +30,7 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4935" top="1950" width="15045" height="14295">
+   <BOUNDS type="Window" left="855" top="1935" width="15045" height="14295">
    </BOUNDS>
    <NODE systemname="Cons (DX11.Texture 2d)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Cons (DX11.Texture 2d)" componentmode="Hidden" id="31">
    <BOUNDS type="Node" left="4440" top="7350" width="3285" height="270">
@@ -465,7 +465,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11985" top="1470" width="6000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="6450" top="8160" width="12330" height="5085">
+   <BOUNDS type="Window" left="10770" top="3450" width="12330" height="5085">
    </BOUNDS>
    <PIN pinname="Translate" slicecount="1" values="28.7321">
    </PIN>
@@ -538,8 +538,6 @@
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="73" srcpinname="String0" dstnodeid="76" dstpinname="Input">
-   </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="13695" top="2385" width="100" height="100">
    </BOUNDS>
@@ -717,5 +715,7 @@
    <LINK srcnodeid="52" srcpinname="Position" dstnodeid="90" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="90" srcpinname="Output" dstnodeid="88" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Flow1" dstnodeid="76" dstpinname="Input">
    </LINK>
    </PATCH>

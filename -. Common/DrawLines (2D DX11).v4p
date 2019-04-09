@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\DrawLines (2D DX11).v4p" systemname="DrawLines (2D DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\DrawLines (2D DX11).v4p" scrollx="6585" scrolly="90">
+   <PATCH nodename="E:\openFrameworks\apps\Installation.LineSegmentsSpace\-. Common\DrawLines (2D DX11).v4p" systemname="DrawLines (2D DX11)" filename="C:\kimchiandchips\Installations\VVVV.Patches.DaVinci13\-. Common\DrawLines (2D DX11).v4p" scrollx="3000" scrolly="0">
    <BOUNDS type="Window" left="12090" top="2415" width="12195" height="12180">
    </BOUNDS>
    <NODE systemname="Unzip (Value Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value Bin)" componentmode="Hidden" id="11">
@@ -361,7 +361,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10065" top="8250" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
